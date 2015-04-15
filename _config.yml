@@ -1,0 +1,29 @@
+baseurl: /guide
+markdown: redcarpet
+name: 18F Guides Template
+
+permalink: pretty
+
+# Author/Organization info to be displayed in the templates
+author:
+  name: 18F
+  url: https://18f.gsa.gov
+
+# Point the logo URL at a file in your repo or hosted elsewhere by your organization
+logourl: /assets/img/18f-logo.png
+logoalt: 18f logo
+
+# Navigation
+# List links that should appear in the site sidebar here
+navigation:
+- text: Home
+  url: index.html
+  internal: true
+
+repos:
+- name: Guides Template
+  description: Main repository
+  url: https://github.com/18F/guides-template
+
+# Style Variables
+brand_color: "#1188ff"
