@@ -12,8 +12,9 @@ Guides](http://18f.github.io/guides), derived from
 ## Creating a guide
 
 To create a brand new guide, first follow the instructions in the
-[README.md](https://github.com/18F/guides-template/blob/master/README.md) file
-of this guide's GitHub repository to create a local clone of this template.
+[README.md](https://github.com/18F/guides-template/blob/gh-pages/README.md)
+file of this guide's GitHub repository to create a local clone of this
+template.
 
 Once you've created a new clone, click the _Adding a New Page_ entry in the
 table of contents.

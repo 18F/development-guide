@@ -7,7 +7,7 @@ To add new pages to the guide, first create a new
 [Markdown](http://daringfireball.net/projects/markdown/syntax) file in the
 `pages/` directory of the repository. As an example, the Markdown text for
 this page is
-[`pages/new-page.md`](https://github.com/18F/guides-template/blob/master/pages/new-page.md).
+[`pages/new-page.md`](https://github.com/18F/guides-template/blob/gh-pages/pages/new-page.md).
 
 The Markdown document begins with this [YAML front
 matter](http://jekyllrb.com/docs/frontmatter/):
