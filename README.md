@@ -1,19 +1,31 @@
 ## 18F Guides Template
 
-This is a skeleton repo containing the DOCter-based Jekyll template for 18F
-Guides.
+This is a skeleton repo containing the
+[CFPB/DOCter](https://github.com/CFPB/DOCter)-based
+[Jekyll](http://jekyllrb.com/) template for
+[18F Guides](http://18f.github.io/guides/).
 
 ### Generating the site/hosting locally
 
 You will need [Ruby](https://www.ruby-lang.org) ( > version 2.1.5 ). You may
-also consider using a Ruby version manager such as
-[rbenv](https://github.com/sstephenson/rbenv) to help ensure that Ruby version
-upgrades don't mean all your [gems](https://rubygems.org/) will need to be
-rebuilt.
+consider using a Ruby version manager such as
+[rbenv](https://github.com/sstephenson/rbenv) or [rvm](https://rvm.io/) to
+help ensure that Ruby version upgrades don't mean all your
+[gems](https://rubygems.org/) will need to be rebuilt.
 
-To run your own local instance:
+On OS X, you can use [Homebrew](http://brew.sh/) to install Ruby in
+`/usr/local/bin`, which may require you to update your `$PATH` environment
+variable:
 
+```shell
+$ brew update
+$ brew install ruby
 ```
+
+To create a new guide and serve it locally, where `MY-NEW-GUIDE` is the name
+of your new repository:
+
+```shell
 $ git clone git@github.com:18F/guides-template.git MY-NEW-GUIDE
 $ cd MY-NEW-GUIDE
 $ ./go init
@@ -22,8 +34,10 @@ $ ./go serve
 
 This will check that your Ruby version is supported, install the [Bundler
 gem](http://bundler.io/) if it is not yet installed, install all the gems
-needed by the playbook, and launch a running instance on
-`http://localhost:4000/guide/`.
+needed by the template, and launch a running instance on
+`http://localhost:4000/guide/`. (Make sure to include the `/`! The built-in
+Jekyll webserver doesn't redirect to it.) That page contains further
+instructions on how to adapt the template to a new guide repository.
 
 After going through these steps, run `./go` to see a list of available
 commands. The `serve` command is the most common for routine development.
