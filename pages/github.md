@@ -12,9 +12,16 @@ publish your guide.
 
 ## <a name="create-local-repo"></a>Create a new local repository
 
-Once you've got the `_config.yml` file up-to-date, execute the following to
-detach from the the original template repository and create a new one for your
-guide:
+Once you've got the `_config.yml` file up-to-date, execute this command to
+remove all of the pages that came with this template (careful not to remove
+any files that you actually intend to keep):
+
+```
+$ rm {% for p in site.pages %}{% if p.path contains 'pages/' %}{{ p.path }} {% endif %}{% endfor %}
+```
+
+Then execute the following to detach from the the original template repository
+and create a new one for your guide:
 
 ```
 $ rm -rf .git
