@@ -16,7 +16,7 @@ logoalt: 18F logo
 # Navigation
 # List links that should appear in the site sidebar here
 navigation:
-- text: Home
+- text: Introduction
   url: index.html
   internal: true
 - text: Adding a New Page

@@ -1,7 +1,7 @@
 ---
 permalink: /
 layout: default
-title: Home
+title: Introduction
 ---
 This is the template used for the [Jekyll](http://jekyllrb.com/)-based [18F
 Guides](http://18f.github.io/guides), derived from
