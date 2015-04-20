@@ -1,6 +1,13 @@
 baseurl: /guides-template
 markdown: redcarpet
 name: 18F Guides Template
+exclude:
+- go
+- copy-template
+- Gemfile
+- Gemfile.lock
+- README.md
+- LICENSE.md
 
 permalink: pretty
 

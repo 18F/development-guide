@@ -21,10 +21,21 @@ table of contents.
 
 ## Updating an existing guide
 
-Copy the `_includes`, `_layouts`, and `assets` directories from this template
-and follow the instructions in _Updating the Config File_ to update your
-`_config.yml` accordingly.
+First, clone this template:
 
-You may also need to consult the _GitHub Setup_ and _Post Your Guide_ chapters
-to ensure your guide is correctly published to `18f.github.io` and linked from
-the main [18F Guides](http://18f.github.io/guides/) site.
+```
+$ git clone git@github.com:18F/guides-template.git
+```
+
+Run the `copy-template` script from this template, passing the path to your
+guide's repository as the argument (replacing `MY-EXISTING-GUIDE` below):
+
+```
+$ guides-template/copy-template MY-EXISTING-GUIDE
+```
+
+Follow the instructions in _Updating the Config File_ to update your
+`_config.yml` accordingly. You may also need to consult the _GitHub Setup_ and
+_Post Your Guide_ chapters to ensure your guide is correctly published to
+`18f.github.io` and linked from the main [18F
+Guides](http://18f.github.io/guides/) site.
