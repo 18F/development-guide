@@ -1,5 +1,4 @@
-baseurl: /guides-template
-destination: _site/guides-template
+baseurl: /pages/guides-template
 markdown: redcarpet
 name: 18F Guides Template
 exclude:
