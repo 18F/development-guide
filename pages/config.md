@@ -16,8 +16,8 @@ entry in the table of contents.
 The configuration file is called `_config.yml`. The first properties to update
 are `baseurl:`, which determines the top-level URL of your guide relative to
 the host; and `name:`, which appears as the guide's overall title. Make sure to
-set `baseurl:` to `/pages/` plus the name of your new guide's repository; this
-is important to ensure that it will be published correctly.
+set `baseurl:` to the name of your new guide's repository; this is important
+to ensure that it will be published correctly.
 
 For example, for this template, these values are set to:
 
