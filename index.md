@@ -12,7 +12,7 @@ Guides](http://pages.18f.gov/guides/), derived from
 ## Creating a guide
 
 To create a brand new guide, first follow the instructions in the
-[README.md](https://github.com/18F/guides-template/blob/gh-pages/README.md)
+[README.md](https://github.com/18F/guides-template/blob/18f-pages/README.md)
 file of this guide's GitHub repository to create a local clone of this
 template.
 
