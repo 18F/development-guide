@@ -34,6 +34,14 @@ guide's repository as the argument (replacing `MY-EXISTING-GUIDE` below):
 $ guides-template/copy-template MY-EXISTING-GUIDE
 ```
 
+If your repository already has a `gh-pages` branch, you can create an
+`18f-pages` branch from it via:
+
+```
+$ git checkout -b 18f-pages gh-pages
+$ git push origin 18f-pages
+```
+
 Follow the instructions in _Updating the Config File_ to update your
 `_config.yml` accordingly. You may also need to consult the _GitHub Setup_ and
 _Post Your Guide_ chapters to ensure your guide is correctly published to

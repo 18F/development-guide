@@ -21,6 +21,10 @@ interface">
 
 ## <a name="set-default-branch"></a>Set the default branch
 
+_Note: If your repository is not just a Jekyll site, e.g. it is a project
+repository with a `gh-pages` or `18f-pages` branch for documentation, you can
+ignore this step._
+
 You also need to set `18f-pages` branch as the default. First, click the **Settings** page button (on the right side of the screen):<br/>
 <img src="{{site.baseurl}}/images/gh-settings-button.png" alt="GitHub settings page button">
 
