@@ -4,7 +4,7 @@ layout: default
 title: Introduction
 ---
 This is the template used for the [Jekyll](http://jekyllrb.com/)-based [18F
-Guides](http://18f.github.io/guides), derived from
+Guides](http://pages.18f.gov/guides/), derived from
 [CFPB/DOCter](https://github.com/CFPB/DOCter). It is structured to act as an
 18F Guides Guide. The repository for this template is
 [18F/guides-template](https://github.com/18F/guides-template/).
@@ -37,5 +37,5 @@ $ guides-template/copy-template MY-EXISTING-GUIDE
 Follow the instructions in _Updating the Config File_ to update your
 `_config.yml` accordingly. You may also need to consult the _GitHub Setup_ and
 _Post Your Guide_ chapters to ensure your guide is correctly published to
-`18f.github.io` and linked from the main [18F
-Guides](http://18f.github.io/guides/) site.
+`pages.18f.gov` and linked from the main [18F
+Guides](http://pages.18f.gov/guides/) site.
