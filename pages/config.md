@@ -7,6 +7,7 @@ title: Updating the Config File
 - [Copy the `exclude:` entries](#copy-exclude-entries)
 - [Register new pages](#register-new-pages)
 - [Update the repository list](#update-repository-list)
+- [Set `google_analytics_ua`](#set-google-analytics)
 
 Once you're finished updating the config file, click the _GitHub Setup_
 entry in the table of contents.
@@ -71,4 +72,12 @@ repos:{% for i in site.repos %}
   description: {{ i.description }}
   url: {{ i.url }}
 {% endfor %}
+```
+
+## <a name="set-google-analytics"></a>Set `google_analytics_ua`
+
+Set `google_analytics_ua` to the following, if it isn't set already:
+
+```yaml
+google_analytics_ua: {{ site.google_analytics_ua }}
 ```

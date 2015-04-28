@@ -49,3 +49,5 @@ repos:
 
 # Style Variables
 brand_color: "#1188ff"
+
+google_analytics_ua: UA-48605964-19
