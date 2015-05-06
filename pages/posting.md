@@ -55,7 +55,7 @@ GitHub repository. Within seconds, your guide should appear at
 Now for the final step: Add an entry to the list of [18F
 Guides](http://18f.github.io/guides/) linking to your new guide. You can [use
 this link to edit the file directly in
-GitHub](https://github.com/18F/guides/edit/18f-pages/index.md):
+GitHub](https://github.com/18F/guides/edit/18f-pages/index.html):
 
 <img src="{{site.baseurl}}/images/gh-add-guide.png" alt="Add the new guide to 18F Guides using the GitHub text editor">
 
