@@ -1,8 +1,6 @@
 18F Frontend Guild
 ===================
 
-## What
-
 18F is promoting team best practices across speciality areas through guilds. These guilds support their members in whatever way deemed most appropriate by those members themselves. This branch houses guild research into its membership needs.
 
 This repo is where the 18F Frontend Guild keeps its guide (yep, I went there — guild and guide in one sentence) to best practices and resources for frontend development.
