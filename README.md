@@ -7,6 +7,13 @@ This repo is where the 18F Frontend Guild keeps its guide (yep, I went there —
 
 Also, the Frontend Guild Roadmap is in [the wiki](https://github.com/18F/frontend/wiki), and research into what the guild should be doing to support frontend practice at 18F is kept in [this branch](https://github.com/18F/frontend/tree/research).
 
+## How Guild best practices are developed
+
+1. Team members suggest needs in issues, and guild leads identify issues through [research](https://github.com/18F/frontend/tree/research)
+2. If resolving these issues require documentation, a draft document is created in an internal Google Doc that is open to comment and announced to #frontend for contribution
+3. Once a relatively clear and stable version emerges, an alert is posted to #dev, #frontend and #design for more review and comment
+4. Once comments are resolved, the guide is posted publically (location dependent on content)
+5. The best practice or guide is announced to the entire 18F Team via #news and email.
 
 ### Public domain
 
