@@ -1,0 +1,62 @@
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+{% if page.title == "Keyboard Access" %}
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.moveFocus').on('focus',function(){
+			$('.keyboardTrap:first').focus();
+		});
+		$('.keyboardTrap').click(function(){
+			$('.moveFocus').each(function(){
+				$(this).remove();
+			});
+		});
+	});
+</script>
+{% endif %}
+
+{% if page.title == "Flashing" %}
+<script type="text/javascript">
+	$(document).ready(function(){
+		var blinking = false,
+			interval,
+			$blink = $('.blink');
+		$('#blinkbutton').click(function(){
+			if (!blinking){
+				$('#blinkbutton').html('Click to stop blinking');
+				interval = setInterval(function(){
+					$blink.toggle();
+				},200);
+				blinking = true;
+			}
+			else
+			{
+				clearInterval(interval);
+				$('#blinkbutton').html('Click to see non-compliant flashing');
+				$blink.hide();
+				blinking = false;
+			}
+		});
+
+	});
+</script>
+{% endif %}
+{% if page.title == "Time Outs" %}
+<script type="text/javascript">
+	$(document).ready(function(){
+		var timer;
+		$('#pForm input').on('input',function(){
+			if (timer)
+				clearTimeout(timer);
+			timer = setTimeout(function(){
+				var c = confirm('Would you like more time to complete the form?'),
+				time;
+				if(c == true)
+					clearTimeout(timer);
+				else
+					$('#pForm').trigger('reset');
+			}, 2000);
+		});
+	});
+</script>
+{% endif %}

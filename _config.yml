@@ -1,0 +1,53 @@
+baseurl: /launch-checklist
+markdown: redcarpet
+name: 18F Guides Template
+exclude:
+- go
+- copy-template
+- Gemfile
+- Gemfile.lock
+- README.md
+- LICENSE.md
+
+permalink: pretty
+
+# Author/Organization info to be displayed in the templates
+author:
+  name: 18F
+  url: https://18f.gsa.gov
+
+# Point the logo URL at a file in your repo or hosted elsewhere by your organization
+logourl: /assets/img/18f-logo.png
+logoalt: 18F logo
+
+# Navigation
+# List links that should appear in the site sidebar here
+navigation:
+- text: Introduction
+  url: index.html
+  internal: true
+- text: Adding a New Page
+  url: adding-a-new-page/
+  internal: true
+- text: Adding Images
+  url: adding-images/
+  internal: true
+- text: Updating the Config File
+  url: updating-the-config-file/
+  internal: true
+- text: GitHub Setup
+  url: github-setup/
+  internal: true
+- text: Post Your Guide
+  url: post-your-guide/
+  internal: true
+
+repos:
+- name: Guides Template
+  description: Main repository
+  url: https://github.com/18F/guides-template
+
+# Style Variables
+brand_color: "#1188ff"
+
+google_analytics_ua: UA-48605964-19

@@ -1,0 +1,19 @@
+<aside>
+  <p class="intro">{{ site.subtitle }}</p>
+  <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
+  <nav class="sidebar-nav" role="navigation">
+    <ul>
+      {% for link in site.navigation %}
+        {% if link.internal == true %}
+          <li {% if page.title == link.text %}class="sidebar-nav-active"{% endif %}>
+            <a href="{{ site.baseurl }}/{{ link.url }}"  {% if page.title == link.text %}title='Selected'{% endif %}>{{ link.text }}</a>
+          </li>
+        {% else %}
+          <li {% if page.title == link.text %}class="sidebar-nav-active"{% endif %}>
+            <a href="{{ link.url }}" {% if page.title == link.text %}title='Selected'{% endif %}>{{ link.text }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+</aside>
