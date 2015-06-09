@@ -9,10 +9,10 @@ Also, the Frontend Guild Roadmap is in [the wiki](https://github.com/18F/fronten
 
 ## How Guild best practices are developed
 
-1. Team members suggest needs in issues, and guild leads identify issues through [research](https://github.com/18F/frontend/tree/research)
-2. If resolving these issues require documentation, a draft document is created in an internal Google Doc that is open to comment and announced to #frontend for contribution
-3. Once a relatively clear and stable version emerges, an alert is posted to #dev, #frontend and #design for more review and comment
-4. Once comments are resolved, the guide is posted publically (location dependent on content)
+1. Team members suggest needs in issues, and guild leads identify issues through [research](https://github.com/18F/frontend/tree/research).
+2. If resolving these issues requires documentation, a draft document is created in an internal Google Doc that is open to comment and announced to #frontend for contribution. NB: You can see all in-process docs in [this internal folder](https://drive.google.com/drive/u/1/#folders/0B84F26FpUP0lR1B2VVNGSi1MMVk/0B0C6PKlzps2JV3pqX3NJdm5WejA/0B5HeQa_YQ6-VTTlkVEFNZ2VWZEU/0B2CjDILjK8_jfmp1c2ZJM2d0eEtGSHFEeS1CenlHWEQ0S01jcWJfZXNObElUQV9Yei0wZ2s).
+3. Once a relatively clear and stable version emerges, an alert is posted to #dev, #frontend and #design for more review and comment.
+4. Once comments are resolved, the guide is posted publicly (location dependent on content).
 5. The best practice or guide is announced to the entire 18F Team via #news and email.
 
 ### Public domain
