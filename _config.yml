@@ -1,4 +1,4 @@
-baseurl: /launch-checklist
+baseurl: /frontend
 markdown: redcarpet
 name: 18F Guides Template
 exclude:
