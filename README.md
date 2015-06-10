@@ -10,7 +10,7 @@ The guides are in different points in the review process.
 
 - Published guides: https://pages.18f.gov/frontend/
 - Unpublished guides: [pages](pages/)
-- Drafts: [pulls](https://github.com/18F/frontend/blob/master/pulls?q=is%3Aopen+label%3Adraft+is%3Apr)
+- Drafts: [pulls](https://github.com/18F/frontend/pulls?q=is%3Aopen+label%3Adraft+is%3Apr)
 
 ## How to track what we're doing, and how you can be involved!
 
