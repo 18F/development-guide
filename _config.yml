@@ -1,6 +1,6 @@
 baseurl: /frontend
 markdown: redcarpet
-name: 18F Guides Template
+name: Frontend Guides
 exclude:
 - go
 - copy-template
@@ -10,6 +10,16 @@ exclude:
 - LICENSE.md
 
 permalink: pretty
+
+defaults:
+-
+  scope:
+    path: "pages"
+  values:
+    layout: "default"
+    edit_info:
+      repo: 18F/frontend
+      branch: master
 
 # Author/Organization info to be displayed in the templates
 author:
@@ -26,20 +36,8 @@ navigation:
 - text: Introduction
   url: index.html
   internal: true
-- text: Adding a New Page
-  url: adding-a-new-page/
-  internal: true
-- text: Adding Images
-  url: adding-images/
-  internal: true
-- text: Updating the Config File
-  url: updating-the-config-file/
-  internal: true
-- text: GitHub Setup
-  url: github-setup/
-  internal: true
-- text: Post Your Guide
-  url: post-your-guide/
+- text: Web Components
+  url: web-components/
   internal: true
 
 repos:

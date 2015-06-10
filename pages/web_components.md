@@ -1,5 +1,8 @@
-# Web Components
-
+---
+permalink: /web-components/
+layout: default
+title: Web Components
+---
 ## Initial Impressions
 First, check out [this article](http://developer.telerik.com/featured/web-components-arent-ready-production-yet/) and [its follow-up](http://developer.telerik.com/featured/web-components-ready-production/) for some background on whether Web Components (or, more specifically, [custom elements]) are ready for production. TL;DR:
 
