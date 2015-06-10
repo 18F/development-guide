@@ -19,6 +19,10 @@ Also, the Frontend Guild Roadmap is in [the wiki](https://github.com/18F/fronten
 4. Once comments are resolved, the guide is posted publicly (location dependent on content).
 5. The best practice or guide is announced to the entire 18F Team via #news and email.
 
+### How to edit or suggest changes to an existing guide
+
+The frontend space is rapidly changing and all our guides are living documents. Once they are published as guides on 18F Guides, please suggest edits or changes via pull request.
+
 ### Public domain
 
 This project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):
