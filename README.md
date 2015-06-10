@@ -5,6 +5,13 @@
 
 This repo is where the 18F Frontend Guild keeps its guide (yep, I went there — guild and guide in one sentence) to best practices and resources for frontend development.
 
+## Current guides
+The guides are in different points in the review process.
+
+- Published guides: https://pages.18f.gov/frontend/
+- Unpublished guides: [pages](pages/)
+- Drafts: [pulls](pulls?q=is%3Aopen+label%3Adraft+is%3Apr)
+
 ## How to track what we're doing, and how you can be involved!
 
 We use issues in this repo to track work. They are accessible in a nice visual, prioritized form on [our waffle board](https://waffle.io/18F/frontend).
@@ -18,6 +25,18 @@ Also, the Frontend Guild Roadmap is in [the wiki](https://github.com/18F/fronten
 3. Once a relatively clear and stable version emerges, an alert is posted to #dev, #frontend and #design for more review and comment.
 4. Once comments are resolved, the guide is posted publicly (location dependent on content).
 5. The best practice or guide is announced to the entire 18F Team via #news and email.
+
+### How to create a new guide
+
+1. Fork or clone the frontend repo. `git clone git@github.com:18F/frontend.git`
+2. Create a new branch for your guide, prefixed with `draft-`. `git checkout -b draft-a_new_guide`
+3. Create a markdown(md) file in the pages directory for your guide. `touch pages/draft-a_new_guide.md`
+4. After editing add, commit and push changes. `git add pages && git commit && git push orgin draft-a_new_guide`
+5. Create a pull request on github.
+6. Label your pull request with `draft`.
+7. Post in #frontend slack channel for comment.
+
+If ready for publishing, you or someone else can move your guide to the 18f-pages branch so it's appears on pages.18f.gov/frontend.
 
 ### How to edit or suggest changes to an existing guide
 
