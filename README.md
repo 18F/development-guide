@@ -7,52 +7,23 @@ This is a skeleton repo containing the
 
 ### Generating the site/hosting locally
 
-You will need [Ruby](https://www.ruby-lang.org) ( > version 2.1.5 ). You may
-consider using a Ruby version manager such as
-[rbenv](https://github.com/sstephenson/rbenv) or [rvm](https://rvm.io/) to
-help ensure that Ruby version upgrades don't mean all your
-[gems](https://rubygems.org/) will need to be rebuilt.
+## How to track what we're doing, and how you can be involved!
 
-On OS X, you can use [Homebrew](http://brew.sh/) to install Ruby in
-`/usr/local/bin`, which may require you to update your `$PATH` environment
-variable:
+We use issues in this repo to track work. They are accessible in a nice visual, prioritized form on [our waffle board](https://waffle.io/18F/frontend).
 
-```shell
-$ brew update
-$ brew install ruby
-```
+Also, the Frontend Guild Roadmap is in [the wiki](https://github.com/18F/frontend/wiki), and research into what the guild should be doing to support frontend practice at 18F is kept in [this branch](https://github.com/18F/frontend/tree/research).
 
-To create a new guide and serve it locally, where `MY-NEW-GUIDE` is the name
-of your new repository:
+### How Guild best practices are developed
 
-```shell
-$ git clone git@github.com:18F/guides-template.git MY-NEW-GUIDE
-$ cd MY-NEW-GUIDE
-$ ./go init
-$ ./go serve
-```
+1. Team members suggest needs in issues, and guild leads identify issues through [research](https://github.com/18F/frontend/tree/research).
+2. If resolving these issues requires documentation, a draft document is created in an internal Google Doc that is open to comment and announced to #frontend for contribution. NB: You can see all in-process docs in [this internal folder](https://drive.google.com/drive/u/1/#folders/0B84F26FpUP0lR1B2VVNGSi1MMVk/0B0C6PKlzps2JV3pqX3NJdm5WejA/0B5HeQa_YQ6-VTTlkVEFNZ2VWZEU/0B2CjDILjK8_jfmp1c2ZJM2d0eEtGSHFEeS1CenlHWEQ0S01jcWJfZXNObElUQV9Yei0wZ2s).
+3. Once a relatively clear and stable version emerges, an alert is posted to #dev, #frontend and #design for more review and comment.
+4. Once comments are resolved, the guide is posted publicly (location dependent on content).
+5. The best practice or guide is announced to the entire 18F Team via #news and email.
 
-This will check that your Ruby version is supported, install the [Bundler
-gem](http://bundler.io/) if it is not yet installed, install all the gems
-needed by the template, and launch a running instance on
-`http://localhost:4000/guides-template/`. (Make sure to include the trailing slash! The built-in
-Jekyll webserver doesn't redirect to it.) That page contains further
-instructions on how to adapt the template to a new guide repository.
+### How to edit or suggest changes to an existing guide
 
-After going through these steps, run `./go` to see a list of available
-commands. The `serve` command is the most common for routine development.
-
-You'll need to create a new Github repository for your new guide. To do this, go to github.com/18f and click the "New Repository" button. Enter the title and description for your new guide and then click "Create Repository".
-
-After the repository is created, you'll see the repo URL at the top. Copy this url by hitting the handy "Copy to Clipboard" button next to the text box. 
-
-Go back to the directory where you cloned the guides-template repository. We're going to change this repo to point to the one you just created (which is empty) and push the template to it.
-```
-git remote set-url origin https://github.com/18F/MY-NEW-GUIDE.git
-git push origin 18f-pages
-```
-
-Now you can edit the template freely, and push up changes as you need. 
+The frontend space is rapidly changing and all our guides are living documents. Once they are published as guides on 18F Guides, please suggest edits or changes via pull request.
 
 ### Public domain
 
