@@ -15,6 +15,8 @@ The most supported CSS preprocessor at 18F is Sass/SCSS. Using this pre-processo
 
 That being said, any preprocessor is allowed as long as it's a sound project and has community support.
 
+The recommended way to compile your sass code is through (https://www.npmjs.com/package/node-sass)[node-sass] (rather than ruby sass). This allows eliminating the dependency on ruby for projects that don't already require it and is the fastest method of compiling sass.
+
 ## Frameworks
 18F currently recommends two CSS frameworks. Team members can choose the framework that best meets project and design/dev needs.
 
@@ -38,7 +40,7 @@ These frameworks were chosen because they are relatively unopinionated about des
 - Put a blank line between each selector block.
 - To close a selector block, put an unindented closing curly brace on a separate line.
 - Each declaration should appear on its own line for more accurate error reporting.
-- Do not indent selectors
+- Do not indent selectors.
 
 ```scss
 // Good
@@ -56,13 +58,21 @@ These frameworks were chosen because they are relatively unopinionated about des
     margin:3px;text-align:center;}
 ```
 
-- Multiple selectors should each be on a single line, with no space after each
-comma.
+- Multiple selectors should each be on a single line, with no space after each comma, unless they selector is less than 5 chars.
 
 ```scss
+// Good
 selector1,
 selector2,
 selector3 {
+}
+
+// Good
+h1, h2 {
+}
+
+// Bad 
+selector1, selector2 {
 }
 ```
 
@@ -92,7 +102,7 @@ margin-top: 3em;
 margin: 3em 4em 2em 1em;
 ```
 
-- Single-quote URLs and string values
+- Single-quote URLs and string values.
 
 ```scss
   background-image: url('/images/kittens.jpg');
@@ -100,7 +110,7 @@ margin: 3em 4em 2em 1em;
   font-family: 'Lucida Grande', 'Helvetica', sans-serif;
 ```
 
-- Wrap top-level numeric calculations in parentheses
+- Wrap top-level numeric calculations in parentheses.
 
 ```scss
 // Good
@@ -132,6 +142,7 @@ margin: 3em 4em 2em 1em;
 }
 
 // Good
+$align_top: 100%;
 .component {
   top: $align_top;
 }
@@ -146,6 +157,7 @@ margin: 3em 4em 2em 1em;
 - Within properties, you may use alphabetical order or type order—just pick one and keep the whole project consistent.
 - Put a new line before nested selectors.
 - Put mixin calls with @content after nested selectors.
+- Properties should be alphabetical, not grouped by type or length.
 
 ```scss
 // Good
@@ -170,9 +182,9 @@ margin: 3em 4em 2em 1em;
 
 #### Notes
 ##### How to set text editors to 80 chars
-- Sublime: Add a `rulers` setting with 80 as the value
+- Sublime: Add a `rulers` setting with 80 as the value.
 	- ```"rulers": [80]```
-- Atom: Set the `preferredLineLength` setting to 80
+- Atom: Set the `preferredLineLength` setting to 80.
 	- `preferredLineLength: 80`
 - Vim: Set two options in your .vimrc to wrap lines at 80 characters.
 	- ```set formatoptions+=w```
@@ -181,7 +193,7 @@ margin: 3em 4em 2em 1em;
 
 ## Units
 ### Measurements
-- Use **rem** units for font sizes with a em fallback.
+- Use **rem** units for font sizes with a px fallback.
 This can be done with the following mixin:
 
 ```scss
@@ -191,11 +203,11 @@ This can be done with the following mixin:
 }
 ```
 
-- Set the html font size to 62.5% to ensure .1 rem unit equals 1px
+- Set the html font size to 10px to ensure .1 rem unit equals 1px.
 
 ```scss
 html {
-  font-size: 62.5%;
+  font-size: 10px;
 }
 ```
 
@@ -239,18 +251,21 @@ width: 12;
 
 
 ### Colors
-- Use **hex** notation, **rgb(a)**, or **hsl(a)**.
+- Use **hex** notation first, or then **rgb(a)**, or **hsl(a)**.
 - Both three-digit and six-digit hexadecimal notation are acceptable.
 - When denoting color using hexadecimal notation, use all lowercase letters.
 - When using HSL or RGB notation, always add a single space after a comma and no space between parentheses and content.
 
 ```scss
 // Good
-color: #fff;
+$light: #fff;
+color: $light;
 // Good
-color: #fe9848;
+$primary: #fe9848;
+color: $primary;
 // Good
-color: rgba(255, 100, 255, 0.5);
+$secondary: rgba(255, 100, 255, 0.5);
+color: $secondary;
 // Bad
 color: #FFF;
 ```
@@ -276,6 +291,7 @@ div {
 - Classes should be lowercase.
 - Avoid camelcase.
 - Name things clearly.
+- Write classes semantically. Name its function not its appearance.
 
 ```scss
 // Bad
@@ -289,7 +305,7 @@ div {
 .c1-xr { }
 ```
 
-- Avoid presentation- or location-specific words in names, as this will cause problems when you (invariably) need to change the color/width/feature later
+- Avoid presentation- or location-specific words in names, as this will cause problems when you (invariably) need to change the color/width/feature later.
 
 ```scss
 // Bad
@@ -303,17 +319,17 @@ div {
 .lg-box
 ```
 
-- Be wary of naming components based on content, as this limits the use of the class
+- Be wary of naming components based on content, as this limits the use of the class.
 
 ```scss
 // Danger zone
-.product-list
+.product_list
 
 // Better
-.item-list
+.item_list
 ```
 
-- Don't abbreviate unless it’s a well-known abbreviation
+- Don't abbreviate unless it’s a well-known abbreviation.
 
 ```scss
 // Bad
@@ -492,7 +508,7 @@ A site's architecture should be based on its goals and purposes. This means the 
 
 
 ### Modular/component architecture
-When using a modular or component architecture, every page is broken into a series of modular components. There are two sets of these components: ```components``` and ```modules```. Components are very basic structure elements such as buttons, blurbs, navs, and positioning structures like insets, island, enclosure. From here, modules are built with these components. This architecture also attempts to keep the specificity trend in an upwards curve as you move down in the file (more on this to come).
+When using a modular or component architecture, every page is broken into a series of modular components. There are two sets of these components: ```components``` and ```modules```. The architecture starts out with basic html element rules: html, p, a, form, etc tags that than have components and modules written on top of them. Components are very basic structure such as buttons, blurbs, navs, and positioning structures like insets, island, enclosure. From here, modules are built with these components. This architecture also attempts to keep the specificity trend in an upwards curve as you move down in the file (more on this to come).
 
 - Start with an elements file for all tag rules (a, h1-h5, p, *, html, body).
 - Create component files for each structural element, such as buttons, navs, etc. These are mainly class-based and use BEM or another naming scheme.
@@ -507,7 +523,7 @@ When using a modular or component architecture, every page is broken into a seri
 ```sh
 _elements.scss
 _mixins.scss
-_typeography.scss
+_typography.scss
 _util.scss
 _vars.scss
 component/_blurb.scss
@@ -521,7 +537,7 @@ lib/neat.scss
 _overrides.scss
 ```
 
-- For the `util`, `typography`, `elements`, and `overrides` files, once they grow too large in size, split them into their own folder with sub files.
+- For the `util`, `typography`, `elements`, and `overrides` files, once they grow too large (300 lines or more) in size, split them into their own folder with sub files.
 
 ```sh
 elements/_all.scss
@@ -537,7 +553,7 @@ util/_clearfix.scss
 
 
 ### Importing
-As you likely know, CSS rules that are later in the file override earlier rules.. This means Sass imports can be used to control inheritance and specificity.
+As you likely know, CSS rules that are later in the file override earlier rules. This means Sass imports can be used to control inheritance and specificity.
 - Start with base elements.
 - Move to single nested classes and utils.
 - Move next to more specific classes, often with nesting.
@@ -558,7 +574,7 @@ As you likely know, CSS rules that are later in the file override earlier rules.
 ```
 
 ## Specificity
-- IDs should be reserved for JavaScript.
+- IDs should be reserved for JavaScript. Don’t use IDs for styles.
 
 ```scss
 // Bad
@@ -629,7 +645,7 @@ IDs should be reserved for JavaScript. Unless you have a very good reason, all C
 	- the value is repeated twice;
 	- the value is likely to be updated at least once;
 	- all occurrences of the value are tied to the variable (i.e. not by coincidence).
-- When building scss that will be used across multiple projects use the `!default` flag to allow overriding
+- When building scss that will be used across multiple projects use the `!default` flag to allow overriding.
 
 ```scss
 $baseline: 1em !default;
@@ -657,7 +673,7 @@ $neutral: #ccc;
 $background_color
 ```
 
-- Don't use the value of dimensional variables in the variable name
+- Don't use the value of dimensional variables in the variable name.
 
 ```scss
 // Bad
@@ -681,8 +697,7 @@ $z_index-show: $z_index-1;
 ```
 
 ## Responsive Design & Breakpoints
-- Set variables for breakpoints at the top of your stylesheet. This
-  functionality is built into Bourbon.
+- Set variables for breakpoints at the top of your stylesheet. This functionality is built into Bourbon.
 
 ```scss
 $sm: new-breakpoint(min-width 0 max-width 40em $sm_cols);
@@ -690,8 +705,7 @@ $sm: new-breakpoint(min-width 0 max-width 40em $sm_cols);
 
 - Use variables to set the queries throughout so they are easy to adapt if necessary.
 - Place media queries nearest to the class they are affecting.
-- Rather than focusing on devices when deciding where to put breakpoints, focus
-on content.
+- Rather than focusing on devices when deciding where to put breakpoints, focus on content.
 
 ```scss
 $iphone: new-breakpoint(min-width 0 max-width 640px 6);
@@ -714,8 +728,6 @@ $small
 ### KSS
 Use KSS for documentation. More information on KSS can be found on the
 [official site](http://warpspire.com/kss/).
-
-
 
 #### Example
 
