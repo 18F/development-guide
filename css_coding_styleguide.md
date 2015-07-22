@@ -88,6 +88,22 @@ selector {
 }
 ```
 
+- Spaces should separate values and operators in Sass expressions.
+
+```scss
+// Bad
+selector {
+  font-size: ($font-size+2em);
+  font-size: ($font-size +2em);
+}
+
+// Good
+selector {
+  font-size: ($font-size + 2em);
+}
+
+```
+
 
 - Do not use shorthand declarations unless you need to explicitly set all the available values.
 
@@ -110,7 +126,7 @@ margin: 3em 4em 2em 1em;
   font-family: 'Lucida Grande', 'Helvetica', sans-serif;
 ```
 
-- Wrap top-level numeric calculations in parentheses.
+- Wrap numeric calculations in parentheses.
 
 ```scss
 // Good
@@ -155,11 +171,26 @@ $align_top: 100%;
 	3. @include directives
 	4. properties
 - Within properties, you may use alphabetical order or type order—just pick one and keep the whole project consistent.
-- Put a new line before nested selectors.
+- Put a new line before nested selectors unless after first selector.
 - Put mixin calls with @content after nested selectors.
 - Properties should be alphabetical, not grouped by type or length.
 
 ```scss
+// Bad
+.module {
+
+  .module-element {
+    color: #fff932;
+  }
+}
+
+// Good
+.module {
+  .module-element {
+    color: #fff932;
+  }
+}
+
 // Good
 .module {
   $amount = 3;
@@ -173,7 +204,7 @@ $align_top: 100%;
   }
 
   @include media($sm) {
-    margin-top: $amount +10em;
+    margin-top: ($amount + 10em);
   }
 }
 ```
@@ -212,8 +243,33 @@ html {
 ```
 
 - Use **em** units for positioning.
-- Use **percentages** when elements have to change based on screen size.
-- Use **px** units for when a measurement shouldn't change based on user set font size or browser zooming.
+- Use **percentages** when layout components stay relational to each other (e.g. a main content area that takes up 75% of the screen and a sidebar that takes up 25%).
+
+```scss
+// Good
+.panel-a {
+  width: 25%;
+}
+
+.panel-b {
+  width: 75%;
+}
+```
+
+- Use **px** units for when a measurement shouldn't change based on user set font size or browser zooming or for when requiring pixel values below 5.
+
+```scss
+// Bad
+selector {
+  border-width: 55px;
+}
+
+// Good
+selector {
+  border-width: 2px;
+}
+```
+
 - Use unitless values for line-height as this will inherit values from the font-size.
 - Use up to 10 decimal places in em units to ensure accuracy.
 
@@ -476,7 +532,7 @@ Don't attach styles to classes with a `test-` flag. These classes are reserved f
 }
 ```
 
-- Do not use mixins for browser prefixes. Use [Autoprefixer]https://github.com/postcss/autoprefixer) or Bourbon for that.
+- Do not use mixins for browser prefixes. Use [Autoprefixer]https://github.com/postcss/autoprefixer).
 
 ```scss
 // Bad
