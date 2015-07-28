@@ -3,18 +3,18 @@ permalink: /css-coding-styleguide/
 layout: default
 title: CSS Coding Styleguide
 ---
-# CSS Coding styleguide
+1. [Preprocessor](#preprocessor)
+2. [Frameworks](#frameworks)
+3. [Format](#format)
+4. [Units](#units)
+5. [Naming](#naming)
+6. [Inheritance](#inheritance)
+7. [Architecture](#architecture)
+8. [Specificity](#specificity)
+9. [Variables](#variables)
+10. [Documentation](#documentation)
 
-1. Preprocessor
-2. Frameworks
-3. Syntax & Formatting
-4. Units
-5. Naming
-6. Variables
-7. Specificity
-8. Architecture
-9. Documentation
-
+<a id="preprocessor"></a>
 ## Preprocessor
 The most supported CSS preprocessor at 18F is Sass/SCSS. Using this pre-processor means you'll get supported resources such as frameworks, libraries, tutorials and a comprehensive styleguide as support.
 
@@ -22,6 +22,7 @@ That being said, any preprocessor is allowed as long as it's a sound project and
 
 The recommended way to compile your sass code is through (https://www.npmjs.com/package/node-sass)[node-sass] (rather than ruby sass). This allows eliminating the dependency on ruby for projects that don't already require it and is the fastest method of compiling sass.
 
+<a id="frameworks"></a>
 ## Frameworks
 18F currently recommends two CSS frameworks. Team members can choose the framework that best meets project and design/dev needs.
 
@@ -35,6 +36,7 @@ These frameworks were chosen because they are relatively unopinionated about des
 18F specifically does not recommend using Twitter/Bootstrap for production work because of one, the difficulty in adapting its opinionated styles to bespoke design work and two, its CSS style that places semantic layout instructions directly in HTML classes.
 
 
+<a id="format"></a>
 ## Format
 ### Spacing
 - Where possible, limit CSS files’ width to 80 characters. See [notes](#format_notes) to see how to configure your text editor to 80 characters.
@@ -214,7 +216,7 @@ $align_top: 100%;
 }
 ```
 
-<a name="format_notes"></a>
+<a id="format_notes"></a>
 
 #### Notes
 ##### How to set text editors to 80 chars
@@ -227,6 +229,7 @@ $align_top: 100%;
 	- ```set tw=80```
 
 
+<a id="units"></a>
 ## Units
 ### Measurements
 - Use **rem** units for font sizes with a px fallback.
@@ -341,6 +344,7 @@ color: #FFF;
 }
 ```
 
+<a id="naming"></a>
 ## Naming
 - HTML elements should be in lowercase.
 
@@ -513,6 +517,7 @@ Don't attach styles to classes with a `test-` flag. These classes are reserved f
 }
 ```
 
+<a id="inheritance"></a>
 ## Inheritance (@include and @extend)
 ### Mixins
 - Use mixins for groups of properties that appear together intentionally and are used multiple times.
@@ -564,6 +569,7 @@ If you're unsure of using @extend, use these rules to not run into trouble:
 
 You can use mixins in place of selectors. While mixins will copy more code, the difference will often be negligible once the output file has been gzipped.
 
+<a id="architecture"></a>
 ## Architecture
 A site's architecture should be based on its goals and purposes. This means the guidance here should be adapted to different sites and situations.
 
@@ -634,6 +640,8 @@ As you likely know, CSS rules that are later in the file override earlier rules.
 @import 'module/logo';
 ```
 
+
+<a id="specificity"></a>
 ## Specificity
 - IDs should be reserved for JavaScript. Don’t use IDs for styles.
 
@@ -700,7 +708,7 @@ Attribute selectors should use double quotes around values. Refrain from using o
 IDs should be reserved for JavaScript. Unless you have a very good reason, all CSS should be attached to classes rather than IDs. When in doubt, use a class name. This prevents target confusion and allows CSS devs and JS devs to co-exist in the same code in peace. If you must use an id selector (`#id`) make sure that you have no more than one in your rule declaration.
 
 
-
+<a id="variables"></a>
 ## Variables
 - Create new variables in the following circumstances:
 	- the value is repeated twice;
@@ -782,6 +790,8 @@ $mobile
 $small
 ```
 
+
+<a id="documentation"></a>
 ## Documentation
 - Be intentional when you use `//` (silent comments) versus `/* */` (which are preserved in the CSS output). When in doubt, use `//`.
 
