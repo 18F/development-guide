@@ -1,3 +1,8 @@
+---
+permalink: /css-coding-styleguide/
+layout: default
+title: CSS Coding Styleguide
+---
 # CSS Coding styleguide
 
 1. Preprocessor
