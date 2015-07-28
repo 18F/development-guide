@@ -36,6 +36,9 @@ navigation:
 - text: Introduction
   url: index.html
   internal: true
+- text: CSS Coding Styleguide
+  url: css-coding-styleguide/
+  internal: true
 - text: Web Components
   url: web-components/
   internal: true
