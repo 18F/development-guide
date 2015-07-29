@@ -39,6 +39,37 @@ navigation:
 - text: CSS Coding Styleguide
   url: css-coding-styleguide/
   internal: true
+  children: 
+  - text: Preprocessor
+    url: preprocessor/
+    internal: true
+  - text: Frameworks
+    url: frameworks/
+    internal: true
+  - text: Format
+    url: format/
+    internal: true
+  - text: Units
+    url: units/
+    internal: true
+  - text: Naming
+    url: naming/
+    internal: true
+  - text: Inheritance
+    url: inheritance/
+    internal: true 
+  - text: Architecture
+    url: architecture/
+    internal: true 
+  - text: Specificity
+    url: specificity/
+    internal: true 
+  - text: Variables
+    url: variables/
+    internal: true
+  - text: Documentation
+    url: documentation/
+    internal: true                                 
 - text: Web Components
   url: web-components/
   internal: true
