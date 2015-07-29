@@ -192,7 +192,6 @@ Navigation
   color: #74767B;
   border-left: 4px solid {{ site.brand_color }};
   background-color: transparent;
-  padding-left: 20px;
 }
 
 .sidebar-nav ul {
@@ -228,6 +227,7 @@ Navigation
 
 .nav-children li {
     border-bottom: none;
+    padding-left: 0;
 }
 
 .nav-children a {
@@ -236,12 +236,6 @@ Navigation
 
 .nav-children li:last-child a {
     padding-bottom: 10px;
-}
-
-.nav-children a:hover,
-.nav-children a:focus,
-.nav-children a:active {
-    padding-left: 40px;
 }
 
 .expand-subnav {
