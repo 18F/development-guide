@@ -7,7 +7,7 @@ parent: CSS Coding Styleguide
 
 A site's architecture should be based on its goals and purposes. This means the guidance here should be adapted to different sites and situations.
 
-### Modular/component architecture
+## Modular/component architecture
 When using a modular or component architecture, every page is broken into a series of modular components. There are two sets of these components: ```components``` and ```modules```. The architecture starts out with basic html element rules: html, p, a, form, etc tags that than have components and modules written on top of them. Components are very basic structure such as buttons, blurbs, navs, and positioning structures like insets, island, enclosure. From here, modules are built with these components. This architecture also attempts to keep the specificity trend in an upwards curve as you move down in the file (more on this to come).
 
 - Start with an elements file for all tag rules (a, h1-h5, p, *, html, body).
@@ -19,7 +19,7 @@ When using a modular or component architecture, every page is broken into a seri
   - These can be generic utilities.
   - A good thing to put here are breakpoint-specific rules, such as hiding something at small breakpoints.
 
-#### File structure
+### File structure
 ```sh
 _elements.scss
 _mixins.scss
@@ -52,7 +52,7 @@ util/_clearfix.scss
 ```
 
 
-### Importing
+## Importing
 As you likely know, CSS rules that are later in the file override earlier rules. This means Sass imports can be used to control inheritance and specificity.
 - Start with base elements.
 - Move to single nested classes and utils.

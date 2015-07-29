@@ -5,7 +5,7 @@ title: Inheritance
 parent: CSS Coding Styleguide
 ---
 
-### Mixins
+## Mixins
 - Use mixins for groups of properties that appear together intentionally and are used multiple times.
 
 ```scss
@@ -40,7 +40,7 @@ parent: CSS Coding Styleguide
 ```
 
 
-### Extend
+## Extend
 Be very careful with using @extend. It's a powerful tool that can have disastrous side-effects. Before using please consider:
 
 - where is my current selector going to be appended?

@@ -5,7 +5,7 @@ title: Format
 parent: CSS Coding Styleguide
 ---
 
-### Spacing
+## Spacing
 - Where possible, limit CSS files’ width to 80 characters. See [notes](#format_notes) to see how to configure your text editor to 80 characters.
   - There will be unavoidable exceptions to this rule, such as URLs, or gradient syntax. Don’t worry.
 - Use soft-tabs with a two space indent.
@@ -50,7 +50,7 @@ selector1, selector2 {
 }
 ```
 
-### Property-Value Pairs
+## Property-Value Pairs
 - Put each pair on its own line.
 - Indent each pair one level.
 - End in a semicolon.
@@ -138,7 +138,7 @@ $align_top: 100%;
 }
 ```
 
-### Sorting
+## Sorting
 * Follow ordering:
   1. variables
   2. @extend directives
@@ -185,8 +185,8 @@ $align_top: 100%;
 
 <a id="format_notes"></a>
 
-#### Notes
-##### How to set text editors to 80 chars
+## Notes
+### How to set text editors to 80 chars
 - Sublime: Add a `rulers` setting with 80 as the value.
   - ```"rulers": [80]```
 - Atom: Set the `preferredLineLength` setting to 80.

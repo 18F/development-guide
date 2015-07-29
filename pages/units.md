@@ -5,7 +5,7 @@ title: Units
 parent: CSS Coding Styleguide
 ---
 
-### Measurements
+## Measurements
 - Use **rem** units for font sizes with a px fallback.
 This can be done with the following mixin:
 
@@ -88,7 +88,7 @@ width: 12;
 ```
 
 
-### Colors
+## Colors
 - Use **hex** notation first, or then **rgb(a)**, or **hsl(a)**.
 - Both three-digit and six-digit hexadecimal notation are acceptable.
 - When denoting color using hexadecimal notation, use all lowercase letters.

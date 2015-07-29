@@ -47,17 +47,17 @@ p.body_text { }
 .component.component { }
 ```
 
-### Specificity graph
+## Specificity graph
 An easy rule to use when dealing with specificity is to start from a low specificity and curve to higher specificity as you move towards the bottom of the output file. Since CSS rules get replaced by rules further down in the file, you'll override rules in an expected way.
 
 There’s a tool that can graph your files’ specificity, [CSS specificity graph](http://jonassebastianohlsson.com/specificity-graph/). Run your final output file through this tool and strive for a curve trending upwards.
 
-#### Resources
+### Resources
 * [CSS specificity graph](http://jonassebastianohlsson.com/specificity-graph/)
 * [Explanation](http://csswizardry.com/2014/10/the-specificity-graph/)
 
 
-### Rationale
+## Rationale
 With specificity comes great responsibility. Broad selectors allow us to be efficient, yet can have adverse consequences if not tested. Location-specific selectors can save us time, but will quickly lead to a cluttered stylesheet. Exercise your best judgement to create selectors that find the right balance between contributing to the overall style and layout of the DOM.
 
 When modifying an existing element for a specific use, try to use specific class names. Instead of `.listings-layout.bigger` use rules like `.listings-layout.listings-bigger`. Think about ack/grepping your code in the future.

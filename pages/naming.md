@@ -89,11 +89,11 @@ div {
 ```
 
 
-### Naming Methodologies
+## Naming Methodologies
 
 When it comes to naming, the most important thing is consistency. The recommended way to do this is using an existing methodology like BEM (which stands for block, element, modifier), or use a custom one that’s clearly defined.
 
-#### BEM
+### BEM
 
 BEM (which stands for block, element, modifier) structures CSS such that every entity is composed of (you guessed it) blocks, elements and modifiers. From [Harry Roberts](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
@@ -103,7 +103,7 @@ BEM (which stands for block, element, modifier) structures CSS such that every e
 You need a naming scheme that general CSS developers will already be familiar with or an existing naming scheme hasn’t been consistent enough.
 When you want to use Javascript to modify the BEM class names dynamically.
 
-#### Suggested custom methodology
+### Suggested custom methodology
 
 The 18F recommendation for a naming methodology is a modified version of BEM. It still uses blocks, sections within blocks and modifiers, but doesn’t use as long a syntax.
 
@@ -119,7 +119,7 @@ The 18F recommendation for a naming methodology is a modified version of BEM. It
 
 
 
-#####Resources
+####Resources
 - [article explaining BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 - [BEM website](https://en.bem.info/method/)
 
@@ -153,7 +153,7 @@ The 18F recommendation for a naming methodology is a modified version of BEM. It
 
 
 
-### js- Flagged Classes
+## js- Flagged Classes
 Don't attach styles to classes with a `js-` flag. These classes are reserved for javascript .
 
 ```css
@@ -163,10 +163,10 @@ Don't attach styles to classes with a `js-` flag. These classes are reserved for
 }
 ```
 
-#### Rationale
+### Rationale
 A `js-` flagged class needs to be highly portable. Adding styles to it breaks that portability.
 
-### test- Flagged Classes
+## test- Flagged Classes
 Don't attach styles to classes with a `test-` flag. These classes are reserved for testing hooks such as those used by selenium .
 
 ```css
