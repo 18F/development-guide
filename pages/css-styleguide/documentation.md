@@ -1,6 +1,5 @@
 ---
 permalink: /css-coding-styleguide/documentation/
-layout: default
 title: Documentation
 parent: CSS Coding Styleguide
 ---

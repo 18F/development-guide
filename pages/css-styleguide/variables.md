@@ -1,6 +1,5 @@
 ---
 permalink: /css-coding-styleguide/variables/
-layout: default
 title: Variables
 parent: CSS Coding Styleguide
 ---

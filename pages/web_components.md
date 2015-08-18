@@ -1,6 +1,5 @@
 ---
 permalink: /web-components/
-layout: default
 title: Web Components
 ---
 ## Initial Impressions

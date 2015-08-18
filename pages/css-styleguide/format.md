@@ -1,6 +1,5 @@
 ---
 permalink: /css-coding-styleguide/format/
-layout: default
 title: Format
 parent: CSS Coding Styleguide
 ---

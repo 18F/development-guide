@@ -1,6 +1,5 @@
 ---
 permalink: /css-coding-styleguide/specificity/
-layout: default
 title: Specificity
 parent: CSS Coding Styleguide
 ---

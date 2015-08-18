@@ -1,6 +1,5 @@
 ---
 permalink: /css-coding-styleguide/frameworks/
-layout: default
 title: Frameworks
 parent: CSS Coding Styleguide
 ---

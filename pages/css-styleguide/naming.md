@@ -1,6 +1,5 @@
 ---
 permalink: /css-coding-styleguide/naming/
-layout: default
 title: Naming
 parent: CSS Coding Styleguide
 ---

@@ -1,6 +1,5 @@
 ---
 permalink: /css-coding-styleguide/preprocessor/
-layout: default
 title: Preprocessor
 parent: CSS Coding Styleguide
 ---

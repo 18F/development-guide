@@ -83,3 +83,18 @@ repos:
 brand_color: "#1188ff"
 
 google_analytics_ua: UA-48605964-19
+
+# To use the shared 18F Guides styles when deploying to pages.18f.gov,
+# uncomment the following; comment it out during local development:
+asset_root: /guides-template
+
+back_link:
+  url: "https://pages.18f.gov/guides/"
+  text: Read more 18F Guides
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "guides_style_18f_default"

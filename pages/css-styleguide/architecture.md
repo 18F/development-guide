@@ -1,6 +1,5 @@
 ---
 permalink: /css-coding-styleguide/architecture/
-layout: default
 title: Architecture
 parent: CSS Coding Styleguide
 ---
