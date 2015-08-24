@@ -14,7 +14,7 @@ GEM
     execjs (2.5.2)
     fast-stemmer (1.0.2)
     ffi (1.9.8)
-    guides_style_18f (0.0.0)
+    guides_style_18f (0.0.1)
       jekyll (~> 2.5)
       rouge (~> 1.9)
       sass (~> 3.4)
