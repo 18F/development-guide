@@ -1,7 +1,7 @@
 ---
 permalink: /css-coding-styleguide/architecture/
 title: Architecture
-parent: CSS Coding Styleguide
+parent: CSS coding styleguide
 ---
 
 A site's architecture should be based on its goals and purposes. This means the guidance here should be adapted to different sites and situations.

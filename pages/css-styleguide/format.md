@@ -1,7 +1,7 @@
 ---
 permalink: /css-coding-styleguide/format/
 title: Format
-parent: CSS Coding Styleguide
+parent: CSS coding styleguide
 ---
 
 ## Spacing

@@ -1,6 +1,4 @@
 ---
 permalink: /css-coding-styleguide/
-title: CSS Coding Styleguide
+title: CSS coding styleguide
 ---
-
-

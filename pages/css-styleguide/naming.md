@@ -1,7 +1,7 @@
 ---
 permalink: /css-coding-styleguide/naming/
 title: Naming
-parent: CSS Coding Styleguide
+parent: CSS coding styleguide
 ---
 
 - HTML elements should be in lowercase.
