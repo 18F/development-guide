@@ -36,7 +36,7 @@ def_command :update_nav, 'Update the \'navigation:\' data in _config.yml' do
 end
 
 def_command :update_theme, 'Update the guides_style_18f gem' do
-  exec_cmd 'bundle update --source guides_style_18f'
+  exec({ 'RUBYOPT' => nil }, 'bundle', *%w(update --source guides_style_18f))
 end
 
 def_command :update_gems, 'Update Ruby gems' do |gems|
