@@ -1,0 +1,49 @@
+markdown: redcarpet
+name: 18F Engineering Best Practices
+exclude:
+- CONTRIBUTING.md
+- Gemfile
+- Gemfile.lock
+- LICENSE.md
+- README.md
+- go
+
+permalink: pretty
+highlighter: rouge
+
+sass:
+  style: :compressed
+
+# Author/Organization info to be displayed in the templates
+author:
+  name: 18F
+  url: https://18f.gsa.gov
+
+# Point the logo URL at a file in your repo or hosted elsewhere by your organization
+logourl: /assets/img/18f-logo.png
+logoalt: 18F logo
+
+# Navigation
+# List links that should appear in the site sidebar here
+navigation:
+- text: Collaborating on Code
+  url: code-collaboration/
+  internal: true
+
+repos:
+- name: Guides Template
+  description: Main repository
+  url: https://github.com/18F/engineering-best-practices
+
+back_link:
+  url: "https://pages.18f.gov/guides/"
+  text: Read more 18F Guides
+
+google_analytics_ua: UA-48605964-19
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "guides_style_18f_default"
