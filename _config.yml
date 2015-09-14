@@ -74,11 +74,11 @@ navigation:
   url: recommendations/
   internal: true
   children:
-    - text: M**V Frameworks
-      url: mvv-frameworks
-      internal: true
     - text: Dependency Managment
       url: dependency-management
+      internal: true
+    - text: M**V Frameworks
+      url: mvv-frameworks
       internal: true
 - text: Web Components
   url: web-components/
