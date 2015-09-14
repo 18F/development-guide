@@ -10,7 +10,7 @@ The word "dependency" refers to all of the frameworks, libraries and other tools
 ## Bower
 #### Do not use Bower.
 
-It's not needed and should be phased out and replaced by npm. More information can be found here: http://gofore.com/ohjelmistokehitys/stop-using-bower/
+It's not needed and should be phased out and replaced by npm. More information can be found here: [Why We Should Stop Using Bower – And How to Do It](http://gofore.com/ohjelmistokehitys/stop-using-bower/).
 
 
 ## npm
