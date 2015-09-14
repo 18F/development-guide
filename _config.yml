@@ -77,7 +77,7 @@ navigation:
 repos:
 - name: Frontend Guides
   description: Main repository
-  url: https://github.com/18F/guides-template
+  url: https://github.com/18F/frontend
 
 # Style Variables
 brand_color: "#1188ff"
