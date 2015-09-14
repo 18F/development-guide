@@ -1,4 +1,4 @@
-# Recommended Dependencies
+# Recommended dependencies
 
 If you're building a web site or application from scratch, you're probably doing it wrong. There are an uncountable number of open source tools at your disposal, from ready-to-use style frameworks to expansive code libraries, that can help you get your job done more easily while also serving as a common ground for other designers and developers.
 
@@ -7,19 +7,18 @@ The opinions in this guide attempt to reflect 18f's core development principals 
 
 - **Accessibility**, for users first, developers as well.
 - **Open source**, for transparency and contribution.
-(need more)
 
-## Frameworks and Libraries
+## Frameworks and libraries
 The terms "framework" and "library" (and even "tool") are sometimes used interchangeably, but there is a not-so-subtle difference. Here's what these words mean when we use them at 18F:
 
 * **Frameworks** are collections of code that provide off-the-shelf building blocks (either visual components at the CSS level or feature-rich JavaScript objects). For instance, [Foundation] and [Bootstrap] are CSS frameworks, and [Backbone] is a JavaScript framework.
 * **Libraries** consist of the lower-level "helpers" that may serve as building blocks for custom components. [jQuery] and [Underscore] are JavaScript libraries; [Bourbon] provides both an overall structure for [Sass] projects and a slew of style helpers that can be mixed and matched.
 
-## Choosing a Tool
+## Choosing a tool
 Picking the right tool for the job can be tricky. We're working on a list of recommended tools for certain uses, but if your needs outgrow this list, here are some criteria that you can use to judge:
 
 1. **Popularity**: A project's GitHub star count can sometimes be a reliable indicator of whether other people have found this tool useful. More popular projects are usually a good pick because they're better documented, and people on your team are more likely to be familiar with them.
-1. **Examples & Documentation**: Speaking of which, does the project have up-to-date documentation? Are there clear and concise examples of how to use it? If not, it might be best to steer clear.
+1. **Examples and documentation**: Speaking of which, does the project have up-to-date documentation? Are there clear and concise examples of how to use it? If not, it might be best to steer clear.
 1. **Community**: try searching for the tool's name on [stackoverflow.com](http://stackoverflow.com/) and looking for signs of a user community around it. Do questions get answered quickly?
 1. **Maintenance**: Is the project actively maintained? You can usually answer this question by looking at its GitHub stats (where applicable):
   - When was the last release, and/or the last commit?
@@ -30,14 +29,14 @@ Picking the right tool for the job can be tricky. We're working on a list of rec
 ## M**V Frameworks
 
 ### Angular
-AngularJS (commonly referred to as "Angular") is an open-source web application framework maintained by Google and by a community of individual developers and corporations to address many of the challenges encountered in developing single-page applications ([Wikipedia](http://en.wikipedia.org/wiki/AngularJS)).
+AngularJS (commonly referred to as "Angular") is an open-source web application framework maintained by Google and by a community of individual developers and corporations to address many of the challenges encountered in developing single-page applications. ([Wikipedia](http://en.wikipedia.org/wiki/AngularJS)).
 
 ##### When to use:
-- Sites with heavy Front end, Javascript UI interactions (single page apps) such as 
-  - creating, updating, deleting of information without a server reload, 
-  - real-time messaging platforms, such as chat or complex messaging such as email.
-  - complex data visualization dashboards, 
-  - lazy-loaded from the back end
+- Sites with heavy front end, Javascript UI interactions (single page apps) such as:
+  - Creating, updating, or deleting of information without a server reload
+  - Real-time messaging platforms, such as chat or complex messaging such as email
+  - Complex data visualization dashboards
+  - Lazy-loaded from the back end
 - When the site's design specifies a single page app architecture over classic server request and response.
 - When the whole site will be built with Angular to maintain front end code consistency.
 
@@ -45,13 +44,13 @@ AngularJS (commonly referred to as "Angular") is an open-source web application 
 - For a single or a few simple components (with the rest of the site not using Angular).
 - Exporting a module that isn't an Angular module.
 - If there is a strict requirement that the site should work for users that have JavaScript disabled.
-- If there already is an active M**V framework (Backbone, ampersand, Ember) being used on the site.
+- If there is already an active M**V framework (Backbone, ampersand, Ember) being used on the site.
 - When the site's design doesn't benefit from a single page app architecture.
 - When the long-term maintenance dev team is very unfamiliar with Angular and don't have the resources to learn or hire for it.
 
 ##### Pros:
 - Takes care of a lot of boilerplate code for front end interactions.
-- Attempts to extend HTML itself, and was designed so less experienced devs could use it.
+- Attempts to extend HTML itself, and was designed so less-experienced developers could use it.
 - Being maintained and developed by Google generally means good support.
 
 ##### Cons:
@@ -59,7 +58,6 @@ AngularJS (commonly referred to as "Angular") is an open-source web application 
 - Has been known to implement breaking changes in major version updates.
 - Built with Typescript and Dart, both of which are not ECMA standardized (as opposed to vanilla JS or ES6).
 - Has a steep learning curve and is very opinionated, meaning you learn Angular rather then JavaScript.
-
 
 ### Backbone
 Backbone.js is a JavaScript library with a RESTful JSON interface and is based on the model–view–presenter (MVP) application design paradigm([Wikipedia](http://en.wikipedia.org/wiki/Backbone.js)).
@@ -69,7 +67,7 @@ Backbone.js is a JavaScript library with a RESTful JSON interface and is based o
 - When a small front end framework is required due to performance constraints.
 - When the long-term dev maintenance team is unfamiliar with any full frameworks, such as Angular.
 - To use as a wrapper and rest data manipulation library around a view-only framework, such as React.
-- When the dev team is familiar enough with Backbone to know how to write maintainable Backbone code.
+- When the development team is familiar enough with Backbone to know how to write maintainable Backbone code.
 
 ##### When not to use:
 - When the javascript components don't keep data or manipulate data, in which case Backbone's functionality is too heavy and not specific enough for just view rendering.
@@ -88,7 +86,7 @@ Backbone.js is a JavaScript library with a RESTful JSON interface and is based o
 
 
 ## Dependency Management
-The word "dependency" refers to all of the frameworks, libraries and other tools that your project relies on. *Dependency management* is the process by which tools are incorporated into your project, removed and updated (for instance, when you need a new version of [jQuery]). Here are the tools that we recommend for managing dependencies:
+The word "dependency" refers to all of the frameworks, libraries, and other tools that your project relies on. *Dependency management* is the process by which tools are incorporated into your project, removed, and updated (for instance, when you need a new version of [jQuery]). Here are the tools that we recommend for managing dependencies:
 
 ### Bower
 [Bower] is a command-line tool for managing browser-based JavaScript and CSS [packages](http://bower.io/search/). It relies on a `bower.json` file that lives in your project and can be used to download dependencies without having to include them in source control.

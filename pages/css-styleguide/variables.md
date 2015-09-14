@@ -6,9 +6,9 @@ parent: CSS Coding Styleguide
 ---
 
 - Create new variables in the following circumstances:
-  - the value is repeated twice;
-  - the value is likely to be updated at least once;
-  - all occurrences of the value are tied to the variable (i.e. not by coincidence).
+  - The value is repeated twice
+  - The value is likely to be updated at least once
+  - All occurrences of the value are tied to the variable (i.e. not by coincidence)
 - When building scss that will be used across multiple projects use the `!default` flag to allow overriding.
 
 ```scss

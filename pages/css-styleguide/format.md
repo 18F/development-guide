@@ -32,7 +32,7 @@ parent: CSS Coding Styleguide
     margin:3px;text-align:center;}
 ```
 
-- Multiple selectors should each be on a single line, with no space after each comma, unless they selector is less than 5 chars.
+- Multiple selectors should each be on a single line, with no space after each comma, unless they selector is less than five chars.
 
 ```scss
 // Good
@@ -45,12 +45,12 @@ selector3 {
 h1, h2 {
 }
 
-// Bad 
+// Bad
 selector1, selector2 {
 }
 ```
 
-## Property-Value Pairs
+## Property-value pairs
 - Put each pair on its own line.
 - Indent each pair one level.
 - End in a semicolon.
@@ -77,7 +77,6 @@ selector {
 }
 
 ```
-
 
 - Do not use shorthand declarations unless you need to explicitly set all the available values.
 
@@ -144,8 +143,8 @@ $align_top: 100%;
   2. @extend directives
   3. @include directives
   4. properties
-- Within properties, you may use alphabetical order or type order—just pick one and keep the whole project consistent.
-- Put a new line before nested selectors unless after first selector.
+- Within properties, you may use alphabetical order or type order. Just pick one and keep the whole project consistent.
+- Put a new line before nested selectors unless they are after the first selector.
 - Put mixin calls with @content after nested selectors.
 - Properties should be alphabetical, not grouped by type or length.
 
@@ -186,7 +185,7 @@ $align_top: 100%;
 <a id="format_notes"></a>
 
 ## Notes
-### How to set text editors to 80 chars
+### How to set text editors to 80 characters
 - Sublime: Add a `rulers` setting with 80 as the value.
   - ```"rulers": [80]```
 - Atom: Set the `preferredLineLength` setting to 80.
@@ -194,4 +193,3 @@ $align_top: 100%;
 - Vim: Set two options in your .vimrc to wrap lines at 80 characters.
   - ```set formatoptions+=w```
   - ```set tw=80```
-
