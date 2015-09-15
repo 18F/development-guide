@@ -39,7 +39,7 @@ navigation:
 - text: CSS Coding Styleguide
   url: css-coding-styleguide/
   internal: true
-  children: 
+  children:
   - text: Preprocessor
     url: preprocessor/
     internal: true
@@ -57,19 +57,29 @@ navigation:
     internal: true
   - text: Inheritance
     url: inheritance/
-    internal: true 
+    internal: true
   - text: Architecture
     url: architecture/
-    internal: true 
+    internal: true
   - text: Specificity
     url: specificity/
-    internal: true 
+    internal: true
   - text: Variables
     url: variables/
     internal: true
   - text: Documentation
     url: documentation/
-    internal: true                                 
+    internal: true
+- text: Recommendations
+  url: recommendations/
+  internal: true
+  children:
+    - text: Dependency Management
+      url: dependency-management
+      internal: true
+    - text: M**V Frameworks
+      url: mvv-frameworks
+      internal: true
 - text: Web Components
   url: web-components/
   internal: true
