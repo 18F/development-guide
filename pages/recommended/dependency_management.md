@@ -1,7 +1,7 @@
 ---
 permalink: /recommendations/dependency-management/
 layout: default
-title: M**V Frameworks
+title: Dependency Management
 parent: Recommendations
 ---
 

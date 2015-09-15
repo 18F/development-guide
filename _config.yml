@@ -74,7 +74,7 @@ navigation:
   url: recommendations/
   internal: true
   children:
-    - text: Dependency Managment
+    - text: Dependency Management
       url: dependency-management
       internal: true
     - text: M**V Frameworks
