@@ -8,7 +8,7 @@ parent: CSS Coding Styleguide
 - HTML elements should be in lowercase.
 
 ```scss
-body, 
+body,
 div {
 ```
 
@@ -29,7 +29,7 @@ div {
 .c1-xr { }
 ```
 
-- Avoid presentation- or location-specific words in names, as this will cause problems when you (invariably) need to change the color/width/feature later.
+- Avoid presentation- or location-specific words in names, as this will cause problems when you (invariably) need to change the color, width, or feature later.
 
 ```scss
 // Bad
@@ -70,7 +70,7 @@ div {
 .top_image[type=’text’] { }
 ```
 
-- Name CSS components/modules with singular nouns.
+- Name CSS components and modules with singular nouns.
 
 ```scss
 .button { }
@@ -97,7 +97,7 @@ When it comes to naming, the most important thing is consistency. The recommende
 
 BEM (which stands for block, element, modifier) structures CSS such that every entity is composed of (you guessed it) blocks, elements and modifiers. From [Harry Roberts](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
-> The point of BEM is to tell other developers more about what a piece of markup is doing from its name alone. By reading some HTML with some classes in, you can see how – if at all – the chunks are related; something might just be a component, something might be a child, or element, of that component, and something might be a variation or modifier of that component. 
+> The point of BEM is to tell other developers more about what a piece of markup is doing from its name alone. By reading some HTML with some classes in, you can see how – if at all – the chunks are related; something might just be a component, something might be a child, or element, of that component, and something might be a variation or modifier of that component.
 
 18F generally recommends using a modified BEM methodology outlined in the next subsection. However, you might want to use standard BEM when:
 You need a naming scheme that general CSS developers will already be familiar with or an existing naming scheme hasn’t been consistent enough.
@@ -119,7 +119,7 @@ The 18F recommendation for a naming methodology is a modified version of BEM. It
 
 
 
-####Resources
+#### Resources
 - [article explaining BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 - [BEM website](https://en.bem.info/method/)
 
@@ -128,7 +128,7 @@ The 18F recommendation for a naming methodology is a modified version of BEM. It
 // block
 .inset {
   margin-left: 15%;
-  
+
   // element
   .inset__content {
     padding: 3em;
@@ -151,10 +151,8 @@ The 18F recommendation for a naming methodology is a modified version of BEM. It
 
 ```
 
-
-
-## js- Flagged Classes
-Don't attach styles to classes with a `js-` flag. These classes are reserved for javascript .
+## js- flagged classes
+Don't attach styles to classes with a `js-` flag. These classes are reserved for javascript.
 
 ```css
 // Bad
@@ -166,8 +164,8 @@ Don't attach styles to classes with a `js-` flag. These classes are reserved for
 ### Rationale
 A `js-` flagged class needs to be highly portable. Adding styles to it breaks that portability.
 
-## test- Flagged Classes
-Don't attach styles to classes with a `test-` flag. These classes are reserved for testing hooks such as those used by selenium .
+## test- flagged classes
+Don't attach styles to classes with a `test-` flag. These classes are reserved for testing hooks such as those used by selenium.
 
 ```css
 // Bad
