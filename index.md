@@ -3,4 +3,4 @@ permalink: /
 title: Front end guild guides
 ---
 
-All the guides for the front end guild are here.
+Here you will find all of the guides produced by 18F's front end guild.

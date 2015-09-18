@@ -63,9 +63,16 @@ navigation:
   - text: Documentation
     url: documentation/
     internal: true
-  - text: Recommended dependencies
-    url: recommended-dependencies/
-    internal: true
+- text: Recommendations
+  url: recommendations/
+  internal: true
+  children:
+    - text: Dependency management
+      url: dependency-management
+      internal: true
+    - text: M**V frameworks
+      url: mvv-frameworks
+      internal: true
 - text: Web components
   url: web-components/
   internal: true
