@@ -17,7 +17,7 @@ GEM
     go_script (0.1.4)
       bundler (~> 1.10)
       safe_yaml (~> 1.0)
-    guides_style_18f (0.1.1)
+    guides_style_18f (0.1.2)
       jekyll (~> 2.5)
       rouge (~> 1.9)
       sass (~> 3.4)
@@ -78,6 +78,7 @@ DEPENDENCIES
   go_script
   guides_style_18f
   jekyll
+  rouge (< 1.10)
 
 BUNDLED WITH
    1.10.6
