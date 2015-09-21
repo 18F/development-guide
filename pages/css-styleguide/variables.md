@@ -1,8 +1,7 @@
 ---
 permalink: /css-coding-styleguide/variables/
-layout: default
 title: Variables
-parent: CSS Coding Styleguide
+parent: CSS coding styleguide
 ---
 
 - Create new variables in the following circumstances:

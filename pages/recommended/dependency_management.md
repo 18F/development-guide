@@ -1,7 +1,6 @@
 ---
 permalink: /recommendations/dependency-management/
-layout: default
-title: Dependency Management
+title: Dependency management
 parent: Recommendations
 ---
 

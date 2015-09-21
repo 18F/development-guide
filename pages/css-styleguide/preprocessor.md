@@ -1,8 +1,7 @@
 ---
 permalink: /css-coding-styleguide/preprocessor/
-layout: default
 title: Preprocessor
-parent: CSS Coding Styleguide
+parent: CSS coding styleguide
 ---
 
 The most supported CSS preprocessor at 18F is Sass/SCSS. Using this pre-processor means you'll get supported resources such as frameworks, libraries, tutorials, and a comprehensive styleguide as support.

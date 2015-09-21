@@ -1,8 +1,7 @@
 ---
 permalink: /css-coding-styleguide/specificity/
-layout: default
 title: Specificity
-parent: CSS Coding Styleguide
+parent: CSS coding styleguide
 ---
 - IDs should be reserved for JavaScript. Don’t use IDs for styles.
 

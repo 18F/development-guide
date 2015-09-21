@@ -1,8 +1,7 @@
 ---
 permalink: /css-coding-styleguide/frameworks/
-layout: default
 title: Frameworks
-parent: CSS Coding Styleguide
+parent: CSS coding styleguide
 ---
 
 18F currently recommends two CSS frameworks. Team members can choose the framework that best meets project and design and development needs.

@@ -1,8 +1,7 @@
 ---
 permalink: /css-coding-styleguide/units/
-layout: default
 title: Units
-parent: CSS Coding Styleguide
+parent: CSS coding styleguide
 ---
 
 ## Measurements

@@ -1,8 +1,7 @@
 ---
 permalink: /css-coding-styleguide/inheritance/
-layout: default
 title: Inheritance
-parent: CSS Coding Styleguide
+parent: CSS coding styleguide
 ---
 
 ## Mixins

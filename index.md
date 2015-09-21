@@ -1,6 +1,5 @@
 ---
 permalink: /
-layout: default
 title: Front end guild guides
 ---
 

@@ -1,7 +1,6 @@
 ---
 permalink: /recommendations/mvv-frameworks/
-layout: default
-title: M**V Frameworks
+title: M**V frameworks
 parent: Recommendations
 ---
 
