@@ -27,7 +27,7 @@ parent: CSS coding styleguide
 }
 ```
 
-- Do not use mixins for browser prefixes. Use [Autoprefixer]https://github.com/postcss/autoprefixer).
+- Do not use mixins for browser prefixes. Use [Autoprefixer](https://github.com/postcss/autoprefixer).
 
 ```scss
 // Bad
