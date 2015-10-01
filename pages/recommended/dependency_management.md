@@ -39,3 +39,12 @@ Many dependencies consist of a single file and can be more easily incorporated s
   ```
 
 3. Add these dependencies to version control.
+
+[jQuery]: http://jquery.com/
+[npm]: https://www.npmjs.com/
+[Node.js]: https://nodejs.org/
+[D3]: http://d3js.org/
+[Browserify]: http://browserify.org/
+[Webpack]: http://webpack.github.io/
+[Cloud Foundry]: https://www.cloudfoundry.org/
+[Heroku]: https://www.heroku.com/
