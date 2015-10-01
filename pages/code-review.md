@@ -6,7 +6,10 @@ title: Code Review Guide
 > A friendly guide for reviewing code--and not each other--at 18f.
 
 (Forked from the excellent Consumer Financial Protection Bureau
-[guide](https://github.com/cfpb/front-end/blob/master/code-reviews.md)).
+[guide](https://github.com/cfpb/front-end/blob/master/code-reviews.md)). This
+is a **WORK IN PROGRESS**. Help us make it better in the
+[#wg-code-reviews](https://18f.slack.com/messages/wg-code-reviews/) channel!
+
 
 ## Why reviews?
 
