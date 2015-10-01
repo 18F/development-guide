@@ -1,25 +1,18 @@
-baseurl: /frontend
 markdown: redcarpet
 name: Frontend Guides
 exclude:
-- go
-- copy-template
+- CONTRIBUTING.md
 - Gemfile
 - Gemfile.lock
-- README.md
 - LICENSE.md
+- README.md
+- go
 
 permalink: pretty
+highlighter: rouge
 
-defaults:
--
-  scope:
-    path: "pages"
-  values:
-    layout: "default"
-    edit_info:
-      repo: 18F/frontend
-      branch: master
+sass:
+  style: :compressed
 
 # Author/Organization info to be displayed in the templates
 author:
@@ -36,10 +29,10 @@ navigation:
 - text: Introduction
   url: index.html
   internal: true
-- text: CSS Coding Styleguide
+- text: CSS coding styleguide
   url: css-coding-styleguide/
   internal: true
-  children: 
+  children:
   - text: Preprocessor
     url: preprocessor/
     internal: true
@@ -57,20 +50,30 @@ navigation:
     internal: true
   - text: Inheritance
     url: inheritance/
-    internal: true 
+    internal: true
   - text: Architecture
     url: architecture/
-    internal: true 
+    internal: true
   - text: Specificity
     url: specificity/
-    internal: true 
+    internal: true
   - text: Variables
     url: variables/
     internal: true
   - text: Documentation
     url: documentation/
-    internal: true                                 
-- text: Web Components
+    internal: true
+- text: Recommendations
+  url: recommendations/
+  internal: true
+  children:
+  - text: Dependency management
+    url: dependency-management/
+    internal: true
+  - text: M**V frameworks
+    url: mvv-frameworks/
+    internal: true
+- text: Web components
   url: web-components/
   internal: true
 
@@ -79,7 +82,15 @@ repos:
   description: Main repository
   url: https://github.com/18F/frontend
 
-# Style Variables
-brand_color: "#1188ff"
-
 google_analytics_ua: UA-48605964-19
+
+back_link:
+  url: "https://pages.18f.gov/guides/"
+  text: Read more 18F Guides
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "guides_style_18f_default"

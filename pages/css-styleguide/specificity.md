@@ -1,8 +1,7 @@
 ---
 permalink: /css-coding-styleguide/specificity/
-layout: default
 title: Specificity
-parent: CSS Coding Styleguide
+parent: CSS coding styleguide
 ---
 - IDs should be reserved for JavaScript. Don’t use IDs for styles.
 
@@ -56,7 +55,6 @@ There’s a tool that can graph your files’ specificity, [CSS specificity grap
 * [CSS specificity graph](http://jonassebastianohlsson.com/specificity-graph/)
 * [Explanation](http://csswizardry.com/2014/10/the-specificity-graph/)
 
-
 ## Rationale
 With specificity comes great responsibility. Broad selectors allow us to be efficient, yet can have adverse consequences if not tested. Location-specific selectors can save us time, but will quickly lead to a cluttered stylesheet. Exercise your best judgement to create selectors that find the right balance between contributing to the overall style and layout of the DOM.
 
@@ -68,13 +66,12 @@ Attribute selectors should use double quotes around values. Refrain from using o
 
 IDs should be reserved for JavaScript. Unless you have a very good reason, all CSS should be attached to classes rather than IDs. When in doubt, use a class name. This prevents target confusion and allows CSS devs and JS devs to co-exist in the same code in peace. If you must use an id selector (`#id`) make sure that you have no more than one in your rule declaration.
 
-
 <a id="variables"></a>
 ## Variables
 - Create new variables in the following circumstances:
-  - the value is repeated twice;
-  - the value is likely to be updated at least once;
-  - all occurrences of the value are tied to the variable (i.e. not by coincidence).
+  - The value is repeated twice
+  - The value is likely to be updated at least once
+  - All occurrences of the value are tied to the variable (for example not by coincidence)
 - When building scss that will be used across multiple projects use the `!default` flag to allow overriding.
 
 ```scss

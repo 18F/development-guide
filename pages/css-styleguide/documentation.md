@@ -1,8 +1,7 @@
 ---
 permalink: /css-coding-styleguide/documentation/
-layout: default
 title: Documentation
-parent: CSS Coding Styleguide
+parent: CSS coding styleguide
 ---
 - Be intentional when you use `//` (silent comments) versus `/* */` (which are preserved in the CSS output). When in doubt, use `//`.
 

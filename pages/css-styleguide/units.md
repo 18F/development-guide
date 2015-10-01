@@ -1,8 +1,7 @@
 ---
 permalink: /css-coding-styleguide/units/
-layout: default
 title: Units
-parent: CSS Coding Styleguide
+parent: CSS coding styleguide
 ---
 
 ## Measurements
@@ -16,7 +15,7 @@ This can be done with the following mixin:
 }
 ```
 
-- Set the html font size to 10px to ensure .1 rem unit equals 1px.
+- Set the HTML font size to 10px to ensure .1 rem unit equals 1px.
 
 ```scss
 html {
