@@ -80,8 +80,7 @@ Review Code
 -----------
 
 A team member other than the author reviews the pull request. They follow
-Code Review guidelines (forthcoming) to avoid
-miscommunication.
+[Code Review guidelines] to avoid miscommunication.
 
 They make comments and ask questions directly on lines of code in the GitHub
 web interface or in the project's chat room.
@@ -92,6 +91,7 @@ lets the reviewer know it's ready to be reviewed again.
 Repeat until all comments have been addressed. The reviewer then merges the PR
 and deletes the branch.
 
+[Code Review guideline]: {{ site.baseurl }}/code-review/
 Merge
 -----
 
