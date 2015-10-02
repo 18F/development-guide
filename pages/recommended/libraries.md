@@ -14,7 +14,7 @@ parent: Recommendations
 - Does not require jQuery
 
 #### When not to use
-- If theres concerns the library has been inactive for too long and will break with newer browsers. skrollr hasn't been under active development since about September 2014.
+- If theres concerns the library has been inactive for too longr and will break with newer browsers. skrollr hasn't been under active development since about September 2014.
 - If skrollr's method of controlling animation in the markup doesn't work for the project's architecture.
 
 ### stellar.js
@@ -47,7 +47,7 @@ Parallax scrolling made easy, [stellar.js].
 #### Cons
 - Has a confusing syntax for expressing HTML in it's API.
 - No ability to work without JavaScript.
-- Uses relative units for everything rather then percentages, making it very hard to make it work with other responsive elements.
+- Uses absolute units for everything rather then percentages, making it very hard to make it work with other responsive elements.
 - Tries to accomplish everything possible, which makes the API confusing.
 - Documentation on the API can be incomplete and hard to follow.
 
