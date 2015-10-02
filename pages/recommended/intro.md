@@ -29,3 +29,22 @@ Picking the right tool for the job can be tricky. We're working on a list of rec
   - Are there lots of open issues, and have they been commented on by the maintainer(s)? The number of open pull requests may also be an indicator of whether a project has been abandoned.
 1. **Size/Complexity**: some frameworks are large in footprint and/or file size. If adding a tool to your project dramatically affects the download time for your users, you may wish to reconsider its inclusion. For example, though [jQuery] is relatively small compared to some libraries, [you might not need it](http://youmightnotneedjquery.com/) if you're doing simple things in JavaScript.
 1. **Open Source License**: Is this important? Probably. I *think* we prefer CC0.
+
+[Bootstrap]: http://getbootstrap.com/
+[Bourbon]: http://bourbon.io/
+[Foundation]: http://foundation.zurb.com/
+[Backbone]: http://backbonejs.org/
+[Underscore]: http://underscorejs.org/
+[Neat]: http://neat.bourbon.io/
+[Jekyll]: http://jekyllrb.com/
+[npm]: https://www.npmjs.com/
+[Bower]: http://bower.io/
+[jQuery]: http://jquery.com/
+[Sass]: http://sass-lang.com/
+[Stackoverflow]: http://stackoverflow.com/
+[Node.js]: https://nodejs.org/
+[D3]: http://d3js.org/
+[Cloud Foundry]: http://cloudfoundry.org/about/index.html
+[Heroku]: https://www.heroku.com/
+[Browserify]: http://browserify.org/
+[Webpack]: http://webpack.github.io/
