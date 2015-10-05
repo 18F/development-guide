@@ -1,15 +1,16 @@
 ---
 permalink: /code-review/
-title: Code Review Guide
+title: Code Review
 ---
 
 > A friendly guide for reviewing code--and not each other--at 18f.
 
 (Forked from the excellent Consumer Financial Protection Bureau
 [guide](https://github.com/cfpb/front-end/blob/master/code-reviews.md)). This
-is a **WORK IN PROGRESS**. Help us make it better in the
-[#wg-code-reviews](https://18f.slack.com/messages/wg-code-reviews/) channel!
-
+is a **WORK IN PROGRESS**. Help us make it better by
+[submitting an issue](https://github.com/18F/development-guide) or joining us
+in the [#wg-code-reviews](https://18f.slack.com/messages/wg-code-reviews/)
+channel!
 
 ## Why reviews?
 
@@ -20,7 +21,6 @@ when reviewing code are to:
 - ensure a consistent quality in the codebase;
 - create an environment for sharing knowledge and developing skills;
 - encourage open communication between the entire team.
-
 
 ## Tips for a successful review
 
@@ -33,7 +33,6 @@ accomplish this, everyone should follow these tips.
   given or taken taken personally.
 - There is often more than one way to approach a solution. Discuss tradeoffs and
   reach a resolution quickly.
-- Refer to the style guides whenever there's a discussion that can't be resolved.
 - Ask questions rather than make statements. ("What do you think about...?")
 - Ask for clarification if the code or comments are unclear. ("I didn't understand.
   Can you clarify?")
@@ -71,14 +70,16 @@ accomplish this, everyone should follow these tips.
 - Identify ways to simplify the code while still solving the problem.
 - Offer alternative implementations, but assume the author already considered
   them. ("What do you think about such-and-such here?")
-- If discussions turn too philosophical or academic, move the discussion to a new
-  issue or offline. In the meantime, the author has the final say on the current
-  implementation.
 - Sign off on the pull request with a :thumbsup: or "Ready to merge" comment.
 - Wait to merge the branch until it has passed Continuous Integration testing.
   (TDDium, TravisCI, etc.)
-- Merge once you feel confident in the code and its impact on the project.
 
+### Who merges
+
+There's lively debate over whether the code author or reviewer should merge
+the pull request. Follow the idioms that your team has set; if none are
+present, discuss until you have a consensus. Write that down to resolve the
+issue quickly in the future.
 
 ## <a name="submitting"></a>Submitting code
 
@@ -103,7 +104,6 @@ feature or bugfix following CFPB's [PR Template](https://raw.githubusercontent.c
 more information you provide to reviewers, the more context they will have. This
 leads to faster reviews, and less back and forth between everyone.
 
-
 ## Reviewing code
 
 When reviewing code, you should be able to check off each of the following:
@@ -118,23 +118,7 @@ When reviewing code, you should be able to check off each of the following:
 
 Use this bookmarklet code to add this checklist to your Pull Request comments: [Code Review Checklist](https://gist.github.com/cfarm/a4174fe6f775353a3115)
 
-### Commenting on code
-
-When commenting on breaks a team's style guide, reviewers should include a link back
-to the appropriate guide.
-
-Ex:
-
-    [CSS - Property Values](https://github.com/cfpb/front-end/css.md#property-values):
-    If the value of a property is `0`, do not specify units
-
-If you disagree with a guideline or there is no current guideline, open an
-issue said style guide's repo and link back to the discussion, rather than
-debating it within the review. In the meantime, follow the existing guideline.
-
-
 ## Credits
-
 
 - [CFPB's Frontend Code Review Guide](https://github.com/cfpb/front-end/blob/master/code-reviews.md).
 - [Code Review in the Lab](http://mozillascience.github.io/codeReview/intro.html)
