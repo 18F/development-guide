@@ -80,7 +80,8 @@ Review Code
 -----------
 
 A team member other than the author reviews the pull request. They follow
-[Code Review guidelines] to avoid miscommunication.
+[Code Review guidelines](https://pages.18f.gov/development-guide/code-review/)
+to avoid miscommunication.
 
 They make comments and ask questions directly on lines of code in the GitHub
 web interface or in the project's chat room.

@@ -29,6 +29,9 @@ navigation:
 - text: Collaborating on Code
   url: code-collaboration/
   internal: true
+- text: Code Review
+  url: code-review/
+  internal: true
 
 repos:
 - name: Guides Template
