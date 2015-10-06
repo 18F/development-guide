@@ -81,7 +81,7 @@ the pull request. Follow the idioms that your team has set; if none are
 present, discuss until you have a consensus. Write that down to resolve the
 issue quickly in the future.
 
-## <a name="submitting"></a>Submitting code
+## Submitting code
 
 Before seeking a review, you should be able to check off each of the following:
 
@@ -99,10 +99,13 @@ Before seeking a review, you should be able to check off each of the following:
 
 ### Opening a PR
 
-Once sure your code meets the checks above, open a Pull Request for your new
-feature or bugfix following CFPB's [PR Template](https://raw.githubusercontent.com/cfpb/front-end/master/pr-template.md). You can also create a [Bookmarklet based on this template](https://gist.github.com/cfarm/b9b638943a2eea52a3a8). Remember that the
-more information you provide to reviewers, the more context they will have. This
-leads to faster reviews, and less back and forth between everyone.
+Once your code meets the checks above, open a Pull Request for your new
+feature of bugfix.Remember that the more information you provide to reviews,
+the more context they will have. This leads to faster reviews, and less back
+and forth between everyone.
+
+CFPB has published a nice [PR Template](https://raw.githubusercontent.com/cfpb/front-end/master/pr-template.md)
+which might make this easier. You can also create a [Bookmarklet based on this template](https://gist.github.com/cfarm/b9b638943a2eea52a3a8).
 
 ## Reviewing code
 
