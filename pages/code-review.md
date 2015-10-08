@@ -100,7 +100,7 @@ Before seeking a review, you should be able to check off each of the following:
 ### Opening a PR
 
 Once your code meets the checks above, open a Pull Request for your new
-feature of bugfix.Remember that the more information you provide to reviews,
+feature or bugfix.Remember that the more information you provide to reviews,
 the more context they will have. This leads to faster reviews, and less back
 and forth between everyone.
 
