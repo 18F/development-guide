@@ -70,6 +70,9 @@ navigation:
   - text: Dependency management
     url: dependency-management/
     internal: true
+  - text: Libraries
+    url: libraries/
+    internal: true
   - text: M**V frameworks
     url: mvv-frameworks/
     internal: true

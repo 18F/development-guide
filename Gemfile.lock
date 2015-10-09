@@ -79,6 +79,3 @@ DEPENDENCIES
   guides_style_18f
   jekyll
   rouge (< 1.10)
-
-BUNDLED WITH
-   1.10.6

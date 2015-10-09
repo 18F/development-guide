@@ -79,3 +79,33 @@ React (sometimes styled React.js or ReactJS) is an open-source JavaScript librar
 - While open source, is maintained primarily by Facebook.
 
 
+## Flux
+Flux is not a framework, nor is it M**VC. Its a software architecture for
+writing complex single page applications.
+
+#### When to use:
+- A complex JavaScript app that requires both viewing and modifying (CRUD) data
+  in a UI rendered on the client. Flux will likely be overkill for apps that
+  don't modify data in any way.
+- When the data service for the front end is REST and/or something besides REST,
+  such as Websockets.
+- An app that's data flow has grown or will grow overly complex.
+
+#### When not to use:
+- Applications that don't require any updating (create, update, delete) of data.
+- When the cost of updating an apps architecture to flux is more then the cost
+  of writing the software as it exists.
+
+#### Pros:
+- Easily add non-REST services to a front end, in a transparent way.
+- Cleans up complex data flow by using uni-directional data flow.
+- Cleans up complex async behavior and nested callbacks by using an evented
+  system and functionality to wait for data.
+- Can use simple JavaScript objects rather then a complex framework.
+- Easily tie components together in a clean way.
+- Requires little 3rd party software.
+
+#### Cons:
+- More verbose in file and directory structure.
+- Finding best way to use can be difficult for beginners.
+- Can be hard to find a good structure when beginning.
