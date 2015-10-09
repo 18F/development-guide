@@ -81,9 +81,9 @@ navigation:
   internal: true
 
 repos:
-- name: Guides Template
+- name: Frontend Guides
   description: Main repository
-  url: https://github.com/18F/guides-template
+  url: https://github.com/18F/frontend
 
 google_analytics_ua: UA-48605964-19
 
