@@ -26,8 +26,8 @@ logoalt: 18F logo
 # Navigation
 # List links that should appear in the site sidebar here
 navigation:
-- text: Collaborating on Code
-  url: code-collaboration/
+- text: Git Protocol
+  url: git-protocol/
   internal: true
 - text: Code Review
   url: code-review/
