@@ -1,5 +1,3 @@
-exclude: 'scss/lib/**'
-
 linters:
   BangFormat:
     enabled: true
