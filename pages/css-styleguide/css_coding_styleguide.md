@@ -4,7 +4,7 @@ title: CSS coding styleguide
 ---
 
 ## Purpose
-The purpose of the css coding styleguide is to create consistent CSS or preproccessor CSS code across 18F. The styleguide should be treated as a guide, rules can be modified according to project needs.
+The purpose of the CSS coding styleguide is to create consistent CSS or preproccessor CSS code across 18F. The styleguide should be treated as a guide, rules can be modified according to project needs.
 
 ## Linting
 The styleguide provides a method of linting SASS code to ensure it conforms to the rules in the styleguide. This linting tool will go through all SASS code and issue warnings wherever the code differs from the styleguide. We've created a specific [`.scss-lint.yml` file]({{ '/.scss-lint.yml' | prepend: site_baseurl }}) that's configured to work with the css coding styleguide. There are two ways to setup linting, linting on github with Hound, or linting locally with ruby:
