@@ -23,5 +23,5 @@ The styleguide provides a method of linting SASS code to ensure it conforms to t
 ### Shortcomings
 The scss-lint tool currently lacks the functionality to check these rules in the css coding styleguide:
 - Does not limit line width to 80 characters
-- Does not numeric calculations in parentheses
+- Does not check for numeric calculations in parentheses
 - Does not sort properties in quite the order we want (defaults to alphabetical)
