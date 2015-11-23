@@ -1,0 +1,17 @@
+---
+name: Frontend
+full_name: Frontend Guild
+mission: |
+  Provide cross-team support to both frontend developers and 18F team members seeking tips and best practices in the frontend space.
+links:
+- url: 'https://drive.google.com/drive/#folders/0B84F26FpUP0lR1B2VVNGSi1MMVk/0B0C6PKlzps2JV3pqX3NJdm5WejA/0B5HeQa_YQ6-VTTlkVEFNZ2VWZEU'
+  text: Google Drive folder
+github_repos:
+- 18F/frontend-style-guide
+leads:
+- marco
+- mhz
+members:
+- marco
+- mhz
+- julia

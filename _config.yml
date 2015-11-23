@@ -7,6 +7,8 @@ exclude:
 - LICENSE.md
 - README.md
 - go
+include:
+- .scss-lint.yml
 
 permalink: pretty
 highlighter: rouge
