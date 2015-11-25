@@ -14,44 +14,15 @@ channel!
 
 ## Why reviews?
 
-Code reviews are incredibly important step to the development process. Our
+Code reviews are an incredibly important part of the development process. Our
 goals when reviewing code are to:
 
 - expose bugs before they make it to production;
-- ensure a consistent quality in the codebase;
+- ensure consistent code quality;
 - create an environment for sharing knowledge and developing skills;
-- cross-pollination of debugging skills when problems arise;
-- cultivation of the ability to critique one’s own code more strongly;
+- cross-pollinate debugging skills when problems arise;
+- cultivate the ability to critique one’s code more strongly;
 - encourage open communication between the entire team.
-
-## Potential obstacles to be mindful of
-
-If you are attempting to establish code reviews as a part of your team's or
-organization's workflow, there are several obstacles you might run into:
-
-- Code reviews require intense concentration when they are to be done right,
-  which in turn requires additional time that will have an impact on story
-  effort estimates in a sprint.
-- Introducing the idea of writing tests and requiring them in order for a code
-  review to pass will take time and commitment from all team members if they
-  have not already bought into the benefits of TDD.
-- Additional training may be needed for folks who are unfamiliar with
-  what linters and/or testing harnesses.
-- Writing a style guide that is firm but reasonable requires time and a strong
-  commitment from all team members to adhere to and hold each other accountable
-  for.
-- Maintaining a well-organized code base requires strict discipline from all
-  team members.
-
-In order to overcome these obstacles be sure to maintain a positive but
-persistent attitude around the benefits of code reviews.  Continue to work with
-your colleagues and managers to demonstrate the benefits of code reviews by
-exhibiting patience with them and finding ways that showcase how code reviews
-can have a direct impact on improving their work.
-
-By maintaining a positive attititude, leading by example, and demonstrating an
-honest willingess to work with others you will begin to see people come
-around to the idea that code reviews are beneficial for everyone involved.
 
 ## Tips for a successful review
 
@@ -62,8 +33,6 @@ help accomplish this, everyone should follow these tips.
 
 - Remember that we're reviewing the code, not the author. Nothing should be
   given or taken taken personally.
-- Understand the difference between "this isn't how I would do it" vs.
-  "this is fundamentally wrong and needs to be addressed."
 - There is often more than one way to approach a solution. Discuss tradeoffs
   and reach a resolution quickly.
 - Ask questions rather than make statements. ("What do you think about...?")
@@ -80,6 +49,10 @@ help accomplish this, everyone should follow these tips.
 - Talk offline if there is too much back and forth. Post a follow-up comment
   summarizing the discussion.
 - Praise team members when they create exemplary work or suggestions.
+- Code reviews require intense concentration, don't forget to factor this in
+  with level of effort estimates.
+- Maintaining a well-organized code base requires strict discipline from all
+  team members and will take time and effort to establish; be patient!
 
 ### For code submitters
 
@@ -134,7 +107,7 @@ Before seeking a review, you should be able to check off each of the following:
 ### Opening a PR
 
 Once your code meets the checks above, open a Pull Request for your new
-feature or bugfix. Remember that the more information you provide to reviews,
+feature or bugfix. Remember that the more information you provide to reviewers,
 the more context they will have. This leads to faster reviews, and less back
 and forth between everyone.
 
@@ -156,19 +129,8 @@ When reviewing code, you should be able to check off each of the following:
     - [ ] Does the code represent a logical unit of work?
     - [ ] Are there any glaring syntax errors that were missed?
     - [ ] Are language constructs being utilized properly?
-    - [ ] Are there no unecessary premature optimizations?
     - [ ] Are any frameworks/libraries being used leveraged properly?
-    - [ ] Are the changes clean and would they pass through a linter?
     - [ ] Are there useful comments/documentation where needed?
-    - [ ] Is the commit message well-formed with succinct details about
-          what the change is intended for?
-
-In adition to this checklist, you should also pull down the actual changes
-and run them manually to put them through their paces.  Does the code
-actually do what you expect it to do after reading through it?
-
-Use this bookmarklet code to add this checklist to your Pull Request comments:
-[Code Review Checklist](https://gist.github.com/cfarm/a4174fe6f775353a3115)
 
 ## Credits
 
