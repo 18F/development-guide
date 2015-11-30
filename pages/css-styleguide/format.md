@@ -136,7 +136,7 @@ $align_top: 100%;
 }
 ```
 
-## Sorting
+## Order
 * Follow ordering:
   1. variables
   2. @extend directives
