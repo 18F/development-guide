@@ -14,28 +14,30 @@ channel!
 
 ## Why reviews?
 
-Code reviews are incredibly important step to the development process. Our goals
-when reviewing code are to:
+Code reviews are an incredibly important part of the development process. Our
+goals when reviewing code are to:
 
 - expose bugs before they make it to production;
-- ensure a consistent quality in the codebase;
+- ensure consistent code quality;
 - create an environment for sharing knowledge and developing skills;
+- cross-pollinate debugging skills when problems arise;
+- cultivate the ability to critique one’s code more strongly;
 - encourage open communication between the entire team.
 
 ## Tips for a successful review
 
-For a code review to be successful, we all need to be on the same page. To help
-accomplish this, everyone should follow these tips.
+For a code review to be successful, we all need to be on the same page. To
+help accomplish this, everyone should follow these tips.
 
 ### For everyone
 
 - Remember that we're reviewing the code, not the author. Nothing should be
   given or taken taken personally.
-- There is often more than one way to approach a solution. Discuss tradeoffs and
-  reach a resolution quickly.
+- There is often more than one way to approach a solution. Discuss tradeoffs
+  and reach a resolution quickly.
 - Ask questions rather than make statements. ("What do you think about...?")
-- Ask for clarification if the code or comments are unclear. ("I didn't understand.
-  Can you clarify?")
+- Ask for clarification if the code or comments are unclear. ("I didn't
+  understand. Can you please clarify?")
 - Avoid selective ownership of code. ("mine", "not mine", "yours")
 - Avoid using terms that could be seen as referring to personal traits.
 - Be explicit, people don't always understand your intentions online.
@@ -47,16 +49,21 @@ accomplish this, everyone should follow these tips.
 - Talk offline if there is too much back and forth. Post a follow-up comment
   summarizing the discussion.
 - Praise team members when they create exemplary work or suggestions.
+- Code reviews require intense concentration, don't forget to factor this in
+  with level of effort estimates.
+- Maintaining a well-organized code base requires strict discipline from all
+  team members and will take time and effort to establish; be patient!
 
 ### For code submitters
 
 - Link to the code review from the originating task/issue, if applicable.
-- Remember that the code isn't you, don't get defensive when a reviewer is critical
-  of the code.
+- Remember that the code isn't you, don't get defensive when a reviewer is
+  critical of the code; instead, look at it as a learning opportunity.
 - Seek to understand the reviewer's perspective.
 - Try to respond to every comment.
 - Be grateful for the reviewer's suggestions. ("Good catch, fixing in a4994ec")
-- Explain why the code exists. ("We need to work around these existing patterns")
+- Explain why the code exists. ("We need to work around these existing
+  patterns")
 - Extract out-of-scope changes and refactorings into future tasks/issues.
 - Push commits based on earlier rounds of feedback as isolated commits to the
   branch. Do not squash until the branch is ready to merge. Reviewers should be
@@ -90,22 +97,23 @@ Before seeking a review, you should be able to check off each of the following:
     - [ ] Code follows the standards laid out in this playbook
     - [ ] Passes all existing automated tests
     - [ ] New functions include new tests
-    - [ ] New functions are documented (with a description, list of inputs, and
-         expected output)
+    - [ ] New functions are documented (with a description, list of inputs,
+          and expected output)
     - [ ] Placeholder code is flagged
     - [ ] Visually tested in supported browsers and devices
-    - [ ] Project documentation has been updated (including the "Unreleased" section of
-          the CHANGELOG)
+    - [ ] Project documentation has been updated (including the "Unreleased"
+          section of the CHANGELOG)
 
 ### Opening a PR
 
 Once your code meets the checks above, open a Pull Request for your new
-feature or bugfix.Remember that the more information you provide to reviews,
+feature or bugfix. Remember that the more information you provide to reviewers,
 the more context they will have. This leads to faster reviews, and less back
 and forth between everyone.
 
 CFPB has published a nice [PR Template](https://raw.githubusercontent.com/cfpb/front-end/master/pr-template.md)
-which might make this easier. You can also create a [Bookmarklet based on this template](https://gist.github.com/cfarm/b9b638943a2eea52a3a8).
+which might make this easier. You can also create a [Bookmarklet based on this
+template](https://gist.github.com/cfarm/b9b638943a2eea52a3a8).
 
 ## Reviewing code
 
@@ -114,12 +122,15 @@ When reviewing code, you should be able to check off each of the following:
     - [ ] Do the changes address the project's needs?
     - [ ] Do the changes respect the project's existing style?
     - [ ] Does the new code avoid reproducing existing functionality?
-    - [ ] Are functions as simple as possible?
+    - [ ] Are functions/classes as simple as possible?
     - [ ] Is the code as efficient as possible?
-    - [ ] Is the usage of each function clear?
+    - [ ] Is the usage of each function/class clear?
     - [ ] Have edge cases been considered and tested for?
-
-Use this bookmarklet code to add this checklist to your Pull Request comments: [Code Review Checklist](https://gist.github.com/cfarm/a4174fe6f775353a3115)
+    - [ ] Does the code represent a logical unit of work?
+    - [ ] Are there any glaring syntax errors that were missed?
+    - [ ] Are language constructs being utilized properly?
+    - [ ] Are any frameworks/libraries being used leveraged properly?
+    - [ ] Are there useful comments/documentation where needed?
 
 ## Credits
 
