@@ -30,7 +30,7 @@ Every individual and team has a different set of expectations around code
 review. Discussing these expectations explicitly is the best way to make sure
 that everyone is on the same page.
 
-Documenting and/or automate the outcomes of your discussion. A common practice
+Document and/or automate the outcomes of your discussion. A common practice
 is to include this information in a `CONTRIBUTING.md` file in your project's
 repository.
 
