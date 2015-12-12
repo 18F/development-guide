@@ -149,8 +149,8 @@ $align_top: 100%;
 
 - Use alphabetical order or type order for declarations. Pick one to keep the whole project consistent.
 - Put a new line before nested selectors unless they are after the first selector.
-- Put mixin calls with @content after nested selectors.
 - Treat nested includes, such as Neat's media includes — `@include media($small-screen)` — as a standard media query, rather than a Sass @include. So they would be sorted directly after the declaration list.
+- Put mixin calls with @content after nested selectors.
 
 ```scss
 // Bad
@@ -179,7 +179,7 @@ $align_top: 100%;
   @include media($sm) {
     margin-top: ($amount + 10em);
   }
-  
+
   .module__ele {
     color: #fff932;
   }
