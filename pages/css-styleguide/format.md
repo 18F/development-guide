@@ -177,7 +177,7 @@ $align_top: 100%;
   margin-top: $amount * 1em;
   text-align: center;
 
-  @include media($sm) {
+  @include media($small) {
     margin-top: ($amount + 10em);
   }
 
