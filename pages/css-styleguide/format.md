@@ -177,8 +177,12 @@ $align_top: 100%;
   margin-top: $amount * 1em;
   text-align: center;
 
-  @include media($small) {
+  @include media($small-screen) {
     margin-top: ($amount + 10em);
+  }
+
+  &::before {
+    content: "hello";
   }
 
   .module__ele {
