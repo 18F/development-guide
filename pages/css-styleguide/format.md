@@ -141,7 +141,12 @@ $align_top: 100%;
   1. variables
   2. @extend directives
   3. @include directives
-  4. properties
+  4. declaration list (properties)
+  5. media queries
+  6. pseudo-states and pseudo-elements
+  7. nested elements
+  8. nested classes
+
 - Within properties, you may use alphabetical order or type order. Just pick one and keep the whole project consistent.
 - Put a new line before nested selectors unless they are after the first selector.
 - Put mixin calls with @content after nested selectors.
