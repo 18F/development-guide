@@ -137,7 +137,7 @@ $align_top: 100%;
 ```
 
 ## Order
-* Follow ordering:
+* Use the following ordering:
   1. variables
   2. @extend directives
   3. @include directives
@@ -148,9 +148,10 @@ $align_top: 100%;
   8. nested classes
 
 - Use alphabetical order or type order for declarations. Pick one to keep the whole project consistent.
-- Put a new line before nested selectors unless they are after the first selector.
+- Place a new line before nested selectors unless they are after the first selector.
 - Treat nested includes, such as Neat's media includes — `@include media($small-screen)` — as a standard media query, rather than a Sass @include. So they would be sorted directly after the declaration list.
-- Put mixin calls with @content after nested selectors.
+- Place mixin calls with @content after nested selectors.
+- You may deviate the sorting order to better suit your project's needs, as long as it's consistent throughout the project.
 
 ```scss
 // Bad
