@@ -152,7 +152,6 @@ $align_top: 100%;
 - Put mixin calls with @content after nested selectors.
 - Treat nested includes, such as Neat's media includes — `@include media($small-screen)` — as a standard media query, rather than a Sass @include. So they would be sorted directly after the declaration list.
 
-
 ```scss
 // Bad
 .module {
