@@ -176,12 +176,12 @@ $align_top: 100%;
   margin-top: $amount * 1em;
   text-align: center;
 
-  .module__ele {
-    color: #fff932;
-  }
-
   @include media($sm) {
     margin-top: ($amount + 10em);
+  }
+  
+  .module__ele {
+    color: #fff932;
   }
 }
 ```
