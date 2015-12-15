@@ -24,10 +24,45 @@ goals when reviewing code are to:
 - cultivate the ability to critique one’s code more strongly;
 - encourage open communication between the entire team.
 
+## Discuss code review with your team
+
+Every individual and team has a different set of expectations around code
+review. Discussing these expectations explicitly is the best way to make sure
+that everyone is on the same page.
+
+Document and/or automate the outcomes of your discussion. A common practice
+is to include this information in a `CONTRIBUTING.md` file in your project's
+repository.
+
+Some guiding questions for your team's code review discussion:
+
+- What does the current code review process, at a high level, look like? Start
+  with the feature request and discuss each step until a feature is considered
+  "done"
+- Do contributors use forks or branches?
+- What's the git workflow? E.g. is master always deployable? Rebase or merge?
+- Are pull requests assigned? If so what process is used?
+- How many people are expected to review each pull request?
+- If a patch is worked on in a pairing session, how does it get merged?
+- Does your team make use of any tools to aid in code reviews? (eg: CI, Static
+  Analysis, linters)
+- Are there any automated tools that you are not using that you would like to try?
+- If commit messages aren't up to par, should they be modified before the PR is
+- What do you look for when conducting a code review?
+- Should code be pulled down and tested/what QA strategy is used?
+merged?
+- How do you know that a pull request is ready to be merged?
+- Who merges code, the author or the reviewer?
+- Are there any exceptions to the above process? Typos? Hotfixes?
+- What about the current process do you like?
+- What about the current process do you think can be improved?
+- How do changes and refinements to this process get made? Retro? PR to a
+contributing file?
+
 ## Tips for a successful review
 
-For a code review to be successful, we all need to be on the same page. To
-help accomplish this, everyone should follow these tips.
+For a code review to be successful, we all need to be on the same page. To help
+accomplish this, everyone should consider these tips.
 
 ### For everyone
 
