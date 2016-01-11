@@ -16,7 +16,7 @@ The styleguide provides a method of linting SASS code to ensure it conforms to t
 4. Add the [`.scss-lint.yml` file](https://raw.githubusercontent.com/18F/frontend/18f-pages-staging/.scss-lint.yml) to the base of your repository.
 
 ### Locally with ruby
-1. Add the [`.scss-lint.yml` file]({{ '/.scss-lint.yml' | prepend: site_baseurl }}) to the base of your repository.
+1. Add the [`.scss-lint.yml` file](https://raw.githubusercontent.com/18F/frontend/18f-pages-staging/.scss-lint.yml) to the base of your repository.
 2. Install the [sass-lint](https://github.com/brigade/scss-lint) gem: `gem install scss_lint`
 3. Run sass-link: `scss-lint app/assets/stylesheets/`
 
