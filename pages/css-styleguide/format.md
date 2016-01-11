@@ -136,16 +136,22 @@ $align_top: 100%;
 }
 ```
 
-## Sorting
-* Follow ordering:
+## Order
+* Use the following ordering:
   1. variables
   2. @extend directives
   3. @include directives
-  4. properties
-- Within properties, you may use alphabetical order or type order. Just pick one and keep the whole project consistent.
-- Put a new line before nested selectors unless they are after the first selector.
-- Put mixin calls with @content after nested selectors.
-- Properties should be alphabetical, not grouped by type or length.
+  4. declaration list (property name and value)
+  5. media queries
+  6. pseudo-states and pseudo-elements
+  7. nested elements
+  8. nested classes
+
+- Use alphabetical order or type order for declarations. Pick one to keep the whole project consistent.
+- Place a new line before nested selectors unless they are after the first selector.
+- Treat nested includes, such as Neat's media includes — `@include media($small-screen)` — as a standard media query, rather than a Sass @include. So they would be sorted directly after the declaration list.
+- Place mixin calls with @content after nested selectors.
+- You may deviate the sorting order to better suit your project's needs, as long as it's consistent throughout the project.
 
 ```scss
 // Bad
@@ -171,12 +177,16 @@ $align_top: 100%;
   margin-top: $amount * 1em;
   text-align: center;
 
-  .module__ele {
-    color: #fff932;
+  @include media($small-screen) {
+    margin-top: ($amount + 10em);
   }
 
-  @include media($sm) {
-    margin-top: ($amount + 10em);
+  &::before {
+    content: "hello";
+  }
+
+  .module__ele {
+    color: #fff932;
   }
 }
 ```
