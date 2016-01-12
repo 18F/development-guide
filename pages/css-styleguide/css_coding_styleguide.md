@@ -7,7 +7,7 @@ title: CSS coding styleguide
 The purpose of the CSS coding styleguide is to create consistent CSS or preprocessor CSS code across 18F. The styleguide should be treated as a guide &mdash; rules can be modified according to project needs.
 
 ## Linting
-The styleguide provides a method of linting SASS code to ensure it conforms to the rules in the styleguide. This linting tool will go through all SASS code and issue warnings wherever the code differs from the styleguide. We've created a specific [`.scss-lint.yml` file](https://raw.githubusercontent.com/18F/frontend/18f-pages-staging/.scss-lint.yml) that's configured to work with the css coding styleguide. There are two ways to setup linting, linting on github with Hound, or linting locally with ruby:
+The styleguide provides a method of linting Sass code to ensure it conforms to the rules in the styleguide. This linting tool will go through all Sass code and issue warnings wherever the code differs from the styleguide. We've created a specific [`.scss-lint.yml` file](https://raw.githubusercontent.com/18F/frontend/18f-pages-staging/.scss-lint.yml) that's configured to work with the css coding styleguide. There are two ways to setup linting, linting on github with Hound, or linting locally with ruby:
 
 ### On GitHub with Hound
 1. Go to [Hound](https://houndci.com/).
