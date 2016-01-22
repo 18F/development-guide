@@ -4,7 +4,7 @@ title: Preprocessor
 parent: CSS coding styleguide
 ---
 
-The most supported CSS preprocessor at 18F is Sass/SCSS. Using this pre-processor means you'll get supported resources such as frameworks, libraries, tutorials, and a comprehensive styleguide as support.
+The most supported CSS preprocessor at 18F is [Sass](http://sass-lang.com/) (SCSS). Using this pre-processor means you'll get supported resources such as frameworks, libraries, tutorials, and a comprehensive styleguide as support.
 
 In addition, 18F uses a [`.scss-lint.yml` file](https://raw.githubusercontent.com/18F/frontend/18f-pages-staging/.scss-lint.yml) to keep our CSS code compliant with our own styleguide.
 
