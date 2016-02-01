@@ -16,6 +16,10 @@ parent: CSS coding styleguide
 - Do not indent selectors.
 
 ```scss
+// Bad
+.rule{
+    margin:3px;text-align:center;}
+
 // Good
 .rule {
   margin: 3px;
@@ -25,15 +29,15 @@ parent: CSS coding styleguide
 .another_rule {
   margin: 3px;
 }
-
-// Bad
-.rule{
-    margin:3px;text-align:center;}
 ```
 
 - Multiple selectors should each be on a single line, with no space after each comma, unless they selector is less than five chars.
 
 ```scss
+// Bad
+selector1, selector2 {
+}
+
 // Good
 selector1,
 selector2,
@@ -42,10 +46,6 @@ selector3 {
 
 // Good
 h1, h2 {
-}
-
-// Bad
-selector1, selector2 {
 }
 ```
 
@@ -74,7 +74,6 @@ selector {
 selector {
   font-size: ($font-size + 2em);
 }
-
 ```
 
 - Do not use shorthand declarations unless you need to explicitly set all the available values.
@@ -101,14 +100,14 @@ margin: 3em 4em 2em 1em;
 - Wrap numeric calculations in parentheses.
 
 ```scss
-// Good
-.component {
-  width: (100% / 3);
-}
-
 // Bad
 .component {
   width: 100% / 3;
+}
+
+// Good
+.component {
+  width: (100% / 3);
 }
 ```
 

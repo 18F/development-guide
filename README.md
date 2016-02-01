@@ -30,12 +30,12 @@ Also, the Frontend Guild Roadmap is in [the wiki](https://github.com/18F/fronten
 1. Fork or clone the frontend repo. `git clone git@github.com:18F/frontend.git`
 2. Create a new branch for your guide, prefixed with `draft-`. `git checkout -b draft-a_new_guide`
 3. Create a markdown(md) file in the pages directory for your guide. `touch pages/draft-a_new_guide.md`
-4. After editing add, commit and push changes. `git add pages && git commit && git push orgin draft-a_new_guide`
+4. After editing add, commit and push changes. `git add pages && git commit && git push origin draft-a_new_guide`
 5. Create a pull request on github.
 6. Label your pull request with `draft`.
 7. Post in #frontend slack channel for comment.
 
-If ready for publishing, you or someone else can move your guide to the 18f-pages branch so it's appears on pages.18f.gov/frontend.
+If ready for publishing, you or someone else can move your guide to the 18f-pages branch so it appears on pages.18f.gov/frontend.
 
 ### How to edit or suggest changes to an existing guide
 
