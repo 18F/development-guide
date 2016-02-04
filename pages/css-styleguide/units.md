@@ -15,7 +15,7 @@ This can be done with the following mixin:
 }
 ```
 
-- Set the HTML font size to 10px to ensure .1 rem unit equals 1px.
+- Set the HTML font size to 10px to ensure 0.1 rem unit equals 1px.
 
 ```scss
 html {
