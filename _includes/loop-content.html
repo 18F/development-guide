@@ -1,0 +1,18 @@
+{% for chapter in include.chapters %}
+<section id="{{ chapter.id|default:chapter.slug }}" class="section-level{{ include.depth|default:0 }}">
+  <h1>{{ chapter.title }}</h1>
+
+  {% if chapter.content != false %}
+  {% capture content %}{% include {{ chapter.file|default:chapter.id }}.md %}{% endcapture %}
+  {{ content | markdownify }}
+  {% endif %}
+
+  {% if chapter.children %}
+  <div class="children">
+    {% assign _depth = include.depth|plus:1 %}
+    {% include loop-content.html chapters=chapter.children depth=_depth %}
+  </div>
+  {% endif %}
+
+</section>
+{% endfor %}

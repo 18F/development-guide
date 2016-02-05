@@ -1,9 +1,6 @@
----
-permalink: /css-coding-styleguide/documentation/
-title: Documentation
-parent: CSS coding styleguide
----
-- Be intentional when you use `//` (silent comments) versus `/* */` (which are preserved in the CSS output). When in doubt, use `//`.
+## Sass Comments
+Be intentional when you use `//` (silent comments) versus `/* */`
+(which are preserved in the CSS output). When in doubt, use `//`.
 
 ## KSS
 Use KSS for documentation. More information on KSS can be found on the
@@ -25,8 +22,11 @@ Use KSS for documentation. More information on KSS can be found on the
 //
 //
 // Styleguide component.button
-.button { ...
-.button-modified { ...
+.button {
+}
+
+.button-modified {
+}
 ```
 
 ### Rationale

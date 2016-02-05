@@ -1,0 +1,10 @@
+{% for chapter in include.chapters %}
+<li>
+  <a href="#{{ chapter.id }}">{{ chapter.title }}</a>
+  {% if chapter.children %}
+    <ol class="children">
+      {% include loop-nav.html chapters=chapter.children %}
+    </ol>
+  {% endif %}
+</li>
+{% endfor %}
