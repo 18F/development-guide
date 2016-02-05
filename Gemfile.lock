@@ -43,7 +43,7 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    redcarpet (3.3.3)
+    redcarpet (3.3.1)
     ref (2.0.0)
     rouge (1.9.1)
     safe_yaml (1.0.4)
@@ -60,7 +60,6 @@ DEPENDENCIES
   guides_style_18f
   jekyll
   redcarpet
-  rouge
 
 BUNDLED WITH
    1.11.2
