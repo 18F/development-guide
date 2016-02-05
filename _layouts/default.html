@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{{ site.title }}</title>
+  </head>
+  <body>
+    <header>
+      <h1>{{ site.title }}</h1>
+    </header>
+
+    <nav id="toc">
+      <ol>
+        {% include loop-nav.html chapters=site.data.chapters %}
+      </ol>
+    </nav>
+
+    <main>
+      {{ content }}
+    </main>
+  </body>
+</html>
