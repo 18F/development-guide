@@ -1,8 +1,11 @@
 {% for chapter in include.chapters %}
-<li>
+<li class="group">
   <a href="#{{ chapter.id }}">{{ chapter.title }}</a>
   {% if chapter.children %}
-    <ol class="children">
+    <button class="expand-subnav"
+      aria-expanded="false"
+      aria-controls="nav-collapsible-{{ chapter.id }}">+</button>
+    <ol class="nav-children" id="nav-collapsible-{{ chapter.id }}" aria-hidden="true">
       {% include loop-nav.html chapters=chapter.children %}
     </ol>
   {% endif %}
