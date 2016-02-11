@@ -19,3 +19,16 @@ include:
   - .scss-lint.yml
 
 google_analytics_ua: UA-48605964-19
+
+author:
+ name: 18F
+ url: https://18f.gsa.gov
+
+repos:
+  - name: Front End Guide
+    description: Main repository
+    url: https://github.com/18F/frontend
+
+back_link:
+  url: "https://pages.18f.gov/guides/"
+  text: Read more 18F Guides
