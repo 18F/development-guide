@@ -2,3 +2,65 @@
 ---
 
 @import "guides_style_18f";
+
+.nav-children {
+  overflow: hidden;
+}
+
+nav .group {
+  overflow: visible;
+  position: relative;
+
+  .expand-subnav {
+    float: none;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 7px;
+  }
+
+  .group .expand-subnav {
+    top: 0px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+
+  .content {
+    display: flex;
+
+    main {
+      flex: 7;
+      float: none;
+      order: 2;
+      width: auto;
+    }
+
+    aside {
+      flex: 3;
+      float: none;
+      min-width: 16em;
+      order: 1;
+      width: auto;
+    }
+  }
+
+  nav {
+    padding-right: 2em;
+
+    ol {
+      padding: 0;
+      margin: 0;
+
+      ol {
+        margin-left: 1em;
+      }
+    }
+  }
+
+  .js-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
