@@ -19,4 +19,9 @@
     button.addEventListener('click', toggleAccordion);
   });
 
+  var sticky = document.querySelectorAll('.js-sticky');
+  [].forEach.call(sticky, function(el) {
+    Stickyfill.add(el);
+  });
+
 })();
