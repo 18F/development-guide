@@ -27,6 +27,7 @@
 
     - id: html
       title: HTML
+      enabled: false
 
     - id: css
       title: CSS
@@ -47,16 +48,5 @@
     - id: javascript
       title: JavaScript
 
-- id: meta
-  title: Meta
-  children:
-
-    - id: contributing
-      title: Contributing
-
-    - id: decisions
-      title: Decision Making
-
-    - id: spec
-      title: Is This a Spec?
-
+- id: contributing
+  title: Contributing
