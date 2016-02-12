@@ -1,4 +1,4 @@
-{% for chapter in include.chapters %}
+{% for chapter in include.chapters %}{% if chapter.enabled != false %}
 <section id="{{ chapter.id|default:chapter.slug }}" class="section-level{{ include.depth|default:0 }}">
   <h1>{{ chapter.title }}</h1>
 
@@ -15,4 +15,4 @@
   {% endif %}
 
 </section>
-{% endfor %}
+{% endif %}{% endfor %}
