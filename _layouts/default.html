@@ -28,7 +28,7 @@
           {% if site.intro %}
           <p class="intro">{{ site.introduction }}</p>
           {% endif %}
-          <nav class="sidebar-nav" role="navigation">
+          <nav class="sidebar-nav js-sticky" role="navigation">
             <ol>
               {% include loop-nav.html chapters=site.data.chapters %}
             </ol>
@@ -39,6 +39,6 @@
 
     </div><!-- /.container -->
   </body>
-  <script src="{% guides_style_18f_asset_root %}/assets/js/accordion.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/vendor/stickyfill.min.js"></script>
   <script src="{{ site.baseurl }}/assets/js/main.js"></script>
 </html>
