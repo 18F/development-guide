@@ -10,7 +10,6 @@ The opinions in this guide attempt to reflect 18f's core development principles 
 
 - **Accessibility**, for users first, developers as well.
 - **Open source**, for transparency and contribution.
-(need more)
 
 ## Frameworks and Libraries
 The terms "framework" and "library" (and even "tool") are sometimes used interchangeably, but there is a not-so-subtle difference. Here's what these words mean when we use them at 18F:
@@ -26,7 +25,7 @@ Picking the right tool for the job can be tricky. We're working on a list of rec
 1. **Community**: try searching for the tool's name on [stackoverflow.com](http://stackoverflow.com/) and looking for signs of a user community around it. Do questions get answered quickly?
 1. **Maintenance**: Is the project actively maintained? You can usually answer this question by looking at its GitHub stats (where applicable):
   - When was the last release, and/or the last commit?
-  - Are there lots of open issues, and have they been commented on by the maintainer(s)? The number of open pull requests may also be an indicator of whether a project has been abandoned.
+  - Are there lots of open issues and have they been commented on by the maintainer(s)? The number of open pull requests may also be an indicator of whether a project has been abandoned.
 1. **Size/Complexity**: some frameworks are large in footprint and/or file size. If adding a tool to your project dramatically affects the download time for your users, you may wish to reconsider its inclusion. For example, though [jQuery] is relatively small compared to some libraries, [you might not need it](http://youmightnotneedjquery.com/) if you're doing simple things in JavaScript.
 1. **Open Source License**: Is this important? Probably. I *think* we prefer CC0.
 

@@ -8,10 +8,10 @@ parent: Recommendations
 AngularJS (commonly referred to as "Angular") is an open-source web application framework maintained by Google and by a community of individual developers and corporations to address many of the challenges encountered in developing single-page applications ([Wikipedia](http://en.wikipedia.org/wiki/AngularJS)).
 
 #### When to use:
-- Sites with heavy Front end, Javascript UI interactions (single page apps) such as 
-  - creating, updating, deleting of information without a server reload, 
-  - real-time messaging platforms, such as chat or complex messaging such as email.
-  - complex data visualization dashboards, 
+- Sites with heavy front-end, JavaScript UI interactions (single page apps) such as:
+  - creating, updating, deleting of information without a server reload
+  - real-time messaging platforms, such as chat or complex messaging such as email
+  - complex data visualization dashboards
   - lazy-loaded from the back end
 - When the site's design specifies a single page app architecture over classic server request and response.
 - When the whole site will be built with Angular to maintain front end code consistency.
@@ -37,7 +37,7 @@ AngularJS (commonly referred to as "Angular") is an open-source web application 
 
 
 ## Backbone
-Backbone.js is a JavaScript library with a RESTful JSON interface and is based on the model–view–presenter (MVP) application design paradigm([Wikipedia](http://en.wikipedia.org/wiki/Backbone.js)).
+Backbone.js is a JavaScript library with a RESTful JSON interface and is based on the model–view–presenter (MVP) application design paradigm ([Wikipedia](http://en.wikipedia.org/wiki/Backbone.js)).
 
 #### When to use:
 - A page design that requires dynamic data manipulation on the front end without a server request response, such as a todo app.
@@ -47,9 +47,9 @@ Backbone.js is a JavaScript library with a RESTful JSON interface and is based o
 - When the dev team is familiar enough with Backbone to know how to write maintainable Backbone code.
 
 #### When not to use:
-- When the javascript components don't keep data or manipulate data, in which case Backbone's functionality is too heavy and not specific enough for just view rendering.
+- When the JavaScript components don't keep data or manipulate data, in which case Backbone's functionality is too heavy and not specific enough for just view rendering.
 - If there is a strict requirement that the site should work for users that have JavaScript disabled.
-- When another full javascript framework is already in use, such as Angular.
+- When another full JavaScript framework is already in use, such as Angular.
 - When working with a data source that is NOT RESTful. Backbone was built for RESTful services, instead see Flux.
 
 #### Pros:
@@ -80,8 +80,7 @@ React (sometimes styled React.js or ReactJS) is an open-source JavaScript librar
 
 
 ## Flux
-Flux is not a framework, nor is it M**VC. Its a software architecture for
-writing complex single page applications.
+Flux is not a framework, nor is it M**VC. It's a software architecture for writing complex single page applications.
 
 #### When to use:
 - A complex JavaScript app that requires both viewing and modifying (CRUD) data
@@ -89,7 +88,7 @@ writing complex single page applications.
   don't modify data in any way.
 - When the data service for the front end is REST and/or something besides REST,
   such as Websockets.
-- An app that's data flow has grown or will grow overly complex.
+- An app thats data flow has grown or will grow overly complex.
 
 #### When not to use:
 - Applications that don't require any updating (create, update, delete) of data.

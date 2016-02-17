@@ -4,7 +4,7 @@ title: Dependency management
 parent: Recommendations
 ---
 
-The word "dependency" refers to all of the frameworks, libraries and other tools that your project relies on. *Dependency management* is the process by which tools are incorporated into your project, removed and updated (for instance, when you need a new version of [jQuery]). Here are the tools that we recommend for managing dependencies:
+The word "dependency" refers to all of the frameworks, libraries, and other tools that your project relies on. *Dependency management* is the process by which tools are incorporated into your project, removed and updated (for instance, when you need a new version of [jQuery]). Here are the tools that we recommend for managing dependencies:
 
 ## Bower
 #### Do not use Bower.
