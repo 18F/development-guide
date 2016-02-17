@@ -8,7 +8,7 @@ parent: Recommendations
 AngularJS (commonly referred to as "Angular") is an open-source web application framework maintained by Google and by a community of individual developers and corporations to address many of the challenges encountered in developing single-page applications ([Wikipedia](http://en.wikipedia.org/wiki/AngularJS)).
 
 #### When to use:
-- Sites with heavy front-end, JavaScript UI interactions (single page apps) such as:
+- Sites with heavy front end, JavaScript UI interactions (single page apps) such as:
   - creating, updating, deleting of information without a server reload
   - real-time messaging platforms, such as chat or complex messaging such as email
   - complex data visualization dashboards
