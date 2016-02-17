@@ -80,7 +80,8 @@ React (sometimes styled React.js or ReactJS) is an open-source JavaScript librar
 
 
 ## Flux
-Flux is not a framework, nor is it M**VC. It's a software architecture for writing complex single page applications.
+Flux is not a framework, nor is it M**VC. It's a software architecture for 
+writing complex single page applications.
 
 #### When to use:
 - A complex JavaScript app that requires both viewing and modifying (CRUD) data
