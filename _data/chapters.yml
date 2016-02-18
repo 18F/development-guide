@@ -4,8 +4,8 @@
 
 - id: concepts
   title: Core Concepts
-  children:
   enabled: false
+  children:
 
     - id: progressive-enhancement
       title: Progressive Enhancement
