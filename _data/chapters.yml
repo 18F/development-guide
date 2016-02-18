@@ -5,6 +5,7 @@
 - id: concepts
   title: Core Concepts
   children:
+  enabled: false
 
     - id: progressive-enhancement
       title: Progressive Enhancement
@@ -47,6 +48,8 @@
 
     - id: javascript
       title: JavaScript
+      enabled: false
 
 - id: contributing
   title: Contributing
+  enabled: false
