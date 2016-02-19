@@ -24,4 +24,11 @@
     Stickyfill.add(el);
   });
 
+  // load up AnchorJS
+  var anchor = new AnchorJS({
+    placement: 'right',
+    icon: '§'
+  });
+  anchor.add('h2, h3');
+
 })();
