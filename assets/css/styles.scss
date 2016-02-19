@@ -7,6 +7,28 @@
   overflow: hidden;
 }
 
+nav a[aria-active=true]:link {
+  // XXX this isn't turning links black for me...
+  color: black;
+  font-weight: bold;
+}
+
+// add the nav active indicator to targeted section titles
+section:target > h1,
+h2:target,
+h3:target {
+  border-left: 4px solid #1188ff;
+  padding-left: 10px;
+}
+
+section section {
+  padding-left: 1em;
+}
+
+pre {
+  overflow-y: hidden;
+}
+
 a.anchorjs-link {
   color: #999;
 }
