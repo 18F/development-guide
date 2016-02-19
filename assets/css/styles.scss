@@ -7,6 +7,10 @@
   overflow: hidden;
 }
 
+a.anchorjs-link {
+  color: #999;
+}
+
 nav .group {
   overflow: visible;
   position: relative;
@@ -34,6 +38,9 @@ nav .group {
       float: none;
       order: 2;
       width: auto;
+      // ensure that the main content (and hanging anchor links)
+      // goes above the sidebar
+      z-index: 2;
     }
 
     aside {
