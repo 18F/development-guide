@@ -1,6 +1,9 @@
 {% for chapter in include.chapters %}{% if chapter.enabled != false %}
 <section id="{{ chapter.id|default:chapter.slug }}" class="section-level{{ include.depth|default:0 }}">
-  <h1>{{ chapter.title }}</h1>
+  <h1>
+    {{ chapter.title }}
+    <a class="anchorjs-link" href="#{{ chapter.id|default:chapter.slug }}">§</a>
+  </h1>
 
   {% if chapter.content != false %}
   {% capture content %}{% include {{ chapter.file|default:chapter.id }}.md %}{% endcapture %}
