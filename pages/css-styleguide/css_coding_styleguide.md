@@ -12,7 +12,7 @@ The styleguide provides a method of linting Sass (SCSS) code to ensure it confor
 ### On GitHub with Hound
 1. Go to [Hound](https://houndci.com/).
 2. Sign in with GitHub.
-3. Activate the respository through [Hound](https://houndci.com/repos).
+3. Activate the repository through [Hound](https://houndci.com/repos).
 4. Add the [`.scss-lint.yml` file](https://raw.githubusercontent.com/18F/frontend/18f-pages-staging/.scss-lint.yml) to the base of your repository.
 
 ### Locally with the Ruby gem
