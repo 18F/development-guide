@@ -34,21 +34,45 @@
       title: CSS
       children:
 
-        - id: css-architecture
-          file: css/architecture
-          title: CSS Architecture
-
-        - id: css-style-guide
-          file: css/style-guide
-          title: Style Guide
-
-        - id: css-documentation
-          file: css/documentation
-          title: CSS Documentation
+        - id: css-preprocessors
+          file: css/preprocessors
+          title: Preprocessors
 
         - id: css-frameworks
           file: css/frameworks
-          title: CSS Frameworks
+          title: Frameworks
+
+        - id: css-formatting
+          file: css/formatting
+          title: Formatting
+
+        - id: css-units
+          file: css/units
+          title: Units
+
+        - id: css-naming
+          file: css/naming
+          title: Naming
+
+        - id: css-inheritance
+          file: css/inheritance
+          title: Inheritance
+
+        - id: css-architecture
+          file: css/architecture
+          title: Architecture
+
+        - id: css-specificity
+          file: css/specificity
+          title: Specificity
+
+        - id: css-variables
+          file: css/variables
+          title: Variables
+
+        - id: css-documentation
+          file: css/documentation
+          title: Documentation
 
     - id: javascript
       title: JavaScript
