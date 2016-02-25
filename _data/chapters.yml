@@ -34,16 +34,20 @@
       title: CSS
       children:
 
-        - id: css/architecture
+        - id: css-architecture
+          file: css/architecture
           title: CSS Architecture
 
-        - id: css/style-guide
+        - id: css-style-guide
+          file: css/style-guide
           title: Style Guide
 
-        - id: css/documentation
+        - id: css-documentation
+          file: css/documentation
           title: CSS Documentation
 
-        - id: css/frameworks
+        - id: css-frameworks
+          file: css/frameworks
           title: CSS Frameworks
 
     - id: javascript
