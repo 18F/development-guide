@@ -34,6 +34,10 @@
       title: CSS
       children:
 
+        - id: css-linting
+          file: css/linting
+          title: Linting
+
         - id: css-preprocessors
           file: css/preprocessors
           title: Preprocessors
