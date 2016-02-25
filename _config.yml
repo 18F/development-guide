@@ -4,6 +4,9 @@ permalink: pretty
 highlighter: rouge
 markdown: redcarpet
 
+redcarpet:
+  extensions: ['tables']
+
 sass:
   style: compressed
 
