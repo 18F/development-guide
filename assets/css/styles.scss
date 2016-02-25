@@ -8,8 +8,9 @@
 }
 
 nav a[aria-active=true]:link {
+  background: transparent;
   // XXX this isn't turning links black for me...
-  color: black;
+  color: #000;
   font-weight: bold;
 }
 
