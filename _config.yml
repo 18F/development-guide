@@ -2,6 +2,7 @@ title: 18F Front End Guide
 
 permalink: pretty
 highlighter: rouge
+markdown: redcarpet
 
 sass:
   style: compressed
