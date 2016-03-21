@@ -80,7 +80,23 @@
 
     - id: javascript
       title: JavaScript
-      enabled: false
+      children:
+
+        - id: javascript-dependencies
+          file: js/dependencies
+          title: Depedencies
+
+        - id: javascript-libraries
+          file: js/libraries
+          title: Libraries
+
+        - id: javascript-frameworks
+          file: js/frameworks
+          title: Frameworks
+
+        - id: web-components
+          file: js/web-components
+          title: Web Components
 
 - id: contributing
   title: Contributing
