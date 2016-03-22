@@ -94,9 +94,9 @@
           file: js/frameworks
           title: Frameworks
 
-        - id: web-components
-          file: js/web-components
-          title: Web Components
+    - id: web-components
+      file: web-components
+      title: Web Components
 
 - id: contributing
   title: Contributing

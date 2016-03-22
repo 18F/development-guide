@@ -1,7 +1,7 @@
 ---
 permalink: /recommendations/libraries/
-title: Libraries
-parent: Recommendations
+layout: redirect
+redirect: /#javascript-libraries
 ---
 
 ## Scrolling
