@@ -1,6 +1,7 @@
 ---
 permalink: /recommendations/
-title: Recommendations
+layout: redirect
+redirect: /#javascript
 ---
 
 If you're building a web site or application from scratch, you're probably doing it wrong. There are an uncountable number of open source tools at your disposal, from ready-to-use style frameworks to expansive code libraries, that can help you get your job done more easily while also serving as a common ground for other designers and developers.
