@@ -97,6 +97,10 @@
   no space between parentheses and content.
 
 ```scss
+// Bad
+color: #FFF;
+color: rgb( 255, 0, 0 );
+
 // Good
 $light: #fff;
 color: $light;
@@ -108,10 +112,6 @@ color: $primary;
 // Good
 $secondary: rgba(255, 100, 255, 0.5);
 color: $secondary;
-
-// Bad
-color: #FFF;
-color: rgb( 255, 0, 0 );
 ```
 
 - If you use an rgba rule, include a fallback value in hexadecimal.
