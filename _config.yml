@@ -2,6 +2,7 @@ markdown: redcarpet
 redcarpet:
   extensions:
     - tables
+    - autolink
 name: 18F Engineering Best Practices
 exclude:
 - CONTRIBUTING.md

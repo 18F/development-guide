@@ -11,4 +11,4 @@ interesting design decisions from existing projects.
 
 ## Projects
 
-* [DATA Act Pilot]({{site.baseurl}}/architecture-review/data-act-pilot/)
+* [DATA Act Pilot: Simplicity is Key]({{site.baseurl}}/architecture-review/data-act-pilot/)

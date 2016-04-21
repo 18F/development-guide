@@ -1,6 +1,6 @@
 ---
 permalink: /architecture-review/data-act-pilot/
-title: DATA Act Pilot
+title: "DATA Act Pilot: Simplicity is Key"
 ---
 
 ## TL;DR
@@ -139,3 +139,12 @@ client’s expectations in short order. Building for a least common denominator
 complexity. Pulling out validation rules into a separate, easy-to-modify
 format made the product flexible and simple to maintain. Do any of these
 principles make sense for your project?
+
+---
+
+This document is the distillation of an architecture discussion between Aaron
+Borden, Jacob Kaplan-Moss, CM Lubinski, Micah Saul, Marco Segreto, and Becky
+Sweger. For more information about the DATA Act pilot, see
+https://github.com/18F/data-act-pilot, particularly their
+[screencasts](https://github.com/18F/data-act-pilot/tree/master/assets/screencast).
+
