@@ -13,6 +13,8 @@ A guide for programming within version control.
 
 ### Maintain a Repo on GitHub
 
+* Enable [two-factor authentication][2FA] for your GitHub account
+(required for 18F employees).
 * Make all new repos public by default unless there's a compelling reason not
   to.
 * Avoid including files in source control that are specific to your
@@ -21,7 +23,10 @@ A guide for programming within version control.
 * Perform work in a feature branch.
 * Rebase frequently to incorporate upstream changes.
 * Use a [pull request] for code reviews.
+* [Sign your commits with a GPG key](https://help.github.com/categories/gpg/)
+(recommended).
 
+[2FA]: https://help.github.com/articles/about-two-factor-authentication/
 [pull request]: https://help.github.com/articles/using-pull-requests/
 
 ### Write a Feature
@@ -81,26 +86,6 @@ If comments need to be addressed, the pull request author makes changes and
 lets the reviewer know it's ready to be reviewed again.
 
 Repeat until all comments have been addressed. The reviewer then merges the PR
-and deletes the branch.
+using the GitHub web interface, and deletes the branch.
 
 [Code Review guideline]: {{ site.baseurl }}/code-review/
-
-### Merge
-
-View a list of new commits. View changed files. Merge branch into master.
-
-    git log origin/master..<branch-name>
-    git diff --stat origin/master
-    git checkout master
-    git merge <branch-name> --ff-only
-    git push
-
-Delete your remote feature branch.
-
-    git push origin --delete <branch-name>
-
-Delete your local feature branch.
-
-    git branch --delete <branch-name>
-
-[find the pull request]: http://stackoverflow.com/a/17819027
