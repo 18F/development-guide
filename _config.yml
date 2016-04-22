@@ -1,4 +1,8 @@
 markdown: redcarpet
+redcarpet:
+  extensions:
+    - tables
+    - autolink
 name: 18F Engineering Best Practices
 exclude:
 - CONTRIBUTING.md
@@ -31,6 +35,9 @@ navigation:
   internal: true
 - text: Code Review
   url: code-review/
+  internal: true
+- text: Architecture Review
+  url: architecture-review/
   internal: true
 
 repos:
