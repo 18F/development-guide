@@ -57,7 +57,7 @@ described viewing code as “not real” to be a trap. Their small code base
 quickly grew larger than anticipated and their early technical decisions would
 have long lasting ramifications.
 
-![Diagram matching above description]({{ site.url }}/assets/img/data-act-diagram.svg)
+![Diagram matching above description](../../assets/img/data-act-diagram.svg)
 
 ## Simplicity avoids scary
 
