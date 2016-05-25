@@ -39,6 +39,10 @@ navigation:
 - text: Architecture Review
   url: architecture-review/
   internal: true
+- text: Example Workflows
+  url: workflows/
+  internal: true
+
 
 repos:
 - name: Guides Template
