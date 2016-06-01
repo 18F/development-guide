@@ -1,4 +1,4 @@
-The front end guild did a series of exercises to determine the fundamental differences between the fron end design and front end developer roles at 18F. Using [some of our own research methods](https://methods.18f.gov), the front end guild came up with the following recommendations on knowing the difference between the two disciplines:
+The front end guild did a series of exercises to determine the fundamental differences between the front end design and front end developer roles at 18F. Using [some of our own research methods](https://methods.18f.gov), the front end guild came up with the following recommendations on knowing the difference between the two disciplines:
 
 **Front end designers** design, write, and implement the presentational code base for websites and applications. They should have a clear understanding of design fundamentals and systems, such as interface style guides, responsive design, grid systems, front end frameworks, and accessibility best practices. Front end designers should feel comfortable creating and implementing design systems using semantic HTML5, CSS/Sass and be able to assist in debugging this aspect of the code base.
 
