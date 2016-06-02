@@ -1,3 +1,6 @@
+---
+slug: js-dependencies
+---
 The word "dependency" refers to all of the frameworks, libraries, and other tools that your project relies on. *Dependency management* is the process by which tools are incorporated into your project, removed and updated (for instance, when you need a new version of [jQuery]). Here are the tools that we recommend for managing dependencies:
 
 ## Bower
@@ -42,4 +45,3 @@ Many dependencies consist of a single file and can be more easily incorporated s
 [Webpack]: http://webpack.github.io/
 [Cloud Foundry]: https://www.cloudfoundry.org/
 [Heroku]: https://www.heroku.com/
-

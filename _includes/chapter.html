@@ -11,9 +11,11 @@
   </ol>
   {% endif %}
 
+  {% comment %}
   {% if chapter.children %}
     {% for chapter.children as chapter %}
       {% include chapter.html %}
     {% endfor %}
   {% endif %}
+  {% endcomment %}
 </section>

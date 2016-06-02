@@ -1,13 +1,9 @@
 # Table of Contents
 - id: intro
-  title: Introduction
 
 - id: what-is-frontend
-  title: What is Front end?
 
 - id: concepts
-  title: Core Concepts
-  enabled: false
   children:
 
     - id: progressive-enhancement

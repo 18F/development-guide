@@ -1,21 +1,21 @@
-{% for chapter in include.chapters %}{% if chapter.enabled != false %}
-<section id="{{ chapter.id|default:chapter.slug }}" class="section-level{{ include.depth|default:0 }}">
+{% for ref in include.chapters %}
+{% assign chapter = site.chapters | where: 'slug', ref.id | first %}
+<!-- {{chapter.enabled | jsonify }} -->
+{% if chapter.enabled == false %}{% continue %}{% endif %}
+<section id="{{ chapter.slug }}" class="section-level{{ include.depth|default:0 }}">
   <h1>
     {{ chapter.title }}
-    <a class="anchorjs-link" href="#{{ chapter.id|default:chapter.slug }}">§</a>
+    <a class="anchorjs-link" href="#{{ chapter.slug }}">§</a>
   </h1>
 
-  {% if chapter.content != false %}
-  {% capture content %}{% include {{ chapter.file|default:chapter.id }}.md %}{% endcapture %}
-  {{ content | markdownify }}
-  {% endif %}
+  {{ chapter.content }}
 
-  {% if chapter.children %}
+  {% if ref.children %}
   <div class="children">
     {% assign _depth = include.depth|plus:1 %}
-    {% include loop-content.html chapters=chapter.children depth=_depth %}
+    {% include loop-content.html chapters=ref.children depth=_depth %}
   </div>
   {% endif %}
 
 </section>
-{% endif %}{% endfor %}
+{% endfor %}

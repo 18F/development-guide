@@ -18,6 +18,9 @@ exclude:
   - README.md
   - go
 
+collections:
+  - chapters
+
 include:
   - .scss-lint.yml
 
