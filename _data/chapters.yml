@@ -29,9 +29,9 @@
 
     - id: javascript
       children:
-        - id: javascript-dependencies
-        - id: javascript-libraries
-        - id: javascript-frameworks
+        - id: js-dependencies
+        - id: js-libraries
+        - id: js-frameworks
 
     - id: web-components
 
