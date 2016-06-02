@@ -1,3 +1,6 @@
+---
+title: Progressive Enhancement
+---
 This is a really important topic.
 
 ```css
