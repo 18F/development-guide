@@ -11,42 +11,28 @@
 
 - id: technical
   children:
-
     - id: html
 
     - id: css
       children:
-
         - id: css-linting
-
         - id: css-preprocessors
-
         - id: css-frameworks
-
         - id: css-formatting
-
         - id: css-units
-
         - id: css-naming
-
         - id: css-inheritance
-
         - id: css-architecture
-
         - id: css-specificity
-
         - id: css-variables
-
         - id: css-documentation
 
     - id: javascript
       children:
-
         - id: javascript-dependencies
-
         - id: javascript-libraries
-
         - id: javascript-frameworks
 
     - id: web-components
+
 - id: contributing
