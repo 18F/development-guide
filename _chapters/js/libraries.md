@@ -1,3 +1,7 @@
+---
+title: Libraries
+slug: js-libraries
+---
 ## Scrolling
 ### skrollr
 [Skrollr] is stand-alone parallax scrolling library for mobile (Android + iOS) and desktop.
@@ -49,4 +53,3 @@ Parallax scrolling made easy, [stellar.js].
 [Datatables]: https://www.datatables.net
 [Skrollr]: http://prinzhorn.github.io/skrollr/
 [stellar.js]: http://markdalgleish.com/projects/stellar.js/
-

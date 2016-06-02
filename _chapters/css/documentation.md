@@ -1,3 +1,7 @@
+---
+title: Documentation
+slug: css-documentation
+---
 ## Sass Comments
 Be intentional when you use `//` (silent comments) versus `/* */`
 (which are preserved in the CSS output). When in doubt, use `//`.
@@ -32,4 +36,3 @@ Use KSS for documentation. More information on KSS can be found on the
 ### Rationale
 KSS is the most common CSS documentation method to date. While it’s not perfect,
 the generated documentation can be modified through templates.
-

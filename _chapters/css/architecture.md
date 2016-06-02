@@ -1,3 +1,7 @@
+---
+title: Architecture
+slug: css-architecture
+---
 A site's architecture should be based on its goals and purposes. This means the
 guidance here should be adapted to different sites and situations.
 

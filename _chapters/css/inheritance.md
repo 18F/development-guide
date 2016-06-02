@@ -1,3 +1,7 @@
+---
+title: Inheritance
+slug: css-inheritance
+---
 ## Mixins
 - Use mixins for groups of properties that appear together intentionally and
   are used multiple times.

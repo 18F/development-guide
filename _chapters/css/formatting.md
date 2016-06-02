@@ -1,3 +1,7 @@
+---
+title: Formatting
+slug: css-formatting
+---
 ## Spacing
 - Where possible, limit CSS files’ width to 80 characters. See
   [notes](#format_notes) to see how to configure your text editor to 80

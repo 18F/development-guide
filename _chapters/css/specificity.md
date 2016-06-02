@@ -1,3 +1,7 @@
+---
+title: Specificity
+slug: css-specificity
+---
 - IDs should be reserved for JavaScript. Don’t use IDs for styles.
 
   ```scss
@@ -82,4 +86,3 @@ between contributing to the overall style and layout of the DOM.
   class name. This prevents target confusion and allows CSS devs and JS devs to
   co-exist in the same code in peace. If you must use an id selector (`#id`)
   make sure that you have no more than one in your rule declaration.
-

@@ -1,3 +1,7 @@
+---
+title: Frameworks
+slug: js-frameworks
+---
 ## Angular
 AngularJS (commonly referred to as "Angular") is an open-source web application framework maintained by Google and by a community of individual developers and corporations to address many of the challenges encountered in developing single-page applications ([Wikipedia](http://en.wikipedia.org/wiki/AngularJS)).
 
@@ -103,4 +107,3 @@ writing complex single page applications.
 - More verbose in file and directory structure.
 - Finding best way to use can be difficult for beginners.
 - Can be hard to find a good structure when beginning.
-

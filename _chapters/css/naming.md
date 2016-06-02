@@ -1,3 +1,7 @@
+---
+title: Naming
+slug: css-naming
+---
 - HTML elements should be in lowercase.
 
   ```scss
