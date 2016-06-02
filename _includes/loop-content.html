@@ -1,6 +1,5 @@
-{% for ref in include.chapters %}
-{% assign chapter = site.chapters | where: 'slug', ref.id | first %}
-<!-- {{chapter.enabled | jsonify }} -->
+{% for node in include.chapters %}
+{% assign chapter = site.chapters | where: 'slug', node.id | first %}
 {% if chapter.enabled == false %}{% continue %}{% endif %}
 <section id="{{ chapter.slug }}" class="section-level{{ include.depth|default:0 }}">
   <h1>
@@ -10,10 +9,10 @@
 
   {{ chapter.content }}
 
-  {% if ref.children %}
+  {% if node.children %}
   <div class="children">
     {% assign _depth = include.depth|plus:1 %}
-    {% include loop-content.html chapters=ref.children depth=_depth %}
+    {% include loop-content.html chapters=node.children depth=_depth %}
   </div>
   {% endif %}
 
