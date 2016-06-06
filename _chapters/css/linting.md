@@ -12,26 +12,26 @@ with the css coding styleguide. There are three ways to setup linting:
 * locally with ruby
 * locally with node
 
-### On GitHub with Hound
+## On GitHub with Hound
 1. Go to [Hound](https://houndci.com/).
 2. Sign in with GitHub.
 3. Activate the respository through [Hound](https://houndci.com/repos).
 4. Add the [`.scss-lint.yml` file][scss-lint yaml] to the base of your
    repository.
 
-### Locally with ruby
+## Locally with ruby
 1. Add the [`.scss-lint.yml` file][scss-lint yaml] to the base of your
    repository.
 2. Install the [scss-lint] gem with `gem install scss_lint`
 3. Run scss-lint: `scss-lint app/assets/stylesheets/`
 
-### Locally with node (experimental!)
+## Locally with node (experimental!)
 1. Run `npm install --save-dev @18f/stylelint-rules` to download the package and save it to your package.json
 2. The package provides both a gulp task and a cli interface. Detailed usage instructions can be found in the [README](https://github.com/18F/stylelint-rules)
 
-### Shortcomings
+## Shortcomings
 
-__scss-lint__
+### scss-lint
 
 The scss-lint tool currently lacks the functionality to check these rules in
 the CSS coding styleguide:
@@ -41,7 +41,7 @@ the CSS coding styleguide:
 - Does not sort properties in quite the order we want (defaults to
   alphabetical)
 
-__stylelint__
+### stylelint
 
 This tool is still being evaluated, so not every rule in our current styleguide
 is supported by stylelint. scss-lint is purpose built for SCSS and is therefore
