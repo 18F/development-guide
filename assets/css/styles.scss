@@ -8,6 +8,50 @@
   font-size: $sizeValue + rem;
 }
 
+html {
+  font-size: 10px;
+}
+
+body {
+  @include font-size(1.4);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-bottom: .5em;
+  margin-top: 1.5em;
+}
+
+h1 {
+  @include font-size(3.8);
+}
+
+h2,
+.section-level2 h1 {
+  @include font-size(2.8);
+}
+
+h3,
+.section-level2 h2 {
+  @include font-size(1.8);
+}
+
+h4,
+.section-level2 h3 {
+  @include font-size(1.5);
+}
+
+h5,
+.section-level2 h4 {
+  @include font-size(1.3);
+  text-transform: uppercase;
+}
+
+h6,
+.section-level2 h5 {
+  @include font-size(1.1);
+}
+
 .nav-children {
   overflow: hidden;
 }
@@ -60,10 +104,6 @@ nav .group {
 }
 
 @media screen and (min-width: 640px) {
-
-  html {
-    font-size: 10px;
-  }
 
   body {
     @include font-size(1.6);
