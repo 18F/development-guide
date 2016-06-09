@@ -2,9 +2,7 @@
 
 18F is promoting team best practices across speciality areas through guilds. These guilds support their members in whatever way deemed most appropriate by those members themselves. [This branch](https://github.com/18F/frontend/tree/research) houses guild research into its membership needs.
 
-## Guides
-These guides are in different points in the review process.
-
+### Quicklinks to guides
 - Published guides: https://pages.18f.gov/frontend/
 - Unpublished guides: [pages](pages/)
 - Drafts: [pulls](https://github.com/18F/frontend/pulls?q=is%3Aopen+label%3Adraft+is%3Apr)
