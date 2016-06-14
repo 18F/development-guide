@@ -1,7 +1,4 @@
----
-permalink: /workflows/
-title: Example Workflows
----
+## Example workflows
 
 Here we've collected descriptions of team processes (particularly around
 submitting code) that various projects have used in the past. Please consider
