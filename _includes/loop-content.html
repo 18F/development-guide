@@ -1,0 +1,20 @@
+{% for node in include.chapters %}
+{% assign chapter = site.chapters | where: 'slug', node.id | first %}
+{% if chapter.enabled == false %}{% continue %}{% endif %}
+<section id="{{ chapter.slug }}" class="section-level{{ include.depth|default:0 }}">
+  <h1>
+    {{ chapter.title }}
+    <a class="anchorjs-link" href="#{{ chapter.slug }}">§</a>
+  </h1>
+
+  {{ chapter.content }}
+
+  {% if node.children %}
+  <div class="children">
+    {% assign _depth = include.depth|plus:1 %}
+    {% include loop-content.html chapters=node.children depth=_depth %}
+  </div>
+  {% endif %}
+
+</section>
+{% endfor %}

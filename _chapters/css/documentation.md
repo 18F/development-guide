@@ -1,9 +1,10 @@
 ---
-permalink: /css-coding-styleguide/documentation/
 title: Documentation
-parent: CSS coding styleguide
+slug: css-documentation
 ---
-- Be intentional when you use `//` (silent comments) versus `/* */` (which are preserved in the CSS output). When in doubt, use `//`.
+## Sass Comments
+Be intentional when you use `//` (silent comments) versus `/* */`
+(which are preserved in the CSS output). When in doubt, use `//`.
 
 ## KSS
 Use KSS for documentation. More information on KSS can be found on the
@@ -25,11 +26,13 @@ Use KSS for documentation. More information on KSS can be found on the
 //
 //
 // Styleguide component.button
-.button { ...
-.button-modified { ...
+.button {
+}
+
+.button-modified {
+}
 ```
 
 ### Rationale
 KSS is the most common CSS documentation method to date. While it’s not perfect,
 the generated documentation can be modified through templates.
-

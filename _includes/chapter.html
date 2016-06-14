@@ -1,0 +1,21 @@
+<section id="{{ chapter.id }}">
+  <h1>{{ chapter.title }}</h1>
+
+  {{ chapter.content }}
+
+  {% if chapter.footnotes %}
+  <ol class="footnotes">
+    {% for chapter.footnotes as index, fn %}
+    <li id="fn-{{ index|plus:1 }}">{{ fn }}</li>
+    {% endfor %}
+  </ol>
+  {% endif %}
+
+  {% comment %}
+  {% if chapter.children %}
+    {% for chapter.children as chapter %}
+      {% include chapter.html %}
+    {% endfor %}
+  {% endif %}
+  {% endcomment %}
+</section>

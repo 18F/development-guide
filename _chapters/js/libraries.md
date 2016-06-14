@@ -1,9 +1,7 @@
 ---
-permalink: /recommendations/libraries/
-layout: redirect
-redirect: /#javascript-libraries
+title: Libraries
+slug: js-libraries
 ---
-
 ## Scrolling
 ### skrollr
 [Skrollr] is stand-alone parallax scrolling library for mobile (Android + iOS) and desktop.
@@ -31,14 +29,14 @@ Parallax scrolling made easy, [stellar.js].
 
 ## Tables
 ### DataTables
-[DataTables] is a jQuery tool to progressively enhance HTML tables with advanced interactive features, such as sorting, paging, filtering, etc. 
+[DataTables] is a jQuery tool to progressively enhance HTML tables with advanced interactive features, such as sorting, paging, filtering, etc.
 
 #### When to use
 - Creating an interactive table that doesn't need to be configured or restyled very much from what DataTables offers.
 
 #### When not to use
-- When the interactive table being created will be very custom and will not look and/or function like the basic examples on the DataTables website.
-- When your site doesn't require jQuery.
+- When the interactive table being created will be very custom and will not look and/or function like the basic examples on the data tables website.
+- When your site doens't require jQuery.
 - When elements around or interacting with the table use percentages for positioning. DataTables forces the table to use absolute units (pixels) which get manipulated. This means it can be problematic for responsive sites.
 
 #### Pros
@@ -52,6 +50,6 @@ Parallax scrolling made easy, [stellar.js].
 - Documentation on the API can be incomplete and hard to follow.
 
 
-[DataTables]: https://www.datatables.net
+[Datatables]: https://www.datatables.net
 [Skrollr]: http://prinzhorn.github.io/skrollr/
 [stellar.js]: http://markdalgleish.com/projects/stellar.js/

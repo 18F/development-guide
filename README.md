@@ -1,12 +1,10 @@
-## 18F Guides Template
+## 18F Front End Guild
 
 18F is promoting team best practices across speciality areas through guilds. These guilds support their members in whatever way deemed most appropriate by those members themselves. [This branch](https://github.com/18F/frontend/tree/research) houses guild research into its membership needs.
+ 
+This repo is where the 18F Frontend Guild keeps its guide (yep, I went there — guild and guide in one sentence) to best practices and resources for frontend development.
 
-### Generating the site/hosting locally
-
-## Current guides
-The guides are in different points in the review process.
-
+#### Quicklinks to guides
 - Published guides: https://pages.18f.gov/frontend/
 - Unpublished guides: [pages](pages/)
 - Drafts: [pulls](https://github.com/18F/frontend/pulls?q=is%3Aopen+label%3Adraft+is%3Apr)

@@ -1,18 +1,21 @@
 ---
-permalink: /css-coding-styleguide/format/
-title: Format
-parent: CSS coding styleguide
+title: Formatting
+slug: css-formatting
 ---
-
 ## Spacing
-- Where possible, limit CSS files’ width to 80 characters. See [notes](#format_notes) to see how to configure your text editor to 80 characters.
-  - There will be unavoidable exceptions to this rule, such as URLs, or gradient syntax. Don’t worry.
+- Where possible, limit CSS files’ width to 80 characters. See
+  [notes](#format_notes) to see how to configure your text editor to 80
+  characters.
+  - There will be unavoidable exceptions to this rule, such as URLs, or
+    gradient syntax. Don’t worry.
 - Use soft-tabs with a two space indent.
-- Put one space after : in property declarations.
-- Put spaces before { in rule declarations.
+- Put one space after `:` in property declarations.
+- Put spaces before `{` in rule declarations.
 - Put a blank line between each selector block.
-- To close a selector block, put an unindented closing curly brace on a separate line.
-- Each declaration should appear on its own line for more accurate error reporting.
+- To close a selector block, put an unindented closing curly brace on a
+  separate line.
+- Each declaration should appear on its own line for more accurate error
+  reporting.
 - Do not indent selectors.
 
 ```scss
@@ -31,7 +34,8 @@ parent: CSS coding styleguide
 }
 ```
 
-- Multiple selectors should each be on a single line, with no space after each comma, unless they selector is less than five chars.
+Multiple selectors should each be on a single line, with no space after each
+comma, unless they selector is less than five chars.
 
 ```scss
 // Bad
@@ -61,7 +65,7 @@ selector {
 }
 ```
 
-- Spaces should separate values and operators in Sass expressions.
+Spaces should separate values and operators in Sass expressions.
 
 ```scss
 // Bad
@@ -76,7 +80,8 @@ selector {
 }
 ```
 
-- Do not use shorthand declarations unless you need to explicitly set all the available values.
+Do not use shorthand declarations unless you need to explicitly set all the
+available values.
 
 ```scss
 // Bad
@@ -89,7 +94,7 @@ margin-top: 3em;
 margin: 3em 4em 2em 1em;
 ```
 
-- Single-quote URLs and string values.
+Single-quote URLs and string values.
 
 ```scss
   background-image: url('/images/kittens.jpg');
@@ -97,7 +102,7 @@ margin: 3em 4em 2em 1em;
   font-family: 'Lucida Grande', 'Helvetica', sans-serif;
 ```
 
-- Wrap numeric calculations in parentheses.
+Wrap numeric calculations in parentheses.
 
 ```scss
 // Bad
@@ -111,7 +116,8 @@ margin: 3em 4em 2em 1em;
 }
 ```
 
-- Avoid arbitrary numbers that are repeated, or linked, or dependent on other parts of the code, (aka “magic numbers”).
+Avoid arbitrary numbers that are repeated, or linked, or dependent on other
+parts of the code, (aka “magic numbers”).
 
 ```scss
 // Bad
@@ -140,17 +146,23 @@ $align_top: 100%;
   1. variables
   2. @extend directives
   3. @include directives
-  4. declaration list (property name and value)
+  4. declaration list (`property: name;`)
   5. media queries
-  6. pseudo-states and pseudo-elements
+  6. pseudo-states (`:checked`, `:target`, etc.) and pseudo-elements
+     (`::after`, `::selection`, etc.)
   7. nested elements
   8. nested classes
 
-- Use alphabetical order or type order for declarations. Pick one to keep the whole project consistent.
-- Place a new line before nested selectors unless they are after the first selector.
-- Treat nested includes, such as Neat's media includes — `@include media($small-screen)` — as a standard media query, rather than a Sass @include. So they would be sorted directly after the declaration list.
-- Place mixin calls with @content after nested selectors.
-- You may deviate the sorting order to better suit your project's needs, as long as it's consistent throughout the project.
+- Use alphabetical order or type order for declarations. Pick one to keep the
+  whole project consistent.
+- Place a new line before nested selectors unless they are after the first
+  selector.
+- Treat nested includes, such as Neat's media includes — `@include
+  media($small-screen)` — as a standard media query, rather than a Sass
+  @include. So they would be sorted directly after the declaration list.
+- Place mixin calls with `@content` after nested selectors.
+- You may deviate the sorting order to better suit your project's needs, as
+  long as it's consistent throughout the project.
 
 ```scss
 // Bad

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{% guides_style_18f_asset_root %}/assets/css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
+
+      <header role="banner">
+        <div class="wrap">
+          <h1 class="site-title">
+            {{ site.title }}
+          </h1>
+
+          <div class="back-link"><a href="https://pages.18f.gov/guides/">&laquo; Read more 18F Guides</a></div>
+        </div><!-- /.wrap -->
+      </header>
+
+      <div class="wrap content">
+
+        <main id="main" class="main-content">
+          {{ content }}
+        </main>
+
+        <aside>
+          {% if site.intro %}
+          <p class="intro">{{ site.introduction }}</p>
+          {% endif %}
+          <nav class="sidebar-nav js-sticky" role="navigation">
+            <ol>
+              {% include loop-nav.html chapters=site.data.chapters %}
+            </ol>
+          </nav>
+        </aside>
+
+      </div><!-- /.wrap.content -->
+
+    </div><!-- /.container -->
+  </body>
+  <script src="{{ site.baseurl }}/assets/js/vendor/stickyfill.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/vendor/anchor.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/vendor/gumshoe.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+</html>
