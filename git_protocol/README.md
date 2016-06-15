@@ -1,8 +1,3 @@
----
-permalink: /git-protocol/
-title: Git Protocol
----
-
 **WORK IN PROGRESS**
 Initial content borrowed from:
 https://github.com/thoughtbot/guides/blob/master/protocol/git/README.md

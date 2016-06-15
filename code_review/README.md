@@ -1,8 +1,3 @@
----
-permalink: /code-review/
-title: Code Review
----
-
 > A friendly guide for reviewing code--and not each other--at 18f.
 
 (Forked from the excellent Consumer Financial Protection Bureau
