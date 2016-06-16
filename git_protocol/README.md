@@ -46,7 +46,7 @@ When you've staged the changes, commit them.
     git status
     git commit --verbose
 
-Write a [good commit message]. Example format:
+Write a [good commit message], which should contain all the necessary context around why the change is being made, any security or developer workflow implications, etc. Example format:
 
     Present-tense summary under 50 characters
 
