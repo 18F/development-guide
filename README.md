@@ -7,6 +7,7 @@ A set of guidelines and best practices for an awesome engineering team
 * [Project Setup](/project_setup)
 * [Example Workflows](/example_workflows)
 * [Architecture Reviews](/architecture_reviews)
+* [Ruby Guide](/ruby)
 
 ### Public domain
 

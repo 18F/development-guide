@@ -1,0 +1,212 @@
+# This configuration only includes the cops that differ from the Rubocop
+# defaults, which can be found here:
+# https://github.com/bbatsov/rubocop/blob/master/config/default.yml
+# https://github.com/bbatsov/rubocop/blob/master/config/enabled.yml
+# https://github.com/bbatsov/rubocop/blob/master/config/disabled.yml
+
+AllCops:
+  Include:
+    - '**/Gemfile'
+    - '**/Rakefile'
+  Exclude:
+    - 'bin/**/*'
+    - 'db/schema.rb'
+  UseCache: true
+
+Metrics/AbcSize:
+  Description: A calculated magnitude based on number of assignments, branches, and
+    conditions.
+  Enabled: true
+  Max: 15
+  Exclude:
+  - spec/**/*
+
+Metrics/ClassLength:
+  Description: Avoid classes longer than 100 lines of code.
+  Enabled: true
+  CountComments: false
+  Max: 100
+  Exclude:
+  - spec/**/*
+
+Metrics/LineLength:
+  Description: Limit lines to 80 characters.
+  StyleGuide: https://github.com/bbatsov/ruby-style-guide#80-character-limits
+  Enabled: true
+  Max: 100
+  AllowURI: true
+  URISchemes:
+  - http
+  - https
+
+Metrics/MethodLength:
+  Description: Avoid methods longer than 10 lines of code.
+  StyleGuide: https://github.com/bbatsov/ruby-style-guide#short-methods
+  Enabled: true
+  CountComments: false
+  Max: 10
+  Exclude:
+  - 'db/migrate/*'
+  - spec/**/*
+
+Metrics/ModuleLength:
+  CountComments: false
+  Max: 100
+  Description: Avoid modules longer than 100 lines of code.
+  Enabled: true
+  Exclude:
+  - spec/**/*
+
+Rails/TimeZone:
+  # The value `strict` means that `Time` should be used with `zone`.
+  # The value `flexible` allows usage of `in_time_zone` instead of `zone`.
+  Enabled: true
+  EnforcedStyle: flexible
+  SupportedStyles:
+    - strict
+    - flexible
+
+Style/AlignParameters:
+  # Alignment of parameters in multi-line method calls.
+  #
+  # The `with_first_parameter` style aligns the following lines along the same
+  # column as the first parameter.
+  #
+  #     method_call(a,
+  #                 b)
+  #
+  # The `with_fixed_indentation` style aligns the following lines with one
+  # level of indentation relative to the start of the line with the method call.
+  #
+  #     method_call(a,
+  #       b)
+  Description: >-
+                 Align the parameters of a method call if they span more
+                 than one line.
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-double-indent'
+  EnforcedStyle: with_first_parameter
+  SupportedStyles:
+    - with_first_parameter
+    - with_fixed_indentation
+  # By default, the indentation width from Style/IndentationWidth is used
+  # But it can be overridden by setting this parameter
+  IndentationWidth: ~
+
+Style/AndOr:
+  Description: Use &&/|| instead of and/or.
+  StyleGuide: https://github.com/bbatsov/ruby-style-guide#no-and-or-or
+  EnforcedStyle: conditionals
+  SupportedStyles:
+  - always
+  - conditionals
+
+Style/Documentation:
+  Description: Document classes and non-namespace modules.
+  Enabled: false
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+
+Style/DotPosition:
+  Description: Checks the position of the dot in multi-line method calls.
+  StyleGuide: https://github.com/bbatsov/ruby-style-guide#consistent-multi-line-chains
+  EnforcedStyle: trailing
+  SupportedStyles:
+  - leading
+  - trailing
+
+# Warn on empty else statements
+# empty - warn only on empty else
+# nil - warn on else with nil in it
+# both - warn on empty else and else with nil in it
+Style/EmptyElse:
+  EnforcedStyle: both
+  SupportedStyles:
+    - empty
+    - nil
+    - both
+
+Style/ExtraSpacing:
+  # When true, allows most uses of extra spacing if the intent is to align
+  # things with the previous or next line, not counting empty lines or comment
+  # lines.
+  AllowForAlignment: true
+  # When true, forces the alignment of = in assignments on consecutive lines.
+  ForceEqualSignAlignment: false
+
+Style/IfUnlessModifier:
+  Description: Favor modifier if/unless usage when you have a single-line body.
+  StyleGuide: https://github.com/bbatsov/ruby-style-guide#if-as-a-modifier
+  Enabled: true
+  MaxLineLength: 100
+
+# Checks the indentation of the first element in an array literal.
+Style/IndentArray:
+  # The value `special_inside_parentheses` means that array literals with
+  # brackets that have their opening bracket on the same line as a surrounding
+  # opening round parenthesis, shall have their first element indented relative
+  # to the first position inside the parenthesis.
+  #
+  # The value `consistent` means that the indentation of the first element shall
+  # always be relative to the first position of the line where the opening
+  # bracket is.
+  #
+  # The value `align_brackets` means that the indentation of the first element
+  # shall always be relative to the position of the opening bracket.
+  EnforcedStyle: special_inside_parentheses
+  SupportedStyles:
+    - special_inside_parentheses
+    - consistent
+    - align_brackets
+  # By default, the indentation width from Style/IndentationWidth is used
+  # But it can be overridden by setting this parameter
+  IndentationWidth: ~
+
+Style/MultilineOperationIndentation:
+  EnforcedStyle: aligned
+  SupportedStyles:
+    - aligned
+    - indented
+  # By default, the indentation width from Style/IndentationWidth is used
+  # But it can be overridden by setting this parameter
+  IndentationWidth: ~
+
+Style/SignalException:
+  Description: 'Checks for proper usage of fail and raise.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#prefer-raise-over-fail'
+  EnforcedStyle: only_raise
+  SupportedStyles:
+    - only_raise
+    - only_fail
+    - semantic
+
+Style/StringLiterals:
+  Description: Checks if uses of quotes match the configured preference.
+  StyleGuide: https://github.com/bbatsov/ruby-style-guide#consistent-string-literals
+  EnforcedStyle: single_quotes
+  SupportedStyles:
+  - single_quotes
+  - double_quotes
+  ConsistentQuotesInMultiline: true
+
+Style/TrailingCommaInArguments:
+  # If `comma`, the cop requires a comma after the last argument, but only for
+  # parenthesized method calls where each argument is on its own line.
+  # If `consistent_comma`, the cop requires a comma after the last argument,
+  # for all parenthesized method calls with arguments.
+  EnforcedStyleForMultiline: no_comma
+  SupportedStyles:
+    - comma
+    - consistent_comma
+    - no_comma
+
+Style/TrailingCommaInLiteral:
+  # If `comma`, the cop requires a comma after the last item in an array or
+  # hash, but only when each item is on its own line.
+  # If `consistent_comma`, the cop requires a comma after the last item of all
+  # non-empty array and hash literals.
+  EnforcedStyleForMultiline: no_comma
+  SupportedStyles:
+    - comma
+    - consistent_comma
+    - no_comma
