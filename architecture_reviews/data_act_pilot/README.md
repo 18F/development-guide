@@ -54,7 +54,7 @@ described viewing code as “not real” to be a trap. Their small code base
 quickly grew larger than anticipated and their early technical decisions would
 have long lasting ramifications.
 
-![Diagram matching above description](/architcture_reviews/data_act_pilot/data-act-diagram.png)
+![Diagram matching above description](/architecture_reviews/data_act_pilot/data-act-diagram.png)
 
 ## Simplicity avoids scary
 
