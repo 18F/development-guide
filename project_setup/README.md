@@ -13,6 +13,7 @@ it easily.
 
 Commonly used project management tools:
 
+* [GitHub Issues](https://guides.github.com/features/issues/) (built-in to your repo)
 * [Trello](https://trello.com/)
 * [Waffle.io](https://waffle.io/)
 * [Pivotal Tracker](https://www.pivotaltracker.com)
