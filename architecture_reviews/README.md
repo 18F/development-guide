@@ -6,4 +6,4 @@ interesting design decisions from existing projects.
 
 ## Projects
 
-* [DATA Act Pilot: Simplicity is Key](/architecture-review/examples/data-act-pilot.md)
+* [DATA Act Pilot: Simplicity is Key](/architecture_reviews/data_act_pilot)
