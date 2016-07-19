@@ -134,6 +134,11 @@ Style/ExtraSpacing:
   # When true, forces the alignment of = in assignments on consecutive lines.
   ForceEqualSignAlignment: false
 
+Style/FrozenStringLiteralComment:
+  StyleGuide: Check for the comment `# frozen_string_literal: true` to the top
+    of files. This will help with upgrading to Ruby 3.0.
+  Enabled: false
+
 Style/IfUnlessModifier:
   Description: Favor modifier if/unless usage when you have a single-line body.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#if-as-a-modifier
