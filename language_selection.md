@@ -51,11 +51,11 @@ a viable option.
   ratcheted<sup>[8](#racket)</sup> up risk: a team will need to maintain these
   tests in the future. However, if the team were so inclined, using something
   like Perl might still be a viable option due to the limited impact of these
-  tests
+  tests.
 * Agency-centric open<sup>[9](#open)</sup> data API - Given the public-facing
   project scope and assuming other factors are equal, we should write this in
   one of our primary languages. We can be confident we'll do the best job,
-  most efficiently with this approach
+  most efficiently with this approach.
 
 ## Factors
 
@@ -67,8 +67,8 @@ particular order:
   selection<sup>[11](#select)</sup> to reflect that. We want open APIs, open
   source binaries, and community participation.
 * Domain preference - certain problem domains emphasize particular languages.
-  For example, the Cloud Foundry community has a preference for Go while
-  SOAP-heavy specs<sup>[12](#specs)</sup> are more friendly in Java and Rails
+  For example, the Cloud Foundry community has a preference for Go, while
+  SOAP-heavy specs<sup>[12](#specs)</sup> are more friendly in Java, and Rails
   projects promote CoffeeScript. We want to use the tools appropriate for the
   job.
 * Team familiarity - avoid the bus problem. The more 18F engineers who are
