@@ -22,6 +22,29 @@ It's not needed and should be phased out and replaced by npm. More information c
 
 npm installs its dependencies in the `node_modules` directory. Common conventions dictate that `node_modules` should be excluded from source control by adding it to your project's `.gitignore`, primarily because Node.js-friendly environments (such as 18F's deployment service, [Cloud Foundry], and other such as [Heroku]) recognize the existence of `package.json` and automatically install dependencies as needed.
 
+### Publishing
+#### Scoping a package to the 18F npm org
+18f has an [npm organization](https://www.npmjs.com/org/18f) that is meant to organize permissions and packages related to 18f. As an 18F developer, when publishing a package, you have the choice whether to scope a package to the 18F org or not. Scoped package will always be prefixed with `@18f/` before their package name and can have their permissions managed by people in the org. More information about scoped packages can be found on the [npm documentation](https://docs.npmjs.com/misc/scope).
+
+##### Guidance on when to scope a package or not
+- A package *should not* be scoped to 18f if consumers of the package (either gov or non-gov) do not need to know about 18f in order to use the package.
+  - Example: The Draft US Web Design Standards are used by many entities outside of 18f and government. When user's go to install the WDS, the don't need to know anything about 18f.
+- A package *should* be scoped to 18f if it's use cases falls main inside 18f.
+  - Example: [@18f/stylelint-rules](https://github.com/18F/stylelint-rules) is scoped to 18f because it's an 18f specific linting configuration that's directly linked to the 18f guides site.
+- A package *should* be scoped to 18f to avoid naming conflicts.
+  - Example: if 18f made a generic front end accordion to use across 18f sites, it should probably be scoped to `@18f/accordion` to avoid conflicts with all other accordions out there.
+
+##### How to scope a package to 18f
+- Ensure you are part of the 18f npm org and have at least developer rights. This can be found on the [18f org team page](https://www.npmjs.com/org/18f/members).
+  - If you don't have the proper access, ask in #g-frontend or #javascript slack channels and an admin will add you.
+- If the package has not been published to 18f yet, follow the [instructions on npm](https://docs.npmjs.com/getting-started/scoped-packages) for scoped packages.
+- If the package has already been published, it currently cannot be scoped, so may need to be renamed. See the [npm documentation on existing packages](https://docs.npmjs.com/orgs/preexisting-packages) for more information.
+
+##### General tips for publishing
+- Use [semver](http://semver.org/).
+- Include instructions on how to use the modules in the README.md. Start from `npm install`, as this is generally a convention on npm.
+- Test to ensure that your package works with any required versions of node and works on Windows.
+
 ### Node and the browser
 Using [Node.js] modules in the browser can be either straightforward or convoluted, depending on the project. Some project packages come with browser-ready `.js` files, whereas others require build tools such as [Browserify] or [Webpack] to translate some Node-specific JavaScript so that it can be run in browsers. Visit the #javascript or #nodejs channels on Slack if you need help with these tools.
 
