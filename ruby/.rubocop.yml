@@ -135,7 +135,8 @@ Style/ExtraSpacing:
   ForceEqualSignAlignment: false
 
 Style/FrozenStringLiteralComment:
-  StyleGuide: Check for the comment `# frozen_string_literal: true` to the top
+  StyleGuide: >-
+    Check for the comment `# frozen_string_literal: true` to the top
     of files. This will help with upgrading to Ruby 3.0.
   Enabled: false
 
