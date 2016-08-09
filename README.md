@@ -8,6 +8,7 @@ A set of guidelines and best practices for an awesome engineering team
 * [Example Workflows](/example_workflows)
 * [Architecture Reviews](/architecture_reviews)
 * [Ruby Guide](/ruby)
+* [Language Selection Guidance](/language_selection)
 
 ### Public domain
 
