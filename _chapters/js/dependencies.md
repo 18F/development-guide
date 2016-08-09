@@ -24,7 +24,7 @@ npm installs its dependencies in the `node_modules` directory. Common convention
 
 ### Publishing
 #### Scoping a package to the 18F npm org
-18f has an [npm organization](https://www.npmjs.com/org/18f) that is meant to organize permissions and packages related to 18f. As an 18F developer, when publishing a package, you have the choice whether to scope a package to the 18F org or not. Scoped package will always be prefixed with `@18f/` before their package name and can have thier permissions managed by people in the org. More information about scoped packages can be found on the [npm documentation](https://docs.npmjs.com/misc/scope).
+18f has an [npm organization](https://www.npmjs.com/org/18f) that is meant to organize permissions and packages related to 18f. As an 18F developer, when publishing a package, you have the choice whether to scope a package to the 18F org or not. Scoped package will always be prefixed with `@18f/` before their package name and can have their permissions managed by people in the org. More information about scoped packages can be found on the [npm documentation](https://docs.npmjs.com/misc/scope).
 
 ##### Guidance on when to scope a package or not
 - A package *should not* be scoped to 18f if consumers of the package (either gov or non-gov) do not need to know about 18f in order to use the package.
