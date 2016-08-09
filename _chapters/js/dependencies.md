@@ -35,6 +35,10 @@ npm installs its dependencies in the `node_modules` directory. Common convention
   - Example: if 18f made a generic front end accordion to use across 18f sites, it should probably be scoped to `@18f/accordion` to avoid conflicts with all other accordions out there.
 
 ##### How to scope a package to 18f
+- Ensure you are part of the 18f npm org and have at least developer rights. This can be found on the [18f org team page](https://www.npmjs.com/org/18f/members).
+  - If you don't have the proper access, ask in #g-frontend or #javascript slack channels and an admin will add you.
+- If the package has not been published to 18f yet, follow the [instructions on npm](https://docs.npmjs.com/getting-started/scoped-packages) for scoped packages.
+- If the package has already been published, it currently cannot be scoped, so may need to be renamed. See the [npm documentation on existing packages](https://docs.npmjs.com/orgs/preexisting-packages) for more information.
 
 ##### General tips for publishing
 - Use [semver](http://semver.org/)
