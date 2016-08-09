@@ -41,7 +41,9 @@ npm installs its dependencies in the `node_modules` directory. Common convention
 - If the package has already been published, it currently cannot be scoped, so may need to be renamed. See the [npm documentation on existing packages](https://docs.npmjs.com/orgs/preexisting-packages) for more information.
 
 ##### General tips for publishing
-- Use [semver](http://semver.org/)
+- Use [semver](http://semver.org/).
+- Include instructions on how to use the modules in the README.md. Start from `npm install`, as this is generally a convention on npm.
+- Test to ensure that your package works with any required versions of node and works on Windows.
 
 ### Node and the browser
 Using [Node.js] modules in the browser can be either straightforward or convoluted, depending on the project. Some project packages come with browser-ready `.js` files, whereas others require build tools such as [Browserify] or [Webpack] to translate some Node-specific JavaScript so that it can be run in browsers. Visit the #javascript or #nodejs channels on Slack if you need help with these tools.
