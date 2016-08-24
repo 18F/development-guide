@@ -38,6 +38,11 @@ Propose, discuss, and prioritize **preventative measures**. This is the key
 outcome for the project team: we want to avoid these types of problems in the
 future.
 
+Define a single place to put these artifacts and be consistent. It doesn't
+matter if it's GitHub issues, Google Docs, a wiki, etc. so long as it's kept
+together and easy to reference by both the team and interested stakeholders.
+Don't make folks search for the information.
+
 ## Examples
 * [C2](./C2)
 * [Cloud.gov](./cloud_gov)
