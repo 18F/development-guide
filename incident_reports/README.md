@@ -1,8 +1,8 @@
-# Incident post mortems
+# Incident reports
 Though we fully expect to write dependable applications, every project will
 experience service disruptions and other significant failings. In all cases,
 we want to learn from our mistakes both within our projects and more broadly.
-Post mortems, which detail the events and how they were resolved, are an
+Incident reports, which detail the events and how they were resolved, are an
 excellent mechanism for sharing this information.
 
 Note that this document won't discuss what to do during a security incident,
