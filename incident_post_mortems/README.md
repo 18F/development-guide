@@ -14,6 +14,11 @@ see:
 * Slack: #infrastructure, #incident-response, #cloud-gov-support
 
 ## Key components
+At the high level, we want to follow Mark Imbriaco's [formula for writing a great post-mortem report](https://www.digitalocean.com/company/blog/inside-digitalocean-mark-imbriaco/#departing-from-github):
+1. Apologize for what happened.
+1. Demonstrate you understand what happened.
+1. Explain what you will do to reduce the likelihood of it happening again.
+
 Before any deep analysis we should write a **timeline**, beginning at the time
 the incident was discovered and ending at the point the incident was declared
 over. Events in this timeline include deploys, configuration changes, key
@@ -40,3 +45,10 @@ future.
 ## Additional resources
 * John Allspaw's [introduction](https://codeascraft.com/2012/05/22/blameless-postmortems/)
 * This [great * presentation](http://www.slideshare.net/danmil30/how-to-run-a-postmortem-with-humans-not-robots-velocity-2013) by Dan Milstein
+* Mark Imbriaco's [formula for writing a great post-mortem report](https://www.digitalocean.com/company/blog/inside-digitalocean-mark-imbriaco/#departing-from-github),
+  and [an example with some commentary](https://medium.com/@faruque/post-mortem-communication-789f396c7dd6#.t1u4ziduf)
+* @peculiaire's [template for retrospective meetings](https://github.com/peculiaire/incident-lifecycle/blob/master/retrotemplate.md)
+  (adapted from what Heroku uses)
+* Allspaw's article on [Infinite How's](https://www.oreilly.com/ideas/the-infinite-hows)
+  - an alternative to Five Whys (that arguably works better)
+* @danluu's [collection of post-mortems](https://github.com/danluu/post-mortems)
