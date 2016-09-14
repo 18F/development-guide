@@ -24,7 +24,7 @@ npm installs its dependencies in the `node_modules` directory. Common convention
 
 ### Install npm
 
-It's recommended that developers install using [nvm](https://github.com/creationix/nvm). nvm (which stands for Node version manager) is a software that allows you to run multiple versions of node in different projects on the same computer. It's benefits include
+We recommend that developers (note 1) install both node and npm through a tool called nvm. nvm (which stands for Node version manager) is a software that allows you to run multiple versions of node in different projects on the same computer. Its benefits include
 
 - Installs npm in a manner that doesn't require running sudo to install global packages.
 - Easily be able to switch between multiple node versions with a project configuration file or command.
@@ -43,7 +43,7 @@ It's recommended that developers at 18F follow these guidelines when installing 
 npm allows various hooks to be executed during the install process. These scripts are where potential dangerous scripts can be executed. To limit this it's recommended to:
 
 1. install npm in a manner so sudo is never required. The 18F recommended way of doing this is to [install with nvm](#install-npm).
-1. check what scripts will be run on install by running `npm show $module scripts`.
+1. check which scripts will be run on install by running `npm show $module scripts`.
   - Each script under `preinstall`, `install`, `postinstall` will be run when installing.
   - Each script under `postuninstall`, `preuninstall`, `uninstall` will be run on uninstall.
 1. Pull a tarball of the whole package down to check that any scripts run during those steps are safe, `wget http://registry.npmjs.org/$module/-/$module-version.tgz`.
