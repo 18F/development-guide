@@ -22,6 +22,35 @@ It's not needed and should be phased out and replaced by npm. More information c
 
 npm installs its dependencies in the `node_modules` directory. Common conventions dictate that `node_modules` should be excluded from source control by adding it to your project's `.gitignore`, primarily because Node.js-friendly environments (such as 18F's deployment service, [Cloud Foundry], and other such as [Heroku]) recognize the existence of `package.json` and automatically install dependencies as needed.
 
+### Install npm
+
+We recommend that developers (note 1) install both node and npm through a tool called nvm. nvm (which stands for Node version manager) is a software that allows you to run multiple versions of node in different projects on the same computer. Its benefits include
+
+- Installs npm in a manner that doesn't require running sudo to install global packages.
+- Easily be able to switch between multiple node versions with a project configuration file or command.
+
+To install on MacOSX or linux, follow the instructions on the [nvm site](https://github.com/creationix/nvm#installation). If you system has a c++ compiler setup, you'll likely be able to install it with this simple script:
+
+```
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.6/install.sh | bash
+```
+
+### Safely installing packages from npm
+While npm is generally a safe environment to install code from, there are certain aspects of the system that are vulnerable to dangerous script execution. Luckily there are steps that can be taken to minimize these risks.
+
+It's recommended that developers at 18F follow these guidelines when installing unknown or new packages.
+
+npm allows various hooks to be executed during the install process. These scripts are where potential dangerous scripts can be executed. To limit this it's recommended to:
+
+1. install npm in a manner so sudo is never required. The 18F recommended way of doing this is to [install with nvm](#install-npm).
+1. check which scripts will be run on install by running `npm show $module scripts`.
+  - Each script under `preinstall`, `install`, `postinstall` will be run when installing.
+  - Each script under `postuninstall`, `preuninstall`, `uninstall` will be run on uninstall.
+1. Pull a tarball of the whole package down to check that any scripts run during those steps are safe, `wget http://registry.npmjs.org/$module/-/$module-version.tgz`.
+  - Check any files that are being run as part of the install scripts.
+  - Check that the file in the package are generally what they are supposed to be.
+1. If unsure, install the packages without running any scripts with `npm install $module --ignore-scripts`.
+
 ### Publishing
 #### Scoping a package to the 18F npm org
 18F has an npm organization called [18f](https://www.npmjs.com/org/18f) that is meant to organize permissions and packages related to 18F. As an 18F developer, when publishing a package, you have the choice whether to scope a package to the 18F org or not. Scoped packages will always be prefixed with `@18f/` before their package name and can have their permissions managed by people in the org. More information about scoped packages can be found on the [npm documentation](https://docs.npmjs.com/misc/scope).
