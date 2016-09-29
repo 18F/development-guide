@@ -5,8 +5,8 @@ knowledge silos and the technical soundness of their projects.
 ## Learning from other projects
 
 ![I have learned from the technical experience of projects I have no directly
-worked on. 0-10 scale. Votes: 1x1, 3x3, 1x4, 3x6, 8x7, 7x8, 2x9,
-5x10](question1.png)
+worked on. 0 (Strongly Disagree) to 10 (Strongly Agree). Votes: 1x1, 3x3, 1x4,
+3x6, 8x7, 7x8, 2x9, 5x10](question1.png)
 
 Here, we tried to get a sense of how siloed developers felt from their
 colleagues. On a 0 to 10 scale, we averaged just over 7. As you can see from
@@ -36,7 +36,8 @@ We're also exploring
 ## Where to get advice
 
 ![When I encounter a technical challenge, I know who/where to ask for advice.
-0-10 scale. Votes: 1x5, 3x6, 6x7, 11x8, 5x9, 4x10](question2.png)
+0 (None of the time) to 10 (All of the time). Votes: 1x5, 3x6, 6x7, 11x8, 5x9,
+4x10](question2.png)
 
 With this question, we wanted to know if folks felt comfortable around
 resources for solving technical problems. We averaged just about 8 on this
@@ -67,8 +68,9 @@ Longer term:
 
 ## Project status
 
-![I think my project(s) is/are technically sound. 0-10 scale. Votes: 1x2, 1x3,
-1x4, 1x5, 1x6, 7x7, 8x8, 5x9, 4x10](question3.png)
+![I think my project(s) is/are technically sound. 0 (Strongly Disagree) to 10
+(Strongly Agree). Votes: 1x2, 1x3, 1x4, 1x5, 1x6, 7x7, 8x8, 5x9,
+4x10](question3.png)
 
 Here we averaged about 7.5 with a stdev around 2; as you can see, we're top
 heavy, with the majority of respondents seeing their project as relatively
