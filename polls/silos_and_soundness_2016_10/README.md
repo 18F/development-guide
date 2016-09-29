@@ -1,6 +1,10 @@
 Many of the issues we care about the most are very difficult to quantify. In
 this survey, we asked three questions meant to gauge how engineers felt about
-knowledge silos and the technical soundness of their projects.
+knowledge silos and the technical soundness of their projects. We invited all
+of engineering (and their engineering-minded co-workers) to fill out the
+survey via email and facilitation groups, which translates to roughly 70
+potential submitters; 30 submitted answers, though all questions were
+optional. See data below for further breakdowns.
 
 ## Learning from other projects
 
