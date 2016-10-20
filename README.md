@@ -9,6 +9,7 @@ A set of guidelines and best practices for an awesome engineering team
 * [Architecture Reviews](/architecture_reviews)
 * [Ruby Guide](/ruby)
 * [Language Selection Guidance](/language_selection)
+* [Accessibility Scanning Guide](/accessibility_scanning)
 
 ### Public domain
 
