@@ -1,4 +1,4 @@
-> A friendly guide for reviewing code--and not each other--at 18f.
+> A friendly guide for reviewing code — and not each other — at 18f.
 
 (Forked from the excellent Consumer Financial Protection Bureau
 [guide](https://github.com/cfpb/front-end/blob/master/code-reviews.md)). This
@@ -33,7 +33,7 @@ Some guiding questions for your team's code review discussion:
 
 - What does the current code review process, at a high level, look like? Start
   with the feature request and discuss each step until a feature is considered
-  "done"
+  "done."
 - Do contributors use forks or branches?
 - What's the git workflow? E.g. is master always deployable? Rebase or merge?
 - Are pull requests assigned? If so what process is used?
@@ -42,7 +42,7 @@ Some guiding questions for your team's code review discussion:
 - Does your team make use of any tools to aid in code reviews? (eg: CI, Static
   Analysis, linters)
 - Are there any automated tools that you are not using that you would like to try?
-- If commit messages aren't up to par, should they be modified before the PR is
+- If commit messages aren't up to par, should they be modified before the PR is?
 - What do you look for when conducting a code review?
 - Should code be pulled down and tested/what QA strategy is used?
 merged?
@@ -71,7 +71,7 @@ accomplish this, everyone should consider these tips.
 - Avoid selective ownership of code. ("mine", "not mine", "yours")
 - Avoid using terms that could be seen as referring to personal traits.
 - Be explicit, people don't always understand your intentions online.
-- Be humble. ("I'm not sure - let's look it up.")
+- Be humble. ("I'm not sure — let's look it up.")
 - Don't use hyperbole. ("always", "never", "endlessly", "nothing")
 - Don't use sarcasm.
 - Keep it real. If emoji, animated gifs, or humor aren't you, don't force them.
@@ -164,7 +164,7 @@ When reviewing code, you should be able to check off each of the following:
 
 ## Credits
 
-- [CFPB's Frontend Code Review Guide](https://github.com/cfpb/front-end/blob/master/code-reviews.md).
+- [CFPB's Frontend Code Review Guide](https://github.com/cfpb/front-end/blob/master/code-reviews.md)
 - [Code Review in the Lab](http://mozillascience.github.io/codeReview/intro.html)
 - [GitHub Code Reviews](https://blog.codeship.com/github-code-review/)
 - [thoughtbot Code Review Guide](https://github.com/thoughtbot/guides/blob/master/code-review/README.md)
