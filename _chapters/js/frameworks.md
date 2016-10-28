@@ -91,7 +91,7 @@ writing complex single page applications.
 
 #### When not to use:
 - Applications that don't require any updating (create, update, delete) of data.
-- When the cost of updating an apps architecture to flux is more than the cost
+- When the cost of updating an app's architecture to flux is more than the cost
   of writing the software as it exists.
 
 #### Pros:
