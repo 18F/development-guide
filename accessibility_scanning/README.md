@@ -6,7 +6,7 @@ Building a website or application that is easy accessible toeveryone is  not onl
 
 ## Running Pa11y locally
 
-### Installation and setup(For MacOS)
+### Installation and setup (For MacOS)
 
 1. [Concourse CI](https://concourse.ci/index.html) allows you to run multiple compliance scanning jobs  on your machine using a virtual machine. It is highly recommended to go through its [excellent documentation and "Hello World" tutorial ](https://concourse.ci/hello-world.html) before writing custom jobs for your project.
 
@@ -24,7 +24,7 @@ Building a website or application that is easy accessible toeveryone is  not onl
    vagrant up                  # downloads the box and spins up the VM
    ```
 
-5. Login into fly
+5. Log into fly
 
    `fly -t lite login -c http://192.168.100.4:8080`
 
