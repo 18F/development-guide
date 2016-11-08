@@ -15,7 +15,7 @@ Describe behaviors (is late to meetings) rather than traits or emotions (doesn't
 When you describe a behavior, also say the result. This goes for positive and constructive feedback. "When you review pull requests right away, you really help the velocity of the whole team." "When you are regularly late for meetings, the effectiveness of the rest of the meeting is reduced because the meeting leader has to repeat information or wait for you."
 
 ### Future Focus
-Don't well on the past, but focus on the future. The future can be altered, the past will never change.
+Don't dwell on the past, but focus on the future. The future can be altered, the past will never change.
 
 ### Top Performers
 Giving constructive feedback to a top performer is not nitpicking, it is actually some of the highest leverage work we can do. Most folks (not everyone of course) are eager to hear ways they can keep growing. We don't help folks by having no ideas for them. 
