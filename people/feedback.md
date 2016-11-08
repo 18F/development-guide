@@ -3,7 +3,7 @@
 Here are some attributes of giving feedback in a highly constructive way that we have learned and used over the years.
 
 ### Timely
-Ideally feedback, positive or constructive, is given as close to the event as possible. Regular weekly 1:1 meetings are a great venue for delivering feedback.
+Ideally feedback, positive or constructive, is given as close to the event as possible. Regular [1:1 meetings](https://handbook.18f.gov/one-on-ones/) are a great venue for delivering feedback.
 
 ### Evidence
 Gather evidence for the feedback instead of relying on vague reports or hunches. Have concrete examples, ideally more than one for constructive feedback.
