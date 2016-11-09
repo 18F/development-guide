@@ -10,6 +10,7 @@ A set of guidelines and best practices for an awesome engineering team
 * [Ruby Guide](/ruby)
 * [Language Selection Guidance](/language_selection)
 * [Accessibility Scanning Guide](/accessibility_scanning)
+* [People Guidance](/people)
 
 ### Public domain
 
