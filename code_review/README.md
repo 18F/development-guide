@@ -118,6 +118,21 @@ the pull request. Follow the idioms that your team has set; if none are
 present, discuss until you have a consensus. Write that down to resolve the
 issue quickly in the future.
 
+
+### Opening a PR
+
+Open a Pull Request for your new feature or bugfix soon after your first commit. 
+[Pull Requests initiate discussion about your commits.](https://guides.github.com/introduction/flow/)
+Tag it with `WIP` if you're not yet ready for a final review.
+The more information you provide to reviewers in the description,
+the more context they will have. This leads to faster reviews, and less back
+and forth between everyone.
+
+CFPB has published a nice [PR Template](https://raw.githubusercontent.com/cfpb/front-end/master/pr-template.md)
+which might make this easier. You can also create a [Bookmarklet based on this
+template](https://gist.github.com/cfarm/b9b638943a2eea52a3a8).
+
+
 ## Submitting code
 
 Before seeking a review, you should be able to check off each of the following:
@@ -134,16 +149,6 @@ Before seeking a review, you should be able to check off each of the following:
     - [ ] Project documentation has been updated (including the "Unreleased"
           section of the CHANGELOG)
 
-### Opening a PR
-
-Once your code meets the checks above, open a Pull Request for your new
-feature or bugfix. Remember that the more information you provide to reviewers,
-the more context they will have. This leads to faster reviews, and less back
-and forth between everyone.
-
-CFPB has published a nice [PR Template](https://raw.githubusercontent.com/cfpb/front-end/master/pr-template.md)
-which might make this easier. You can also create a [Bookmarklet based on this
-template](https://gist.github.com/cfarm/b9b638943a2eea52a3a8).
 
 ## Reviewing code
 
