@@ -18,7 +18,8 @@ until then, do your best!
     1. `.about.yml`
 1. `.gitignore` for your languages (though also consider a [global config](https://help.github.com/articles/ignoring-files/#create-a-global-gitignore)])
 1. Language version specification (e.g. `.nvmrc`, `runtime.txt`, `Gemfile`)
-1. Backend project files (e.g. `setup.py`, `package.json`)
+1. Backend project files (e.g. `setup.py`, `package.json`, `.gemspec`) if
+creating a library
 1. `package.json` for frontend apps
 1. Build scripts (e.g. `grunt`, `rake`, `manage.py`)
 1. Dependency descriptions (e.g. `Gemfile`, `requirements.txt`). Don't forget to
