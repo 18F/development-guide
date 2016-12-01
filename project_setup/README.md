@@ -4,6 +4,26 @@ While the specific setup for each 18F project varies widely, there are certain
 elements that should be present on every project. This document aims to detail
 those elements and provide suggested tools and resources.
 
+### Initialization Checklist
+
+This list is aspirational, but a good place to start. We will try to include
+all in upcoming project templates; until then, do your best!
+
+1. Common project files (consider using [`18f init`](https://github.com/18F/18f-cli#18f-init)):
+    1. LICENSE.md
+    1. CONTRIBUTING.md
+    1. README.md
+    1. .about.yml
+1. Cloud.gov manifests (one per environment) if applicable. See [fec-cms](https://github.com/18F/fec-cms) for a great example
+1. Linter setup (straight [flake8](http://flake8.pycqa.org/en/latest/), [rubocop](https://github.com/18F/development-guide/blob/master/ruby/.rubocop.yml), [eslint](https://github.com/airbnb/javascript/blob/master/linters/.eslintrc))
+1. Unit test setup for each applicable language
+1. Integration test setup (e.g. Selenium, Phantom) if applicable
+1. [Pa11y](https://github.com/18F/development-guide/tree/master/accessibility_scanning) setup, if applicable
+1. Visual regression setup, if applicable
+1. Continuous integration/testing (e.g. Travis, CircleCI)
+1. Code coverage metrics (e.g. CodeClimate, CodeCov, Coveralls)
+1. Static analysis tool (e.g. CodeClimate)
+
 ### Project Management Tool
 
 Every project, no matter the size, should use a project management tool to keep
