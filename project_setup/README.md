@@ -14,6 +14,11 @@ all in upcoming project templates; until then, do your best!
     1. CONTRIBUTING.md
     1. README.md
     1. .about.yml
+1. Project files (e.g. package.json, setup.py) if relevant
+1. Build scripts (e.g. grunt, rake, manage.py) if relevant
+1. Dependency descriptions (e.g. Gemfiles, requirements.txt) if relevant.
+Don't forget to [pin](https://pages.18f.gov/before-you-ship/infrastructure/pinning-dependencies/)
+them
 1. Cloud.gov manifests (one per environment) if applicable. See [fec-cms](https://github.com/18F/fec-cms) for a great example
 1. Linter setup (straight [flake8](http://flake8.pycqa.org/en/latest/), [rubocop](https://github.com/18F/development-guide/blob/master/ruby/.rubocop.yml), [eslint](https://github.com/airbnb/javascript/blob/master/linters/.eslintrc))
 1. Unit test setup for each applicable language
