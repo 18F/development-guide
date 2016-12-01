@@ -25,7 +25,8 @@ creating a library
 1. Dependency descriptions (e.g. `Gemfile`, `requirements.txt`). Don't forget to
 [pin](https://pages.18f.gov/before-you-ship/infrastructure/pinning-dependencies/)
 them
-1. Cloud.gov manifests (one per environment.) See [fec-cms](https://github.com/18F/fec-cms) for a great example
+1. Cloud.gov manifests (one per environment.) See the `manifest_*.yml` files
+in [fec-cms](https://github.com/18F/fec-cms) for a great example
 1. `.cfignore` (can be a sym link to `.gitignore` to get started)
 1. Linter setup (straight [`flake8`](http://flake8.pycqa.org/en/latest/),
 [`rubocop`](https://github.com/18F/development-guide/blob/master/ruby/.rubocop.yml),
