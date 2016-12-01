@@ -38,7 +38,9 @@ in [fec-cms](https://github.com/18F/fec-cms) for a great example
 1. Continuous integration/testing (e.g. Travis, CircleCI)
 1. Code coverage metrics (e.g. CodeClimate, CodeCov, Coveralls). Aim for 90+%,
 worry if it drops below 80%.
-1. Static analysis tool (e.g. CodeClimate)
+1. Static code quality tool (e.g. CodeClimate)
+1. [Static security analysis](https://pages.18f.gov/before-you-ship/security/static-analysis/) as
+part of CI
 
 ### Project Management Tool
 
