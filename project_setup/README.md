@@ -21,7 +21,8 @@ all in upcoming project templates; until then, do your best!
 1. [Pa11y](https://github.com/18F/development-guide/tree/master/accessibility_scanning) setup, if applicable
 1. Visual regression setup, if applicable
 1. Continuous integration/testing (e.g. Travis, CircleCI)
-1. Code coverage metrics (e.g. CodeClimate, CodeCov, Coveralls)
+1. Code coverage metrics (e.g. CodeClimate, CodeCov, Coveralls). Aim for 90+%,
+worry if it drops below 80%.
 1. Static analysis tool (e.g. CodeClimate)
 
 ### Project Management Tool
