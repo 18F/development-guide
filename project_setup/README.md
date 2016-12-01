@@ -11,19 +11,24 @@ elements will apply to every project (e.g. visual regression tests don't make
 sense for an API). We will try to include all in upcoming project templates;
 until then, do your best! 
 
-1. Common project files (consider using [`18f init`](https://github.com/18F/18f-cli#18f-init)):
-    1. LICENSE.md
-    1. CONTRIBUTING.md
-    1. README.md
-    1. .about.yml
-1. Backend project files (e.g. setup.py, package.json)
-1. package.json for frontend apps
-1. Build scripts (e.g. grunt, rake, manage.py)
-1. Dependency descriptions (e.g. Gemfiles, requirements.txt). Don't forget to
+1. Standard project files (consider using [`18f init`](https://github.com/18F/18f-cli#18f-init)):
+    1. `LICENSE.md`
+    1. `CONTRIBUTING.md`
+    1. `README.md`
+    1. `.about.yml`
+1. `.gitignore` for your languages (though also consider a [global config](https://help.github.com/articles/ignoring-files/#create-a-global-gitignore)])
+1. Language version specification (e.g. `.nvmrc`, `runtime.txt`, `Gemfile`)
+1. Backend project files (e.g. `setup.py`, `package.json`)
+1. `package.json` for frontend apps
+1. Build scripts (e.g. `grunt`, `rake`, `manage.py`)
+1. Dependency descriptions (e.g. `Gemfile`, `requirements.txt`). Don't forget to
 [pin](https://pages.18f.gov/before-you-ship/infrastructure/pinning-dependencies/)
 them
 1. Cloud.gov manifests (one per environment.) See [fec-cms](https://github.com/18F/fec-cms) for a great example
-1. Linter setup (straight [flake8](http://flake8.pycqa.org/en/latest/), [rubocop](https://github.com/18F/development-guide/blob/master/ruby/.rubocop.yml), [eslint](https://github.com/airbnb/javascript/blob/master/linters/.eslintrc))
+1. `.cfignore` (can be a sym link to `.gitignore` to get started)
+1. Linter setup (straight [`flake8`](http://flake8.pycqa.org/en/latest/),
+[`rubocop`](https://github.com/18F/development-guide/blob/master/ruby/.rubocop.yml),
+[`eslint`](https://github.com/airbnb/javascript/blob/master/linters/.eslintrc))
 1. Unit test setup for each language
 1. Integration test setup (e.g. Selenium, Phantom)
 1. [Pa11y](https://github.com/18F/development-guide/tree/master/accessibility_scanning) setup
