@@ -1,3 +1,41 @@
+## Accessibility Scanning using AccessLint
+
+[AccessLintCI](https://github.com/accesslint/accesslint-ci) is an automated accessibility scanning tool. It is configured with CircleCI to leave comments on Pull Requests stating potential accessibility problems with the committed code.
+
+### Setup with Jekyll
+
+The setup is detailed [here](https://github.com/accesslint/accesslint-ci#installation) for Rails, but can also easily be configured with Jekyll sites as follows. In the `circle.yml` file of your repo add the following:
+
+```yml
+general:
+  artifacts:
+    - "tmp"
+
+machine:
+  environment:
+    ACCESSLINT_API_TOKEN: <API token from https://accesslint.com>
+    ACCESSLINT_GITHUB_USER: <GitHub user authenticated at https://accesslint.com>
+    ACCESSLINT_MASTER_BRANCH: <Branch that you want accesslint to test against>
+  node:
+    version: 6.1.0
+
+dependencies:
+  override:
+    - npm install -g accesslint-cli
+    - gem install accesslint-ci
+
+test:
+  post:
+    - bundle exec jekyll serve --detach && bundle exec accesslint-ci scan http://localhost:4000
+
+```
+
+Both the `ACCESSLINT_API_TOKEN` and `ACCESSLINT_GITHUB_USER` should be configured in the CircleCI settings of your repo and not added directly to the `circle.yml` file itself.
+
+### What it does
+
+Once configured, AccessLintCI will leave a single comment on a Pull Request to the `ACCESSLINT_MASTER_BRANCH`. If errors are accepted, they will be cached, and not checked again in the next PR to that branch.
+
 ## Accessibility Scanning Using Pa11y-ci
 
 ### Introduction
@@ -72,7 +110,7 @@ Building a website or application that is easy accessible toeveryone is  not onl
 
       * printing the results in our CLI `cat…` (for debugging purposes, optional)
 
-      **Note that** we are using the `sitemap.xml`  file instead of individual files(much more efficient)     
+      **Note that** we are using the `sitemap.xml`  file instead of individual files(much more efficient)
 
 
  2.  Run
