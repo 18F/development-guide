@@ -1,9 +1,9 @@
 # Autodeployment Guide
 ## What to do?
-1. [Get deployer credentials]()
-2. [Update `.travis.yml`]()
-3. [Add `deploy.sh`]()
-4. [Add manifests]()
+1. [Get deployer credentials](https://github.com/18F/development-guide/tree/add-autopilot/adding-autodeployment#1-getting-deployer-credentials)
+2. [Update `.travis.yml`](https://github.com/18F/development-guide/tree/add-autopilot/adding-autodeployment#2-update-travisyml)
+3. [Add `deploy.sh`](https://github.com/18F/development-guide/tree/add-autopilot/adding-autodeployment#3-add-deploysh)
+4. [Add manifests](https://github.com/18F/development-guide/tree/add-autopilot/adding-autodeployment#4-add-manifests)
 
 ## What is this  guide for?
 This guide is to help developers implement [Contraband's Autopilot](https://github.com/contraband/autopilot) plugin on a [cloud.gov](https://cloud.gov/) hosted app. In the future we hope to provide you with a small script to generate this all for you!
