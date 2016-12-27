@@ -17,7 +17,7 @@ This guide assumes that you already have:
 ## 1. Getting deployer credentials
 Use the instructions on [Cloud.gov](https://cloud.gov/docs/apps/continuous-deployment/#provisioning-deployment-credentials) to create a deployer account for your app.
 
-Because of `travis encrypt` escape issues, we recommend that you store these credentials in the travis environement variable gui found here: https://travis-ci.org/18F/YOUR_REPO/settings. Make sure that the *Display value in build log* setting is **OFF** for this value.
+In general, follow the rules of configuration as code. But because of `travis encrypt` escape issues, we suggest that you store these credentials in the travis environement variable gui found here: https://travis-ci.org/18F/YOUR_REPO/settings. Make sure that the *Display value in build log* setting is **OFF** for this value.
 
 ## 2. Update `.travis.yml`
 If you are following from above, ignore the continuous integration instructions from above. We will be using a slightly different set of instructions from what is listed there.
