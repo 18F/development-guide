@@ -15,7 +15,7 @@ This guide assumes that you already have:
 - a cloud.gov account.
 
 ## 1. Getting deployer credentials
-Use the instructions on [Cloud.gov](https://cloud.gov/docs/apps/continuous-deployment/#provisioning-deployment-credentials) to create a deployer account for your app.
+Use the [instructions on Cloud.gov](https://cloud.gov/docs/apps/continuous-deployment/#provisioning-deployment-credentials) to create a deployer account for your app.
 
 In general, follow the rules of configuration as code. But because of `travis encrypt` escape issues, we suggest that you store these credentials in the travis environement variable gui found here: https://travis-ci.org/18F/YOUR_REPO/settings. Make sure that the *Display value in build log* setting is **OFF** for this value.
 
