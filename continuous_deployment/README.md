@@ -1,8 +1,8 @@
-# Autodeployment Guide
+# Continuous Deployment with Contraband's Autopilot
 ## What to do?
 
 1. [Get deployer credentials](https://github.com/18F/development-guide/tree/add-autopilot/adding-autodeployment#1-getting-deployer-credentials)
-2. [Update `.travis.yml`](https://github.com/18F/development-guide/tree/add-autopilot/adding-autodeployment#2-update-travisyml)
+2. [Configure the continuous integration service](https://github.com/18F/development-guide/tree/add-autopilot/adding-autodeployment#2-update-travisyml)
 3. [Add `deploy.sh`](https://github.com/18F/development-guide/tree/add-autopilot/adding-autodeployment#3-add-deploysh)
 4. [Add manifests](https://github.com/18F/development-guide/tree/add-autopilot/adding-autodeployment#4-add-manifests)
 
@@ -19,7 +19,7 @@ In the future we hope to provide you with a small script to generate this all fo
 This guide assumes that you already have:
 - a git repository
 - continuous integration services on [Travis CI](https://travis-ci.org/).
-- a cloud.gov account
+- [a cloud.gov account](https://cloud.gov/docs/getting-started/accounts/?)
 
 ## 1. Getting deployer credentials
 
@@ -27,13 +27,15 @@ Use the instructions on [Cloud.gov](https://cloud.gov/docs/apps/continuous-deplo
 
 In order for the Travis CI build environment to have access to the deployer credentials, you can either use `travis encrypt` to add an encrypted hash of the credentials to your `.travis.yml` file, _or_ you can use Travis CI's web-based GUI for adding secrets.
 
-Because of some character escape issues posed by `travis encrypt`, we suggest that you store these credentials using the web-based GUI. To access this, visit: https://travis-ci.org/18F/YOUR_REPO/settings. Make sure that the *Display value in build log* setting is **OFF** for this value.
+Because of some character escape issues posed by `travis encrypt`, we suggest that you store these credentials using the web-based GUI. To access this, visit: https://travis-ci.org/18F/YOUR_REPO/settings. Make sure that the *Display value in build log* setting is **OFF** for this value. For more on this see the [Travis Docs]( https://docs.travis-ci.com/user/encryption-keys/#Note-on-escaping-certain-symbols).
 
-## 2. Update `.travis.yml`
+## 2. Configure the continuous integration service
+### Travis CI
+**Update `.travis.yml`**
 
-If you are following from above, ignore the continuous integration instructions from above. We will be using a slightly different set of instructions from what is listed there.
+If you are following the instructions from above, you can ignore the continuous integration instructions in the Cloud.gov docs. We will be using a slightly different set of instructions from what is listed there.
 
-### The `before_deploy` block
+#### The `before_deploy` block
 
 To utilize Autopilot, you will need your Travis deployment to have both the Cloud Foundry CLI and Autopilot installed. To do this, you will modify your `before_deploy` section of your `.travis.yml` file.
 
@@ -48,7 +50,7 @@ Add the following lines to the `before_deploy` section of your `.travis.yml` fil
 - cf install-plugin autopilot -f -r CF-Community
 ```
 
-### The `deploy` block
+#### The `deploy` block
 
 In order to make use of conditional deployments to staging/master on different branches, add the following to the `deploy` section of the `.travis.yml`:
 
@@ -66,6 +68,9 @@ In order to make use of conditional deployments to staging/master on different b
 ```
 
 For more on conditional deployments, you can check out the [cloud.gov documentation](https://cloud.gov/docs/apps/continuous-deployment/#using-conditional-deployments).
+
+### Other Continuous Integration Tools
+Coming Soon!
 
 ## 3. Add `deploy.sh`
 
