@@ -11,7 +11,7 @@ A set of guidelines and best practices for an awesome engineering team
 * [Language Selection Guidance](/language_selection)
 * [Accessibility Scanning Guide](/accessibility_scanning)
 * [People Guidance](/people)
-* [Autodeployment Guide](/adding-autodeployment)
+* [Continuous Deployment with Autopilot Guide](/continuous_deployment)
 
 ### Public domain
 
