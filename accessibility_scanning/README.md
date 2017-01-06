@@ -1,6 +1,10 @@
 ## Accessibility Scanning using AccessLint
 
-[AccessLintCI](https://github.com/accesslint/accesslint-ci) is an automated accessibility scanning tool. It is configured with CircleCI to leave comments on Pull Requests stating potential accessibility problems with the committed code.
+[AccessLintCI](https://github.com/accesslint/accesslint-ci) is an automated accessibility scanning tool. It is configured with CircleCI (Travis and Jenkins support pending) to leave comments on Pull Requests stating potential accessibility problems with the committed code.
+
+### Getting started
+
+Regardless of what framework your project is using, you will need to add `gem: [accesslint-ci](https://github.com/accesslint/accesslint-ci)` to your `Gemfile` with the  gem.
 
 ### Setup with Jekyll
 
@@ -13,24 +17,44 @@ general:
 
 machine:
   environment:
-    ACCESSLINT_API_TOKEN: <API token from https://accesslint.com>
-    ACCESSLINT_GITHUB_USER: <GitHub user authenticated at https://accesslint.com>
     ACCESSLINT_MASTER_BRANCH: <Branch that you want accesslint to test against>
   node:
     version: 6.1.0
 
 dependencies:
+  pre:
+    - gem install bundler
   override:
     - npm install -g accesslint-cli
     - gem install accesslint-ci
 
 test:
   post:
-    - bundle exec jekyll serve --detach && bundle exec accesslint-ci scan http://localhost:4000
-
+    - bundle exec jekyll serve --detach
+    - bundle exec accesslint-ci scan http://localhost:4000
 ```
 
-Both the `ACCESSLINT_API_TOKEN` and `ACCESSLINT_GITHUB_USER` should be configured in the CircleCI settings of your repo and not added directly to the `circle.yml` file itself.
+The `ACCESSLINT_MASTER_BRANCH` should be set to the branch that PRs are being made to. If it is not set, it will default to `master`. For 18F repos, this will generally be `dev` or `development`.
+
+### Accesslint API access
+
+In order for AccessLint to access your Github webhooks, you will need to
+
+1. [Create an token](https://accesslint.com/)
+2. Reference it. In your Circle CI settings for your repo, create a variable named `ACCESSLINT_API_TOKEN` with the token you created.
+
+### Configuring ther project frameworks
+
+If your project is not a Rails or Jekyll project, you can still use AccessLintCI!
+
+To do so, make a few changes to the `post` section of your configuration. Replace `bundle exec jekyll serve --detach` with a repo-specific server command that detaches, and allows accesslint-ci to run on the same process to check your server port.
+
+```yml
+test:
+  post:
+    - <your detached server command>
+    - accesslint-ci scan http://localhost:<your server port>
+```
 
 ### What it does
 
