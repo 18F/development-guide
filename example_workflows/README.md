@@ -5,9 +5,10 @@ submitting code) that various projects have used in the past. Please consider
 using one as an example until a more formal template is provided.
 
 * [ATF eRegs](https://github.com/18F/atf-eregs/blob/master/CONTRIBUTING.md)
-* [Cloud.gov](https://github.com/18F/cg-docs/blob/master/content/ops/code-review.md)
-* [Cloud.gov's Deck UI](https://github.com/18F/cg-deck/blob/staging-alpha/CONTRIBUTING.md)
-* [Communicart](https://github.com/18F/C2/blob/master/doc/team_practices.md)
+* [cloud.gov](https://github.com/18F/cg-product/blob/master/DeliveryProcess.md)
+* [cloud.gov Dashboard](https://github.com/18F/cg-dashboard/blob/master/CONTRIBUTING.md)
+* [Communicart (C2)](https://github.com/18F/C2/blob/master/doc/team_practices.md)
+* [Data to Decisions (D2D)](https://docs.google.com/document/d/1N9DBZj3zooA2nK00-7_WOSEr1DOsLx5aTtxaaSFBdoM/edit#)
 * [eManifest](https://github.com/18F/e-manifest/blob/master/CONTRIBUTING.md#development-practices)
 * [eRegs Notice &amp; Comment](https://github.com/eregs/notice-and-comment/blob/master/CONTRIBUTING.md)
 * [FEC's API](https://github.com/18F/openFEC/blob/develop/CONTRIBUTING.md)
