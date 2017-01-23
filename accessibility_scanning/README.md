@@ -24,6 +24,7 @@ machine:
 dependencies:
   pre:
     - gem install bundler
+    - bundle install
   override:
     - npm install -g accesslint-cli
     - gem install accesslint-ci
