@@ -4,7 +4,7 @@
 
 ### Getting started
 
-Regardless of what framework your project is using, you will need to add `gem: [accesslint-ci](https://github.com/accesslint/accesslint-ci)` to your `Gemfile` with the  gem.
+Regardless of what framework your project is using, you will need to add `gem: accesslint-ci` to your `Gemfile` with the  gem.
 
 ### Setup with Jekyll
 
@@ -39,10 +39,11 @@ The `ACCESSLINT_MASTER_BRANCH` should be set to the branch that PRs are being ma
 
 ### Accesslint API access
 
-In order for AccessLint to access your Github webhooks, you will need to
+In order for AccessLint to access your GitHub webhooks, you will need to
 
 1. [Create an token](https://accesslint.com/)
-2. Reference it. In your Circle CI settings for your repo, create a variable named `ACCESSLINT_API_TOKEN` with the token you created.
+1. Reference it. In your Circle CI settings for your repo, create a variable named `ACCESSLINT_API_TOKEN` with the token you created.
+1. Also add a variable named `ACCESSLINT_GITHUB_USER` to your Circle CI repo settings, with a value of the GitHub username that was used to create the token in step 1.
 
 ### Configuring ther project frameworks
 
