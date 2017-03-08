@@ -4,6 +4,12 @@ While the specific setup for each 18F project varies widely, there are certain
 elements that should be present on every project. This document aims to detail
 those elements and provide suggested tools and resources.
 
+### Docker
+
+We're piloting Docker as a dependency management solution so that all
+developers can get started quickly. See our [initial
+recommendations](./docker/) for using Docker for development.
+
 ### Initialization Checklist
 
 This list is aspirational, but a good place to start. Not all of these
