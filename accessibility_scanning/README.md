@@ -32,7 +32,7 @@ dependencies:
 test:
   post:
     - bundle exec jekyll serve --detach
-    - bundle exec accesslint-ci scan http://localhost:4000
+    - accesslint-ci scan http://localhost:4000
 ```
 
 The `ACCESSLINT_MASTER_BRANCH` should be set to the branch that PRs are being made to. If it is not set, it will default to `master`. For 18F repos, this will generally be `dev` or `development`.
