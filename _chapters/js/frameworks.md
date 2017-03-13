@@ -31,7 +31,7 @@ AngularJS (commonly referred to as "Angular") is an open-source web application 
 - While open source, is maintained primarily by Google.
 - Has been known to implement breaking changes in major version updates.
 - Built with Typescript and Dart, both of which are not ECMA standardized (as opposed to vanilla JS or ES6).
-- Has a steep learning curve and is very opinionated, meaning you learn Angular rather then JavaScript.
+- Has a steep learning curve and is very opinionated, meaning you learn Angular rather than JavaScript.
 
 
 ## Backbone
@@ -91,7 +91,7 @@ writing complex single page applications.
 
 #### When not to use:
 - Applications that don't require any updating (create, update, delete) of data.
-- When the cost of updating an apps architecture to flux is more then the cost
+- When the cost of updating an app's architecture to flux is more than the cost
   of writing the software as it exists.
 
 #### Pros:
@@ -99,7 +99,7 @@ writing complex single page applications.
 - Cleans up complex data flow by using uni-directional data flow.
 - Cleans up complex async behavior and nested callbacks by using an evented
   system and functionality to wait for data.
-- Can use simple JavaScript objects rather then a complex framework.
+- Can use simple JavaScript objects rather than a complex framework.
 - Easily tie components together in a clean way.
 - Requires little 3rd party software.
 
