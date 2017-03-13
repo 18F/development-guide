@@ -35,7 +35,7 @@ slug: css-formatting
 ```
 
 Multiple selectors should each be on a single line, with no space after each
-comma, unless they selector is less than five chars.
+comma, unless the selector is less than five chars.
 
 ```scss
 // Bad
