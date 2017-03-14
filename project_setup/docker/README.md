@@ -3,7 +3,7 @@
 Below we lay out recommendations for using Docker to wrap development
 dependencies. Unfortunately, this is a relatively new space and we don't have
 a consistent, end-to-end setup at the moment. Instead, we'll provide pointers,
-partial solutions and examples. We intend to flesh out complete solutions as
+partial solutions, and examples. We intend to flesh out complete solutions as
 they become apparent in addition to a comprehensive introduction.
 
 ## Why?
@@ -69,7 +69,7 @@ they aren't likely to closely match the production environment.
 Demanding the developers rebuild their Docker images after every modification
 won't fly and isn't necessary. Instead, we'll want to mount the source code
 into a shared volume, meaning edits on the host file system are visible within
-the container and vis versa. This will likely look something like:
+the container and vice versa. This will likely look something like:
 
 ```yml
 # docker-compose.yml
@@ -137,8 +137,8 @@ One of our primary needs from Docker is to wrap all of our application's
 runtime (and development) libraries -- how do we do that?
 
 One strategy would be to create a Dockerfile which instructed Docker to
-include a description of these libraries (requirements.txt, package.json,
-Gemfile.lock, etc.) and to download those requirements into the constructed
+include a description of these libraries (`requirements.txt`, `package.json`,
+`Gemfile.lock`, etc.) and to download those requirements into the constructed
 Docker image (e.g. via `pip install`, `gem install`, `npm install -g`). Any
 commands which use this constructed image would have the libraries already at
 their disposal. The benefit to this approach is that we could ship this image
@@ -180,7 +180,7 @@ docker-compose run --rm my-service py.test --pdb
 This starts your `my-service` (as defined in your docker-compose manifest),
 including any necessary dependencies, such as databases. It doesn't execute
 `my-service`'s startup command, however; instead it runs `py.test` within the
-`my-service` container. Once that command finished, Docker stop and deletes
+`my-service` container. Once that command finished, Docker stops and deletes
 (`--rm`) the running container (any services it depended on will continue to
 run).
 
@@ -212,8 +212,8 @@ example](https://learnxinyminutes.com/docs/yaml/) for more details).
 If using Django, Atul has written a [manage.py
 library](https://github.com/18F/calc/blob/0994b0aa496e9ec11224cb403b8f6b408ba5eb04/docker_django_management.py)
 which intelligently selects between docker-compose and the local environment.
-If we can describe all of our one-time commands via Django, this tact may get
-you going faster.
+If we can describe all of our one-time commands via Django, this tactic may
+get you going faster.
 
 ### Are Dockerfiles needed?
 
