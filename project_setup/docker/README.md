@@ -209,7 +209,7 @@ combined with `docker-compose up`. If taking this approach, be sure to use
 YAML anchors to reduce duplication (search within [this
 example](https://learnxinyminutes.com/docs/yaml/) for more details).
 
-If using Django, Atul has written a [manage.py
+If using Django, [Atul](https://github.com/toolness) has written a [manage.py
 library](https://github.com/18F/calc/blob/0994b0aa496e9ec11224cb403b8f6b408ba5eb04/docker_django_management.py)
 which intelligently selects between docker-compose and the local environment.
 If we can describe all of our one-time commands via Django, this tactic may
