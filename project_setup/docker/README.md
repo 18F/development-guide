@@ -48,7 +48,10 @@ both of these problems by allowing us to specify different services,
 dependencies between those services, and specific values for exposed ports,
 mount points, etc. Though it feels more complex at first, we recommend using
 docker-compose even when a single Dockerfile would suffice so that we have a
-consistent tool across 18F engineering.
+consistent tool across 18F engineering. One of the bigger "aha" moments you
+will encounter is transitioning from thinking of Docker as a VM build script
+(a la `vagrant`) to thinking of it as a way to configure ("orchestrate")
+several, single-purpose containers (i.e. microservices).
 
 ### Base-images
 
