@@ -265,3 +265,10 @@ settling), but it's worth considering.
 * [iaa-gem](https://github.com/18F/iaa-gem)
 * [identity-idp](https://github.com/18F/identity-idp)
 * [micropurchase](https://github.com/18F/micropurchase)
+
+## Additional reading
+
+* Atul's [Reflections on Docker-based
+  development](https://github.com/18F/dev-environment-standardization/blob/18f-pages/pages/virtualization/docker.md)
+* OMB eRegs' [Resolving common container
+  issues](https://github.com/18F/omb-eregs#resolving-common-container-issues)
