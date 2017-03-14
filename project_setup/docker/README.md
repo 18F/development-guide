@@ -40,8 +40,8 @@ different environments (e.g. one for building, one for development, one for
 production-like); while it's possible to include all of that in a single
 image, it's generally better to use separate, focused images. Moreover, while
 Dockerfiles provide _hints_ around which ports should be exposed, which files
-should be shared with the host, etc. While we're running the app, we want to
-define _specific_ values.
+should be shared with the host, etc., the docker-compose file instantiates
+_specific_ values. This is needed when we run the app locally.
 
 [Docker-compose files](https://docs.docker.com/compose/compose-file/) solve
 both of these problems by allowing us to specify different services,
