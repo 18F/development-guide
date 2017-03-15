@@ -1,8 +1,8 @@
 ---
-title: Style
+title: Style / Linting
 slug: js-style
 ---
-We recommend adhering to the [Airbnb](https://github.com/airbnb/javascript) JavaScript style guide.
+We recommend adhering to the [Airbnb JavaScript style guide](https://github.com/airbnb/javascript).
 
 Maintaining stylistic consistency across 18F's code helps lower the barrier to jumping in and helping
 with or reviewing other projects because we'll all be familiar with reading and working with code
@@ -11,16 +11,16 @@ discussions (aka bikeshedding) around personal code-formatting preferences.
 
 [`eslint`](http://eslint.org/) is our preferred tool for analyzing and flagging (aka "linting")
 JavaScript that is out of line with a set of stylistic rules. There are plugins to integrate
-eslint with nearly every code editor and build system, as described at http://eslint.org/docs/user-guide/integrations.
+eslint with nearly every code editor and build system, as described at [http://eslint.org/docs/user-guide/integrations](http://eslint.org/docs/user-guide/integrations).
 Using an eslint plugin with your editor makes it easier to quickly see non-conforming lines of
 code on the spot, as shown below:
 
 ![Atom eslint plugin screenshot]({{ site.url }}/images/atom-eslint-example.png)
 
-Airbnb provides `npm` packages of eslint rules that implement their style guide:
+Airbnb provides `npm` packages of `eslint` rules that implement their style guide:
 
-- [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb) for projects using ES2015 and React
-- [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base) for projects using ES2015 without React
+- [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb) for projects using ES2015 (and up) and React
+- [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base) for projects using ES2015 (and up) without React
 - [eslint-config-airbnb-base/legacy](https://www.npmjs.com/package/eslint-config-airbnb-base#eslint-config-airbnb-baselegacy) for projects using ES5 and below
 
 Each link above has instructions for installing the required `npm` packages and configuring `eslint` to use the installed rules.
@@ -39,4 +39,4 @@ and then create a local file configuration within your project called `.eslintrc
 }
 ```
 
-For more information on configuring eslint, see its documentation at http://eslint.org/docs/user-guide/configuring
+For more information on configuring eslint, see its documentation at [http://eslint.org/docs/user-guide/configuring](http://eslint.org/docs/user-guide/configuring)
