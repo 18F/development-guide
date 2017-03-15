@@ -28,7 +28,10 @@ Each link above has instructions for installing the required `npm` packages and 
 Generally the process is to `npm install` the required modules and peer dependencies, for example:
 
 ```sh
-npm install --save-dev eslint@3.15.0 eslint-config-airbnb eslint-plugin-jsx-a11y@3.0.2 eslint-plugin-import@2.2.0 eslint-plugin-react@6.9.0
+# These version numbers will change so please follow the instructions at the
+# linked packages for up-to-date instructions.
+npm install --save-dev eslint@3.15.0 eslint-config-airbnb eslint-plugin-jsx-a11y@3.0.2 \
+  eslint-plugin-import@2.2.0 eslint-plugin-react@6.9.0
 ```
 
 and then create a local file configuration within your project called `.eslintrc` that looks like:
@@ -39,4 +42,4 @@ and then create a local file configuration within your project called `.eslintrc
 }
 ```
 
-For more information on configuring eslint, see its documentation at [http://eslint.org/docs/user-guide/configuring](http://eslint.org/docs/user-guide/configuring)
+For more information on configuring `eslint`, see its documentation at [http://eslint.org/docs/user-guide/configuring](http://eslint.org/docs/user-guide/configuring)
