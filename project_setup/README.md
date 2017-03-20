@@ -88,3 +88,12 @@ concerns, and more.
 Commonly used static analysis tools:
 
 * [Code Climate](https://codeclimate.com/)
+
+### Sandboxing and security
+
+Developers needing to test their code live should use a [cloud.gov sandbox](https://cloud.gov/overview/pricing/free-limited-sandbox/)
+or TTS-managed AWS equivalent.
+
+The use of tools such as `localtunnel` and `ngrok`, which make your locally 
+running services visible to the internet, are not allowed because they present
+a large security concern. Consult #infrastructure on Slack for any questions.
