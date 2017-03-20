@@ -96,4 +96,4 @@ or TTS-managed AWS equivalent.
 
 The use of tools such as `localtunnel` and `ngrok`, which make your locally 
 running services visible to the internet, are not allowed because they present
-a large security concern. Consult #infrastructure on Slack for any questions.
+a large security concern. Consult `#infrastructure` on Slack for any questions.
