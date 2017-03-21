@@ -17,13 +17,14 @@ code on the spot, as shown below:
 
 ![Atom eslint plugin screenshot]({{ site.url }}/images/atom-eslint-example.png)
 
-Airbnb provides `npm` packages of `eslint` rules that implement their style guide:
+Airbnb provides `npm` packages of `eslint` rules that implement their style guide.
 
-- [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb) for projects using ES2015 (and up) and React
-- [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base) for projects using ES2015 (and up) without React
-- [eslint-config-airbnb-base/legacy](https://www.npmjs.com/package/eslint-config-airbnb-base#eslint-config-airbnb-baselegacy) for projects using ES5 and below
+- For projects using ES6/ES2015 (or above) and React: [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
+- For projects using ES6/ES2015 (or above) without React: [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base)
+- For projects using ES5 and below: [eslint-config-airbnb-base/legacy](https://www.npmjs.com/package/eslint-config-airbnb-base#eslint-config-airbnb-baselegacy)
 
 Each link above has instructions for installing the required `npm` packages and configuring `eslint` to use the installed rules.
+These should be installed for each project, and saved in each project's `package.json`.
 
 Generally the process is to `npm install` the required modules and peer dependencies, for example:
 
