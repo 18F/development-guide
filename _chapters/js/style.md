@@ -43,4 +43,4 @@ and then create a local file configuration within your project called `.eslintrc
 }
 ```
 
-For more information on configuring `eslint`, see its documentation at [http://eslint.org/docs/user-guide/configuring](http://eslint.org/docs/user-guide/configuring)
+For more information on configuring `eslint`, see its documentation at [http://eslint.org/docs/user-guide/configuring](http://eslint.org/docs/user-guide/configuring).
