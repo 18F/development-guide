@@ -101,3 +101,7 @@ Lastly, the engineer will need to digitally sign the PDF. You’ll store those P
 ## Going forward
 
 Our intention for this process is that it will be the start of a more regular, granular feedback system. Engineers deserve frequent feedback on their performance, and there have been many organization and leadership changes in Engineering this year that have disrupted regular feedback loops. Our new structure, where engineers will have a more established relationship with their facilitator and supervisor, will allow us to ensure that feedback happens. Providing regular feedback will make the annual review process a simple extension of regular feedback, as it will be more a culmination of the year’s progress.
+
+## Retrospective
+
+In November 2016 we conducted a [retro](https://docs.google.com/document/d/1VY7VEneWzfe4eMNIZ8cmIMdDG5W6T0NQCy6P9yehlNU/edit) of the 2016 Engineering end of year assessment. We asked ourselves how the process we used worked, and what we'd improve. Those in 18F can review that document for details.
