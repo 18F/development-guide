@@ -27,6 +27,7 @@
     - id: js-dependencies
     - id: js-libraries
     - id: js-frameworks
+    - id: js-style
 
 - id: web-components
 - id: contributing
