@@ -20,5 +20,20 @@ Whenever a `Style` Rubocop setting provides multiple options, at least one
 option must be chosen. A cop that supports different styles must never be
 disabled outright. The point is to pick one style and use it consistently.
 
+
+### Dependency Management
+
+Rough notes, what this section will cover:
+
+* Bundler
+* gems
+* Gemfile
+* Gemfile.lock
+* Both Rails and Ruby
+* Pessimistic versioning
+* Semantic versioning
+
+
+
 [Code Climate]: https://codeclimate.com
 [Rubocop]: https://github.com/bbatsov/rubocop
