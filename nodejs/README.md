@@ -87,6 +87,75 @@ your browser code and server code use the same ECMAScript features.
   the missing features in the browser.
 
 
+## Managing dependencies
+
+Your dependencies should be declared explicitly in your application. Node.js
+uses `package.json` to do that.
+
+    $ npm install --save <package>
+
+This will install the package from [npmjs.org][npmjs] and `--save` will record the version
+range in your `package.json`. This allows dependency versions to be explicit and
+locked to a particular version or version range.
+
+If this is a package only used for development, like a test or build tool, it
+should be marked as a `devDependency` with `--save-dev`. This way the dependency
+will not be shipped to production.
+
+   $ npm install --save-dev <package>
+
+
+### Shrinkwrap
+
+Your dependencies each has their own dependency. Running `npm ls` will show you
+the entire dependency tree. While `package.json` ensures your top-level
+dependencies are fixed, it's possible some deep dependencies could be different
+versions between your development environments and production environments.
+`npm-shrinkwrap.json` solves that by recording the entire dependency tree.
+
+    $ npm shrinkwrap
+
+
+### Vendoring dependencies
+
+cloud.gov recommends you vendor your dependencies. This means your dependencies
+are included with your application.
+
+Ensure that `.cfignore` does **not** include `node_modules`. You want this directory
+to be pushed to cloud.gov.
+
+These steps should be included in your deploy script or continuous deployment
+pipeline. Install only your production dependencies.
+
+    $ rm -rf node_modules
+    $ npm install --production
+
+The [nodejs_buildpack](https://github.com/cloudfoundry/nodejs-buildpack) will
+automatically run `npm rebuild` to build any native modules for the production
+platform.
+
+*Note: If you do not vendor your application dependencies, the `nodejs_buildpack`
+will try to download and build your dependencies automatically. Some
+applications have so many dependencies that cloud.gov fails to build your
+application because it runs out of space. If your application dies on `cf push`,
+you might be running into this issue. The solution is to vendor your
+dependenices.*
+
+
+### Best practices
+
+#### Recommend
+
+- Use `--save` or `--save-dev` with `npm install` when installing new packages
+  to record the version range automatically in your `package.json`.
+
+
+#### Suggest
+
+- Use `npm-shrinkwrap.json` to lock deep dependencies in your application.
+- Vendor your application dependencies.
+
+
 ## Frameworks
 
 Frameworks provide a common baseline for your application. ATO requires
@@ -206,3 +275,4 @@ If you need to embed serialized JSON in an HTML script tag, use
 [github-federalist]: https://github.com/18F/federalist
 [github-analytics-report]: https://github.com/18F/analytics-reporter-api
 [github-omb-eregs]: https://github.com/18F/omb-eregs
+[npmjs]: https://npmjs.org/
