@@ -30,16 +30,16 @@ application implements a generic contract with the platform. This contract
 allows it to be scaled and managed by the platform without intimate knowledge of
 how the application works.
 
-[cloud.gov](https://cloud.gov/) is the preferred platform at 18F. Building your
+[cloud.gov][cloud-gov] is the preferred platform at 18F. Building your
 Node.js application with the Twelve-factor methodology in mind will ensure your
-application is designed for cloud.gov.
+application is designed for [cloud.gov][cloud-gov].
 
 
 ### Best practices
 
 #### Recommend
 
-- Build your application on top of cloud.gov.
+- Build your application on top of [cloud.gov][cloud-gov].
 - Read the [Twelve-factor methodology](https://12factor.net/) and keep it in
   mind as you build your application.
 
@@ -118,11 +118,11 @@ versions between your development environments and production environments.
 
 ### Vendoring dependencies
 
-cloud.gov recommends you vendor your dependencies. This means your dependencies
-are included with your application.
+[cloud.gov][cloud-gov] recommends you vendor your dependencies. This means your
+dependencies are included with your application.
 
-Ensure that `.cfignore` does **not** include `node_modules`. You want this directory
-to be pushed to cloud.gov.
+Ensure that `.cfignore` does **not** include `node_modules`. You want this
+directory to be pushed to [cloud.gov][cloud-gov].
 
 These steps should be included in your deploy script or continuous deployment
 pipeline. Install only your production dependencies.
@@ -134,12 +134,12 @@ The [nodejs_buildpack](https://github.com/cloudfoundry/nodejs-buildpack) will
 automatically run `npm rebuild` to build any native modules for the production
 platform.
 
-*Note: If you do not vendor your application dependencies, the `nodejs_buildpack`
-will try to download and build your dependencies automatically. Some
-applications have so many dependencies that cloud.gov fails to build your
-application because it runs out of space. If your application dies on `cf push`,
-you might be running into this issue. The solution is to vendor your
-dependenices.*
+*Note: If you do not vendor your application dependencies, the
+`nodejs_buildpack` will try to download and build your dependencies
+automatically. Some applications have so many dependencies that
+[cloud.gov][cloud-gov] fails to build your application because it runs out of
+space. If your application dies on `cf push`, you might be running into this
+issue. The solution is to vendor your dependenices.*
 
 
 ### Best practices
@@ -219,7 +219,7 @@ Here's a list of scaffolds we've had success with:
 
 For Express, [Passport](http://www.passportjs.org/) has many authentication
 plugins including [OAuth2](https://www.npmjs.com/package/passport-oauth2) which
-can be used with cloud.gov authentication.
+can be used with [cloud.gov][cloud-gov] authentication.
 
 
 ### Best practices
