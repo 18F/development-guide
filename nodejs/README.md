@@ -269,6 +269,60 @@ If you need to embed serialized JSON in an HTML script tag, use
 - Take special care when embedding un-trusted user data in HTML or SQL.
 
 
+## Monitoring
+
+[New Relic](https://www.npmjs.com/package/newrelic) works with Node.js and
+provides in-depth monitoring and instrumentation of your application. It's
+Synthetics product also provides availability alerting.
+
+    $ npm install --save newrelic
+
+```javascript
+// app.js
+
+require('newrelic');
+```
+
+You can configure it by dropping a `newrelic.js` file or you can configure it
+using the `newrelic` module's API. Your `NEW_RELIC_LICENSE_KEY` should be
+treated like a secret. You can include it in a user provided service and where
+it is exposed via the `VCAP_SERVICES` environment variable.
+
+Don't forget to [configure
+alerts](https://pages.18f.gov/before-you-ship/infrastructure/monitoring/).
+
+
+### Best practices
+
+
+#### Suggest
+
+- Use New Relic to instrument and monitor your application.
+- Configure Synthetics to alert you in case your application is unavailable.
+
+
+## Static analysis
+
+Many of the hosted services used in other languages also work with Node.js.
+These services analyze your code and report any issues they find.
+
+Gemnasium can also be configured to send alerts when your dependencies are out
+of date or have security issues.
+
+- Gemnasium
+- Code Climate
+
+
+### Best practices
+
+
+### Suggest
+
+- Follow the [before you
+  ship](https://pages.18f.gov/before-you-ship/security/static-analysis/) guide
+  to configure static analysis.
+
+
 [cloud-gov]: https://cloud.gov/
 [expressjs]: https://expressjs.com/
 [hapijs]: https://hapijs.com/
