@@ -215,6 +215,73 @@ Here's a list of scaffolds we've had success with:
   has been scaffolded, you're not going to scaffold it again.
 
 
+## Automated testing
+
+Automated testing is critical to developing a modern web application.
+
+
+### Test frameworks
+
+[Mocha](https://www.npmjs.com/package/mocha) is a simple, flexible test
+framework. It provides a good base to write your test suite. Mocha is
+a behavior-driven development (BDD) style framework which allows for writing
+descriptive and meaningful phrases (DAMP) in your test cases.
+
+[Many projects at
+18F](https://github.com/search?utf8=%E2%9C%93&q=org%3A18F+filename%3Apackage.json+mocha&type=Code)
+are using mocha.
+
+You should configure your default test command by specifying a `test` script in
+your `package.json`.
+
+```javascript
+{
+  // ...
+  "scripts": {
+    "test": "mocha"
+  }
+}
+```
+
+And now you can run your tests with a simple command:
+
+    $ npm test
+
+
+### Spies, stubs, and mocks
+
+In testing, it's important to isolate the subject under test. Usually this is
+done with spies, stubs, and mocks and then making assertions on how your code
+interacted with these primitives. [Sinon](https://www.npmjs.com/package/sinon)
+is a framework to provide these.
+
+
+### Assertions
+
+[Chai](https://www.npmjs.com/package/chai) is a BDD-style assertion library for
+Node.js. There are many plugins, including
+[Sinon-Chai](https://www.npmjs.com/package/sinon-chai), that provide additional
+assertions for specific test frameworks.
+
+
+### Best practices
+
+
+#### Recommend
+
+- Use a test runner to write automated tests for your application.
+- Specify your test runner as your `test` script.
+- Enable continuous integration so your tests are run automatically on every
+  change of your application.
+
+
+#### Suggest
+
+- Use the [javascript testing
+  cookbook](https://pages.18f.gov/testing-cookbook/javascript/) to learn more
+  about testing with Node.js.
+
+
 ## Authentication
 
 For Express, [Passport](http://www.passportjs.org/) has many authentication
