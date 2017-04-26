@@ -36,5 +36,5 @@ repos:
     url: https://github.com/18F/frontend
 
 back_link:
-  url: "https://pages.18f.gov/guides/"
+  url: "https://guides.18f.gov/"
   text: Read more 18F Guides
