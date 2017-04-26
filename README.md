@@ -4,8 +4,8 @@
 
 This repo is where the 18F Frontend Guild keeps its guide (yep, I went there — guild and guide in one sentence) to best practices and resources for frontend development.
 
-#### Quicklinks to guides
-- Published guides: https://pages.18f.gov/frontend/
+#### Quicklinks
+- Published guides: https://frontend.18f.gov/
 - Unpublished guides: [pages](pages/)
 - Drafts: [pulls](https://github.com/18F/frontend/pulls?q=is%3Aopen+label%3Adraft+is%3Apr)
 
@@ -33,7 +33,7 @@ Also, the Frontend Guild Roadmap is in [the wiki](https://github.com/18F/fronten
 6. Label your pull request with `draft`.
 7. Post in #frontend slack channel for comment.
 
-If ready for publishing, you or someone else can move your guide to the 18f-pages branch so it appears on pages.18f.gov/frontend.
+If ready for publishing, you or someone else can move your guide to the 18f-pages branch so it appears on frontend.18f.gov.
 
 ### How to edit or suggest changes to an existing guide
 
