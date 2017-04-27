@@ -73,7 +73,7 @@ your browser code and server code use the same ECMAScript features.
 #### Recommend
 
 - Use the [current active LTS](https://github.com/nodejs/LTS#lts-schedule1)
-  version of Node.js.
+  version of Node.js, currently v6.x.
 
 
 #### Consider
@@ -83,8 +83,8 @@ your browser code and server code use the same ECMAScript features.
 - Many developers write JavaScript in the browser (ES5) even if they aren't
   a JavaScript developer. Using a syntax that many folks are familiar with
   allows more folks to jump in.
-- Front end build tools make it easy to choose a syntax you want and polyfill
-  the missing features in the browser.
+- Front end build tools make it possible to choose a syntax you want and
+  polyfill the missing features in the browser.
 
 
 ## Frameworks
@@ -121,9 +121,15 @@ external projects as well.
 - Use [Express][expressjs].
 
 
+#### Consider
+
+- [Hapi](https://hapijs.com) is another popular framework with a handful of
+  projects using it at 18F.
+
+
 ## Scaffolding your application
 
-Scaffolding tools can help take care of some of boiler plate of initializing
+Scaffolding tools can help take care of some of boilerplate of initializing
 a project. Some scaffolds are generator tools, others are kits intended to be
 forked. There are many available on Github. You might also choose one based on the
 front end frameworks you want to use and then add the server-side pieces
@@ -171,7 +177,7 @@ can be used with cloud.gov authentication.
 You'll want some basic web application hardening.
 
 [helmet](https://www.npmjs.com/package/helmet) includes several smaller
-middleware functions to set secure HTTP headers on your application.
+middleware functions to set secure HTTP headers on your Express application.
 
 If you're using any kind of user sessions, use
 [cookie-session](https://www.npmjs.com/package/cookie-session) for secure,
