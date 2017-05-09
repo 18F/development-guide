@@ -46,10 +46,11 @@ Combined, this creates a sort of "Leads API".
 
 Leads generally set aside some time on a routine basis to act as "office
 hours". During this time, the lead is explicitly available for discussing
-architectures, rubber duck-ing solutions, and other point-to-point
-conversations. Be aware that leads will generally charge time to projects if
-the topics warrant a deep discussion. See the "18F Engineering" calendar to
-review upcoming sessions.
+architectures, [rubber
+duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging)-ing solutions, and
+other point-to-point conversations. Be aware that leads will generally charge
+time to projects if the topics warrant a deep discussion. See the "18F
+Engineering" calendar to review upcoming sessions.
 
 Leads are often available outside of this block for similar conversations, but
 may require additional scheduling.
