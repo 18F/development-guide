@@ -34,7 +34,7 @@ There are several methods technical leads may offer to help us achieve our
 objectives, and different expectations may be set for each offering. Combined, 
 this defines our "Leads API".
 
-### Office Hours
+### Office hours
 
 Leads may offer dedicated time on a regular basis to act as "office hours". 
 During this time, the lead is explicitly available for discussing
@@ -47,7 +47,7 @@ billable project, leads must still tock their time to the project. See the
 Leads may be available outside of office hours for similar conversations, but
 may also require ad-hoc scheduling.
 
-### Project Reviews
+### Project reviews
 
 Reviewing project-specific practices enables leads to bring to your team their 
 breadth of experience across all our other projects. These reviews can be 
@@ -63,7 +63,7 @@ Technical leads do *not* leverage project reviews as a deployment gate; they
 are non-binding and exist to aid the individual project only, though the leads 
 also gain insight into that project's challenges which may recurr elsewhere.
 
-### Engineering-wide Discussions
+### Engineering-wide discussions
 
 When higher-level decision making needs to take place, leads may organize and
 invite the whole chapter to discuss. These may be through a video conference
