@@ -78,9 +78,9 @@ Leads, as well as our working groups, may document learnings and best
 practices in developer guides. These can cover a wide range of topics
 from recommended libraries, to linter setup, to tooling setup. They may include
 warnings about potential pain points and strong recommendations for 
-standardization based on past projects . Guides are only guides, not policy, 
-though they may refer to policy; use them when you don't have a specific 
-preference or when you need to assistance resolving a technical disagreement.
+standardization based on past projects. Guides are only guides, not policy
+(though they may refer to policy); use them when you don't have a specific 
+preference or when you need assistance resolving a technical disagreement.
 
 All of our guides are living documents. Please make suggestions via pull
 requests, issues, or the relevant Slack channel.
@@ -90,9 +90,9 @@ requests, issues, or the relevant Slack channel.
 Some miscellaneous methods that leads may also offer:
 
 * Leading tutorials, book clubs, and other educational presentations.
-* Maintaining specific *projects* like scaffold generators and gitsecrets
+* Maintaining specific projects like scaffold generators and gitsecrets
   rules.
-* Performing code reviews for personal feedback to developers by request.
+* Performing code reviews for personal feedback by request.
 
 Please note: this Leads API is not set in stone. Your suggestions on how the 
 API could be changed to better serve 18F's needs are always welcome!
