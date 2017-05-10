@@ -40,9 +40,9 @@ Leads may offer dedicated time on a regular basis to act as "office hours".
 During this time, the lead is explicitly available for discussing
 architectures, [rubber
 duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging)-ing solutions, and
-other point-to-point conversations. Be aware that if the topic is regarding a 
-billable project, leads must still tock their time to the project. See the 
-"18F Engineering" calendar to review upcoming sessions.
+other point-to-point conversations. Be aware that if the topic is regarding a
+billable project, leads may tock their time against that project. See the "18F
+Engineering" calendar to review upcoming sessions.
 
 Leads may be available outside of office hours for similar conversations, but
 may also require ad-hoc scheduling.
