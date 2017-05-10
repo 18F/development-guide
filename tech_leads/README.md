@@ -49,19 +49,18 @@ may also require ad-hoc scheduling.
 
 ### Project reviews
 
-Reviewing project-specific practices enables leads to bring to your team their 
-breadth of experience across all our other projects. These reviews can be 
-scoped as widely (see our [architecture reviews](../architecture_reviews/)) or 
-narrow as you need, depending on your budget. It is most cost-effective to 
-engage with technical leads as early as possible, when they can easily help 
-you avoid or solve the kinds of problems that will become harder with time. 
-Leads may suggest developers with more subject matter expertise conduct the 
-review, but in either case, time spent on project reviews will be tocked to 
-that project.
+Reviewing project-specific practices enables leads to bring to your team their
+breadth of experience across all our other projects. These reviews can be
+scoped as widely (see our [architecture reviews](../architecture_reviews/)) or
+narrow as you need, depending on your situation. We strongly encourage you to
+engage with technical leads as early as possible, when they can help you avoid
+or solve the kinds of problems that will be harder with time. Leads may
+suggest developers with more subject matter expertise conduct the review, but
+in either case, time spent on project reviews will be tocked to that project.
 
 Technical leads do *not* leverage project reviews as a deployment gate; they 
 are non-binding and exist to aid the individual project only, though the leads 
-also gain insight into that project's challenges which may recurr elsewhere.
+also gain insight into that project's challenges which may recur elsewhere.
 
 ### Engineering-wide discussions
 
