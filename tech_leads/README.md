@@ -1,106 +1,99 @@
 # Tech Leads
 
-Whereas facilitators, the diversity lead, etc. are primarily focused on our
-developers and their needs, tech leads focus on qualities of our technical
-work. 
-
-
-## Responsibilities
-
-Technical leads are primarily charged with improving and maintaining the
-technical quality of our projects. These qualities include high-level topics
-such as system architectures and deployment strategies, frequent tasks like
-library selection and developer work-flow, down to line-level style guides.
-Best practices may arise from each lead's experience, but more often come from
-aggregating knowledge across 18F projects. Leads should therefore have a good
-sense of what problems are recurring across teams and be prepared to ensure
-solutions propagate.
-
-The leads also serve as point people around engineering-wide issues that arise
-within their domains. These include tracking down security advisories,
-ensuring the maintenance of shared libraries, pinch-hitting when teams are
-missing specific skill-sets, and so forth. Leads should therefore be generally
-available to address these concerns directly or indirectly.
-
-We should emphasize that while technical leads are ultimately responsible for
-these tasks, they will most certainly delegate to subject matter experts,
-working groups, and others where appropriate.
-
-
 ## Current roster
 
 * Backend - [CM Lubinski](https://gsa-tts.slack.com/messages/@cm)
 * Data - [Tony Garvan](https://gsa-tts.slack.com/messages/@tony)
 * DevOps - [Adam Kendall](https://gsa-tts.slack.com/messages/@adamkendall)
-* Frontend - [Marco Segreto](https://gsa-tts.slack.com/messages/@marco)
+* Front-End - [Marco Segreto](https://gsa-tts.slack.com/messages/@marco)
 * Security - [DKP](https://gsa-tts.slack.com/messages/@dkp)
 
+## Responsibilities
+
+Technical leads are selected to improve the technical quality of our projects. 
+These qualities cover high-level topics, such as system architectures and 
+deployment strategies, frequent tasks like library selection and developer 
+work-flow, down to line-level style guides. Best practices may arise from each 
+lead's experience, but more often come from aggregating knowledge across 18F 
+projects. Leads need to maintain a good sense of what problems are recurring 
+across teams and be prepared to ensure solutions propagate.
+
+The leads also serve as point people around engineering-wide issues that arise 
+within their domains. These include triaging security issues, ensuring the 
+maintenance of shared libraries, pinch-hitting when teams are missing specific 
+skills, and the like. Leads therefore need to be generally available to 
+address these issues directly or indirectly.
+
+While technical leads are ultimately responsible for the quality of the 
+resolution, they will most certainly delegate to subject matter experts, 
+working groups, and others where appropriate.
 
 ## The Leads API
 
-Below we describe several of the methods technical leads may use to achieve
-their objectives as well as what to expect from them in these activities.
-Combined, this creates a sort of "Leads API".
+There are several methods technical leads may offer to help us achieve our 
+objectives, and different expectations may be set for each offering. Combined, 
+this defines our "Leads API".
 
-### Office hours
+### Office Hours
 
-Leads generally set aside some time on a routine basis to act as "office
-hours". During this time, the lead is explicitly available for discussing
+Leads may offer dedicated time on a regular basis to act as "office hours". 
+During this time, the lead is explicitly available for discussing
 architectures, [rubber
 duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging)-ing solutions, and
-other point-to-point conversations. Be aware that leads will generally charge
-time to projects if the topics warrant a deep discussion. See the "18F
-Engineering" calendar to review upcoming sessions.
+other point-to-point conversations. Be aware that if the topic is regarding a 
+billable project, leads must still tock their time to the project. See the 
+"18F Engineering" calendar to review upcoming sessions.
 
-Leads are often available outside of this block for similar conversations, but
-may require additional scheduling.
+Leads may be available outside of office hours for similar conversations, but
+may also require ad-hoc scheduling.
 
-### Project reviews
+### Project Reviews
 
-Reviewing project-specific practices also allows leads to share knowledge
-across teams. These reviews can be quite encompassing (see our [architecture
-reviews](../architecture_reviews/)) or focused on particular concerns, leading
-to a range of time investment. It is wise to rope technical leads in as early
-in a project's life cycle as possible so that they might provide insight
-around likely issues and solutions others have developed. Leads may suggest
-developers with more subject matter expertise hold this review. In most cases,
-time spent on project reviews will be billed to that project.
+Reviewing project-specific practices enables leads to bring to your team their 
+breadth of experience across all our other projects. These reviews can be 
+scoped as widely (see our [architecture reviews](../architecture_reviews/)) or 
+narrow as you need, depending on your budget. It is most cost-effective to 
+engage with technical leads as early as possible, when they can easily help 
+you avoid or solve the kinds of problems that will become harder with time. 
+Leads may suggest developers with more subject matter expertise conduct the 
+review, but in either case, time spent on project reviews will be tocked to 
+that project.
 
-Here we should emphasize that project reviews are *not* a gate; they are
-non-binding and exist to aid the individual project and give the leads insight
-into that project's strategies.
+Technical leads do *not* leverage project reviews as a deployment gate; they 
+are non-binding and exist to aid the individual project only, though the leads 
+also gain insight into that project's challenges which may recurr elsewhere.
 
-### Engineering-wide discussions
+### Engineering-wide Discussions
 
-When higher-level decision making needs to take place, leads will organize and
+When higher-level decision making needs to take place, leads may organize and
 invite the whole chapter to discuss. These may be through a video conference
-or asynchronously through #dev and surveys. Most often, the relevant leads
-have a suggested course of action and are seeking input (particularly negative
-input), such as whether or not to move towards Docker-centric standardization
-or if there's a strong preference around branching-vs-forks. Time spent here
-should be billed to "General".
+or asynchronously through the #dev Slack channel and surveys. The relevant 
+leads will have a course of action to recommend and need your input 
+(positive *and* negative), such as whether or not to standardize on a 
+particular piece of technology like Docker or a development practice like 
+branching vs. forks. Time spent on this dicussion will be billed to "General".
 
 ### Guides
 
-Leads, along with any relevant working groups, try to document learnings and
-best practices through developer guides. These cover a wide range of topics
-from recommended libraries, to linter setup, to tooling setup. They include
-warnings around potential pain points from projects of the past and strong
-recommendations for the purpose of standardization. Guides should be seen as
-references; use them when you don't have a specific preference or when you
-need to bolster a technical argument.
+Leads, as well as our working groups, may document learnings and best 
+practices in developer guides. These can cover a wide range of topics
+from recommended libraries, to linter setup, to tooling setup. They may include
+warnings about potential pain points and strong recommendations for 
+standardization based on past projects . Guides are only guides, not policy, 
+though they may refer to policy; use them when you don't have a specific 
+preference or when you need to assistance resolving a technical disagreement.
 
 All of our guides are living documents. Please make suggestions via pull
-requests, issues, or the relevant slack channel.
+requests, issues, or the relevant Slack channel.
 
 ### Other
 
-Technical leads have many more levers to achieve their objects. These include:
+Some miscellaneous methods that leads may also offer:
 
-* hosting *tutorials*, book clubs, and other educational presentations
-* maintaining specific *projects* like scaffold generators and gitsecrets
-  rules
-* performing ad hoc *code review* for developers who request it
+* Leading tutorials, book clubs, and other educational presentations.
+* Maintaining specific *projects* like scaffold generators and gitsecrets
+  rules.
+* Performing code reviews for personal feedback to developers by request.
 
-That said, this Leads API is not set in stone. Please reach out to share
-suggestions on how they can best serve 18F's needs.
+Please note: this Leads API is not set in stone. Your suggestions on how the 
+API could be changed to better serve 18F's needs are always welcome!
