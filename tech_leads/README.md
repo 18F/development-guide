@@ -24,9 +24,12 @@ maintenance of shared libraries, pinch-hitting when teams are missing specific
 skills, and the like. Leads therefore need to be generally available to 
 address these issues directly or indirectly.
 
+Additionally, technical leads serve as subject matter experts for meta
+discussions such as business development and staffing.
+
 While technical leads are ultimately responsible for the quality of the 
-resolution, they will most certainly delegate to subject matter experts, 
-working groups, and others where appropriate.
+resolution, they will most certainly delegate to working groups, individual
+developers, etc. as appropriate.
 
 ## The Leads API
 
