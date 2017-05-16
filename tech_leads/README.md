@@ -95,7 +95,8 @@ Some miscellaneous methods that leads may also offer:
 * Leading tutorials, book clubs, and other educational presentations.
 * Maintaining specific projects like scaffold generators and gitsecrets
   rules.
-* Performing code reviews for personal feedback by request.
+* Individual mentoring, code reviews, and other personal feedback (by
+  request).
 
 Please note: this Leads API is not set in stone. Your suggestions on how the 
 API could be changed to better serve 18F's needs are always welcome!
