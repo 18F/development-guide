@@ -29,7 +29,7 @@ certain events caused the incident, those events should also be added
 Analyze the **factors** that contributed to the incident. Here it's important
 to emphasize the [Retrospective Prime
 Directive](http://www.retrospectives.com/pages/retroPrimeDirective.html);
-paraphrased: everyone did their best; there should be no judgement of
+paraphrased: everyone did their best; there should be no judgment of
 individuals. If lucky, we will discover a single **root cause**, but often we
 will find a sort-of comedy of errors or serious of unfortunate events that
 collectively led to the incident.
