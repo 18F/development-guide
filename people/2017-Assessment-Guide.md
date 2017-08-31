@@ -101,10 +101,10 @@ Finally, discuss their answers to the “engineering climate” questions. There
 
 Lastly, the engineer will need to sign the review. You’ll store those PDFs in a Google Drive folder (Talent will send us the link), Talent’s tracking spreadsheet, and CHRIS.
 
-## Going forward
+## Continuous feedback
 
-Our intention for this process is that it will be the start of a more regular, granular feedback system. Engineers deserve frequent feedback on their performance, and there have been many organization and leadership changes in Engineering this year that have disrupted regular feedback loops. Our new structure, where engineers will have a more established relationship with their facilitator and supervisor, will allow us to ensure that feedback happens. Providing regular feedback will make the annual review process a simple extension of regular feedback, as it will be more a culmination of the year’s progress.
+Our intention for this process is that it is part of a regular, granular feedback system. Engineers deserve frequent feedback on their performance. Our structure, where engineers will have an established relationship with their facilitator and supervisor, allows us to ensure that feedback happens. Providing regular feedback makes the annual review process a simple extension of regular feedback, as it is a culmination of the year’s progress.
 
 ## Retrospective
 
-In November 2017 we conducted a [retro](https://docs.google.com/document/d/1VY7VEneWzfe4eMNIZ8cmIMdDG5W6T0NQCy6P9yehlNU/edit) of the 2017 Engineering end of year assessment. We asked ourselves how the process we used worked, and what we'd improve. Those in 18F can review that document for details.
+In November 2017 we will conducte a retro of the 2017 Engineering end of year assessment. We will ask ourselves how the process we used worked, and what we'd improve. Those in 18F will be able to review that document for details.
