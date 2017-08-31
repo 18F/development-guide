@@ -9,8 +9,7 @@ facilitator, and other coworkers.
 Assessments are based on an individual’s performance plan. GSA’s Office of Human Resources Management (OHRM) has a 
 [set of appraisal materials](https://insite.gsa.gov/portal/category/532570) applicable to all of GSA. These include a 
 good guide on [Appraising Objectively and Fairly](https://insite.gsa.gov/portal/getMediaData?mediaId=614006), 
-and the requirement to evaluate performance on a 5 point scale. Performance plans have what 18F calls “objectives” and OHRM 
-calls “critical elements.” Each “critical element” in the performance plan is rated, and there is also a summary rating. 
+and the requirement to evaluate performance on a 5 point scale. Performance plans have what GSA calls “critical elements.” Each “critical element” in the performance plan is rated, and there is also a summary rating. 
 Some ratings can earn performance awards. You can find more detail, including what each rating number means, in the 
 [Appraisal Rating System & Performance Awards](https://docs.google.com/document/d/1YtnP2RoSJZh5IiKWVJwxyAksjafCqlmBXspCV8nlhZM/edit) document. 
 
@@ -44,7 +43,7 @@ More details on each step:
 Have each individual complete a self-review. This review should ask for:
 
 1. Which projects and accomplishments they’ve worked on over the last year, including both major staffed projects and also side-projects, working groups, guilds, etc.
-2. A self-assessment against each objective in their performance plan.
+2. A self-assessment against each critical element in their performance plan.
 3. Peers (in engineering, or elsewhere) that they’d like us to solicit feedback from (in addition to project leads, tech leads, guild leads, etc., which we’ll talk to by default).
 4. Any specific areas they’d like feedback on.
 5. Answers to these six “engineering climate” questions (the same as we asked in the [mid-year review](https://docs.google.com/document/d/1n0LegkVV6j3HsUJat-cda_5QmPfF_hFFaWjubpv-amA/edit) plus one new one):
@@ -64,7 +63,7 @@ First, identify reviewers. The engineer’s facilitator can help with this. They
 
 Send a request for feedback to each of the reviewers you identified above. This should ask for:
 
-1. An assessment against each objective in their performance plan (as for #2, above). 
+1. An assessment against each critical element in their performance plan (as for #2, above). 
 2. A request for feedback on the specific areas the individual identified in #4 above.
 3. A free-form general feedback area.
 
@@ -76,13 +75,13 @@ If necessary, you can arrange short (15-30 minute) meetings with a reviewer to g
 
 Now you’ve got a bunch of feedback, so the next step is to synthesize it down into a coherent written review.
 
-First, you’ll want to review all that feedback along with the person’s facilitator (if applicable). You’re looking for patterns, commonalities, or feedback that aligns with what you or the facilitator have personally observed. You’re looking to distill down all that feedback into a review for each objective in the person’s performance profile. Include as many specific examples of behavior as possible — good feedback is specific and actionable (for a deeper treatment if this idea, see this article on [The Situation-Impact-Feedback Tool](https://www.mindtools.com/pages/article/situation-behavior-impact-feedback.htm)).
+First, you’ll want to review all that feedback along with the person’s facilitator (if applicable). You’re looking for patterns, commonalities, or feedback that aligns with what you or the facilitator have personally observed. You’re looking to distill down all that feedback into a review for each critical element in the person’s performance profile. Include as many specific examples of behavior as possible — good feedback is specific and actionable (for a deeper treatment if this idea, see this article on [The Situation-Impact-Feedback Tool](https://www.mindtools.com/pages/article/situation-behavior-impact-feedback.htm)).
 
 It’s important to be especially cognizant of unconscious bias here. Remember that people are especially susceptible to assume that underrepresented people in tech — women, people of color, etc. — are less qualified than their white male counterparts. One way to correct for this bias is to make sure that reviews are concrete and specific (as above). Another way is to be cognizant of the kinds of reviews that are especially applied to underrepresented minorities. For example, [the word “abrasive” is far more common in reviews of women than of men](https://www.fastcompany.com/3034895/strong-female-lead/the-one-word-men-never-see-in-their-performance-reviews). Other similar kinds of phrases to watch out for are “tone”, “aggressive”, “judgemental”, “too nice”, and so on. In general, if you’re writing a review that seems like it speaks to the person’s character, you may be headed in the wrong direction. 
 
 GSA has [guidance on writing objective and fair reviews](https://insite.gsa.gov/portal/getMediaData?mediaId=614006) that’s worth reviewing as you start to write your review.
 
-You’ll need to provide a score (1-5) for each objective area in the person’s performance profile. The performance plan has criteria for each score; these plans are available in CHRIS. You should also review the overall guidance on the [rating system scores](https://docs.google.com/document/d/1YtnP2RoSJZh5IiKWVJwxyAksjafCqlmBXspCV8nlhZM/edit). You’ll also need to give the engineer a single overall score (1-5), which is calculated from the objective scores.
+You’ll need to provide a score (1-5) for each critical element in the person’s performance profile. The performance plan has criteria for each score; these plans are available in CHRIS. You should also review the overall guidance on the [rating system scores](https://docs.google.com/document/d/1YtnP2RoSJZh5IiKWVJwxyAksjafCqlmBXspCV8nlhZM/edit). You’ll also need to give the engineer a single overall score (1-5), which is calculated from the critical element scores.
 
 ### 4. Review your drafts with the Director
 Before finalizing the reviews, meet with the Director of Engineering and review your reviews. They’ll check that your reviews are fair, and also compare scores across the whole chapter to check for bias, patterns, and consistency across Engineering.
