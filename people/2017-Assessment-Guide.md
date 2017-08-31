@@ -15,12 +15,12 @@ Some ratings can earn performance awards. You can find more detail, including wh
 
 End-of-year assessments are given to everyone hired into GSA on or prior to May 15, 2017, and are due by November 14, 2017. 
 
-In late September, a group of Engineering leadership and engineers met to determine what outcomes we wanted from the end-of-year review process, and what we’d do to achieve those outcomes.
+In September 2016, a group of Engineering leadership and engineers met to determine what outcomes we wanted from the end-of-year review process, and what we’d do to achieve those outcomes. This 2017 guide is largely the same as the 2016 guide.
 
 ## Desired outcomes
 
 ### Actionable feedback
-The number one desired outcome was actionable feedback for individuals. In order for a review to be valuable, the person being reviewed needs to finish the process with knowledge of — and, ideally, a plan for — how to grow over the following year. At the end of the review period, every engineer should have a solid understanding of what to do next to continue to improve and deliver better value to their teams.
+The number one desired outcome was actionable feedback for individuals. In order for a review to be valuable, the person being reviewed needs to finish the process with knowledge of and a plan for how to grow over the following year. At the end of the review period, every engineer should have a solid understanding of what to do next to continue to improve and deliver better value to their teams.
 
 ### Fair rating
 Individuals deserve fair ratings. These ratings should be calibrated both within Engineering and across 18F. The ratings and feedback should be aligned with the individual’s performance profile (as is required of course), and not biased towards individuals that the raters have interacted with more than others or those whose strengths align the most with their raters’ interests. Positive and constructive feedback should be balanced, and all feedback should be backed by evidence. Ideally the individual agrees with the rating they’re given.
