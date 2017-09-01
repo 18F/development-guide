@@ -1,0 +1,46 @@
+# _data/navigation.yml
+primary:
+  - text: CSS
+    href: /css
+    links:
+      - text: Linting
+        href: /css/linting
+      - text: preprocessors
+        href: /css/preprocessors
+      - text: frameworks
+        href: /css/frameworks
+      - text: Formatting
+        href: /css/formatting
+      - text: Units
+        href: /css/units
+      - text: Naming
+        href: /css/naming
+      - text: Inheritance
+        href: /css/inheritance
+      - text: Architecture
+        href: /css/architecture
+      - text: Specificity
+        href: /css/specificity
+      - text: Variables
+        href: /css/variables
+      - text: Documentation
+        href: /css/documentation
+  - text: Javascript
+    href: /javascript
+    links:
+      - text: Dependencies
+        href: /javascript/dependencies/
+      - text: Libraries
+        href: /javascript/libraries/
+      - text: Frameworks
+        href: /javascript/frameworks/
+      - text: Style / Linting
+        href: /javascript/style/
+  - text: Web Components
+    href: /web-components
+
+
+secondary:
+  - text: More 18F guides
+    href: https://guides.18f.gov/
+    external: true

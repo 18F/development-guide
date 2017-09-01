@@ -1,0 +1,21 @@
+{% assign _scripts = '' | split: '' %}
+{% assign _async_marker = 'uswds_async=true' %}
+{% assign _site_scripts = site.scripts %}
+{% unless _site_scripts -%}
+  {% assign _uswds_js = '/assets/uswds/js/uswds.min.js' | append: '?' | append: _async_marker %}
+  {% assign _site_scripts = '' | split: ''
+    | push: _uswds_js %}
+{% endunless %}
+{% assign _scripts = _scripts
+  | push: _site_scripts
+  | push: layout.scripts
+  | push: page.scripts
+  | uniq %}
+{% for _list in _scripts %}{% for _script in _list %}
+  {% assign _src = _script.src | default: _script %}
+<script src="{{ _src | replace: _async_marker, '' | relative_url }}"{% if _script.async or _src contains _async_marker %} async{% endif %}></script>
+{% endfor %}{% endfor %}
+
+{% if page.layout == 'search-results' %}
+{% jekyll_pages_api_search_load %}
+{% endif %}

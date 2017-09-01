@@ -1,7 +1,14 @@
 ---
 ---
 
-@import "guides_style_18f";
+// set your variables or @import them here.
+
+// at the very least, you should set the USWDS font and image paths
+// to the correct paths relative to assets/main.css, like so:
+$font-path: 'uswds/fonts';
+$image-path: 'uswds/img';
+
+@import 'uswds/all';
 
 @mixin font-size($sizeValue: 1.6) {
   font-size: ($sizeValue * 10) + px;
