@@ -2,6 +2,7 @@
 title: Preprocessors
 permalink: /css/preprocessors
 layout: docs
+sidenav: css
 ---
 # Preprocessors
 The most supported CSS preprocessor at 18F is [Sass](http://sass-lang.com/)

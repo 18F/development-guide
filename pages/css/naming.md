@@ -2,6 +2,7 @@
 title: Naming
 permalink: /css/naming
 layout: docs
+sidenav: css
 ---
 # Naming
 - HTML elements should be in lowercase.

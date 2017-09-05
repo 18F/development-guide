@@ -2,6 +2,7 @@
 title: Libraries
 permalink: /javascript/libraries
 layout: docs
+sidenav: js
 ---
 # Libraries
 ## Scrolling

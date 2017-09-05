@@ -2,6 +2,7 @@
 title: Documentation
 permalink: /css/documentation
 layout: docs
+sidenav: css
 ---
 # Documentation
 ## Sass Comments

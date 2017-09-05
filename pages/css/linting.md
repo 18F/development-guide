@@ -2,6 +2,7 @@
 title: Linting
 permalink: /css/linting
 layout: docs
+sidenav: css
 ---
 # Linting
 The styleguide provides a method of linting [Sass] code to ensure it conforms

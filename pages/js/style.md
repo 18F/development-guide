@@ -2,6 +2,7 @@
 title: Style / Linting
 permalink: /javascript/style
 layout: docs
+sidenav: js
 ---
 # Style / Linting
 We recommend adhering to the [Airbnb JavaScript style guide](https://github.com/airbnb/javascript).

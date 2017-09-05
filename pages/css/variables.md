@@ -2,6 +2,7 @@
 title: Variables
 permalink: /css/variables
 layout: docs
+sidenav: css
 ---
 # Variables
 - Create new variables in the following circumstances:

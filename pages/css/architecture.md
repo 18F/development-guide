@@ -2,6 +2,7 @@
 title: Architecture
 permalink: /css/architecture
 layout: docs
+sidenav: css
 ---
 # Architecture
 A site's architecture should be based on its goals and purposes. This means the
