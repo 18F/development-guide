@@ -1,6 +1,6 @@
 ---
 title: Inheritance
-permalink: /css/inheritance
+permalink: /css/inheritance/
 layout: docs
 sidenav: css
 ---

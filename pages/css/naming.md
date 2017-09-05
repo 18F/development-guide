@@ -1,6 +1,6 @@
 ---
 title: Naming
-permalink: /css/naming
+permalink: /css/naming/
 layout: docs
 sidenav: css
 ---

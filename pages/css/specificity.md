@@ -1,6 +1,6 @@
 ---
 title: Specificity
-permalink: /css/specificity
+permalink: /css/specificity/
 layout: docs
 sidenav: css
 ---

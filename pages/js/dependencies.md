@@ -1,6 +1,6 @@
 ---
 title: Dependencies
-permalink: /javascript/dependencies
+permalink: /javascript/dependencies/
 layout: docs
 sidenav: js
 ---

@@ -1,6 +1,6 @@
 ---
 title: Frameworks
-permalink: /css/frameworks
+permalink: /css/frameworks/
 layout: docs
 sidenav: css
 ---

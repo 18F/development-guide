@@ -1,6 +1,6 @@
 ---
 title: Documentation
-permalink: /css/documentation
+permalink: /css/documentation/
 layout: docs
 sidenav: css
 ---

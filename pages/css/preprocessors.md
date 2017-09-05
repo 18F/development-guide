@@ -1,6 +1,6 @@
 ---
 title: Preprocessors
-permalink: /css/preprocessors
+permalink: /css/preprocessors/
 layout: docs
 sidenav: css
 ---

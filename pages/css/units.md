@@ -1,6 +1,6 @@
 ---
 title: Units
-permalink: /css/units
+permalink: /css/units/
 layout: docs
 sidenav: css
 ---

@@ -1,6 +1,6 @@
 ---
 title: Formatting
-permalink: /css/formatting
+permalink: /css/formatting/
 layout: docs
 sidenav: css
 ---

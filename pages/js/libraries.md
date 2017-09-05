@@ -1,6 +1,6 @@
 ---
 title: Libraries
-permalink: /javascript/libraries
+permalink: /javascript/libraries/
 layout: docs
 sidenav: js
 ---

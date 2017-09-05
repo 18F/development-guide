@@ -1,6 +1,6 @@
 ---
 title: Variables
-permalink: /css/variables
+permalink: /css/variables/
 layout: docs
 sidenav: css
 ---

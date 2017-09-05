@@ -1,6 +1,6 @@
 ---
 title: Style / Linting
-permalink: /javascript/style
+permalink: /javascript/style/
 layout: docs
 sidenav: js
 ---
