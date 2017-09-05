@@ -1,6 +1,6 @@
 ---
 title: Architecture
-permalink: /css/architecture
+permalink: /css/architecture/
 layout: docs
 sidenav: css
 ---
