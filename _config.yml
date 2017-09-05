@@ -48,10 +48,10 @@ logoalt: 18F logo
 
 google_analytics_ua: UA-48605964-19
 
-repos:
-  - name: Front End Guide
-    description: Main repository
-    url: https://github.com/18F/frontend
+repo:
+  name: Front End Guide
+  description: Main repository
+  url: https://github.com/18F/frontend
 
 back_link:
   url: "https://guides.18f.gov/"

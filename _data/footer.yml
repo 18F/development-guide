@@ -5,7 +5,7 @@ top: true
 # Which links to show at the top of the footer.
 # This can key into _data/navigation.yml or a list of link objects
 # with 'text' and 'href' properties.
-links: footer
+links:
 
 # The optional heading for the footer.
 heading:
@@ -13,17 +13,19 @@ heading:
 # An array of agency logos to show, side by side, in the lower left
 # of the footer on large screens.
 logos:
-  - src: https://18f.gsa.gov/assets/img/logos/18f-logo.svg
+  - src: /assets/images/18f-logo.svg
     alt: 18F
 
 contact:
   links:
-    - text: USA
-      href: https://usa.gov/
+#    - text: USA
+#      href: https://usa.gov/
 
-  heading: Contact us
+  heading:
 
   address: |
-    [Edit this page](https://github.com/18F/web-design-standards)
+    [18F USWDS-Jekyll theme](https://github.com/18F/uswds-jekyll)
 
-    [uswebdesignstandards@gsa.gov](mailto:uswebdesignstandards@gsa.gov)
+    Hosted by [Federalist](https://federalist.fr.cloud.gov/)
+
+    Maintained by [18F](https://18f.gsa.gov/)
