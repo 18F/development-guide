@@ -3,37 +3,37 @@ primary:
   - text: CSS
     href: /css
     links:
-      - text: Linting
-        href: /css/linting
-      - text: preprocessors
-        href: /css/preprocessors
-      - text: frameworks
+      - text: Architecture
+        href: /css/architecture
+      - text: Documentation
+        href: /css/documentation
+      - text: Frameworks
         href: /css/frameworks
       - text: Formatting
         href: /css/formatting
-      - text: Units
-        href: /css/units
-      - text: Naming
-        href: /css/naming
       - text: Inheritance
         href: /css/inheritance
-      - text: Architecture
-        href: /css/architecture
+      - text: Linting
+        href: /css/linting
+      - text: Naming
+        href: /css/naming
+      - text: Preprocessors
+        href: /css/preprocessors
       - text: Specificity
         href: /css/specificity
+      - text: Units
+        href: /css/units
       - text: Variables
         href: /css/variables
-      - text: Documentation
-        href: /css/documentation
   - text: Javascript
     href: /javascript
     links:
       - text: Dependencies
         href: /javascript/dependencies/
-      - text: Libraries
-        href: /javascript/libraries/
       - text: Frameworks
         href: /javascript/frameworks/
+      - text: Libraries
+        href: /javascript/libraries/
       - text: Style / Linting
         href: /javascript/style/
   - text: Web Components
