@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/18F/uswds-jekyll.git
-  revision: 6271718e03aaf446581fd89d6630060358f9fade
+  revision: 1eacf596c2a631c57e82697139474d21cf459553
   specs:
-    uswds-jekyll (1.1.1)
+    uswds-jekyll (1.2.0)
       jekyll (~> 3.4)
 
 GEM
@@ -35,7 +35,7 @@ GEM
     jekyll_pages_api_search (0.4.4)
       jekyll_pages_api (~> 0.1.4)
       sass (~> 3.4)
-    kramdown (1.14.0)
+    kramdown (1.15.0)
     liquid (4.0.0)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
