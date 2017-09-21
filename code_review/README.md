@@ -62,7 +62,7 @@ accomplish this, everyone should consider these tips.
 ### For everyone
 
 - Remember that we're reviewing the code, not the author. Nothing should be
-  given or taken taken personally.
+  given or taken personally.
 - There is often more than one way to approach a solution. Discuss tradeoffs
   and reach a resolution quickly.
 - Ask questions rather than make statements. ("What do you think about...?")
