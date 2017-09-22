@@ -75,7 +75,6 @@ for each pull request.
 Commonly used CI services:
 
 * [CircleCI](https://circleci.com/)
-* [Travis CI](https://travis-ci.org/)
 
 ### Static Analysis Tool
 
@@ -91,7 +90,8 @@ Commonly used static analysis tools:
 
 ### Sandboxing and security
 
-Developers needing to test their code live should use a [cloud.gov sandbox](https://cloud.gov/overview/pricing/free-limited-sandbox/)
+Developers needing to test their code live should use a 
+[cloud.gov sandbox](https://cloud.gov/overview/pricing/free-limited-sandbox/)
 or TTS-managed AWS equivalent.
 
 The use of tools such as `localtunnel` and `ngrok`, which make your locally 
