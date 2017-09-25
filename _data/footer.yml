@@ -13,7 +13,7 @@ heading:
 # An array of agency logos to show, side by side, in the lower left
 # of the footer on large screens.
 logos:
-  - src: /assets/images/18f-logo.svg
+  - src: /assets/images/18f-Logo.svg
     alt: 18F
 
 contact:
