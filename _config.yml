@@ -2,6 +2,7 @@ title: 18F Front End Guide
 
 styles:
   - /assets/uswds/css/uswds.min.css
+  - /assets/css/styles.css
 
 exclude:
   - CONTRIBUTING.md
@@ -30,6 +31,12 @@ jekyll_pages_api_search:
       boost: 5
     body:
   results_page_title: Search results
+
+defaults:
+  - scope:
+      path: "assets/uswds"
+    values:
+      skip_index: true
 
 permalink: pretty
 markdown: kramdown
