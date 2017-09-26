@@ -56,7 +56,7 @@ Backbone.js is a JavaScript library with a RESTful JSON interface and is based o
 
 #### Cons:
 - Still requires a lot of boilerplate code (this can be mitigated by pairing with a library like Marionette)
-- Since it has very little structure, unexperienced programs can easily create unmaintainable code with Backbone.
+- Since it has very little structure, unexperienced programmers can easily create unmaintainable code with Backbone.
 - Designed primarily for REST data.
 
 
