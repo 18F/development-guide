@@ -18,7 +18,7 @@ eslint with nearly every code editor and build system, as described at [http://e
 Using an eslint plugin with your editor makes it easier to quickly see non-conforming lines of
 code on the spot, as shown below:
 
-![Atom eslint plugin screenshot]({{ site.url }}//assets/images/atom-eslint-example.png)
+![Atom eslint plugin screenshot]({{ site.baseurl }}/assets/images/atom-eslint-example.png)
 
 Airbnb provides `npm` packages of `eslint` rules that implement their style guide.
 
