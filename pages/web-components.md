@@ -31,7 +31,7 @@ Google's Polymer Project fully embraces [HTML imports], which are a way to encap
 ## Vanilla JS ([document.registerElement()](https://github.com/WebReflection/document-register-element))
 Next up, I tried out [Andrea Giammarchi's](http://webreflection.blogspot.com/2014/07/a-w3c-custom-elements-alternative.html) [polyfill](https://github.com/WebReflection/document-register-element) for the core custom elements API, the `document.registerElement()` function. Andrea's polyfill has some major advantages over x-tag and Polymer:
 
-1. At just 3K minified and zipped, it's *tiny* compared to Polymer's hefty 150K payload (after you include all of the necessary polyfills). Because x-tag relies on many of the same polyfills (which involve a
+1. At just 3K minified and zipped, it's *tiny* compared to Polymer's hefty 150K payload (after you include all of the necessary polyfills).
 2. It works in IE9 if you include either [aight] or Andrea's [dom4] polyfill.
 3. The API does exactly what the spec says it should, and nothing more. No two-way data binding, no event delegation, no performance-hobbling shadow DOM shims (or shams).
 
