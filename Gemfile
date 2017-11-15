@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
-gem 'redcarpet'
-gem 'go_script'
+gem 'uswds-jekyll', :git => 'https://github.com/18F/uswds-jekyll.git'
 
 group :jekyll_plugins do
-  gem 'guides_style_18f'
+  gem 'jekyll_pages_api_search'
+  gem 'jemoji'
 end

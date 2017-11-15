@@ -1,0 +1,25 @@
+---
+layout: base
+hide_edit_link: true
+main:
+  class: usa-grid usa-section usa-content
+---
+
+{% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
+{% if sidenav %}
+<aside class="usa-width-one-fourth usa-layout-docs-sidenav">
+  {% include sidenav.html links=sidenav %}
+</aside>
+
+<div class="usa-width-three-fourths usa-layout-docs-main_content">
+  <h2>Search results</h2>
+  {% jekyll_pages_api_search_results %}
+  {{ content }}
+</div>
+{% else %}
+<div class="usa-layout-docs-main_content">
+  <h2>Search results</h2>
+  {% jekyll_pages_api_search_results %}
+  {{ content }}
+</div>
+{% endif %}
