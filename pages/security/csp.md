@@ -46,7 +46,10 @@ Let's break this down:
   object-src none : Prevent any flash content from loading
 ```
 
-A full list of available directives and keywords is outside the scope of this guide, but is available in the excellent Google CSP guide linked in the Further Reading section.
+A full list of available directives and keywords is outside the scope of this guide, but is available in the excellent Google CSP guide linked in the [Further Reading](#further-reading) section.
+
+<!-- !!add info about reporting¡¡ -->
+<!-- not sure yet where the level info goes -->
 
 
 ### Client-side Implementation
@@ -57,7 +60,13 @@ To implement CSP on the client, add a `<meta>` tag to your web site's `<head>`.
 ### Server-side Implementation
 Similarly, to include CSP on the server, simply return a `Content-Security-Policy: {my-policy-string}` HTTP header in your web responses.
 
+
+Although a basic CSP policy is relatively easy to write, developers may wish to use a library to assist them with defining their policies in a declarative way on the server. Two of the most well known libraries are [secureheaders](https://github.com/twitter/secureheaders), a `ruby` gem written and maintained by Twitter, and `express.js` middleware [helmetjs](https://github.com/helmetjs/helmet).
+
 ## Caveats
+The biggest caveat is that CSP, by default, prevents the developer from adding inline `<style>` and `<script>` tags, and from specifying JavaScript behavior or CSS `style` attributes on DOM elements. This isn't a bad thing, as all current best practices in front-end development discourage the use of the aforementioned patterns.
+
+However, there are scenarios in which a developer may want to include an inline content tag, such as including a Google Analytics initializion script. For these cases, CSP allows the user to supply a `nonce` attribute to the inline script: `<script nonce=GHDGsfsd83hfdfFD3>...javascript here...</script>`. Then, in your policy, `script-src 'nonce-GHDGsfsd83hfdfFD3'`. Nonces must be regenerated on each request. Additionally, CSP Level 2 allows the developer to generate a SHA hash of the script content, and pass that to the `srcipt-src` directive as `'sha-{content-sha}'`. This eliminates the need for a `nonce` attribute.
 
 ## Further Reading
 
@@ -65,6 +74,7 @@ The information contained is this guide is only a primer, and was sourced from t
 - [MDN CSP Overview](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
 - [Google CSP Guide](https://developers.google.com/web/fundamentals/security/csp/)
 - [caniuse.com CSP Support](https://caniuse.com/#search=Content%20Security%20Policy)
+- [CSP Quick reference guide](https://content-security-policy.com/)
 
 _the following links are fairly old, but pretty short and worth skimming_
 - [Twitter CSP blog post](https://blog.twitter.com/engineering/en_us/a/2011/improving-browser-security-with-csp.html)
