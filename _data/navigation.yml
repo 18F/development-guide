@@ -2,7 +2,7 @@
 primary:
   - text: CSS
     href: /css/
-  - text: Javascript
+  - text: JavaScript
     href: /javascript/
   - text: Web Components
     href: /web-components/
