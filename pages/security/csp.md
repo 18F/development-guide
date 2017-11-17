@@ -56,7 +56,7 @@ It might be useful to test your policies before letting them use on your users. 
 #### Reporting
 CSP can also be configured to send reports to an endpoint you control when content that violates your policies is encountered.
 
-To do this, use the `report-uri` directive, passing it a fully qualified URI e.g. `https://my-public-site.gov/reports/csp`. Now, each time content from an invalid source is encountered, your browser will POST a JSON error payload to the provided URI.
+To do this, use the `report-uri` directive, passing it a fully qualified URI e.g. `https://my-public-site.gov/reports/csp`. Now, each time content from an invalid source is encountered, your browser will POST a JSON payload to the provided URI.
 
 Here is an example, from the MDN article linked in [Further Reading](#further-reader)
 
@@ -104,6 +104,7 @@ The information contained is this guide is only a primer, and was sourced from t
 - [Google CSP Guide](https://developers.google.com/web/fundamentals/security/csp/)
 - [caniuse.com CSP Support](https://caniuse.com/#search=Content%20Security%20Policy)
 - [CSP Quick reference guide](https://content-security-policy.com/)
+- [Wikipedia reference](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
 _the following links are fairly old, but pretty short and worth skimming_
 - [Twitter CSP blog post](https://blog.twitter.com/engineering/en_us/a/2011/improving-browser-security-with-csp.html)
