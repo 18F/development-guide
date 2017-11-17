@@ -93,9 +93,13 @@ Similarly, to include CSP on the server, simply return a `Content-Security-Polic
 Although a basic CSP policy is relatively easy to write, you might find it easier to use a server-side library to define your policies declaratively. Two of well-known and actively maintained libraries are [secureheaders](https://github.com/twitter/secureheaders), a **ruby** gem written and maintained by Twitter, and the [helmetjs](https://github.com/helmetjs/helmet) middleware for **express.js**.
 
 ## Caveats
-The biggest caveat is that CSP, by default, prevents developers from adding inline `<style>` and `<script>` tags, and from specifying JavaScript behavior or CSS `style` attributes directly on DOM elements. This isn't a bad thing, as current best practices in front-end development discourage the use of these patterns.
+A major caveat is that CSP, by default, prevents developers from adding inline `<style>` and `<script>` tags, and from specifying JavaScript behavior or CSS `style` attributes directly on DOM elements. This isn't a bad thing, as current best practices in front-end development discourage the use of these patterns.
 
 However, there are scenarios in which you may want to use an inline content tag, such as including a Google Analytics initialization script. For these cases, CSP allows the user to supply a `nonce` attribute to the inline script: `<script nonce=GHDGsfsd83hfdfFD3>...javascript here...</script>`. Then, in your policy, `script-src 'nonce-GHDGsfsd83hfdfFD3'`. Nonces must be regenerated on each request. Additionally, CSP 2.0 allows you to generate a SHA hash of the script content, and pass that to the `srcipt-src` directive as `'sha-{content-sha}'`. You don't need to use a `nonce` attribute if your content is hashed.
+
+Another potential issue is third-party libraries that automatically inject JavaScript and CSS into your HTML. If your project utilizes a library that does this, the only solution is
+to use the 'unsafe-inline' value when setting the `script-src` directive; this obviously defeats the purpose of having a CSP for your JavaScript. Therefore, you should perform your own research to determine if the third-party scripts your project relies on are loaded in a manner incompatible with CSP, and what work-arounds may be available.
+
 
 ## Further Reading
 
