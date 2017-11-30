@@ -19,12 +19,14 @@ Unfortunately, support for numbered versions of IE is essentially zero, with no 
 All of the above supported browsers support CSP 1.0, with 100% support for 2.0 in Webkit/Blink browsers, and partial, but very good, support in Firefox. CSP 2.0 has all the features of 1.0, with several additional directives and support for inline `<script>` and `<style>` tags (see [Caveats](#caveats)).
 
 ## Usage
-CSP is straightforward to implement, and supports providing a policy via HTTP header or `<meta>` tag.
+CSP is straigtforward to implement, and supports providing a policy server-side [via HTTP header](#server-side-implementation) or client-side via a [`<meta>` tag](#client-side-implementation).
 
 #### Policies
 The most important aspect of CSP is the policy itself, which is written as a string of **directives**. Directives describe how the browser should handle loading different content types. These directives are represented as a `;` delimited key-value pair.
 
-The values in this pair can either be **keywords**, **schemes**, **mime-types**, or **urls**. Keywords are always enclosed in single quotes, while all other values are left unquoted. Multiple values may be supplied in a single directive; they are always separated by a space. A comprehensive list of values can be found at the [Content Security Policy cheatseet](https://content-security-policy.com/).
+The values in this pair can either be **keywords**, **schemes**, **mime-types**, or **urls**. Keywords are always enclosed in single quotes, while all other values are left unquoted. Multiple values may be supplied in a single directive, they are always separated by a space.
+
+A comprehensive list of values and directives can be found at the [Content Security Policy cheatseet](https://content-security-policy.com/).
 
 
 In general, your policy will restrict loading of content to known
@@ -50,9 +52,7 @@ Let's break this down:
 
 The `default-src` directive should always be defined! This directive acts as a fallback for all other `*-src` directives that are not defined within in the policy or are unsupported.
 
-A full list of available directives and keywords is outside the scope of this guide, but is available in the excellent Google CSP guide linked in the [Further Reading](#further-reading) section.
-
-It might be useful to test your policies before letting them use on your users. To do this, use the `Content-Security-Policy-Report-Only` HTTP header. Combined with the reporting information in the next section, you can monitor the kinds of content your user's are encountering and tweak the your policy accordingly.
+It might be useful to test your policies before letting them loose on your users. To do this, use the `Content-Security-Policy-Report-Only` HTTP header. Combined with the reporting information in the next section, you can monitor the kinds of content your user's are encountering and tweak the your policy accordingly.
 
 
 #### Reporting
@@ -110,8 +110,8 @@ If you must load external scripts inline and are not allowed to use the `unsafe-
 
 This technique will allow those scripts to load, with the following caveats:
 
-* Each time the third-party script changes, a new hash will have to be computed, and your policy's `script-src` whitelist will need to be updated
-* Inlining the SHAs of multiple scripts adds bloat to the policy, and the number of bytes needed to transmit the header to the browser.
+* Each the time the third-party script changes, a new hash will have to be computed, and your policy's `script-src` whitelist will need to be updated
+* Inline the SHAs of multiple scripts adds bloat to the policy, and increases the number of bytes needed to transmit the header to the browser.
 
 As each project has its own needs, you should always perform your own research on a per-project basis to determine the best way to handle third-party scripts!
 
