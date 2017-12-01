@@ -6,6 +6,8 @@ primary:
     href: /javascript/
   - text: Web Components
     href: /web-components/
+  - text: Security
+    href: /security/
 
 
 secondary:
