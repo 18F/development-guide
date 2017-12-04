@@ -48,3 +48,7 @@ js:
     href: /javascript/libraries/
   - text: Style / Linting
     href: /javascript/style/
+
+security:
+  - text: Content Security Policy (CSP)
+    href: /security/content-security-policy/
