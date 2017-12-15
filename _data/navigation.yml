@@ -6,6 +6,8 @@ primary:
     href: /javascript/
   - text: Web Components
     href: /web-components/
+  - text: Security
+    href: /security/
 
 
 secondary:
@@ -46,3 +48,7 @@ js:
     href: /javascript/libraries/
   - text: Style / Linting
     href: /javascript/style/
+
+security:
+  - text: Content Security Policy (CSP)
+    href: /security/content-security-policy/
