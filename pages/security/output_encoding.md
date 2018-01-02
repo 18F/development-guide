@@ -19,9 +19,9 @@ Protecting from XSS attacks requires developers to consider how data is being di
 
 Since most web applications at 18F are built through JavaScript or backend frameworks, this guide will go over output encoding issues by those frameworks in addition to plain JavaScript.
 
-### Plain JavaScript
+### Vanilla JavaScript
 
-When writing plain JavaScript, developers have to consider where data is coming from whenever it's being output in the web application. While data that comes from a backend database is usually considered as needing output encoding, code also could need output encoding when extracting data from the current page's url (which an attacker could modify and send to a user).
+When writing plain JavaScript, developers have to consider where data is coming from whenever it's being output in the web application. While data that comes from a backend database usually needs output encoding, code also could need output encoding when extracting data from the current page's url (which an attacker could modify and send to a user).
 
 The [excess xss prevention](https://excess-xss.com/#xss-prevention) section has up-to-date information on how to prevent XSS attacks in all the possible ways they could happen.
 
@@ -32,7 +32,7 @@ By default React DOM escapes all output. This means that output in JSX component
 There are some cases where ouput may not be correctly escaped in React components. Here are some of those cases:
 
 - Using the `dangerouslySetInnerHTML` prop (it's named this for a reason)
-- Passing state from the server, JSON stringifying it without seralizing it
+- Passing state from the server, JSON stringifying it without serializing it
 - Using user supplied `href` values
 - Incorrect usages of `eval`
 
