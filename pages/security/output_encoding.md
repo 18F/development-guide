@@ -29,7 +29,7 @@ The [excess xss prevention](https://excess-xss.com/#xss-prevention) section has 
 
 By default React DOM escapes all output. This means that output in JSX components will usually be safe, which is great news. This is discussed in [React's documentation](https://reactjs.org/docs/introducing-jsx.html#jsx-prevents-injection-attacks).
 
-There are some cases where ouput may not be correctly escaped in React components. Here are some of those cases:
+There are some cases where output may not be correctly escaped in React components. Here are some of those cases:
 
 - Using the `dangerouslySetInnerHTML` prop (it's named this for a reason)
 - Passing state from the server, JSON stringifying it without serializing it
@@ -40,4 +40,4 @@ This [dailyjs article](https://medium.com/dailyjs/exploiting-script-injection-fl
 
 ### Angular
 
-Angular also does a good job of escaping ouput by default. In general, earlier versions of Angular 1 had more security vulnerabilities, so a safe bet is to ensure the project is on the most recent version of Angular. To learn more about potential vulnerabilities, the [Angular site](https://docs.angularjs.org/guide/security) provides detailed information.
+Angular also does a good job of escaping output by default. In general, earlier versions of Angular 1 had more security vulnerabilities, so a safe bet is to ensure the project is on the most recent version of Angular. To learn more about potential vulnerabilities, the [Angular site](https://docs.angularjs.org/guide/security) provides detailed information.
