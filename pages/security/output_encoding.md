@@ -1,9 +1,9 @@
-+---
-+title: Output Enco
-+permalink: /security/output-encoding
-+layout: docs
-+sidenav: security
-+---
+---
+title: Output Enco
+permalink: /security/output-encoding
+layout: docs
+sidenav: security
+---
 
 # Output encoding
 
