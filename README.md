@@ -2,6 +2,7 @@
 
 A set of guidelines and best practices for an awesome engineering team
 
+* [Third-Party Integrations](/integrations)
 * [Code Review](/code_review)
 * [Git Protocol](/git_protocol)
 * [Project Setup](/project_setup)
