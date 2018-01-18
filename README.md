@@ -3,10 +3,8 @@
 A set of guidelines and best practices for an awesome engineering team
 
 * [Third-Party Integrations](/integrations)
-* [Code Review](/code_review)
-* [Git Protocol](/git_protocol)
+* [Workflow Best Practices](/workflow)
 * [Project Setup](/project_setup)
-* [Example Workflows](/example_workflows)
 * [Architecture Reviews](/architecture_reviews)
 * [Ruby Guide](/ruby)
 * [Language Selection Guidance](/language_selection)
