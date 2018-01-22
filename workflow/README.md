@@ -25,19 +25,37 @@ around deployments, git etiquette, and similar workflow conventions.
 Git is our version control system of choice and GitHub is our current
 repository platform, but how to use these tools can be spelled out in a bit
 more detail. Note that we are looking to consolidate this with our existing
-documentation on [code review](/code_review), [git protocol](/git_protocol),
-and [example workflows](/example_workflows).
+documentation on [code review](/code_review) and [example
+workflows](/example_workflows).
+
+### "Must"s
 
 * [Install](https://github.com/18F/laptop#git-seekret) our version of
   **git-seekret** as a pre-commit hook. This will check for many common types
   of API tokens and other sensitive information from making its way into
   version control.
+* Enable [**two-factor
+  authentication**](https://help.github.com/articles/about-two-factor-authentication/)
+  for your GitHub account. This is required for all 18F employees.
+* Default to **public** for new repositories. See our
+  [guidelines](https://github.com/18F/open-source-policy/blob/master/practice.md)
+  about open source for more detail.
 * As part of the ATO process, we require any branches which trigger automated
   deployment be
   [**protected**](https://help.github.com/articles/about-protected-branches/)
   by passing CI and peer review.
+
+### Defaults
+
 * Generally we prefer **branches** over forks to ease internal collaboration.
   If your project has many outside contributors, consider forks instead.
-* When in doubt, use
+* When in doubt, use feature branches and
   [**gitflow**](http://nvie.com/posts/a-successful-git-branching-model/) as
   your branch naming scheme.
+* Keep your repository **clean**; delete merged branches and avoid committing
+  files specific to your dev environment (e.g. `.DS_Store`).
+* Follow [this
+  guidance](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+  about **good commit messages**.
+* Consider [**signing commits** with a GPG
+  key](https://help.github.com/articles/signing-commits-with-gpg/)
