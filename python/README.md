@@ -2,15 +2,16 @@
 
 This is a **WORK IN PROGRESS**. Help us make it better by [submitting an
 issue](https://github.com/18F/development-guide) or joining us in the
-[#python](https://gsa-tts.slack.com/messages/C02ES0C3R) channel! This document
-is structured by topic; under each, we include "Standards", "Defaults", and
-"Suggestions". **Standards** are practices that have a strong consensus across
-18F; they should generally be followed to ease the ATO process and make
-on-boarding simpler. **Defaults** are safe selections that tend to be used by
-a large number of our projects; you may find yourself with a better or more
-tailored solution, however. **Suggestions** contain examples that have worked
-well on a project or two; they're not widely used enough to be defaults, but
-are worth considering.
+[#python](https://gsa-tts.slack.com/messages/C02ES0C3R) channel!
+
+This document is structured by topic; under each, we include "Standards",
+"Defaults", and "Suggestions". **Standards** are practices that have a strong
+consensus across 18F; they should generally be followed to ease the ATO
+process and make on-boarding simpler. **Defaults** are safe selections that
+tend to be used by a large number of our projects; you may find yourself with
+a better or more tailored solution, however. **Suggestions** contain examples
+that have worked well on a project or two; they're not widely used enough to
+be defaults, but are worth considering.
 
 ## Versions
 
@@ -23,9 +24,9 @@ on cloud.gov and incrementally update as new releases are issued.
 
 When using Django, we **default** to starting with the most recent [Long Term
 Support](https://www.djangoproject.com/download/#supported-versions) release.
-This will give your project the most runway of support after 18F finishes the
-project. If a second LTS becomes available while building the project, upgrade
-at the earliest convenience; devs that follow will thank you.
+This will give your project the most runway of support after 18F finishes its
+work. If a second LTS becomes available while building the project, upgrade at
+the earliest convenience; devs that follow will thank you.
 
 Otherwise, our **standard** practice is to use the latest release of our
 libraries when first installing. Security updates (as indicated by GitHub or
@@ -49,13 +50,13 @@ Our **standard** tool for ensure consistency across Python code-bases is
 [flake8](http://flake8.pycqa.org/en/latest/). It's **default** settings are a
 good first step, as is using its [integration with
 isort](https://pypi.python.org/pypi/flake8-isort) for import order. We
-**suggest** investigating its flake8's [plugin
+**suggest** investigating flake8's [plugin
 ecosystem](https://pypi.python.org/pypi?%3Aaction=search&term=flake8&submit=search)
 for more functionality.
 
 Using Code Climate to measure complexity scores (by way of
 [radon](https://pypi.python.org/pypi/radon)) is also a reasonable **default**
-to ensure you see potentially problematic functions and classes.
+to ensure you see potentially confounding functions and classes.
 
 ## Libraries
 
@@ -76,8 +77,8 @@ recommend when trying to solve them.
 
 Python 3.5 and beyond have had partial support for static type hints. Static
 typing can both make code authors' intent clearer and reduce the number of
-bugs through static analysis. They're also notorious for slowing down the page
-of prototyping and requiring a great deal of boiler-plate.
+bugs through static analysis. It's also notorious for slowing down the pace of
+prototyping and requiring a great deal of boiler-plate.
 
 Given this state, we believe it's reasonable to **default** to using type
 annotations when they make your intent clearer (i.e. as a form of
