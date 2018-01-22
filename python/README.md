@@ -47,7 +47,7 @@ implementing that include
 ## Style
 
 Our **standard** tool for ensure consistency across Python code-bases is
-[flake8](http://flake8.pycqa.org/en/latest/). It's **default** settings are a
+[flake8](http://flake8.pycqa.org/en/latest/). Its **default** settings are a
 good first step, as is using its [integration with
 isort](https://pypi.python.org/pypi/flake8-isort) for import order. We
 **suggest** investigating flake8's [plugin
