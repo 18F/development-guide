@@ -4,14 +4,19 @@ This is a **WORK IN PROGRESS**. Help us make it better by [submitting an
 issue](https://github.com/18F/development-guide) or joining us in the
 [#python](https://gsa-tts.slack.com/messages/C02ES0C3R) channel!
 
-This document is structured by topic; under each, we include "Standards",
-"Defaults", and "Suggestions". **Standards** are practices that have a strong
-consensus across 18F; they should generally be followed to ease the ATO
-process and make on-boarding simpler. **Defaults** are safe selections that
-tend to be used by a large number of our projects; you may find yourself with
-a better or more tailored solution, however. **Suggestions** contain examples
-that have worked well on a project or two; they're not widely used enough to
-be defaults, but are worth considering.
+This document is structured by topic; under each, we include “Standards”,
+“Defaults”, and “Suggestions”.
+
+**Standards** are practices that have a strong consensus across 18F; they
+should generally be followed to ease the ATO process and make on-boarding
+simpler.
+
+**Defaults** are safe selections that tend to be used by a large number of our
+projects; you may find yourself with a better or more tailored solution,
+however.
+
+**Suggestions** contain examples that have worked well on a project or two;
+they're not widely used enough to be defaults, but are worth considering.
 
 ## Versions
 
