@@ -31,7 +31,7 @@ When using Django, we **default** to starting with the most recent [Long Term
 Support](https://www.djangoproject.com/download/#supported-versions) release.
 This will give your project the most runway of support after 18F finishes its
 work. If a second LTS becomes available while building the project, upgrade at
-the earliest convenience; devs that follow will thank you.
+the earliest convenience. Devs that follow will thank you.
 
 Otherwise, our **standard** practice is to use the latest release of our
 libraries when first installing. Security updates (as indicated by GitHub or
@@ -51,7 +51,7 @@ implementing that include
 
 ## Style
 
-Our **standard** tool for ensure consistency across Python code-bases is
+Our **standard** tool for ensure consistency across Python code bases is
 [flake8](http://flake8.pycqa.org/en/latest/). Its **default** settings are a
 good first step, as is using its [integration with
 isort](https://pypi.python.org/pypi/flake8-isort) for import order. We
@@ -66,7 +66,7 @@ to ensure you see potentially confounding functions and classes.
 ## Libraries
 
 The Python ecosystem is large and full of alternative solutions to similar
-problems. Here we document a few, common use cases and the libraries we
+problems. Here we document a few common use cases and the libraries we
 recommend when trying to solve them.
 
 | Purpose | Library | Conviction |
