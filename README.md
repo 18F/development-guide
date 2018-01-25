@@ -6,11 +6,16 @@ A set of guidelines and best practices for an awesome engineering team
 * [Workflow Best Practices](/workflow)
 * [Project Setup](/project_setup)
 * [Architecture Reviews](/architecture_reviews)
-* [Ruby Guide](/ruby)
-* [Language Selection Guidance](/language_selection)
 * [Accessibility Scanning Guide](/accessibility_scanning)
 * [People Guidance](/people)
 * [Continuous Deployment with Autopilot Guide](/continuous_deployment)
+
+### Language Guides
+
+* [Language Selection Guidance](/language_selection)
+* [Node](/nodejs)
+* [Python](/python)
+* [Ruby](/ruby)
 
 ### Public domain
 
