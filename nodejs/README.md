@@ -30,16 +30,16 @@ application implements a generic contract with the platform. This contract
 allows it to be scaled and managed by the platform without intimate knowledge of
 how the application works.
 
-[cloud.gov](https://cloud.gov/) is the preferred platform at 18F. Building your
+[cloud.gov][cloud-gov] is the preferred platform at 18F. Building your
 Node.js application with the Twelve-factor methodology in mind will ensure your
-application is designed for cloud.gov.
+application is designed for [cloud.gov][cloud-gov].
 
 
 ### Best practices
 
 #### Recommend
 
-- Build your application on top of cloud.gov.
+- Build your application on top of [cloud.gov][cloud-gov].
 - Read the [Twelve-factor methodology](https://12factor.net/) and keep it in
   mind as you build your application.
 
@@ -85,6 +85,75 @@ your browser code and server code use the same ECMAScript features.
   allows more folks to jump in.
 - Front end build tools make it possible to choose a syntax you want and
   polyfill the missing features in the browser.
+
+
+## Managing dependencies
+
+Your dependencies should be declared explicitly in your application. Node.js
+uses `package.json` to do that.
+
+    $ npm install --save <package>
+
+This will install the package from [npmjs.org][npmjs] and `--save` will record the version
+range in your `package.json`. This allows dependency versions to be explicit and
+locked to a particular version or version range.
+
+If this is a package only used for development, like a test or build tool, it
+should be marked as a `devDependency` with `--save-dev`. This way the dependency
+will not be shipped to production.
+
+   $ npm install --save-dev <package>
+
+
+### Shrinkwrap
+
+Your dependencies each has their own dependency. Running `npm ls` will show you
+the entire dependency tree. While `package.json` ensures your top-level
+dependencies are fixed, it's possible some deep dependencies could be different
+versions between your development environments and production environments.
+`npm-shrinkwrap.json` solves that by recording the entire dependency tree.
+
+    $ npm shrinkwrap
+
+
+### Vendoring dependencies
+
+[cloud.gov][cloud-gov] recommends you vendor your dependencies. This means your
+dependencies are included with your application.
+
+Ensure that `.cfignore` does **not** include `node_modules`. You want this
+directory to be pushed to [cloud.gov][cloud-gov].
+
+These steps should be included in your deploy script or continuous deployment
+pipeline. Install only your production dependencies.
+
+    $ rm -rf node_modules
+    $ npm install --production
+
+The [nodejs_buildpack](https://github.com/cloudfoundry/nodejs-buildpack) will
+automatically run `npm rebuild` to build any native modules for the production
+platform.
+
+*Note: If you do not vendor your application dependencies, the
+`nodejs_buildpack` will try to download and build your dependencies
+automatically. Some applications have so many dependencies that
+[cloud.gov][cloud-gov] fails to build your application because it runs out of
+space. If your application dies on `cf push`, you might be running into this
+issue. The solution is to vendor your dependenices.*
+
+
+### Best practices
+
+#### Recommend
+
+- Use `--save` or `--save-dev` with `npm install` when installing new packages
+  to record the version range automatically in your `package.json`.
+
+
+#### Suggest
+
+- Use `npm-shrinkwrap.json` to lock deep dependencies in your application.
+- Vendor your application dependencies.
 
 
 ## Frameworks
@@ -152,11 +221,78 @@ Here's a list of scaffolds we've had success with:
   has been scaffolded, you're not going to scaffold it again.
 
 
+## Automated testing
+
+Automated testing is critical to developing a modern web application.
+
+
+### Test frameworks
+
+[Mocha](https://www.npmjs.com/package/mocha) is a simple, flexible test
+framework. It provides a good base to write your test suite. Mocha is
+a behavior-driven development (BDD) style framework which allows for writing
+descriptive and meaningful phrases (DAMP) in your test cases.
+
+[Many projects at
+18F](https://github.com/search?utf8=%E2%9C%93&q=org%3A18F+filename%3Apackage.json+mocha&type=Code)
+are using mocha.
+
+You should configure your default test command by specifying a `test` script in
+your `package.json`.
+
+```javascript
+{
+  // ...
+  "scripts": {
+    "test": "mocha"
+  }
+}
+```
+
+And now you can run your tests with a simple command:
+
+    $ npm test
+
+
+### Spies, stubs, and mocks
+
+In testing, it's important to isolate the subject under test. Usually this is
+done with spies, stubs, and mocks and then making assertions on how your code
+interacted with these primitives. [Sinon](https://www.npmjs.com/package/sinon)
+is a framework to provide these.
+
+
+### Assertions
+
+[Chai](https://www.npmjs.com/package/chai) is a BDD-style assertion library for
+Node.js. There are many plugins, including
+[Sinon-Chai](https://www.npmjs.com/package/sinon-chai), that provide additional
+assertions for specific test frameworks.
+
+
+### Best practices
+
+
+#### Recommend
+
+- Use a test runner to write automated tests for your application.
+- Specify your test runner as your `test` script.
+- Enable continuous integration so your tests are run automatically on every
+  change of your application.
+
+
+#### Suggest
+
+- Use the [javascript testing
+  cookbook](https://pages.18f.gov/testing-cookbook/javascript/) to learn more
+  about testing with Node.js.
+
+
 ## Authentication
 
 For Express, [Passport](http://www.passportjs.org/) has many authentication
 plugins including [OAuth2](https://www.npmjs.com/package/passport-oauth2) which
-can be used with cloud.gov authentication.
+can be used with [cloud.gov][cloud-gov] authentication.
 
 
 ### Best practices
@@ -206,9 +342,64 @@ If you need to embed serialized JSON in an HTML script tag, use
 - Take special care when embedding un-trusted user data in HTML or SQL.
 
 
+## Monitoring
+
+[New Relic](https://www.npmjs.com/package/newrelic) works with Node.js and
+provides in-depth monitoring and instrumentation of your application. It's
+Synthetics product also provides availability alerting.
+
+    $ npm install --save newrelic
+
+```javascript
+// app.js
+
+require('newrelic');
+```
+
+You can configure it by dropping a `newrelic.js` file or you can configure it
+using the `newrelic` module's API. Your `NEW_RELIC_LICENSE_KEY` should be
+treated like a secret. You can include it in a user provided service and where
+it is exposed via the `VCAP_SERVICES` environment variable.
+
+Don't forget to [configure
+alerts](https://pages.18f.gov/before-you-ship/infrastructure/monitoring/).
+
+
+### Best practices
+
+
+#### Suggest
+
+- Use New Relic to instrument and monitor your application.
+- Configure Synthetics to alert you in case your application is unavailable.
+
+
+## Static analysis
+
+Many of the hosted services used in other languages also work with Node.js.
+These services analyze your code and report any issues they find.
+
+Gemnasium can also be configured to send alerts when your dependencies are out
+of date or have security issues.
+
+- Gemnasium
+- Code Climate
+
+
+### Best practices
+
+
+### Suggest
+
+- Follow the [before you
+  ship](https://pages.18f.gov/before-you-ship/security/static-analysis/) guide
+  to configure static analysis.
+
+
 [cloud-gov]: https://cloud.gov/
 [expressjs]: https://expressjs.com/
 [hapijs]: https://hapijs.com/
 [github-federalist]: https://github.com/18F/federalist
 [github-analytics-report]: https://github.com/18F/analytics-reporter-api
 [github-omb-eregs]: https://github.com/18F/omb-eregs
+[npmjs]: https://npmjs.org/
