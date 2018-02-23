@@ -84,10 +84,10 @@ pain points around test coverage, monitoring, integrating with systems like
 cloud.gov, and code complexity, but overall felt that we _know_ where those
 pain points lie. This dovetails with concerns around project hand-offs and
 losing that knowledge. One responder (an excellent JS coder) suggested we
-standardize our backends further, particularly preferring Rails and Django and
-dropping Node. The other major problem cited was around getting time to circle
-back and clean projects up. On a positive note, one commenter wrote, our
-projects are "by far the most technically sound portfolio I've ever seen".
+standardize our back ends further, particularly preferring Rails and Django
+and dropping Node. The other major problem cited was around getting time to
+circle back and clean projects up. On a positive note, one commenter wrote,
+our projects are "by far the most technically sound portfolio I've ever seen".
 
 Immediate guidance:
 

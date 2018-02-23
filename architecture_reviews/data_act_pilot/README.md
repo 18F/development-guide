@@ -37,7 +37,7 @@ sales teams to sell DATA Act solutions, the engineers on this pilot focused on
 a minimal viable product. It would contain two endpoints: one to display a
 form and one to accept input and report validation errors. There would be no
 file storage, no authentication (aside from minimal Basic Auth), and no
-frontend build process. They would deploy on cloud.gov and selected a
+front end build process. They would deploy on cloud.gov and selected a
 familiar, Flask stack. The team anticipated writing “throwaway” code, a simple
 demonstration that such an application _could_ exist; they wanted to create
 that demonstration quickly with few resources. Ultimately, they were quite

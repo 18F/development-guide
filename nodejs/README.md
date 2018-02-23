@@ -1,214 +1,114 @@
-# Node.js
+# Node/Javascript Development Guide
 
-> [Node.js](https://nodejs.org/) is a JavaScript runtime built on Chrome's V8
-> JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that
-> makes it lightweight and efficient. Node.js' package ecosystem, npm, is the
-> largest ecosystem of open source libraries in the world.
+This is a **WORK IN PROGRESS**. Help us make it better by [submitting an
+issue](https://github.com/18F/development-guide) or joining us in the
+[#javascript](https://gsa-tts.slack.com/messages/C032KSPPQ) channel!
 
-This is a living guide that describes some best practices around using Node.js
-at 18F. For areas we don't have a specific recommendation, we try to document
-what folks are currently using to help inform your decision.
+This document is structured by topic; under each, we include “Standards”,
+“Defaults”, and “Suggestions”.
 
-This guide will also help facilitate discussions around these technologies so we
-can identify where there is consensus and where there is disagreement.
+**Standards** are practices that have a strong consensus across 18F; they
+should generally be followed to ease the ATO process and make on-boarding
+simpler.
 
-For each area, we'll include Recommendations, Suggestions, or Considerations.
-Recommendations are practices where there is a strong consensus on the team.
-Suggestions are practices where there is some agreement but many reasons why you
-might choose something different. Considerations are tips to help you decide for
-yourself what is right for your project.
+**Defaults** are safe selections that tend to be used by a large number of our
+projects; you may find yourself with a better or more tailored solution,
+however.
 
-If you have any questions, hop into the
-[#javascript](https://gsa-tts.slack.com/messages/javascript/) Slack channel.
+**Suggestions** contain examples that have worked well on a project or two;
+they're not widely used enough to be defaults, but are worth considering.
 
 
-## Twelve-factor web applications
+## Versions
 
-[12factor.net](https://12factor.net/) describes a twelve-factor methodology for
-building scalable web applications. By following the methodology, your
-application implements a generic contract with the platform. This contract
-allows it to be scaled and managed by the platform without intimate knowledge of
-how the application works.
-
-[cloud.gov](https://cloud.gov/) is the preferred platform at 18F. Building your
-Node.js application with the Twelve-factor methodology in mind will ensure your
-application is designed for cloud.gov.
+Node.js supports certain versions as Long-term Support (LTS) versions. We have
+**standardized** to using the [current active
+LTS](https://github.com/nodejs/LTS#lts-schedule1) version, currently v8.x.
 
 
-### Best practices
-
-#### Recommend
-
-- Build your application on top of cloud.gov.
-- Read the [Twelve-factor methodology](https://12factor.net/) and keep it in
-  mind as you build your application.
-
-
-## Choosing a version
-
-### Node.js
-
-Node.js supports certain versions as Long-term Support (LTS) versions. We
-recommend the [current active LTS](https://github.com/nodejs/LTS#lts-schedule1)
-version, currently v6.x.
-
-
-### ECMAScript
-
-ES5, ES6, ES7? JavaScript is an evolving language and is defined by
-[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript). Modern browsers support
-ES5, but when writing code on the server, you don't have to write
+JavaScript is an evolving language defined by
+[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript). Modern browsers
+support ES5, but when writing code on the server, you don't have to write
 browser-compatible code. With `--harmony`, Node.js [supports many ES6 and ES7
-features](http://node.green/).
+features](http://node.green/). Similarly, on both the front end _and_ back end,
+you can use webpack, browserify, babel, etc. to transpile your code. This
+allows you to fill in the feature gaps that are not yet supported by Node.js.
+This also means your browser code and server code use the same ECMAScript
+features. Given these capabilities, we recommend **default**ing to using a
+transpiler and targeting the same ES version for back end and front end code.
+Be sure to always polyfill missing features in the browser. We **suggest**
+using ES6 as your source language.
 
-You can also use the same build tools that you use on the front end, like
-webpack and browserify with babel, to transpile your code. This allows you to
-fill in the feature gaps that are not yet supported by Node.js. This also means
-your browser code and server code use the same ECMAScript features.
+For libraries, our **standard** practice is to use the latest release when
+first installing. Security updates (as indicated by GitHub or Gemnasium)
+should be applied ASAP, but all libs should be updated at some routine
+interval (e.g. quarterly).
 
+Finally, in an effort to ensure our deployments are repeatable, our code
+**stardards** require all dependencies (including dependencies' dependencies)
+be pinned to specific versions. This should also apply to the development
+environment (e.g. linters, testing tools, etc.) **Suggestions** for
+implementing that include
+* npm's [package-lock.json](https://docs.npmjs.com/files/package-lock.json)
+  (npm &gt;= 5)
+* npm's [npm-shrinkwrap.json](https://docs.npmjs.com/files/shrinkwrap.json)
+  (npm &lt; 5)
+* yarn's [yarn.lock](https://yarnpkg.com/lang/en/docs/yarn-lock/)
+* [vendoring
+  dependencies](http://docs.cloudfoundry.org/buildpacks/node/index.html#vendoring)
+  (though this is only a partial solution)
 
-### Best practices
+## Style
 
+Our **standard** tool for ensuring consistency across Node code bases is
+[eslint](http://eslint.org/), using the [AirBnB style
+guide](https://github.com/airbnb/javascript) as a **default** configuration.
+See the [Front End Guide](https://frontend.18f.gov/javascript/style/) for
+installation instructions.
 
-#### Recommend
-
-- Use the [current active LTS](https://github.com/nodejs/LTS#lts-schedule1)
-  version of Node.js, currently v6.x.
-
-
-#### Consider
-
-- What syntax are you using on the front end? Consider using the same syntax and
-  features for both the  front end and back end code.
-- Many developers write JavaScript in the browser (ES5) even if they aren't
-  a JavaScript developer. Using a syntax that many folks are familiar with
-  allows more folks to jump in.
-- Front end build tools make it possible to choose a syntax you want and
-  polyfill the missing features in the browser.
-
-
-## Frameworks
+## Libraries
 
 Frameworks provide a common baseline for your application. ATO requires
 configurations that most frameworks provide out of the box, or make it very easy
-to enable.
+to enable. Here, we document a few common use cases and the libraries we
+recommend when trying to solve them.
 
-The most common framework at 18F is [Express][expressjs]. You don't have to
-choose Express, but you should use an existing framework with an active
-community for support.
-
-Here are some existing projects at 18F using Express:
-
-- [Federalist][github-federalist]
-- [OMB eRegs][github-omb-eregs]
-- [Analytics Reporter API][github-analytics-report]
-
-You can [find many
-more](https://github.com/search?q=org%3A18F+filename%3Apackage.json+express&type=Code&utf8=%E2%9C%93) internal and
-external projects as well.
-
-
-### Best practices
-
-
-#### Recommend
-
-- Use an existing framework with active community support.
-
-
-#### Suggest
-
-- Use [Express][expressjs].
-
-
-#### Consider
-
-- [Hapi](https://hapijs.com) is another popular framework with a handful of
-  projects using it at 18F.
-
+| Purpose | Library | Conviction |
+| --- | --- | --- |
+| Test Runner | [Mocha](https://mochajs.org/) | Default |
+| Test Spies, Stubs, etc. | [Sinon](https://www.npmjs.com/package/sinon) | Default |
+| Test assertions | [Chai](https://www.npmjs.com/package/chai) | Default |
+| Web framework | [Express](https://expressjs.com) | Default |
+| Authentication | [Passport](http://www.passportjs.org/) | Default |
+| Security Headers | [Helmet](https://www.npmjs.com/package/helmet) | Default |
+| Embedded JSON | [htmlescape](https://www.npmjs.com/package/htmlescape) | Default |
+| ORM | [sequelize](https://www.npmjs.com/package/sequelize) | Suggestion |
+| Sessions | [cookie-session](https://www.npmjs.com/package/cookie-session) | Suggestion |
+| CSRF | [csurf](https://www.npmjs.com/package/csurf) | Suggestion |
 
 ## Scaffolding your application
 
-Scaffolding tools can help take care of some of boilerplate of initializing
-a project. Some scaffolds are generator tools, others are kits intended to be
-forked. There are many available on Github. You might also choose one based on the
-front end frameworks you want to use and then add the server-side pieces
-yourself. You also don't have to use one at all.
+Scaffolding tools can help take care of some of boilerplate of initializing a
+project. Some scaffolds are generator tools, others are kits intended to be
+forked. There are many available on Github. You might also choose one based on
+the front end frameworks you want to use and then add the server-side pieces
+yourself. You also don't have to use one at all. That said, don't spend too
+much time finding the perfect generator. Once your application has been
+scaffolded, you're not going to scaffold it again.
 
-Here's a list of scaffolds we've had success with:
+We **suggest** using one of the following scaffolds:
 
 - [express-generator](https://www.npmjs.com/package/express-generator)
 - [express-babel](https://github.com/vmasto/express-babel)
 
+## Type support
 
-### Best practices
+Static typing can both make code authors' intent clearer and reduce the number
+of bugs through static analysis. It's also notorious for slowing down the pace
+of prototyping and requiring a great deal of boiler-plate. A significant
+number of 18F projects are using [TypeScript](https://www.typescriptlang.org/)
+to add static typing, while a handful are testing out
+[Flow](https://flow.org/).
 
-
-#### Consider
-
-- What front end frameworks do you plan to use? Maybe choose a generator based
-  on those frameworks instead.
-- Don't spend too much time finding the perfect generator. Once your application
-  has been scaffolded, you're not going to scaffold it again.
-
-
-## Authentication
-
-For Express, [Passport](http://www.passportjs.org/) has many authentication
-plugins including [OAuth2](https://www.npmjs.com/package/passport-oauth2) which
-can be used with cloud.gov authentication.
-
-
-### Best practices
-
-#### Recommend
-
-- Avoid writing your own authentication. Use an existing framework with an
-  active development community.
-
-
-#### Suggest
-
-- Use [Passport](http://www.passportjs.org/) for your Express application.
-
-
-## Security
-
-You'll want some basic web application hardening.
-
-[helmet](https://www.npmjs.com/package/helmet) includes several smaller
-middleware functions to set secure HTTP headers on your Express application.
-
-If you're using any kind of user sessions, use
-[cookie-session](https://www.npmjs.com/package/cookie-session) for secure,
-encrypted, signed session cookies.
-
-When used with session middleware, [csurf](https://www.npmjs.com/package/csurf)
-provides cross-site request forgery (CSRF) protection.
-
-For database queries, use a library or ORM like
-[sequelize](https://www.npmjs.com/package/sequelize) which will quote SQL values
-for you. You shouldn't be writing SQL queries directly in your code unless you
-are using a low-level database feature. Take special care when using
-un-trusted user data within these scripts.
-
-If you need to embed serialized JSON in an HTML script tag, use
-[htmlescape](https://www.npmjs.com/package/htmlescape) instead of
-`JSON.stringify`.
-
-
-### Best practices
-
-#### Recommend
-
-- Use existing well-known libraries with an active development community.
-- Use a library or ORM to avoid writing SQL commands directly.
-- Take special care when embedding un-trusted user data in HTML or SQL.
-
-
-[cloud-gov]: https://cloud.gov/
-[expressjs]: https://expressjs.com/
-[hapijs]: https://hapijs.com/
-[github-federalist]: https://github.com/18F/federalist
-[github-analytics-report]: https://github.com/18F/analytics-reporter-api
-[github-omb-eregs]: https://github.com/18F/omb-eregs
+At this time, we **suggest** considering a static type-checker, and using
+TypeScript if it'd aid your project's workflow.
