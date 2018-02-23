@@ -1,6 +1,6 @@
 In preparation for a discussion about whether we should try to encourage or
-discourage backend NodeJS apps, we created a brief survey about NodeJS backend
-usage. We received 17 responses of roughly 80 solicited.
+discourage back end NodeJS apps, we created a brief survey about NodeJS back
+end usage. We received 17 responses of roughly 80 solicited.
 
 ## 18F projects
 
@@ -57,13 +57,13 @@ on the topic. Let's look at reasons why engineers say they responded this way.
 
 ### Yes
 
-Responders in this camp described the benefits of NodeJS on the backend in the
-abstract:
+Responders in this camp described the benefits of NodeJS on the back end in
+the abstract:
 
 * Easy testing, packaging, deployment
 * Rich libraries, particularly for web apps
 * JS is the lingua franca for web developers, meaning more contributors
-* Frontend devs can contribute to backend and vis versa more easily
+* Front end devs can contribute to back end and vis versa more easily
 * Event-driven IO matches the workflow of API servers, adapters, and proxies
 
 ### No

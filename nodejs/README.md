@@ -30,12 +30,12 @@ JavaScript is an evolving language defined by
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript). Modern browsers
 support ES5, but when writing code on the server, you don't have to write
 browser-compatible code. With `--harmony`, Node.js [supports many ES6 and ES7
-features](http://node.green/). Similarly, on both the front end _and_ backend,
+features](http://node.green/). Similarly, on both the front end _and_ back end,
 you can use webpack, browserify, babel, etc. to transpile your code. This
 allows you to fill in the feature gaps that are not yet supported by Node.js.
 This also means your browser code and server code use the same ECMAScript
 features. Given these capabilities, we recommend **default**ing to using a
-transpiler and targeting the same ES version for backend and frontend code.
+transpiler and targeting the same ES version for back end and front end code.
 Be sure to always polyfill missing features in the browser. We **suggest**
 using ES6 as your source language.
 
