@@ -5,7 +5,7 @@
 * Backend - [CM Lubinski](https://gsa-tts.slack.com/messages/@cm)
 * Data - [Tony Garvan](https://gsa-tts.slack.com/messages/@tony)
 * DevOps - [Adam Kendall](https://gsa-tts.slack.com/messages/@adamkendall)
-* Front-End - [Marco Segreto](https://gsa-tts.slack.com/messages/@marco)
+* Front-End - [Jeremia Kimelman](https://gsa-tts.slack.com/messages/@jeremiak)
 * Security - [DKP](https://gsa-tts.slack.com/messages/@dkp)
 
 ## Responsibilities
