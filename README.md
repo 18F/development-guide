@@ -7,6 +7,7 @@ This repo is where the 18F Front End Guild keeps its guide to best practices and
 ### Quicklinks
 
 - Guide: https://frontend.18f.gov/
+- [CONTRIBUTING.md](CONTRIBUTING.md) on how to build this guide locally and submitting PRs/issues.
 
 ## Our mission
 We believe that government websites should be functional, maintainable, and thoughtfully designed. Our guild helps TTS promote the adoption and advancement of front end design and development best practices. In this way, TTS can lead by example while providing effective services that help our partners and customers fulfill their missions.
