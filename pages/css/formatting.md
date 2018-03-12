@@ -1,7 +1,6 @@
 ---
 title: Formatting
 permalink: /css/formatting/
-layout: docs
 sidenav: css
 ---
 # Formatting

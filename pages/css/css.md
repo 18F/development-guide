@@ -1,7 +1,6 @@
 ---
 title: CSS
 permalink: /css/
-layout: docs
 sidenav: css
 ---
 

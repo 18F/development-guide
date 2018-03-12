@@ -1,0 +1,74 @@
+{% if footer %}
+<footer class="usa-footer usa-footer-medium" role="contentinfo">
+
+  {% if footer.last_updated %}
+    <div class="usa-grid">
+      <div class="usa-width-one-whole">
+        <p>Last updated: {{ page.last_modified_at | date: '%B %d, %Y at %I:%M %p' }}</p>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if footer.top %}
+    <div class="usa-grid usa-footer-return-to-top">
+      <a href="{{ footer.top.href | default: '#' }}">{{ footer.top.text | default: 'Return to top' }}</a>
+    </div>
+  {% endif %}
+
+
+
+  {% if footer.links %}
+    {% assign footer_links = site.data.navigation[footer.links] | default: footer.links %}
+    {% assign _sizes = 'whole half third fourth sixth' | split: ' ' %}
+    {% assign _size = footer_links.size | minus: 1 %}
+    {% assign _size = _sizes[_size] | default: 'whole' %}
+  <div class="usa-footer-primary-section">
+    <div class="usa-grid">
+      <nav class="usa-footer-nav">
+        <ul class="usa-unstyled-list">
+          {% for _link in footer_links %}
+          <li class="usa-width-one-{{ _size }} usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="{% if _link.external == true %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}">
+              {{ _link.text }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if footer.logos or footer.heading or footer.contact %}
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid">
+      <div class="usa-footer-logo usa-width-one-half">
+        {% if footer.logos %}
+          {% for logo in footer.logos -%}
+            {% if logo.url %}
+              <a href="{{ logo.url }}">
+            {% endif %}
+            <img class="usa-footer-logo-img" src="{% if logo.external %}{{ logo.src }}{% else %}{{ logo.src | relative_url }}{% endif %}" alt="{{ logo.alt }}"{% if logo.width %}width="{{ logo.width }}"{% endif %}{% if logo.height %}height="{{ logo.height }}"{% endif %}>
+            {% if logo.url %}
+              </a>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% if footer.heading %}
+        <h3 class="usa-footer-logo-heading">{{ footer.heading }}</h3>
+        {% endif %}
+      </div>
+      <div class="usa-footer-contact-links usa-width-one-half">
+        <ul class="usa-unstyled-list">
+          <li><a href="https://github.com/18F/uswds-jekyll">18F USWDS-Jekyll theme</a></li>
+          <li>Hosted by <a href="https://federalist.18f.gov/">Federalist</a></li>
+          <li>Maintained by <a href="https://18f.gsa.gov/">18F</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+</footer>
+{% endif %}

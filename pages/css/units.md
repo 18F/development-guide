@@ -1,7 +1,6 @@
 ---
 title: Units
 permalink: /css/units/
-layout: docs
 sidenav: css
 ---
 # Units

@@ -1,7 +1,6 @@
 ---
 title: Dependencies
 permalink: /javascript/dependencies/
-layout: docs
 sidenav: js
 ---
 # Dependencies

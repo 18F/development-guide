@@ -1,7 +1,6 @@
 ---
 title: Naming
 permalink: /css/naming/
-layout: docs
 sidenav: css
 ---
 # Naming
