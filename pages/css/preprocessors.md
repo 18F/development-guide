@@ -1,7 +1,6 @@
 ---
 title: Preprocessors
 permalink: /css/preprocessors/
-layout: docs
 sidenav: css
 ---
 # Preprocessors

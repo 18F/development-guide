@@ -1,7 +1,6 @@
 ---
 title: Frameworks
 permalink: /javascript/frameworks/
-layout: docs
 sidenav: js
 ---
 # Frameworks

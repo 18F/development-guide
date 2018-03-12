@@ -6,6 +6,8 @@
 # _config.yml).
 # title: Header title
 
+usa_banner: true
+
 primary:
   # this is a key into _data/navigation.yml
   links: primary

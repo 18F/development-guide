@@ -1,6 +1,5 @@
 ---
 title: 18F Front End Guide
-layout: docs
 permalink: /
 ---
 Welcome to the 18F front end guide! This is where we keep all of our
