@@ -1,10 +1,10 @@
 # Continuous Deployment with Contraband's Autopilot
 ## What to do?
 
-1. [Get deployer credentials](https://github.com/18F/development-guide/tree/add-autopilot/adding-autodeployment#1-getting-deployer-credentials)
-2. [Configure the continuous integration service](https://github.com/18F/development-guide/tree/add-autopilot/adding-autodeployment#2-update-travisyml)
-3. [Add `deploy.sh`](https://github.com/18F/development-guide/tree/add-autopilot/adding-autodeployment#3-add-deploysh)
-4. [Add manifests](https://github.com/18F/development-guide/tree/add-autopilot/adding-autodeployment#4-add-manifests)
+1. [Get deployer credentials](#1-getting-deployer-credentials)
+2. [Configure the continuous integration service](#2-configure-the-continuous-integration-service)
+3. [Add `deploy.sh`](#3-add-deploysh)
+4. [Add manifests](#4-add-manifests)
 
 ## What is this guide for?
 
