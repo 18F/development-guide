@@ -9,6 +9,7 @@ A set of guidelines and best practices for an awesome engineering team
 * [Accessibility Scanning Guide](/accessibility_scanning)
 * [People Guidance](/people)
 * [Continuous Deployment with Autopilot Guide](/continuous_deployment)
+* [Datastore Selection Guidance](/datastore_selection)
 
 ### Language Guides
 
