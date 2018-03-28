@@ -27,7 +27,7 @@ starting a Python project, select the [latest Python
 release](https://github.com/cloudfoundry/python-buildpack/releases) available
 on cloud.gov and incrementally update as new releases are issued.
 
-When using Django, we **default** to starting with the most recent [Long Term
+When using [Django], we **default** to starting with the most recent [Long Term
 Support](https://www.djangoproject.com/download/#supported-versions) release.
 This will give your project the most runway of support after 18F finishes its
 work. If a second LTS becomes available while building the project, upgrade at
@@ -72,8 +72,8 @@ recommend when trying to solve them.
 | Purpose | Library | Conviction |
 | --- | --- | --- |
 | Test Runner | [py.test](https://docs.pytest.org/en/latest/) | Standard |
-| Web framework | [Django](https://www.djangoproject.com/) | Default |
-| ORM | Django | Default |
+| Web framework | [Django] | Default |
+| ORM | [Django] | Default |
 | API | [Django Rest Framework](http://www.django-rest-framework.org/) | Default |
 | HTTP Client | [Requests](http://docs.python-requests.org/en/master/) | Default |
 | Task Queue | [Celery](http://www.celeryproject.org/) | Suggestion |
@@ -90,3 +90,5 @@ annotations when they make your intent clearer (i.e. as a form of
 documentation). We **suggest** using a static analysis tool (such as
 [mypy](http://mypy.readthedocs.io/en/latest/)) to catch logic bugs, but only
 where it's practical. Consider a white-list of files to run against.
+
+[Django]: https://www.djangoproject.com/
