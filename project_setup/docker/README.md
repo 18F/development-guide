@@ -254,6 +254,7 @@ settling), but it's worth considering.
 * [omb-eregs](https://github.com/18F/omb-eregs)
 * [pa11y-lambda](https://github.com/18F/pa11y-lambda)
 * [tock](https://github.com/18F/tock)
+* [federalist](https://github.com/18F/federalist)
 
 ### Docker as alternative dev env
 
