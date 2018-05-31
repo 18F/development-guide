@@ -35,8 +35,8 @@ the earliest convenience. Devs that follow will thank you.
 
 Otherwise, our **standard** practice is to use the latest release of our
 libraries when first installing. Security updates (as indicated by GitHub or
-Gemnasium) should be applied ASAP, but all libs should be updated at some
-routine interval (e.g. quarterly).
+Snyk) should be applied ASAP, but all libs should be updated at some routine
+interval (e.g. quarterly).
 
 Finally, in an effort to ensure our deployments are repeatable, our code
 **stardards** require all dependencies (including dependencies' dependencies)

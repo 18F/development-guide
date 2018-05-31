@@ -17,7 +17,7 @@ otherwise.
 | --- | --- |
 | Back end Performance Monitoring | New Relic APM |
 | Continuous Integration | CircleCI |
-| Dependency Analysis | Gemnasium and/or GitHub |
+| Dependency Analysis | Snyk and/or GitHub |
 | Front end Performance Monitoring | Google Analytics (provided by DAP)<br />Note: New Relic is not approved. |
 | Infrastructure as a Service (IaaS) | Amazon Web Services GovCloud (provided by cloud.gov) |
 | Platform as a Service (PaaS) | cloud.gov |
