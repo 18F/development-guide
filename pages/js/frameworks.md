@@ -14,7 +14,7 @@ AngularJS (commonly referred to as "Angular") is an open-source web application 
   - complex data visualization dashboards
   - lazy-loaded from the back end
 - When the site's design specifies a single page app architecture over classic server request and response.
-- When the whole site will be built with Angular to maintain front end code consistency.
+- When the whole site will be built with Angular to maintain front-end code consistency.
 
 #### When not to use:
 - For a single or a few simple components (with the rest of the site not using Angular), instead see React or Web Components.
@@ -25,7 +25,7 @@ AngularJS (commonly referred to as "Angular") is an open-source web application 
 - When the long-term maintenance dev team is very unfamiliar with Angular and don't have the resources to learn or hire for it.
 
 #### Pros:
-- Takes care of a lot of boilerplate code for front end interactions.
+- Takes care of a lot of boilerplate code for front-end interactions.
 - Attempts to extend HTML itself, and was designed so less experienced devs could use it.
 - Being maintained and developed by Google generally means good support.
 
@@ -41,7 +41,7 @@ Backbone.js is a JavaScript library with a RESTful JSON interface and is based o
 
 #### When to use:
 - A page design that requires dynamic data manipulation on the front end without a server request response, such as a todo app.
-- When a small front end framework is required due to performance constraints.
+- When a small front-end framework is required due to performance constraints.
 - When the long-term dev maintenance team is unfamiliar with any full frameworks, such as Angular.
 - To use as a wrapper and rest data manipulation library around a view-only framework, such as React.
 - When the dev team is familiar enough with Backbone to know how to write maintainable Backbone code.
@@ -71,7 +71,7 @@ React (sometimes styled React.js or ReactJS) is an open-source JavaScript librar
 - JavaScript UI that incorperates many nested components.
 - A UI with many components and updates that needs to be performance conscious.
 - When only a "view" framework is desired/required.
-- To ensure all front end components conform to a single standard.
+- To ensure all front-end components conform to a single standard.
 
 #### When not to use:
 - When a complex build process is not feasible. React requires transforming "jsx" files to regular JavaScript.

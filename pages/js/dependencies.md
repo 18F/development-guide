@@ -63,7 +63,7 @@ npm allows various hooks to be executed during the install process. These script
 - A package *should* be scoped to 18F if its use cases fall mainly inside of 18F.
   - Example: [@18f/stylelint-rules](https://github.com/18F/stylelint-rules) is scoped to 18f because it's an 18F specific linting configuration that's directly linked to the 18F guides site.
 - A package *should* be scoped to 18f to avoid naming conflicts.
-  - Example: If 18F made a generic front end accordion to use across 18F sites, it should probably be scoped to `@18f/accordion` to avoid conflicts with all other accordions out there.
+  - Example: If 18F made a generic front-end accordion to use across 18F sites, it should probably be scoped to `@18f/accordion` to avoid conflicts with all other accordions out there.
 
 ##### How to scope a package to 18F
 - Ensure you are part of the 18f npm org and have at least developer rights. This can be found on the [18f org team page](https://www.npmjs.com/org/18f/members).
