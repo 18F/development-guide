@@ -2,11 +2,11 @@
 
 ## Current roster
 
-* Backend - [CM Lubinski](https://gsa-tts.slack.com/messages/@cm)
-* Data - [Tony Garvan](https://gsa-tts.slack.com/messages/@tony)
-* DevOps - [Adam Kendall](https://gsa-tts.slack.com/messages/@adamkendall)
-* Front-End - [Jeremia Kimelman](https://gsa-tts.slack.com/messages/@jeremiak)
-* Security - [DKP](https://gsa-tts.slack.com/messages/@dkp)
+* Backend - [Greg Walker](https://gsa-tts.slack.com/messages/@U0KHZ7BE1)
+* Data - [Mark Headd](https://gsa-tts.slack.com/messages/@U2C5A07NF)
+* DevOps - [Josh Carp](https://gsa-tts.slack.com/messages/@U049AQS5E)
+* Front-End - [Brendan Sudol](https://gsa-tts.slack.com/messages/@U0UA066AV)
+* Security - [DKP](https://gsa-tts.slack.com/messages/@U3D3G1EHX)
 
 ## Responsibilities
 
