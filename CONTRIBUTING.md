@@ -1,5 +1,5 @@
 ## Building the guide locally
-The front end guide is built on the [USWDS Jekyll theme gem](https://github.com/18F/uswds-jekyll).
+The Front-End Guide is built on the [USWDS Jekyll theme gem](https://github.com/18F/uswds-jekyll).
 
 To run it locally, clone this repo and then:
 1. Install [http://bundler.io/](Bundler) if you don't already have it: `gem install bundler`

@@ -1,7 +1,6 @@
 ---
 title: Style / Linting
 permalink: /javascript/style/
-layout: docs
 sidenav: js
 ---
 # Style / Linting

@@ -1,7 +1,6 @@
 ---
 title: Output Enco
 permalink: /security/output-encoding
-layout: docs
 sidenav: security
 ---
 

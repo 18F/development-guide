@@ -1,7 +1,6 @@
 ---
 title: Web Components
 permalink: /web-components/
-layout: docs
 ---
 # Web components
 

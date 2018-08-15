@@ -1,7 +1,6 @@
 ---
 title: Specificity
 permalink: /css/specificity/
-layout: docs
 sidenav: css
 ---
 # Specificity

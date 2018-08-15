@@ -1,7 +1,6 @@
 ---
 title: Inheritance
 permalink: /css/inheritance/
-layout: docs
 sidenav: css
 ---
 # Inheritance
