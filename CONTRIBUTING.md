@@ -1,5 +1,5 @@
 ## Building the guide locally
-The front end guide is built on the [USWDS Jekyll theme gem](https://github.com/18F/uswds-jekyll).
+The Front-End Guide is built on the [USWDS Jekyll theme gem](https://github.com/18F/uswds-jekyll).
 
 To run it locally, clone this repo and then:
 1. Install [http://bundler.io/](Bundler) if you don't already have it: `gem install bundler`
@@ -16,7 +16,7 @@ We welcome pull requests! Here's how to submit a PR:
 1. A PR must have one `approved` review in order to be merged into master. Any guild member with write access should be able to approve and merge PRs. (You cannot approve your own PR, sorry!)
 
 ## Submitting issues
-Don't have time to file a pull request, but want to flag something? [https://github.com/18F/frontend/issues](Open an issue) stating what you think we should add or change and why, and we'll discuss it as a group.
+Don't have time to file a pull request, but want to flag something? [Open an issue](https://github.com/18F/frontend/issues) stating what you think we should add or change and why, and we'll discuss it as a group.
 
 ## Public domain
 

@@ -1,7 +1,6 @@
 ---
 title: Architecture
 permalink: /css/architecture/
-layout: docs
 sidenav: css
 ---
 # Architecture

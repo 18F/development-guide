@@ -1,7 +1,6 @@
 ---
 title: Linting
 permalink: /css/linting/
-layout: docs
 sidenav: css
 ---
 # Linting
