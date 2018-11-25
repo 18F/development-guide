@@ -45,7 +45,7 @@ applied ASAP, but all libs should be updated at some routine interval (e.g.
 quarterly).
 
 Finally, in an effort to ensure our deployments are repeatable, our code
-**stardards** require all dependencies (including dependencies' dependencies)
+**standards** require all dependencies (including dependencies' dependencies)
 be pinned to specific versions. This should also apply to the development
 environment (e.g. linters, testing tools, etc.) **Suggestions** for
 implementing that include
@@ -90,7 +90,7 @@ recommend when trying to solve them.
 
 Scaffolding tools can help take care of some of boilerplate of initializing a
 project. Some scaffolds are generator tools, others are kits intended to be
-forked. There are many available on Github. You might also choose one based on
+forked. There are many available on GitHub. You might also choose one based on
 the front end frameworks you want to use and then add the server-side pieces
 yourself. You also don't have to use one at all. That said, don't spend too
 much time finding the perfect generator. Once your application has been
