@@ -39,7 +39,7 @@ Snyk) should be applied ASAP, but all libs should be updated at some routine
 interval (e.g. quarterly).
 
 Finally, in an effort to ensure our deployments are repeatable, our code
-**stardards** require all dependencies (including dependencies' dependencies)
+**standards** require all dependencies (including dependencies' dependencies)
 be pinned to specific versions. This should also apply to the development
 environment (e.g. linters, testing tools, etc.) **Suggestions** for
 implementing that include
