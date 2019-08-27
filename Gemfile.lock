@@ -21,7 +21,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.5)
-    ffi (1.9.23)
+    ffi (1.11.1)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
     html-pipeline (2.7.1)
