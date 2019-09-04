@@ -18,19 +18,71 @@ In the future we hope to provide you with a small script to generate this all fo
 
 This guide assumes that you already have:
 - a git repository
-- continuous integration services on [Travis CI](https://travis-ci.org/).
+- continuous integration service set up - CircleCI or Travis
 - [a cloud.gov account](https://cloud.gov/docs/getting-started/accounts/?)
 
 ## 1. Getting deployer credentials
 
 Use the instructions on [Cloud.gov](https://cloud.gov/docs/apps/continuous-deployment/#provisioning-deployment-credentials) to create a deployer account for your app.
 
+## 2. Configure the continuous integration service
+
+### Circle CI
+
+First, add your cloud.gov deployer service credentials as environment variables to CircleCI. Save them as the CF_USERNAME and CF_PASSWORD.
+
+**Update `.circleci/config.yml`**
+
+We're using the new CloudFoundry Orb in CircleCI. Get the latest orb version at https://circleci.com/orbs/registry/orb/circleci/cloudfoundry. There are also examples of blue green deploys for zero downtime deploys. 
+
+```yml
+version: 2.1
+
+orbs:
+  cloudfoundry: circleci/cloudfoundry@0.1.52
+
+jobs:
+  test:
+    # Your test configuration goes here.
+    # Ruby - https://circleci.com/docs/2.0/language-ruby/
+    # Python - https://circleci.com/docs/2.0/language-python/
+    # JS - https://circleci.com/docs/2.0/language-javascript/
+
+workflows:
+  test:
+    jobs:
+      - test:
+          filters:
+            branches:
+              ignore: master
+  build_deploy:
+    jobs:
+      - test:
+          filters:
+            branches:
+              only: master
+      - cloudfoundry/push:
+          appname: YOUR_APP_NAME
+          endpoint: 'https://api.fr.cloud.gov'
+          manifest: 'path/to/manifest.yml'
+          org: YOUR_ORG
+          package: '.'
+          space: YOUR_SPACE
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
+```
+
+Done!
+
+### Travis CI
+
 In order for the Travis CI build environment to have access to the deployer credentials, you can either use `travis encrypt` to add an encrypted hash of the credentials to your `.travis.yml` file, _or_ you can use Travis CI's web-based GUI for adding secrets.
 
 Because of some character escape issues posed by `travis encrypt`, we suggest that you store these credentials using the web-based GUI. To access this, visit: https://travis-ci.org/18F/YOUR_REPO/settings. Make sure that the *Display value in build log* setting is **OFF** for this value. For more on this see the [Travis Docs]( https://docs.travis-ci.com/user/encryption-keys/#Note-on-escaping-certain-symbols).
 
-## 2. Configure the continuous integration service
-### Travis CI
 **Update `.travis.yml`**
 
 If you are following the instructions from above, you can ignore the continuous integration instructions in the Cloud.gov docs. We will be using a slightly different set of instructions from what is listed there.
@@ -69,10 +121,8 @@ In order to make use of conditional deployments to staging/master on different b
 
 For more on conditional deployments, you can check out the [cloud.gov documentation](https://cloud.gov/docs/apps/continuous-deployment/#using-conditional-deployments).
 
-### Other Continuous Integration Tools
-Coming Soon!
 
-## 3. Add `deploy.sh`
+#### Add `deploy.sh`
 
 To account for the branch-wise logic that is generated in the `.travis.yml`, we will be using a separate `deploy.sh` shell script that will be called by Travis at the time of deployment.
 
