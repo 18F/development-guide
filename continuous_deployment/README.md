@@ -1,18 +1,4 @@
-# Continuous Deployment with Contraband's Autopilot
-## What to do?
-
-1. [Get deployer credentials](#1-getting-deployer-credentials)
-2. [Configure the continuous integration service](#2-configure-the-continuous-integration-service)
-3. [Add `deploy.sh`](#3-add-deploysh)
-4. [Add manifests](#4-add-manifests)
-
-## What is this guide for?
-
-This guide is to help developers implement [Contraband's Autopilot](https://github.com/contraband/autopilot) plugin on a [cloud.gov](https://cloud.gov/) hosted app.
-
-By following this guide, you'll be able to deploy by merging pull requests. A benefit of Autopilot is that deploys cause zero downtime.
-
-In the future we hope to provide you with a small script to generate this all for you!
+# Continuous Deployment
 
 ## Pre-requisites
 
@@ -23,13 +9,14 @@ This guide assumes that you already have:
 
 ## 1. Getting deployer credentials
 
-Use the instructions on [Cloud.gov](https://cloud.gov/docs/apps/continuous-deployment/#provisioning-deployment-credentials) to create a deployer account for your app.
+Use the instructions on [Cloud.gov](https://cloud.gov/docs/apps/continuous-deployment/#provisioning-deployment-credentials) to create a deployer account for your app. Your deployer credentials will regularly expire, so please make sure to update them periodically.
+
 
 ## 2. Configure the continuous integration service
 
 ### Circle CI
 
-First, add your cloud.gov deployer service credentials as environment variables to CircleCI. Save them as the CF_USERNAME and CF_PASSWORD.
+Add your cloud.gov deployer service credentials as environment variables to CircleCI. Save them as the CF_USERNAME and CF_PASSWORD.
 
 **Update `.circleci/config.yml`**
 
@@ -157,7 +144,7 @@ cf login -a $API -u $CF_USERNAME -p $CF_PASSWORD -o $ORG -s $SPACE
 cf zero-downtime-push $NAME -f $MANIFEST
 ```
 
-## 4. Add manifests
+## Add manifests
 Cloud.gov (and Cloud Foundry) use manifest files to specify how an app should be built on cloud.gov. You will now add two separate files, a `manifest.yml` for your production app and a `manifest-staging.yml` for your development application.
 
 Generally your production application will have multiple instances while your staging will only have one. Manifests can be short and sweet, or extensive. For the full cloud foundry documentation on manifests see here: https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html#minimal-manifest.
@@ -165,8 +152,3 @@ Generally your production application will have multiple instances while your st
 For an example manifest and manifest-staging see here:
 [Acquisitions Manifest](https://github.com/18F/acquisitions.18f.gov/blob/develop/manifest.yml)
 [Acquisitions Manifest-Staging](https://github.com/18F/acquisitions.18f.gov/blob/develop/manifest-staging.yml)
-
-### Additional Considerations
-Your deployer credentials will regularly expire, so please make sure to update them periodically.
-
-Also, if your application successfully deploys to cloud.gov but does not start, which may happen for an application that does not have an adequate test suite, you may have to go into the cf target space and manually delete the "APP_NAME-venerable" application in order to make use of `autopilot` again.
