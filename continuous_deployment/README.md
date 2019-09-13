@@ -3,8 +3,8 @@
 ## Pre-requisites
 
 This guide assumes that you already have:
-- a git repository
-- continuous integration service set up - CircleCI or Travis
+- [a GitHub account](https://handbook.18f.gov/github/) and a GitHub repository, typically [under the 18F organization](https://github.com/18F)
+- [a CircleCI account](https://circleci.com/signup/) (Log In with GitHub)
 - [a cloud.gov account](https://cloud.gov/docs/getting-started/accounts/?)
 
 ## 1. Getting deployer credentials
@@ -70,85 +70,6 @@ workflows:
 
 Done!
 
-### Travis CI
-
-In order for the Travis CI build environment to have access to the deployer credentials, you can either use `travis encrypt` to add an encrypted hash of the credentials to your `.travis.yml` file, _or_ you can use Travis CI's web-based GUI for adding secrets.
-
-Because of some character escape issues posed by `travis encrypt`, we suggest that you store these credentials using the web-based GUI. To access this, visit: https://travis-ci.org/18F/YOUR_REPO/settings. Make sure that the *Display value in build log* setting is **OFF** for this value. For more on this see the [Travis Docs]( https://docs.travis-ci.com/user/encryption-keys/#Note-on-escaping-certain-symbols).
-
-**Update `.travis.yml`**
-
-If you are following the instructions from above, you can ignore the continuous integration instructions in the Cloud.gov docs. We will be using a slightly different set of instructions from what is listed there.
-
-#### The `before_deploy` block
-
-To utilize Autopilot, you will need your Travis deployment to have both the Cloud Foundry CLI and Autopilot installed. To do this, you will modify your `before_deploy` section of your `.travis.yml` file.
-
-First, find the latest release of the [Cloud Foundry CLI](https://github.com/cloudfoundry/cli/releases) (we want the Linux 64 bit binary).
-
-Add the following lines to the `before_deploy` section of your `.travis.yml` file, replacing `LATEST_VERSION` on the second line with the version number of the latest stable release you found above:
-
-```yml
-- export PATH=$HOME:$PATH
-- travis_retry curl -L -o $HOME/cf.tgz "https://cli.run.pivotal.io/stable?release=linux64-binary&version=LATEST_VERSION"
-- tar xzvf $HOME/cf.tgz -C $HOME
-- cf install-plugin autopilot -f -r CF-Community
-```
-
-#### The `deploy` block
-
-In order to make use of conditional deployments to staging/master on different branches, add the following to the `deploy` section of the `.travis.yml`:
-
-```yml
-- provider: script
-  script: "./deploy.sh staging"
-  skip_cleanup: true
-  on:
-    branch: develop
-- provider: script
-  script: "./deploy.sh production"
-  skip_cleanup: true
-  on:
-    branch: master
-```
-
-For more on conditional deployments, you can check out the [cloud.gov documentation](https://cloud.gov/docs/apps/continuous-deployment/#using-conditional-deployments).
-
-
-#### Add `deploy.sh`
-
-To account for the branch-wise logic that is generated in the `.travis.yml`, we will be using a separate `deploy.sh` shell script that will be called by Travis at the time of deployment.
-
-Follow the comments to adjust the script to suit your needs as you see fit. You will need to update the `spaces` to account for what is available on your particular cloud.gov.
-
-```sh
-set -e
-
-API="https://api.fr.cloud.gov" # This will be the following url if you are still deploying to E/W 'https://api.cloud.gov'
-ORG="gsa-acq-proto"            #Or whatever cloud.gov org you wish to place the app in
-APP_NAME=""                    # Enter your app name
-
-SPACE=$1
-
-if [ $# -ne 1 ]; then
-  echo "Usage: deploy <space>"
-  exit
-fi
-
-if [ $SPACE = 'production' ]; then
-  NAME=APP_NAME
-  MANIFEST="manifest.yml"
-elif [ $SPACE = 'staging' ]; then
-  NAME="$APP_NAME-staging"
-  MANIFEST="manifest-staging.yml"
-else
-  echo "Unknown space: $SPACE"
-  exit
-fi
-
-cf login -a $API -u $CF_USERNAME -p $CF_PASSWORD -o $ORG -s $SPACE
-cf zero-downtime-push $NAME -f $MANIFEST
-```
 
 ## Add manifests
 Cloud.gov (and Cloud Foundry) use manifest files to specify how an app should be built on cloud.gov. You will now add two separate files, a `manifest.yml` for your production app and a `manifest-staging.yml` for your development application.
