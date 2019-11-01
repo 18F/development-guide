@@ -3,84 +3,14 @@ title: Formatting
 permalink: /css/formatting/
 sidenav: css
 ---
+
 # Formatting
-## Spacing
-- Where possible, limit CSS files’ width to 80 characters. See
-  [notes](#format_notes) to see how to configure your text editor to 80
-  characters.
-  - There will be unavoidable exceptions to this rule, such as URLs, or
-    gradient syntax. Don’t worry.
-- Use soft-tabs with a two space indent.
-- Put one space after `:` in property declarations.
-- Put spaces before `{` in rule declarations.
-- Put a blank line between each selector block.
-- To close a selector block, put an unindented closing curly brace on a
-  separate line.
-- Each declaration should appear on its own line for more accurate error
-  reporting.
-- Do not indent selectors.
 
-```scss
-// Bad
-.rule{
-    margin:3px;text-align:center;}
-
-// Good
-.rule {
-  margin: 3px;
-  text-align: center;
-}
-
-.another_rule {
-  margin: 3px;
-}
-```
-
-Multiple selectors should each be on a single line, with no space after each
-comma, unless the selector is less than five chars.
-
-```scss
-// Bad
-selector1, selector2 {
-}
-
-// Good
-selector1,
-selector2,
-selector3 {
-}
-
-// Good
-h1, h2 {
-}
-```
-
-## Property-value pairs
-- Put each pair on its own line.
-- Indent each pair one level.
-- End in a semicolon.
-
-```scss
-selector {
-  name: value;
-  name: value;
-}
-```
-
-Spaces should separate values and operators in Sass expressions.
-
-```scss
-// Bad
-selector {
-  font-size: ($font-size+2em);
-  font-size: ($font-size +2em);
-}
-
-// Good
-selector {
-  font-size: ($font-size + 2em);
-}
-```
+We recommend using [Prettier](https://prettier.io), and enabling it in your
+editor by default. Prettier is an automatic code formatter that will make your
+code format consistent. This way we don't have to argue over how to format our
+code - we just let the tools enforce something! Prettier works with both plain
+CSS and SCSS.
 
 Do not use shorthand declarations unless you need to explicitly set all the
 available values.
@@ -94,28 +24,6 @@ margin-bottom: 3em;
 margin-top: 3em;
 
 margin: 3em 4em 2em 1em;
-```
-
-Single-quote URLs and string values.
-
-```scss
-  background-image: url('/images/kittens.jpg');
-  font-family: 'Helvetica', sans-serif;
-  font-family: 'Lucida Grande', 'Helvetica', sans-serif;
-```
-
-Wrap numeric calculations in parentheses.
-
-```scss
-// Bad
-.component {
-  width: 100% / 3;
-}
-
-// Good
-.component {
-  width: (100% / 3);
-}
 ```
 
 Avoid arbitrary numbers that are repeated, or linked, or dependent on other
@@ -144,7 +52,9 @@ $align_top: 100%;
 ```
 
 ## Order
-* Use the following ordering:
+
+- Use the following ordering:
+
   1. variables
   2. @extend directives
   3. @include directives
@@ -159,9 +69,9 @@ $align_top: 100%;
   whole project consistent.
 - Place a new line before nested selectors unless they are after the first
   selector.
-- Treat nested includes, such as Neat's media includes — `@include
-  media($small-screen)` — as a standard media query, rather than a Sass
-  @include. So they would be sorted directly after the declaration list.
+- Treat nested includes, such as Neat's media includes –
+  `@include media($small-screen)` — as a standard media query, rather than a
+  Sass @include. So they would be sorted directly after the declaration list.
 - Place mixin calls with `@content` after nested selectors.
 - You may deviate the sorting order to better suit your project's needs, as
   long as it's consistent throughout the project.
@@ -203,15 +113,3 @@ $align_top: 100%;
   }
 }
 ```
-
-<a id="format_notes"></a>
-
-## Notes
-### How to set text editors to 80 characters
-- Sublime: Add a `rulers` setting with 80 as the value.
-  - ```"rulers": [80]```
-- Atom: Set the `preferredLineLength` setting to 80.
-  - `preferredLineLength: 80`
-- Vim: Set two options in your .vimrc to wrap lines at 80 characters.
-  - ```set formatoptions+=w```
-  - ```set tw=80```
