@@ -1,0 +1,26 @@
+#! /bin/bash
+
+usage() {
+  echo "Usage: $0 [path to target repository]"
+  exit 1
+}
+
+if [ $# -ne 1 ]; then
+  echo "Error: Exactly one target repository must be specified"
+  usage
+fi
+
+if [ ! -d $1 ]; then
+  echo "Error: $1 is not a directory"
+  usage
+fi
+
+# Hack per:
+# http://stackoverflow.com/questions/4774054/reliable-way-for-a-bash-script-to-get-the-full-path-to-itself
+pushd $(dirname $0) >/dev/null
+TEMPLATE_ROOT=$(pwd -P)
+popd >/dev/null
+
+PATH=/usr/bin
+TARGET=$(echo "$1/" | sed 's#//$#/#')
+rsync -av --exclude .DS_Store $TEMPLATE_ROOT/{_includes,_layouts,assets} $TARGET

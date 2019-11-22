@@ -1,0 +1,54 @@
+# _data/navigation.yml
+primary:
+  - text: CSS
+    href: /css/
+  - text: JavaScript
+    href: /javascript/
+  - text: Web Components
+    href: /web-components/
+  - text: Security
+    href: /security/
+
+
+secondary:
+  - text: More 18F guides
+    href: https://guides.18f.gov/
+    external: true
+
+css:
+  - text: Architecture
+    href: /css/architecture/
+  - text: Documentation
+    href: /css/documentation/
+  - text: Frameworks
+    href: /css/frameworks/
+  - text: Formatting
+    href: /css/formatting/
+  - text: Inheritance
+    href: /css/inheritance/
+  - text: Linting
+    href: /css/linting/
+  - text: Naming
+    href: /css/naming/
+  - text: Preprocessors
+    href: /css/preprocessors/
+  - text: Specificity
+    href: /css/specificity/
+  - text: Units
+    href: /css/units/
+  - text: Variables
+    href: /css/variables/
+
+js:
+  - text: Dependencies
+    href: /javascript/dependencies/
+  - text: Frameworks
+    href: /javascript/frameworks/
+  - text: Libraries
+    href: /javascript/libraries/
+  - text: Style / Linting
+    href: /javascript/style/
+
+security:
+  - text: Content Security Policy (CSP)
+    href: /security/content-security-policy/
