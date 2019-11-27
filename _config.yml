@@ -13,6 +13,9 @@ exclude:
 
 theme: uswds-jekyll
 
+include: 
+  - _pages
+
 defaults:
   - scope:
       path: ""
@@ -20,7 +23,11 @@ defaults:
     values:
       layout: page
 
-permalink: pretty
+collections:
+  pages:
+    output: true
+    permalink: /:path
+
 markdown: kramdown
 
 sass:
