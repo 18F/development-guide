@@ -1,6 +1,5 @@
 ---
 title: Content Security Policy
-permalink: /security/content-security-policy/
 sidenav: security
 ---
 

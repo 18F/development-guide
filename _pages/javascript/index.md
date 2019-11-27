@@ -1,6 +1,5 @@
 ---
 title: JavaScript
-permalink: /javascript/
 sidenav: js
 ---
 

@@ -1,3 +1,8 @@
+---
+title: Development Environments
+---
+# Development Environments
+
 ## Why this guide?
 
 This guide discusses some principles we should strive to achieve when architecting development environments along with some examples techniques for achieving them. By following this guide, you'll learn how to create environments that are easy to setup, well-documented, and are reproducible (great for finding and fixing bugs). This will keep your colleagues happy, save you time from supporting developer ramp-up, make your repo much more likely to receive open source contributions, and is also generally a good practice as a matter of course.

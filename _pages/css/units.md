@@ -1,6 +1,5 @@
 ---
 title: Units
-permalink: /css/units/
 sidenav: css
 ---
 # Units

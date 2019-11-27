@@ -1,3 +1,6 @@
+---
+title: Project Setup
+---
 ## Project Setup
 
 While the specific setup for each 18F project varies widely, there are certain

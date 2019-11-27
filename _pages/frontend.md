@@ -1,9 +1,7 @@
 ---
-title: 18F Front-End Guide
-permalink: /
+title: Front-End Disciplines
 ---
-Welcome to the 18F Front-End Guide! This is where we keep all of our
-guidelines for front-end design and development.
+# Front-End Disciplines
 
 ## What is front end?
 

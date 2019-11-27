@@ -1,3 +1,6 @@
+---
+title: Polls
+---
 Here we collect (publicly visible) survey and poll results. In particular, we
 create quick write-ups to summarize and contextualize the results.
 

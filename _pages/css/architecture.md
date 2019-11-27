@@ -1,6 +1,5 @@
 ---
 title: Architecture
-permalink: /css/architecture/
 sidenav: css
 ---
 # Architecture

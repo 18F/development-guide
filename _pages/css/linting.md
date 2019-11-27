@@ -1,6 +1,5 @@
 ---
 title: Linting
-permalink: /css/linting/
 sidenav: css
 ---
 # Linting

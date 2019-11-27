@@ -1,6 +1,5 @@
 ---
 title: Frameworks
-permalink: /javascript/frameworks/
 sidenav: js
 ---
 # Frameworks

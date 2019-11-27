@@ -1,4 +1,7 @@
-# Incident reports
+---
+title: Incident Reports
+---
+# Incident Reports
 Though we fully expect to write dependable applications, every project will
 experience service disruptions and other significant failings. In all cases,
 we want to learn from our mistakes both within our projects and more broadly.

@@ -1,6 +1,5 @@
 ---
 title: Documentation
-permalink: /css/documentation/
 sidenav: css
 ---
 # Documentation

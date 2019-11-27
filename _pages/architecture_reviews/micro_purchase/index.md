@@ -1,3 +1,6 @@
+---
+title: 'Micro-purchase: Do one thing well'
+---
 # Micro-purchase: Do one thing well
 
 ## TL;DR

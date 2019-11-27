@@ -1,6 +1,5 @@
 ---
 title: CSS
-permalink: /css/
 sidenav: css
 ---
 

@@ -1,3 +1,8 @@
+---
+title: Silos and Soundness, Oct ‘16
+---
+# Silos and Soundness, Oct ‘16
+
 Many of the issues we care about the most are very difficult to quantify. In
 this survey, we asked three questions meant to gauge how engineers felt about
 knowledge silos and the technical soundness of their projects. We invited all

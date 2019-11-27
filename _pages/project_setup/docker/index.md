@@ -1,3 +1,6 @@
+---
+title: Docker for development
+---
 # Docker for development
 
 Below we lay out recommendations for using Docker to wrap development

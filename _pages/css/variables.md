@@ -1,6 +1,5 @@
 ---
 title: Variables
-permalink: /css/variables/
 sidenav: css
 ---
 # Variables

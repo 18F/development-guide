@@ -1,3 +1,6 @@
+---
+title: Workflow Best Practices
+---
 # Workflow Best Practices
 
 Project teams may vary, but across 18F engineering we aim for consistency

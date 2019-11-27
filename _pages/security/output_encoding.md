@@ -1,10 +1,9 @@
 ---
-title: Output Enco
-permalink: /security/output-encoding
+title: Output Encoding
 sidenav: security
 ---
 
-# Output encoding
+# Output Encoding
 
 ## What is cross site scripting (XSS)?
 

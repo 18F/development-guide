@@ -1,6 +1,5 @@
 ---
 title: Security
-permalink: /security/
 sidenav: security
 ---
 

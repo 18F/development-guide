@@ -1,6 +1,5 @@
 ---
 title: Specificity
-permalink: /css/specificity/
 sidenav: css
 ---
 # Specificity

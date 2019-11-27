@@ -1,6 +1,5 @@
 ---
 title: Formatting
-permalink: /css/formatting/
 sidenav: css
 ---
 
