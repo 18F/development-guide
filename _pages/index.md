@@ -3,32 +3,29 @@ title: 18F Engineering Practices Guide
 ---
 A set of guidelines and best practices for an awesome engineering team
 
+* [Front-End Disciplines](/frontend)
 * [Third-Party Integrations](/integrations)
 * [Workflow Best Practices](/workflow)
+* [Example Workflows](/example_workflows)
 * [Project Setup](/project_setup)
 * [Architecture Reviews](/architecture_reviews)
-* [Accessibility Scanning Guide](/accessibility_scanning)
-* [People Guidance](/people)
-* [Continuous Deployment with Autopilot Guide](/continuous_deployment)
+* [Accessibility Scanning using AccessLint](/accessibility_scanning)
+* [Feedback Guide](/people)
+* [Continuous Deployment](/continuous_deployment)
 * [Datastore Selection Guidance](/datastore_selection)
+* [Security](/security)
+* [Code Review](/code_review)
+* [Development Environments](/development_environments)
+* [Incident Reports](/incident_reports)
+* [Polls](/polls)
+* [Project Setup](/project_setup)
+* [Tech Leads](/tech_leads)
 
 ### Language Guides
 
 * [Language Selection Guidance](/language_selection)
-* [Node](/nodejs)
+* [JavaScript](/javascript)
+* [Node.js](/nodejs)
 * [Python](/python)
 * [Ruby](/ruby)
-
-### Public domain
-
-This project is in the worldwide [public domain](LICENSE.md). As stated in
-[CONTRIBUTING](CONTRIBUTING.md):
-
-> This project is in the public domain within the United States, and copyright
-> and related rights in the work worldwide are waived through the [CC0 1.0
-> Universal public domain
-> dedication](https://creativecommons.org/publicdomain/zero/1.0/).
->
-> All contributions to this project will be released under the CC0
->dedication. By submitting a pull request, you are agreeing to comply
->with this waiver of copyright interest.
+* [CSS](/css)

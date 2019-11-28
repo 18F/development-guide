@@ -8,9 +8,9 @@
 
 usa_banner: true
 
-primary:
-  # this is a key into _data/navigation.yml
-  links: primary
+#primary:
+#  # this is a key into _data/navigation.yml
+#  links: primary
 
 secondary:
   # this is a key into _data/navigation.yml

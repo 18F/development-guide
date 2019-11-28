@@ -1,4 +1,4 @@
-title: 18F Front-End Guide
+title: 18F Engineering Practices Guide
 
 styles:
   - /assets/css/styles.css
@@ -45,10 +45,10 @@ logoalt: 18F logo
 google_analytics_ua: UA-48605964-19
 
 repo:
-  name: Front-End Guide
+  name: 18F Engineering Practices Guide
   description: Main repository
-  url: https://github.com/18F/frontend
+  url: https://github.com/18F/development-guide
 
 back_link:
-  url: "https://guides.18f.gov/"
+  url: "https://18f.gsa.gov/guides/"
   text: Read more 18F Guides

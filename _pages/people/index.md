@@ -22,3 +22,11 @@ Don't dwell on the past, but focus on the future. The future can be altered, the
 
 ### Top Performers
 Giving constructive feedback to a top performer is not nitpicking, it is actually some of the highest leverage work we can do. Most folks (not everyone of course) are eager to hear ways they can keep growing. We don't help folks by having no ideas for them. 
+
+### End of Year Assessment Guides
+
+18F, as a part of GSA, has a mature [performance management and recognition system](https://insite.gsa.gov/portal/content/500278). 
+This includes an end-of-year performance assessment.
+
+* [2016 Assessment Guide](/2016-Assessment-Guide)
+* [2017 Assessment Guide](/2017-Assessment-Guide)

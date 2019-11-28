@@ -1,21 +1,17 @@
 # _data/navigation.yml
-primary:
-  - text: CSS
-    href: /css/
-  - text: JavaScript
-    href: /javascript/
-  - text: Web Components
-    href: /web-components/
-  - text: Security
-    href: /security/
-
+#primary:
+#  - text: Example
+#    href: /example/
 
 secondary:
   - text: More 18F guides
-    href: https://guides.18f.gov/
+    href: https://18f.gsa.gov/guides/
     external: true
 
+# TODO: figure out how to nest links
 css:
+  - text: CSS
+    href: /css/
   - text: Architecture
     href: /css/architecture/
   - text: Documentation
@@ -39,7 +35,10 @@ css:
   - text: Variables
     href: /css/variables/
 
+# TODO: figure out how to nest links
 js:
+  - text: JavaScript
+    href: /javascript/
   - text: Dependencies
     href: /javascript/dependencies/
   - text: Frameworks
@@ -49,6 +48,11 @@ js:
   - text: Style / Linting
     href: /javascript/style/
 
+# TODO: figure out how to nest links
 security:
+  - text: Security
+    href: /security/
   - text: Content Security Policy (CSP)
     href: /security/content-security-policy/
+  - text: Output Encoding
+    href: /security/output_encoding/

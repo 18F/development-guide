@@ -47,7 +47,7 @@ together and easy to reference by both the team and interested stakeholders.
 Don't make folks search for the information.
 
 ## Examples
-* [C2](./C2)
+* [C2](./C2/c2-outage-report-2016-08-10.pdf)
 * [Cloud.gov](./cloud_gov)
 
 ## Additional resources

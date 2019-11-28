@@ -3,6 +3,11 @@ title: Node.js Development Guide
 ---
 # Node.js Development Guide
 
+## Related topics
+* [JavaScript](/javascript)
+
+## Introduction
+
 This is a **WORK IN PROGRESS**. Help us make it better by [submitting an
 issue](https://github.com/18F/development-guide) or joining us in the
 [#javascript](https://gsa-tts.slack.com/messages/C032KSPPQ) channel!
