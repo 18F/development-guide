@@ -15,6 +15,7 @@ theme: uswds-jekyll
 
 include: 
   - _pages
+  - .rubocop.yml # in _pages/ruby
 
 defaults:
   - scope:
