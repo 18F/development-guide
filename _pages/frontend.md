@@ -4,10 +4,10 @@ title: Front-End Disciplines
 # Front-End Disciplines
 
 ## Related topics
-* [CSS](/css)
-* [JavaScript](/javascript)
-* [Web Components](/web-components)
-* [Security](/security)
+* [CSS]({{site.baseurl}}/css)
+* [JavaScript]({{site.baseurl}}/javascript)
+* [Web Components]({{site.baseurl}}/web-components)
+* [Security]({{site.baseurl}}/security)
 
 ## What is front end?
 

@@ -3,7 +3,7 @@ title: Third-Party Tool Experience, Feb ‘18
 ---
 # Third-Party Tool Experience, Feb ‘18
 
-As we've begun to [define](/integrations/) a standard set of third-party
+As we've begun to [define]({{site.baseurl}}/integrations/) a standard set of third-party
 services we use in our apps, we wanted to measure existing familiarity. This
 will help us determine where we should focus documentation and training
 efforts. We had 29 responses from a pool of roughly 65.

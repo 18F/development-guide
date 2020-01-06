@@ -12,7 +12,7 @@ around deployments, git etiquette, and similar workflow conventions.
   test completion should be a requirement for deployment.
 * Generally, **CI should perform deployments**. This ensures the deployments
   are repeatable and don’t rely on individual development environments. See
-  our [documentation on continuous deployment](/continuous_deployment) for
+  our [documentation on continuous deployment]({{site.baseurl}}/continuous_deployment) for
   details on how to set this up.
 * Deployments should be **zero-downtime**, achievable through tools like
   “autopilot” (see the above docs for more detail).
@@ -28,8 +28,8 @@ around deployments, git etiquette, and similar workflow conventions.
 Git is our version control system of choice and GitHub is our current
 repository platform, but how to use these tools can be spelled out in a bit
 more detail. Note that we are looking to consolidate this with our existing
-documentation on [code review](/code_review) and [example
-workflows](/example_workflows).
+documentation on [code review]({{site.baseurl}}/code_review) and [example
+workflows]({{site.baseurl}}/example_workflows).
 
 ### "Must"s
 

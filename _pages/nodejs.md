@@ -4,7 +4,7 @@ title: Node.js Development Guide
 # Node.js Development Guide
 
 ## Related topics
-* [JavaScript](/javascript)
+* [JavaScript]({{site.baseurl}}/javascript)
 
 ## Introduction
 
