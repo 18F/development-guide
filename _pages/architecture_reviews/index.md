@@ -11,5 +11,5 @@ interesting design decisions from existing projects.
 
 ## Projects
 
-* [DATA Act Pilot: Simplicity is Key](/architecture_reviews/data_act_pilot)
-* [Micro-purchase: Do one thing well](/architecture_reviews/micro_purchase)
+* [DATA Act Pilot: Simplicity is Key]({{site.baseurl}}/architecture_reviews/data_act_pilot)
+* [Micro-purchase: Do one thing well]({{site.baseurl}}/architecture_reviews/micro_purchase)
