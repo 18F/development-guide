@@ -1,5 +1,6 @@
 ---
 title: 18F Engineering Practices Guide
+permalink: /
 ---
 A set of guidelines and best practices for an awesome engineering team
 
