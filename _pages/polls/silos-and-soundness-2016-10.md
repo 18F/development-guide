@@ -33,7 +33,7 @@ particularly for the pocket of engineers on the low end of the scale.
 
 * The ability to use continuing ed funds for
   [self-study](https://handbook.18f.gov/professional-development-and-training/#self-directed-study-for-engineers)
-* More [architecture reviews]({{site.baseurl}}/architecture_reviews)
+* More [architecture reviews]({{site.baseurl}}/architecture-reviews)
 
 We're also exploring
 
