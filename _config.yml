@@ -10,11 +10,11 @@ exclude:
   - LICENSE.md
   - README.md
   - go
+  - copy-template
 
 theme: uswds-jekyll
 
 include: 
-  - _pages
   - .rubocop.yml # in _pages/ruby
 
 defaults:
