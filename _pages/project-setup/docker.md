@@ -59,10 +59,9 @@ several, single-purpose containers (i.e. microservices).
 ### Base-images
 
 There's a balance to be struck between mirroring cloud.gov (e.g. through the
-[cflinuxfs2 base image](https://hub.docker.com/r/cloudfoundry/cflinuxfs2/))
+[cflinuxfs3 base image](https://hub.docker.com/r/cloudfoundry/cflinuxfs3/) based on Ubuntu 18.04 LTS, aka Bionic Beaver)
 and using [official Docker images](https://hub.docker.com/explore/) for Node,
-Postgres, Nginx, etc. We're working on a sustainable extension of the
-cflinuxfs2 image which would incorporate buildpacks, but in the meantime we
+Postgres, Nginx, etc. We're waiting on [Docker-based buildpacks](https://buildpacks.io) to stabilize, but in the meantime we
 recommend using the Ubuntu build (where available) of the official images,
 such as `python:3.5`, `ruby:2.4`, etc. Avoid the `slim` and `alpine` images as
 they aren't likely to closely match the production environment.
@@ -109,8 +108,8 @@ Adding fixed environment variables (e.g. `DJANGO_SETTINGS_MODULE`) is straight
 forward, just add an `environment` key to your service definition. We'll also
 want to include settings provided within cloud.gov like `PORT`,
 `DATABASE_URL`, and (potentially) `TMPDIR`. See the [full
-list](https://docs.run.pivotal.io/devguide/deploy-apps/environment-variable.html#app-system-env)
-from cloud foundry. We'll also want to duplicate the serialized JSON of the
+list](https://docs.cloudfoundry.org/devguide/deploy-apps/environment-variable.html#app-system-env)
+from Cloud Foundry. We'll also want to duplicate the serialized JSON of the
 `VCAP_APPLICATION` and `VCAP_SERVICES` variables, which is pretty straight
 forward using a "folded" string literal (`>`):
 
