@@ -1,4 +1,4 @@
-title: 18F Engineering Practices Guide
+title: TTS Engineering Practices Guide
 
 styles:
   - /assets/css/styles.css
@@ -46,7 +46,7 @@ logoalt: 18F logo
 google_analytics_ua: UA-48605964-19
 
 repo:
-  name: 18F Engineering Practices Guide
+  name: TTS Engineering Practices Guide
   description: Main repository
   url: https://github.com/18F/development-guide
 
