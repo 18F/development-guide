@@ -1,6 +1,6 @@
 # Technology Transformation Services (TTS) Engineering Practices
 
-[TTS](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services) offices and programs, including [18F](https://18f.gsa.gov), [CoE](https://coe.gsa.gov), [PIF](https://presidentialinnovationfellows.gov), and [Solutions](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services/tts-solutions), promote team best practices across specialty areas through guilds. These guilds support their members in whatever way deemed most appropriate by those members themselves.
+[TTS](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services) offices and programs — including [18F](https://18f.gsa.gov), [Centers of Excellence](https://coe.gsa.gov) (CoE), [Presidential Innovation Fellows](https://presidentialinnovationfellows.gov) (PIF), and [Solutions](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services/tts-solutions) — promote team best practices across specialty areas through guilds. These guilds support their members in whatever way deemed most appropriate by those members themselves.
 
 This repo is where the TTS Engineering Practices Guild keeps its guide to best practices and resources for software development. Documentation is written using [Markdown](https://kramdown.gettalong.org/quickref.html) syntax and published as HTML using the [Jekyll](https://jekyllrb.com) static site generator.
 
