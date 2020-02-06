@@ -3,15 +3,15 @@ title: 18F Engineering 2017 End of Year Assessment Guide
 ---
 # 18F Engineering 2017 End of Year Assessment Guide
 
-18F, as a part of GSA, has a mature [performance management and recognition system](https://insite.gsa.gov/portal/content/500278). 
+18F, as a part of GSA, has a mature [performance management and recognition system](https://insite.gsa.gov/topics/hr-pay-and-leave/employee-performance-management). 
 This includes an end-of-year performance assessment. 18F Engineering’s goals for the end-of-year assessment are to have 
 engineers talk with their facilitator and supervisor about the past year and create actionable plans for career growth 
 in the coming year. These reviews ideally build on a robust, granular, continuous feedback loop between an engineer, their 
 facilitator, and other coworkers.
 
 Assessments are based on an individual’s performance plan. GSA’s Office of Human Resources Management (OHRM) has a 
-[set of appraisal materials](https://insite.gsa.gov/portal/category/532570) applicable to all of GSA. These include a 
-good guide on [Appraising Objectively and Fairly](https://insite.gsa.gov/portal/getMediaData?mediaId=614006), 
+[set of appraisal materials](https://insite.gsa.gov/topics/hr-pay-and-leave/performance-management/performance-management-appraising) applicable to all of GSA. These include a 
+good guide on [Appraising Objectively and Fairly](https://insite.gsa.gov/cdnstatic/insite/Appraising_Objectively_and_Fairly.pdf), 
 and the requirement to evaluate performance on a 5 point scale. Performance plans have what GSA calls “critical elements.” Each “critical element” in the performance plan is rated, and there is also a summary rating. 
 Some ratings can earn performance awards. You can find more detail, including what each rating number means, in the 
 [Appraisal Rating System & Performance Awards](https://docs.google.com/document/d/1YtnP2RoSJZh5IiKWVJwxyAksjafCqlmBXspCV8nlhZM/edit) document. 
