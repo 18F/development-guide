@@ -8,10 +8,10 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.2.10)
-      i18n (~> 0.7)
+    activesupport (5.2.4.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
       minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
@@ -21,10 +21,10 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
-    ffi (1.11.1)
+    ffi (1.12.2)
     forwardable-extended (2.6.0)
-    gemoji (3.0.0)
-    html-pipeline (2.7.1)
+    gemoji (3.0.1)
+    html-pipeline (2.12.3)
       activesupport (>= 2)
       nokogiri (>= 1.4)
     htmlentities (4.3.4)
@@ -54,30 +54,27 @@ GEM
     jekyll_pages_api_search (0.5.0)
       jekyll_pages_api (~> 0.1.4)
       sass (~> 3.4)
-    jemoji (0.9.0)
-      activesupport (~> 4.0, >= 4.2.9)
+    jemoji (0.11.1)
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
-      jekyll (~> 3.0)
+      jekyll (>= 3.0, < 5.0)
     kramdown (1.17.0)
     liquid (4.0.3)
-    listen (3.1.5)
-      rb-fsevent (~> 0.9, >= 0.9.4)
-      rb-inotify (~> 0.9, >= 0.9.7)
-      ruby_dep (~> 1.2)
+    listen (3.2.1)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
     mini_portile2 (2.4.0)
-    minitest (5.11.3)
-    nokogiri (1.10.4)
+    minitest (5.14.0)
+    nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (4.0.1)
+    public_suffix (4.0.3)
     rb-fsevent (0.10.3)
-    rb-inotify (0.10.0)
+    rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rouge (3.10.0)
-    ruby_dep (1.5.0)
+    rouge (3.15.0)
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -85,7 +82,7 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     thread_safe (0.3.6)
-    tzinfo (1.2.5)
+    tzinfo (1.2.6)
       thread_safe (~> 0.1)
 
 PLATFORMS
@@ -93,8 +90,8 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll_pages_api_search
-  jemoji
+  jemoji (>= 0.9.0)
   uswds-jekyll!
 
 BUNDLED WITH
-   1.16.1
+   1.17.3
