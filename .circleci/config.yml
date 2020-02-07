@@ -28,12 +28,13 @@ jobs:
 
       - run:
           name: checking internal links
-          # grep for pages with markdown links to local pages (links with "(/").
+          # grep for pages with markdown links to local pages (links with "(/"),
+          # ignoring any binary files.
           # if found, fail build with error message (grep returns the opposite
           # exit code from what we’re hoping for, so the '!' negates the
           # expression to pass/fail the build as expected).
           command: |
-            ! (grep -Erl "\(/|href=['\"]/" _pages && echo "ERROR: Internal links must be prefixed with {{site.baseurl}} to work correctly with Federalist Previews. Fix the above pages.")
+            ! (grep -IErl "\(/|href=['\"]/" _pages && echo "ERROR: Internal links must be prefixed with {{site.baseurl}} to work correctly with Federalist Previews. Fix the above pages.")
       - run:
           name: build site
           command: bundle exec jekyll build
