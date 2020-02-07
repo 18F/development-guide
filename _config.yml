@@ -4,6 +4,7 @@ styles:
   - /assets/css/styles.css
 
 exclude:
+  - vendor
   - CONTRIBUTING.md
   - Gemfile
   - Gemfile.lock
