@@ -26,18 +26,20 @@ jobs:
             - ./vendor/bundle
           key: v2-dependencies-{{ checksum "Gemfile.lock" }}
 
-      - run:
-          name: checking internal links
+      # Temporarily disable
+      #- run:
+          #name: checking internal links
           # grep for pages with markdown links to local pages (links with "(/").
           # if found, fail build with error message (grep returns the opposite
           # exit code from what we’re hoping for, so the '!' negates the
           # expression to pass/fail the build as expected).
-          command: |
-            ! (grep -Erl "\(/|href=['\"]/" _pages && echo "ERROR: Internal links must be prefixed with {{site.baseurl}} to work correctly with Federalist Previews. Fix the above pages.")
+          #command: |
+          #  ! (grep -Erl "\(/|href=['\"]/" _pages && echo "ERROR: Internal links must be prefixed with {{site.baseurl}} to work correctly with Federalist Previews. Fix the above pages.")
       - run:
           name: build site
           command: bundle exec jekyll build
 
-      - run:
-          name: htmlproofer
-          command: bundle exec htmlproofer ./_site htmlproofer --disable-external
+      # Temporarily disable
+      #- run:
+          #name: htmlproofer
+          #command: bundle exec htmlproofer ./_site htmlproofer --disable-external
