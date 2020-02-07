@@ -4,6 +4,7 @@ styles:
   - /assets/css/styles.css
 
 exclude:
+  - vendor
   - CONTRIBUTING.md
   - Gemfile
   - Gemfile.lock
@@ -11,6 +12,8 @@ exclude:
   - README.md
   - go
   - copy-template
+  - Dockerfile
+  - docker-compose.yml
 
 theme: uswds-jekyll
 
