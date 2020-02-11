@@ -42,7 +42,7 @@ in [fec-cms](https://github.com/18F/fec-cms) for a great example
 [`eslint`](https://github.com/airbnb/javascript/blob/master/linters/.eslintrc))
 1. Unit test setup for each language
 1. Integration test setup (e.g. Selenium, Phantom)
-1. [Pa11y](https://github.com/18F/development-guide/tree/master/accessibility_scanning) setup
+1. [Pa11y](https://engineering.18f.gov/accessibility-scanning/) setup
 1. Visual regression setup (e.g. [Backstop](https://github.com/garris/BackstopJS))
 1. Continuous integration/testing (e.g. Travis, CircleCI)
 1. Code coverage metrics (e.g. CodeClimate, CodeCov, Coveralls). Aim for 90+%,
