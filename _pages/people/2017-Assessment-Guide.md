@@ -3,15 +3,15 @@ title: 18F Engineering 2017 End of Year Assessment Guide
 ---
 # 18F Engineering 2017 End of Year Assessment Guide
 
-18F, as a part of GSA, has a mature [performance management and recognition system](https://insite.gsa.gov/portal/content/500278). 
+18F, as a part of GSA, has a mature [performance management and recognition system](https://insite.gsa.gov/topics/hr-pay-and-leave/employee-performance-management). 
 This includes an end-of-year performance assessment. 18F Engineering’s goals for the end-of-year assessment are to have 
 engineers talk with their facilitator and supervisor about the past year and create actionable plans for career growth 
 in the coming year. These reviews ideally build on a robust, granular, continuous feedback loop between an engineer, their 
 facilitator, and other coworkers.
 
 Assessments are based on an individual’s performance plan. GSA’s Office of Human Resources Management (OHRM) has a 
-[set of appraisal materials](https://insite.gsa.gov/portal/category/532570) applicable to all of GSA. These include a 
-good guide on [Appraising Objectively and Fairly](https://insite.gsa.gov/portal/getMediaData?mediaId=614006), 
+[set of appraisal materials](https://insite.gsa.gov/topics/hr-pay-and-leave/performance-management/performance-management-appraising) applicable to all of GSA. These include a 
+good guide on [Appraising Objectively and Fairly](https://insite.gsa.gov/cdnstatic/insite/Appraising_Objectively_and_Fairly.pdf), 
 and the requirement to evaluate performance on a 5 point scale. Performance plans have what GSA calls “critical elements.” Each “critical element” in the performance plan is rated, and there is also a summary rating. 
 Some ratings can earn performance awards. You can find more detail, including what each rating number means, in the 
 [Appraisal Rating System & Performance Awards](https://docs.google.com/document/d/1YtnP2RoSJZh5IiKWVJwxyAksjafCqlmBXspCV8nlhZM/edit) document. 
@@ -86,7 +86,7 @@ First, you’ll want to review all that feedback along with the person’s facil
 
 It’s important to be especially cognizant of unconscious bias here. Remember that people are especially susceptible to assume that underrepresented people in tech — women, people of color, etc. — are less qualified than their white male counterparts. One way to correct for this bias is to make sure that reviews are concrete and specific (as above). Another way is to be cognizant of the kinds of reviews that are especially applied to underrepresented minorities. For example, [the word “abrasive” is far more common in reviews of women than of men](https://www.fastcompany.com/3034895/strong-female-lead/the-one-word-men-never-see-in-their-performance-reviews). Other similar kinds of phrases to watch out for are “tone”, “aggressive”, “judgemental”, “too nice”, and so on. In general do not write a review that seems like it speaks to the person’s character. Reviews should be focused on outcomes and project work. 
 
-GSA has [guidance on writing objective and fair reviews](https://insite.gsa.gov/portal/getMediaData?mediaId=614006) that’s worth reviewing as you start to write your review.
+GSA has [guidance on writing objective and fair reviews](https://insite.gsa.gov/cdnstatic/insite/Appraising_Objectively_and_Fairly.pdf) that’s worth reviewing as you start to write your review.
 
 You’ll need to provide a score (1-5) for each critical element in the person’s performance profile. The performance plan has criteria for each score; these plans are available in CHRIS. You should also review the overall guidance on the [rating system scores](https://docs.google.com/document/d/1YtnP2RoSJZh5IiKWVJwxyAksjafCqlmBXspCV8nlhZM/edit). You’ll also need to give the engineer a single overall score (1-5), which is calculated from the critical element scores.
 

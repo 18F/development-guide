@@ -28,5 +28,5 @@ Giving constructive feedback to a top performer is not nitpicking, it is actuall
 18F, as a part of GSA, has a mature [performance management and recognition system](https://insite.gsa.gov/portal/content/500278). 
 This includes an end-of-year performance assessment.
 
-* [2016 Assessment Guide]({{site.baseurl}}/2016-Assessment-Guide)
-* [2017 Assessment Guide]({{site.baseurl}}/2017-Assessment-Guide)
+* [2016 Assessment Guide]({{site.baseurl}}/people/2016-Assessment-Guide)
+* [2017 Assessment Guide]({{site.baseurl}}/people/2017-Assessment-Guide)
