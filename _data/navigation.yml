@@ -43,8 +43,6 @@ js:
     href: /javascript/dependencies/
   - text: Frameworks
     href: /javascript/frameworks/
-  - text: Libraries
-    href: /javascript/libraries/
   - text: Style / Linting
     href: /javascript/style/
 
