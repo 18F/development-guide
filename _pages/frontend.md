@@ -6,7 +6,6 @@ title: Front-End Disciplines
 ## Related topics
 * [CSS]({{site.baseurl}}/css)
 * [JavaScript]({{site.baseurl}}/javascript)
-* [Web Components]({{site.baseurl}}/web-components)
 * [Security]({{site.baseurl}}/security)
 
 ## What is front end?
