@@ -24,6 +24,25 @@ We use issues in this repo to track work. If you'd like to suggest a new topic o
 
 The software development industry is ever-changing, and our guide is a living document. Please suggest edits or changes via pull request.
 
+## Development
+
+To run the site locally, we recommend using:
+- [`git`](https://git-scm.com)
+- `docker` and `docker-compose` (included in [Docker Desktop](https://www.docker.com/products/docker-desktop))
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/18F/development-guide.git
+   ```
+1. From within the repository directory, run:
+
+   ```sh
+   docker-compose up --build
+   ```
+
+1. Open http://localhost:4000
+
 ## Public domain
 
 This project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):
