@@ -19,7 +19,6 @@ A set of guidelines and best practices for an awesome engineering team
 * [Development Environments]({{site.baseurl}}/development-environments)
 * [Incident Reports]({{site.baseurl}}/incident-reports)
 * [Polls]({{site.baseurl}}/polls)
-* [Project Setup]({{site.baseurl}}/project-setup)
 * [Tech Leads]({{site.baseurl}}/tech-leads)
 
 ### Language Guides
