@@ -4,7 +4,7 @@ sidenav: js
 ---
 # Frameworks
 ## Angular
-{%include components/tag-suggestions.html %}
+{%include components/tag-suggestion.html %}
 AngularJS (commonly referred to as "Angular") is an open-source web application framework maintained by Google and by a community of individual developers and corporations to address many of the challenges encountered in developing single-page applications ([Wikipedia](http://en.wikipedia.org/wiki/AngularJS)).
 
 #### When to use:
@@ -37,7 +37,7 @@ AngularJS (commonly referred to as "Angular") is an open-source web application 
 
 
 ## Backbone
-{%include components/tag-suggestions.html %}
+{%include components/tag-suggestion.html %}
 Backbone.js is a JavaScript library with a RESTful JSON interface and is based on the model–view–presenter (MVP) application design paradigm ([Wikipedia](http://en.wikipedia.org/wiki/Backbone.js)).
 
 #### When to use:
@@ -64,7 +64,7 @@ Backbone.js is a JavaScript library with a RESTful JSON interface and is based o
 
 
 ## React
-{%include components/tag-suggestions.html %}
+{%include components/tag-suggestion.html %}
 React (sometimes styled React.js or ReactJS) is an open-source JavaScript library for creating user interfaces that aims to address challenges encountered in developing single-page applications ([Wikipedia](https://en.wikipedia.org/wiki/React_(JavaScript_library))).
 
 #### When to use:
@@ -82,7 +82,7 @@ React (sometimes styled React.js or ReactJS) is an open-source JavaScript librar
 
 
 ## Flux
-{%include components/tag-suggestions.html %}
+{%include components/tag-suggestion.html %}
 Flux is not a framework, nor is it M**VC. It's a software architecture for
 writing complex single page applications.
 
