@@ -5,6 +5,7 @@ sidenav: js
 
 # Style / Linting
 
+{%include components/tag-standard.html %}
 We recommend combining [Prettier](https://prettier.io) with the
 [Airbnb JavaScript style guide](https://github.com/airbnb/javascript) plugins
 for [eslint](https://eslint.org).
