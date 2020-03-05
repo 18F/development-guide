@@ -53,4 +53,4 @@ security:
   - text: Content Security Policy (CSP)
     href: /security/content-security-policy/
   - text: Output Encoding
-    href: /security/output_encoding/
+    href: /security/output-encoding/
