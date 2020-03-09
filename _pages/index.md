@@ -42,7 +42,6 @@ classification for discussion._
 * [Development Environments]({{site.baseurl}}/development-environments)
 * [Incident Reports]({{site.baseurl}}/incident-reports)
 * [Polls]({{site.baseurl}}/polls)
-* [Tech Leads]({{site.baseurl}}/tech-leads)
 
 ### Language Guides
 
