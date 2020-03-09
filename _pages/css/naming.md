@@ -98,7 +98,7 @@ sidenav: css
 ## Naming Methodologies
 
 When it comes to naming, the most important thing is consistency. The
-recommended way to do this is using an existing methodology like [BEM](#BEM),
+recommended way to do this is using an existing methodology like [BEM](#bem),
 or use a custom one that’s clearly defined.
 
 ### BEM
