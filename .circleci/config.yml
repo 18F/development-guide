@@ -39,7 +39,6 @@ jobs:
           name: build site
           command: bundle exec jekyll build
 
-      # Temporarily disable
-      #- run:
-          #name: htmlproofer
-          #command: bundle exec htmlproofer ./_site htmlproofer --disable-external
+      - run:
+          name: htmlproofer
+          command: bundle exec htmlproofer ./_site htmlproofer --disable-external

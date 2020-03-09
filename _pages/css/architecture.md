@@ -19,8 +19,7 @@ to keep the specificity trend in an upwards curve as you move down in the file
 
 - Start with an elements file for all tag rules (a, h1-h5, p, \*, html, body).
 - Create component files for each structural element, such as buttons, navs,
-  etc. These are mainly class-based and use [BEM] or another [naming
-  scheme](#css-naming).
+  etc. These are mainly class-based and use [BEM] or another naming scheme.
 - Create more specific structure with modules. For instance, if the logo image
   and text needs very specific treatment, use a module.
   - Build modules from components through mixins, extends, and HTML.
