@@ -48,7 +48,7 @@ Don't make folks search for the information.
 
 ## Examples
 * [C2](./C2/c2-outage-report-2016-08-10.pdf)
-* [Cloud.gov](./cloud_gov)
+* [Cloud.gov](./cloud-gov)
 
 ## Additional resources
 * John Allspaw's [introduction](https://codeascraft.com/2012/05/22/blameless-postmortems/)

@@ -57,7 +57,7 @@ may also require ad-hoc scheduling.
 
 Reviewing project-specific practices enables leads to bring to your team their
 experience and knowledge of other 18F projects. These reviews can be scoped as
-widely (see our [architecture reviews](../architecture_reviews/)) or narrow as
+widely (see our [architecture reviews](../architecture-reviews/)) or narrow as
 you need, depending on your situation. We strongly encourage you to engage
 with technical leads as early as possible, when they can help you avoid or
 solve the kinds of problems that will be harder with time. Leads may suggest
