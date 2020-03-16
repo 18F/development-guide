@@ -2,10 +2,42 @@
 title: Frameworks
 sidenav: js
 ---
+
 # Frameworks
+
+When choosing a JavaScript web framework, also consider if vanilla JavaScript would satisfy your project needs. "Vanilla JavaScript" (or "vanilla JS") refers to using just JavaScript and the [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) provided natively by web browsers. For simpler project, vanilla JavaScript helps avoid overengineering, can reduce security and compliance complexity, and may reduce maintenance costs by making it possible for any JavaScript developer to work on it. However, vanilla JavaScript can be unwieldy in complex applications.
+
+## React
+{%include components/tag-default.html %}
+[React](https://reactjs.org/) (sometimes styled React.js or ReactJS) is an open-source JavaScript library for creating user interfaces that aims to address challenges encountered in developing single-page applications ([Wikipedia](https://en.wikipedia.org/wiki/React_(JavaScript_library))).
+
+#### When to use:
+- Single page apps that requires data manipulation on the front end without a server side request/response architecture.
+- When there's a strong need to render JavaScript based UI on the server due to performance or accessibility reasons.
+- JavaScript UI that incorperates many nested components.
+- A UI with many components and updates that needs to be performance conscious.
+- When only a "view" framework is desired/required.
+- To ensure all front-end components conform to a single standard.
+
+#### When not to use:
+- When a complex build process is not feasible. React requires transforming "jsx" files to regular JavaScript.
+- When developers unfamiliar with JSX and don't have time to learn.
+- While open source, is maintained primarily by Facebook.
+
+#### Goes well with:
+- [Redux](https://redux.js.org/) - An application state management library.
+  - **When to use:**
+    - When an application has complex internal state that affects how the site is rendered in realtime.
+    - When one-way data flow is desired for performance.
+  - **When not to use:**
+    - When application internal state is simple
+    - When all state changes result in cheap re-rendering
+
 ## Angular
 {%include components/tag-suggestion.html %}
-AngularJS (commonly referred to as "Angular") is an open-source web application framework maintained by Google and by a community of individual developers and corporations to address many of the challenges encountered in developing single-page applications ([Wikipedia](http://en.wikipedia.org/wiki/AngularJS)).
+[Angular](https://angular.io/) (sometimes styled Angular 2+) is an open-source web application framework maintained by Google and by a community of individual developers and corporations to address many of the challenges encountered in developing single-page applications ([Wikipedia](https://en.wikipedia.org/wiki/Angular_(web_framework))
+
+We don't work with Angular a lot ourselves, but it is a well-maintained, highly-used modern framework and we should not discourage or frown on its use by our partners. In our consulting and acquisition work, we view Angular as a solid choice for a frontend web framework, given the considerations below.
 
 #### When to use:
 - Sites with heavy front end, JavaScript UI interactions (single page apps) such as:
@@ -32,83 +64,24 @@ AngularJS (commonly referred to as "Angular") is an open-source web application 
 #### Cons:
 - While open source, is maintained primarily by Google.
 - Has been known to implement breaking changes in major version updates.
-- Built with Typescript and Dart, both of which are not ECMA standardized (as opposed to vanilla JS or ES6).
+- Built with Typescript, which is not ECMA standardized (as opposed to vanilla JS or ES6).
 - Has a steep learning curve and is very opinionated, meaning you learn Angular rather than JavaScript.
 
+# Deprecated
+
+## AngularJS
+
+{%include components/tag-caution.html %}
+AngularJS is the legacy version of Angular and is not actively developed. Maintenance will be discontinued on July 21, 2021. New projects should not use AngularJS.
+
+([Wikipedia](http://en.wikipedia.org/wiki/AngularJS)).
 
 ## Backbone
-{%include components/tag-suggestion.html %}
-Backbone.js is a JavaScript library with a RESTful JSON interface and is based on the model–view–presenter (MVP) application design paradigm ([Wikipedia](http://en.wikipedia.org/wiki/Backbone.js)).
 
-#### When to use:
-- A page design that requires dynamic data manipulation on the front end without a server request response, such as a todo app.
-- When a small front-end framework is required due to performance constraints.
-- When the long-term dev maintenance team is unfamiliar with any full frameworks, such as Angular.
-- To use as a wrapper and rest data manipulation library around a view-only framework, such as React.
-- When the dev team is familiar enough with Backbone to know how to write maintainable Backbone code.
+{%include components/tag-caution.html %}
+_words about why not to use Backbone; ask James Tranovich?_
 
-#### When not to use:
-- When the JavaScript components don't keep data or manipulate data, in which case Backbone's functionality is too heavy and not specific enough for just view rendering.
-- If there is a strict requirement that the site should work for users that have JavaScript disabled.
-- When another full JavaScript framework is already in use, such as Angular.
-- When working with a data source that is NOT RESTful. Backbone was built for RESTful services, instead see Flux.
+## jQuery
 
-#### Pros:
-- Relatively un-opinionated, meaning a lot of freedom in development.
-- Open source, and has an active, large community.
-
-#### Cons:
-- Still requires a lot of boilerplate code (this can be mitigated by pairing with a library like Marionette)
-- Since it has very little structure, inexperienced programmers can easily create unmaintainable code with Backbone.
-- Designed primarily for REST data.
-
-
-## React
-{%include components/tag-suggestion.html %}
-React (sometimes styled React.js or ReactJS) is an open-source JavaScript library for creating user interfaces that aims to address challenges encountered in developing single-page applications ([Wikipedia](https://en.wikipedia.org/wiki/React_(JavaScript_library))).
-
-#### When to use:
-- Single page apps that requires data manipulation on the front end without a server side request/response architecture.
-- When there's a strong need to render JavaScript based UI on the server due to performance or accessibility reasons.
-- JavaScript UI that incorperates many nested components.
-- A UI with many components and updates that needs to be performance conscious.
-- When only a "view" framework is desired/required.
-- To ensure all front-end components conform to a single standard.
-
-#### When not to use:
-- When a complex build process is not feasible. React requires transforming "jsx" files to regular JavaScript.
-- When developers unfamiliar with JSX and don't have time to learn.
-- While open source, is maintained primarily by Facebook.
-
-
-## Flux
-{%include components/tag-suggestion.html %}
-Flux is not a framework, nor is it M**VC. It's a software architecture for
-writing complex single page applications.
-
-#### When to use:
-- A complex JavaScript app that requires both viewing and modifying (CRUD) data
-  in a UI rendered on the client. Flux will likely be overkill for apps that
-  don't modify data in any way.
-- When the data service for the front end is REST and/or something besides REST,
-  such as Websockets.
-- An app thats data flow has grown or will grow overly complex.
-
-#### When not to use:
-- Applications that don't require any updating (create, update, delete) of data.
-- When the cost of updating an app's architecture to flux is more than the cost
-  of writing the software as it exists.
-
-#### Pros:
-- Easily add non-REST services to a front end, in a transparent way.
-- Cleans up complex data flow by using uni-directional data flow.
-- Cleans up complex async behavior and nested callbacks by using an evented
-  system and functionality to wait for data.
-- Can use simple JavaScript objects rather than a complex framework.
-- Easily tie components together in a clean way.
-- Requires little 3rd party software.
-
-#### Cons:
-- More verbose in file and directory structure.
-- Finding best way to use can be difficult for beginners.
-- Can be hard to find a good structure when beginning.
+{%include components/tag-caution.html %}
+_words about why not to use jQuery; ask Heather Battaglia?_
