@@ -12,7 +12,7 @@ list](https://github.com/GSA/data/blob/gh-pages/enterprise-architecture/it-stand
 
 While we don’t formally recommend third-party services, a handful have been
 approved by GSA IT (some we pay for collectively) and provide services which
-are essential for attain an Authority-to-Operate (ATO). To get started quickly
+are essential for attaining an Authority-to-Operate (ATO). To get started quickly
 and to ease the ATO burden, use these systems; pain awaits your project
 otherwise.
 
