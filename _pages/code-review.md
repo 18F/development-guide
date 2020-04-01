@@ -2,14 +2,11 @@
 title: Code Review
 ---
 # Code Review
-> A friendly guide for reviewing code — and not each other — at 18f.
+A friendly guide for reviewing code — and not each other — at 18f.
 
-(Forked from the excellent Consumer Financial Protection Bureau
-[guide](https://github.com/cfpb/front-end/blob/master/code-reviews.md)). This
-is a **WORK IN PROGRESS**. Help us make it better by
-[submitting an issue](https://github.com/18F/development-guide) or joining us
-in the [#wg-code-reviews](https://18f.slack.com/messages/wg-code-reviews/)
-channel!
+_Forked from the excellent Consumer Financial Protection Bureau
+[guide](https://github.com/cfpb/front-end/blob/master/code-reviews.md)). 
+Help us continually improve by [submitting an issue](https://github.com/18F/development-guide)._
 
 ## Why reviews?
 
