@@ -8,6 +8,8 @@ around deployments, git etiquette, and similar workflow conventions.
 
 ## Continuous Integration & Deployment
 
+{%include components/tag-standard.html %}
+
 * Ensure that your project is running **automated tests** in CI. Successful
   test completion should be a requirement for deployment.
 * Generally, **CI should perform deployments**. This ensures the deployments
@@ -15,7 +17,7 @@ around deployments, git etiquette, and similar workflow conventions.
   our [documentation on continuous deployment]({{site.baseurl}}/continuous-deployment) for
   details on how to set this up.
 * Deployments should be **zero-downtime**, achievable through tools like
-  “autopilot” (see the above docs for more detail).
+  [Cloud Foundry's rolling deployment process](https://docs.cloudfoundry.org/devguide/deploy-apps/rolling-deploy.html).
 * In addition to deployments after code change, we generally need to
   (automatically) **re-deploy daily** to ensure the running containers haven’t
   been tampered with (an ATO compliance requirement). See CircleCI’s
@@ -31,7 +33,7 @@ more detail. Note that we are looking to consolidate this with our existing
 documentation on [code review]({{site.baseurl}}/code-review) and [example
 workflows]({{site.baseurl}}/example-workflows).
 
-### "Must"s
+{%include components/tag-requirement.html %}
 
 * [Install](https://github.com/18F/laptop#git-seekret) our version of
   **git-seekret** as a pre-commit hook. This will check for many common types
@@ -48,7 +50,7 @@ workflows]({{site.baseurl}}/example-workflows).
   [**protected**](https://help.github.com/articles/about-protected-branches/)
   by passing CI and peer review.
 
-### Defaults
+{%include components/tag-default.html %}
 
 * Generally we prefer **branches** over forks to ease internal collaboration.
   If your project has many outside contributors, consider forks instead.
