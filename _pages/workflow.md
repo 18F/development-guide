@@ -9,7 +9,7 @@ around deployments, git etiquette, and similar workflow conventions.
 
 ## Continuous Integration & Deployment
 
-{%include components/tag-standard.html %}
+### Standards
 
 - Ensure that your project is running **automated tests** in CI. Successful
   test completion should be a requirement for deployment.
@@ -34,7 +34,7 @@ more detail. Note that we are looking to consolidate this with our existing
 documentation on [code review]({{site.baseurl}}/code-review) and [example
 workflows]({{site.baseurl}}/example-workflows).
 
-{%include components/tag-requirement.html %}
+### Requirements
 
 - [Install](https://github.com/18F/laptop#git-seekret) our version of
   **git-seekret** as a pre-commit hook. This will check for many common types
@@ -51,7 +51,7 @@ workflows]({{site.baseurl}}/example-workflows).
   [**protected**](https://help.github.com/articles/about-protected-branches/)
   by passing CI and peer review.
 
-{%include components/tag-default.html %}
+### Defaults
 
 - Generally we prefer **branches** over forks to ease internal collaboration.
   If your project has many outside contributors, consider forks instead.
