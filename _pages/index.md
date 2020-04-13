@@ -7,7 +7,7 @@ A set of guidelines and best practices for an awesome engineering team
 ## How we classify best practices
 
 These documents are structured by topic; under each, we include "Requirement",
-“Standard”, “Default”, and “Suggestion”.
+"Standard", "Default", "Suggestion", and "Caution".
 
 {%include components/tag-requirement.html %} indicates practices that *must* be done for
 regulatory, legal, compliance, or other reasons.
