@@ -23,6 +23,9 @@ however.
 {%include components/tag-suggestion.html %} indicates examples that have worked well on a project or two;
 they're not widely used enough to be defaults, but are worth considering.
 
+{%include components/tag-caution.html %} marks approaches that have significant pitfalls or should not be used for
+security/compliance reasons.
+
 _Note: we've adopted the above classifications but not all the topics have been
 updated to use them. Please submit a pull request to recommend particular
 classification for discussion._
