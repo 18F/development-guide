@@ -44,7 +44,6 @@ classification for discussion._
 * [Code Review]({{site.baseurl}}/code-review)
 * [Development Environments]({{site.baseurl}}/development-environments)
 * [Incident Reports]({{site.baseurl}}/incident-reports)
-* [Polls]({{site.baseurl}}/polls)
 
 ### Language Guides
 
