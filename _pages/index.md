@@ -32,7 +32,6 @@ classification for discussion._
 
 * [Third-Party Integrations]({{site.baseurl}}/integrations)
 * [Workflow Best Practices]({{site.baseurl}}/workflow)
-* [Example Workflows]({{site.baseurl}}/example-workflows)
 * [Project Setup]({{site.baseurl}}/project-setup)
 * [Architecture Reviews]({{site.baseurl}}/architecture-reviews)
 * [Accessibility Scanning using AccessLint]({{site.baseurl}}/accessibility-scanning)
