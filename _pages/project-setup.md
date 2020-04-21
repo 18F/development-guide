@@ -8,18 +8,17 @@ While the specific setup for each TTS project varies widely, there are certain
 elements that should be present in all source code repositories. This document
 aims to detail those elements and suggest corresponding tools and resources.
 
-At times, our guidance assumes the use of [GitHub](https://github.com), but
-is in general transferrable to other source code management tools.
+### Source code management
 
-### Docker
+TTS projects use GitHub for source code management, with their repositories
+under a [government-owned
+organization](https://handbook.tts.gsa.gov/github/#organizations).
 
-We frequently use Docker as a dependency management solution so that all
-developers can get started quickly. See our [Docker for development
-recommendations](./docker/).
+- [GitHub](https://handbook.tts.gsa.gov/github/) {%include components/tag-standard.html %}
 
-### Initialization Checklist
+### Repository Checklist
 
-Below is an aspirational list of initial configuration and files for a source
+Below is an aspirational list of configuration and files for a source
 code repository. Not all of these elements will apply to every project (e.g.
 visual regression tests don't make sense for an API).
 
@@ -103,11 +102,24 @@ Analysis](https://before-you-ship.18f.gov/security/static-analysis/).
 
 - [Code Climate Quality](https://codeclimate.com/quality/) {%include components/tag-suggestion.html %}
 
-### Sandboxing and security
+### Dependency management
 
-Developers needing to test their code live should use a
-[cloud.gov sandbox](https://cloud.gov/docs/pricing/free-limited-sandbox/)
-or a TTS-managed [AWS sandbox account](https://before-you-ship.18f.gov/infrastructure/sandbox/#aws-sandbox-accounts).
+Applications require specific versions of programming languages, libraries,
+databases, services, and configuration to execute. A dependency management
+solution helps abstract that complexity and makes it easier for cross-functional
+teams to create consistent, reproducible, local development environments.
+
+- [Docker](https://www.docker.com/why-docker) {%include components/tag-suggestion.html %}<br>
+  See our [Docker for development](./docker/) recommendations.
+
+### Deployment infrastructure
+
+Developers needing to deploy their code beyond their local environment should
+use either:
+
+- a [cloud.gov sandbox](https://cloud.gov/docs/pricing/free-limited-sandbox/) {%include components/tag-standard.html %}
+- a TTS-managed [AWS sandbox account](https://before-you-ship.18f.gov/infrastructure/sandbox/#aws-sandbox-accounts) {%include components/tag-standard.html %}
+- or [Federalist](https://handbook.tts.gsa.gov/federalist/) (for static web sites) {%include components/tag-standard.html %}
 
 {%include components/tag-caution.html %} The use of tools such as `localtunnel`
 and `ngrok`, which make your locally running services visible to the internet,
