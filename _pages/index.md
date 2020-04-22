@@ -30,6 +30,7 @@ _Note: we've adopted the above classifications but not all the topics have been
 updated to use them. Please submit a pull request to recommend particular
 classification for discussion._
 
+* [Front-End Disciplines]({{site.baseurl}}/frontend)
 * [Third-Party Integrations]({{site.baseurl}}/integrations)
 * [Workflow Best Practices]({{site.baseurl}}/workflow)
 * [Project Setup]({{site.baseurl}}/project-setup)
