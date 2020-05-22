@@ -75,13 +75,3 @@ We don't work with Angular a lot ourselves, but it is a well-maintained, highly-
 AngularJS is the legacy version of Angular and is not actively developed. Maintenance will be discontinued on July 21, 2021. New projects should not use AngularJS.
 
 ([Wikipedia](http://en.wikipedia.org/wiki/AngularJS)).
-
-## Backbone
-
-{%include components/tag-caution.html %}
-_words about why not to use Backbone; ask James Tranovich?_
-
-## jQuery
-
-{%include components/tag-caution.html %}
-_words about why not to use jQuery; ask Heather Battaglia?_
