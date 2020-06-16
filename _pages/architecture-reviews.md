@@ -2,8 +2,6 @@
 title: Architecture Reviews
 ---
 
-# Architecture Reviews
-
 Though we pride ourselves on our [transparent and remote-friendly
 workplace](https://18f.gsa.gov/2015/10/15/best-practices-for-distributed-teams/),
 our project focus tends to silo engineers from each other. We can kick-start

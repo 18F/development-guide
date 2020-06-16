@@ -35,7 +35,7 @@ classification for discussion._
 * [Workflow Best Practices]({{site.baseurl}}/workflow)
 * [Project Setup]({{site.baseurl}}/project-setup)
 * [Architecture Reviews]({{site.baseurl}}/architecture-reviews)
-* [Accessibility Scanning using AccessLint]({{site.baseurl}}/accessibility-scanning)
+* [Accessibility Scanning]({{site.baseurl}}/accessibility-scanning)
 * [Feedback Guide]({{site.baseurl}}/people)
 * [Continuous Deployment]({{site.baseurl}}/continuous-deployment)
 * [Datastore Selection Guidance]({{site.baseurl}}/datastore-selection)

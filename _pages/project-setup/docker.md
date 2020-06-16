@@ -1,7 +1,6 @@
 ---
 title: Docker for development
 ---
-# Docker for development
 
 Below we lay out recommendations for using Docker to wrap development
 dependencies. Unfortunately, this is a relatively new space and we don't have

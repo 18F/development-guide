@@ -1,7 +1,6 @@
 ---
 title: Development Environments
 ---
-# Development Environments
 
 ## Why this guide?
 

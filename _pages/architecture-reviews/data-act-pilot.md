@@ -1,7 +1,6 @@
 ---
 title: 'DATA Act Pilot: Simplicity is Key'
 ---
-# DATA Act Pilot: Simplicity is Key
 
 ## TL;DR
 

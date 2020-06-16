@@ -1,7 +1,6 @@
 ---
 title: Language Selection Guidance
 ---
-# Language Selection Guidance
 
 Many factors should influence how 18F engineers make technology selections
 for their projects. Here, we discuss recommendations on how to select the

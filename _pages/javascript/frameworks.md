@@ -3,8 +3,6 @@ title: Frameworks
 sidenav: js
 ---
 
-# Frameworks
-
 When choosing a JavaScript web framework, also consider if vanilla JavaScript would satisfy your project needs. "Vanilla JavaScript" (or "vanilla JS") refers to using just JavaScript and the [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) provided natively by web browsers. For simpler project, vanilla JavaScript helps avoid overengineering, can reduce security and compliance complexity, and may reduce maintenance costs by making it possible for any JavaScript developer to work on it. However, vanilla JavaScript can be unwieldy in complex applications.
 
 ## React

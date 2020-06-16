@@ -1,7 +1,6 @@
 ---
 title: Node.js Development Guide
 ---
-# Node.js Development Guide
 
 ## Related topics
 * [JavaScript]({{site.baseurl}}/javascript)

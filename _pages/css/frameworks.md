@@ -2,7 +2,6 @@
 title: Frameworks
 sidenav: css
 ---
-# Frameworks
 
 18F currently recommends using the [U.S. Web Design System](https://github.com/uswds/uswds) as it is specifically designed to help build fast, accessible, mobile-friendly federal government websites.
 

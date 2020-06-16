@@ -1,7 +1,6 @@
 ---
 title: Feedback Guide
 ---
-# Feedback Guide
 
 Here are some attributes of giving feedback in a highly constructive way that we have learned and used over the years.
 

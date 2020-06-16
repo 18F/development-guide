@@ -1,7 +1,7 @@
 ---
 title: Code Review
 ---
-# Code Review
+
 A friendly guide for reviewing code — and not each other — at 18f.
 
 _Forked from the excellent Consumer Financial Protection Bureau

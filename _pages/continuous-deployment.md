@@ -1,7 +1,6 @@
 ---
 title: Continuous Deployment
 ---
-# Continuous Deployment
 
 ## Pre-requisites
 
