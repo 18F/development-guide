@@ -2,13 +2,11 @@
 title: Project Setup
 ---
 
-## Project Setup
-
 While the specific setup for each TTS project varies widely, there are certain
 elements that should be present in all source code repositories. This document
 aims to detail those elements and suggest corresponding tools and resources.
 
-### Source code management
+## Source code management
 
 TTS projects use GitHub for source code management, with their repositories
 under a [government-owned
@@ -16,7 +14,7 @@ organization](https://handbook.tts.gsa.gov/github/#organizations).
 
 - [GitHub](https://handbook.tts.gsa.gov/github/) {%include components/tag-standard.html %}
 
-### Repository Checklist
+## Repository Checklist
 
 Below is an aspirational list of configuration and files for a source
 code repository. Not all of these elements will apply to every project (e.g.
@@ -52,7 +50,7 @@ visual regression tests don't make sense for an API).
 1. Integration test setup (e.g., [Selenium](https://www.selenium.dev/) {%include components/tag-suggestion.html %})
 1. Visual regression setup (e.g., [Backstop](https://github.com/garris/BackstopJS) {%include components/tag-suggestion.html %})
 
-### Project Management Tool
+## Project Management Tool
 
 Every project, no matter the size, should use a project management tool to keep
 track of ongoing tasks and to do items. The project management tool should be
@@ -62,7 +60,7 @@ it easily.
 - [GitHub Issues](https://guides.github.com/features/issues/) {%include components/tag-default.html %}
 - [Trello](https://trello.com/) {%include components/tag-suggestion.html %}
 
-### Continuous Integration/Continuous Deployment
+## Continuous Integration/Continuous Deployment
 
 Developers don't always remember to run the test suite. That's why we have
 Continuous Integration services to run the tests automatically after each
@@ -80,7 +78,7 @@ for each pull request.
 - [CircleCI](https://circleci.com/) {%include components/tag-default.html %}
 - [GitHub Actions](https://github.com/features/actions) {%include components/tag-suggestion.html %}
 
-### Code coverage metrics
+## Code coverage metrics
 
 Aim for more than 90% of your source code to be covered by tests; worry if
 coverage drops below 80%. For repositories with multiple programming
@@ -91,7 +89,7 @@ individual components.
 - [Code Climate Quality](https://codeclimate.com/quality/) {%include components/tag-suggestion.html %}
 - [CodeCov](https://codecov.io/) {%include components/tag-suggestion.html %}
 
-### Static analysis for code quality
+## Static analysis for code quality
 
 A good [code review process](../code-review/) is essential to writing good code.
 But certain code problems are difficult for humans to spot. Duplication, for
@@ -102,7 +100,7 @@ Analysis](https://before-you-ship.18f.gov/security/static-analysis/).
 
 - [Code Climate Quality](https://codeclimate.com/quality/) {%include components/tag-suggestion.html %}
 
-### Dependency management
+## Dependency management
 
 Applications require specific versions of programming languages, libraries,
 databases, services, and configuration to execute. A dependency management
@@ -112,7 +110,7 @@ teams to create consistent, reproducible, local development environments.
 - [Docker](https://www.docker.com/why-docker) {%include components/tag-suggestion.html %}<br>
   See our [Docker for development](./docker/) recommendations.
 
-### Deployment infrastructure
+## Deployment infrastructure
 
 Developers needing to deploy their code beyond their local environment should
 use either:

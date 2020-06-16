@@ -1,6 +1,7 @@
 ---
-title: Accessibility Scanning using AccessLint
+title: Accessibility Scanning
 ---
+
 ## Accessibility Scanning using AccessLint
 
 [AccessLintCI](https://github.com/accesslint/accesslint-ci) is an automated accessibility scanning tool. It is configured with CircleCI (Travis and Jenkins support pending) to leave comments on Pull Requests stating potential accessibility problems with the committed code.
