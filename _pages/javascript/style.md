@@ -8,7 +8,7 @@ We recommend combining [Prettier](https://prettier.io) with the
 [Airbnb JavaScript style guide](https://github.com/airbnb/javascript) plugins
 for [eslint](https://eslint.org).
 
-Maintaining stylistic consistency across 18F's code helps lower the barrier to
+Maintaining stylistic consistency across TTS' code helps lower the barrier to
 jumping in and helping with or reviewing other projects because we'll all be
 familiar with reading and working with code that looks similar. Having
 consistent rules for styling also removes generally non-productive discussions

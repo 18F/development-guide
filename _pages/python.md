@@ -9,7 +9,7 @@ issue](https://github.com/18F/development-guide) or joining us in the
 This document is structured by topic; under each, we include “Standards”,
 “Defaults”, and “Suggestions”.
 
-**Standards** are practices that have a strong consensus across 18F; they
+**Standards** are practices that have a strong consensus across TTS; they
 should generally be followed to ease the ATO process and make on-boarding
 simpler.
 
@@ -31,9 +31,9 @@ on cloud.gov and incrementally update as new releases are issued.
 
 When using [Django], we **default** to starting with the most recent [Long Term
 Support](https://www.djangoproject.com/download/#supported-versions) release.
-This will give your project the most runway of support after 18F finishes its
-work. If a second LTS becomes available while building the project, upgrade at
-the earliest convenience. Devs that follow will thank you.
+This will give your project the most runway of support. If a second LTS becomes
+available while building the project, upgrade at the earliest convenience. Devs
+that follow will thank you.
 
 Otherwise, our **standard** practice is to use the latest release of our
 libraries when first installing. Security updates (as indicated by GitHub or

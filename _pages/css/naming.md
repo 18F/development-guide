@@ -113,7 +113,7 @@ From [Harry Roberts][mindbemding]:
 > just be a component, something might be a child, or element, of that
 > component, and something might be a variation or modifier of that component.
 
-18F generally recommends using a modified BEM methodology outlined in the next
+TTS generally recommends using a modified BEM methodology outlined in the next
 subsection. However, you might want to use standard BEM when:
 
 * You need a naming scheme that general CSS developers will already be familiar
@@ -151,7 +151,7 @@ Here is an example of BEM in SCSS:
 
 ### Suggested custom methodology
 
-The 18F recommendation for a naming methodology is a modified version of BEM.
+The TTS recommendation for a naming methodology is a modified version of BEM.
 It still uses blocks, sections within blocks and modifiers, but with an
 abbreviated syntax.
 

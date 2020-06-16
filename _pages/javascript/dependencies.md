@@ -21,7 +21,7 @@ It's not needed and should be phased out and replaced by npm. More information c
   - [jQuery]: `npm install --save jquery`
   - [D3]: `npm install --save d3@v3.5.5` (version 3.5.5)
 
-npm installs its dependencies in the `node_modules` directory. Common conventions dictate that `node_modules` should be excluded from source control by adding it to your project's `.gitignore`, primarily because Node.js-friendly environments (such as 18F's deployment service, [Cloud Foundry], and other such as [Heroku]) recognize the existence of `package.json` and automatically install dependencies as needed.
+npm installs its dependencies in the `node_modules` directory. Common conventions dictate that `node_modules` should be excluded from source control by adding it to your project's `.gitignore`, primarily because Node.js-friendly environments (such as [Cloud Foundry] and [Heroku]) recognize the existence of `package.json` and automatically install dependencies as needed.
 
 ### Install npm
 
@@ -39,11 +39,11 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.6/install.sh | b
 ### Safely installing packages from npm
 While npm is generally a safe environment to install code from, there are certain aspects of the system that are vulnerable to dangerous script execution. Luckily there are steps that can be taken to minimize these risks.
 
-It's recommended that developers at 18F follow these guidelines when installing unknown or new packages.
+It's recommended that developers at TTS follow these guidelines when installing unknown or new packages.
 
 npm allows various hooks to be executed during the install process. These scripts are where potential dangerous scripts can be executed. To limit this it's recommended to:
 
-1. install npm in a manner so sudo is never required. The 18F recommended way of doing this is to [install with nvm](#install-npm).
+1. install npm in a manner so sudo is never required. The TTS recommended way of doing this is to [install with nvm](#install-npm).
 1. check which scripts will be run on install by running `npm show $module scripts`.
   - Each script under `preinstall`, `install`, `postinstall` will be run when installing.
   - Each script under `postuninstall`, `preuninstall`, `uninstall` will be run on uninstall.

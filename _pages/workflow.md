@@ -2,7 +2,7 @@
 title: Workflow Best Practices
 ---
 
-Project teams may vary, but across 18F engineering we aim for consistency
+Project teams may vary, but across TTS engineering we aim for consistency
 around deployments, git etiquette, and similar workflow conventions.
 
 ## Continuous Integration & Deployment
@@ -40,7 +40,7 @@ workflows]({{site.baseurl}}/example-workflows).
   version control.
 - Enable [**two-factor
   authentication**](https://help.github.com/articles/about-two-factor-authentication/)
-  for your GitHub account. This is required for all 18F employees.
+  for your GitHub account. This is required for all TTS employees.
 - Default to **public** for new repositories. See our
   [guidelines](https://github.com/18F/open-source-policy/blob/master/practice.md)
   about open source for more detail.

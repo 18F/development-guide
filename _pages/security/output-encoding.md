@@ -13,7 +13,7 @@ To get a more extensive understanding of XSS, see [excess xss](https://excess-xs
 
 Protecting from XSS attacks requires developers to consider how data is being displayed on a page. If the data could come from a user's input in any way (including through the site's URL), then correct encoding of the output has to be considered.
 
-Since most web applications at 18F are built through JavaScript or backend frameworks, this guide will go over output encoding issues by those frameworks in addition to plain JavaScript.
+Since most web applications at TTS are built through JavaScript or backend frameworks, this guide will go over output encoding issues by those frameworks in addition to plain JavaScript.
 
 ### Vanilla JavaScript
 
