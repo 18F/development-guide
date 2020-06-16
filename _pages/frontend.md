@@ -1,8 +1,6 @@
 ---
 title: Front-End Disciplines
 ---
-# Front-End Disciplines
-
 ## Related topics
 * [CSS]({{site.baseurl}}/css)
 * [JavaScript]({{site.baseurl}}/javascript)
