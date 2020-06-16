@@ -1,7 +1,6 @@
 ---
 title: Datastore Selection Guidance
 ---
-# Datastore Selection Guidance
 
 We're fortunate to have dozens of battle-tested datastores available to us,
 filling many different niches and general use cases. Each has its own

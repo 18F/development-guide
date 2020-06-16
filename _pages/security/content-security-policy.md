@@ -3,8 +3,6 @@ title: Content Security Policy
 sidenav: security
 ---
 
-# Content Security Policy
-
 ## What is Content Security Policy?
 Content Security Policy (referred to as **CSP** in the rest of this guide) is a security measure designed by the W3C (World Wide Web Consortium) to mitigate the likelihood of Cross-Site Scripting (XSS) attacks and data injection. It is designed to be used in conjunction with other security practices currently recommended for web development.
 

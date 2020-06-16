@@ -2,7 +2,7 @@
 title: Inheritance
 sidenav: css
 ---
-# Inheritance
+
 ## Mixins
 - Use mixins for groups of properties that appear together intentionally and
   are used multiple times.

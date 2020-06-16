@@ -2,7 +2,7 @@
 title: Specificity
 sidenav: css
 ---
-# Specificity
+
 - IDs should be reserved for JavaScript. Don’t use IDs for styles.
 
   ```scss

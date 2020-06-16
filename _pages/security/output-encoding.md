@@ -3,8 +3,6 @@ title: Output Encoding
 sidenav: security
 ---
 
-# Output Encoding
-
 ## What is cross site scripting (XSS)?
 
 Cross site scripting, or XSS, is a form of attack on a web application which involves executing code on a user's browser. Output encoding is a defense against XSS attacks.

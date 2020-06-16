@@ -2,7 +2,7 @@
 title: Linting
 sidenav: css
 ---
-# Linting
+
 The styleguide provides a method of linting [Sass] code to ensure it conforms
 to the rules in the styleguide. This linting tool will go through all Sass code
 and issue warnings wherever the code differs from the styleguide. We've created

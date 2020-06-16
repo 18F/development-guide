@@ -1,7 +1,6 @@
 ---
 title: 18F Engineering 2016 End of Year Assessment Guide
 ---
-# 18F Engineering 2016 End of Year Assessment Guide
 
 18F, as a part of GSA, has a mature [performance management and recognition system](https://insite.gsa.gov/portal/content/500278). 
 This includes an end-of-year performance assessment. 18F Engineering’s goals for the end-of-year assessment are to have 

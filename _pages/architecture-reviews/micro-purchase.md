@@ -1,7 +1,6 @@
 ---
 title: 'Micro-purchase: Do one thing well'
 ---
-# Micro-purchase: Do one thing well
 
 ## TL;DR
 * Use many, focused objects for ease of testing

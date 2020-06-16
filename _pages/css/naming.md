@@ -2,7 +2,7 @@
 title: Naming
 sidenav: css
 ---
-# Naming
+
 - HTML elements should be in lowercase.
 
   ```scss

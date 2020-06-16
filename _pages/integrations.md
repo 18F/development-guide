@@ -2,8 +2,6 @@
 title: Third-Party Integrations
 ---
 
-# Third-Party Integrations
-
 Our software is built on the shoulders of giants. We use several third parties
 to perform continuous monitoring, host our apps, etc.; all should be approved
 on the [GSA IT Standards
