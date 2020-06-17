@@ -57,6 +57,8 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
+    jekyll-sitemap (1.4.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     jekyll_pages_api (0.1.6)
@@ -109,6 +111,7 @@ PLATFORMS
 
 DEPENDENCIES
   html-proofer
+  jekyll-sitemap
   jekyll_pages_api_search
   jemoji (>= 0.11.1)
   uswds-jekyll!

@@ -15,7 +15,11 @@ exclude:
 
 theme: uswds-jekyll
 
-include: 
+url: "https://engineering.18f.gov"
+plugins:
+  - jekyll-sitemap
+
+include:
   - .rubocop.yml # in _pages/ruby
 
 defaults:
