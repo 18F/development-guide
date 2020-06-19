@@ -14,7 +14,7 @@ issue](https://github.com/18F/development-guide) or joining us in the
 This document is structured by topic; under each, we include “Standards”,
 “Defaults”, and “Suggestions”.
 
-**Standards** are practices that have a strong consensus across 18F; they
+**Standards** are practices that have a strong consensus across TTS; they
 should generally be followed to ease the ATO process and make on-boarding
 simpler.
 
@@ -112,8 +112,8 @@ We **suggest** using one of the following scaffolds:
 
 Static typing can both make code authors' intent clearer and reduce the number
 of bugs through static analysis. It's also notorious for slowing down the pace
-of prototyping and requiring a great deal of boiler-plate. A significant
-number of 18F projects are using [TypeScript](https://www.typescriptlang.org/)
+of prototyping and requiring a great deal of boiler-plate. Some TTS
+projects are using [TypeScript](https://www.typescriptlang.org/)
 to add static typing, while a handful are testing out
 [Flow](https://flow.org/).
 

@@ -85,6 +85,6 @@ For an example manifest and manifest-staging see here:
 
 ## Zero Downtime Deploy Options
 - `v3-zdt-push` is an official command, yet is in active development. See https://docs.cloudfoundry.org/devguide/deploy-apps/rolling-deploy.html
-- `zero-downtime-push` is the popular Autopilot plugin used by a lot of 18F projects and used in both of the above examples. It is now unmaintained and archived though. Does not support buildpacks. If your application successfully deploys to cloud.gov but does not start, which may happen for an application that does not have an adequate test suite, you may have to go into the cf target space and manually delete the "APP_NAME-venerable" application in order to make use of `autopilot` again.
+- `zero-downtime-push` is the popular Autopilot plugin used by a lot of TTS projects and used in both of the above examples. It is now unmaintained and archived though. Does not support buildpacks. If your application successfully deploys to cloud.gov but does not start, which may happen for an application that does not have an adequate test suite, you may have to go into the cf target space and manually delete the "APP_NAME-venerable" application in order to make use of `autopilot` again.
 - `blue-green-deploy` another plugin similar to autopilot. https://github.com/bluemixgaragelondon/cf-blue-green-deploy
 - An official CircleCI / Cloud Foundry Orb is also available at https://circleci.com/orbs/registry/orb/circleci/cloudfoundry

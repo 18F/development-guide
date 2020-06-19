@@ -1,5 +1,5 @@
 ---
-title: 18F Engineering Practices Guide
+title: TTS Engineering Practices Guide
 permalink: /
 ---
 A set of guidelines and best practices for an awesome engineering team
@@ -12,7 +12,7 @@ These documents are structured by topic; under each, we include "Requirement",
 {%include components/tag-requirement.html %} indicates practices that *must* be done for
 regulatory, legal, compliance, or other reasons.
 
-{%include components/tag-standard.html %} signifies practices that have a strong consensus across 18F; they
+{%include components/tag-standard.html %} signifies practices that have a strong consensus across TTS; they
 should generally be followed to ease the ATO process and make on-boarding
 simpler.
 

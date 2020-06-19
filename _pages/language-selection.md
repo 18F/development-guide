@@ -2,7 +2,7 @@
 title: Language Selection Guidance
 ---
 
-Many factors should influence how 18F engineers make technology selections
+Many factors should influence how TTS engineers make technology selections
 for their projects. Here, we discuss recommendations on how to select the
 _language_ used in your projects. This document doesn't offer hard-and-fast
 rules, focusing instead on several language aspects<sup>[1](#aspect)</sup>
@@ -18,7 +18,7 @@ GitHub to suggest changes to these standards.
 
 ## Our strongest languages
 
-18F has historically worked in three **primary** languages: JavaScript,
+TTS has historically worked in three **primary** languages: JavaScript,
 Python, and Ruby. While we certainly have a healthy smattering of other odds
 and ends, these three are our primary strength<sup>[3](#strong)</sup> as
 indicated by data from past projects, engineer skill sets, and billable hours.
@@ -67,7 +67,7 @@ Languages are not all equal<sup>[10](#triple-equal)</sup>. We next consider a
 handful of factors to weigh when selecting a language for a project. In no
 particular order:
 
-* Open source - 18F is a strong proponent of open source; we want our language
+* Open source - TTS is a strong proponent of open source; we want our language
   selection<sup>[11](#select)</sup> to reflect that. We want open APIs, open
   source binaries, and community participation.
 * Domain preference - certain problem domains emphasize particular languages.
@@ -75,9 +75,9 @@ particular order:
   SOAP-heavy specs<sup>[12](#specs)</sup> are more friendly in Java, and Rails
   projects promote CoffeeScript. We want to use the tools appropriate for the
   job.
-* Team familiarity - avoid the bus problem. The more 18F engineers who are
+* Team familiarity - avoid the bus problem. The more TTS engineers who are
   comfortable with a language, the safer<sup>[13](#safe)</sup> it is to use.
-  We want our project to be accessible to many both within 18F and without.
+  We want our project to be accessible to many both within TTS and without.
 * Stability - bleeding edge languages are more risky. If the standard API is
   changing every few months, we aren't going to be able to maintain the
   project. Try to fathom<sup>[14](#fantom)</sup> how this bodes when we're
@@ -86,7 +86,7 @@ particular order:
   or never gained traction. We will be leaning<sup>[15](#lein)</sup> on the
   community for support and potentially to hire contractors and vendors. Less
   active communities make this more difficult.
-* Inclusive communities - 18F promotes welcoming cultures and we want to see
+* Inclusive communities - TTS promotes welcoming cultures and we want to see
   that reflected in our language selection. We want to reward language leaders
   who promote diverse opinions and have open standards processes. We see
   languages led by cabals<sup>[16](#cabal)</sup> as risks.

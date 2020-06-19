@@ -14,7 +14,7 @@ Consider your app's production environment. You're likely running on cloud.gov
 (which runs Ubuntu Linux) with specific versions of databases, app language
 (e.g. Go/Node/Python/Ruby), and required libraries (you are [pinning your
 dependencies](https://pages.18f.gov/before-you-ship/infrastructure/pinning-dependencies/),
-right?). Now consider your local environment; if you're an 18F engineer, you
+right?). Now consider your local environment; if you're an TTS engineer, you
 likely have OS X, language version management tools, and an assortment of
 strategies for running databases, worker queues, etc. If you're a designer,
 open source contributor, or working at a partner agency, we should assume even
@@ -50,7 +50,7 @@ both of these problems by allowing us to specify different services,
 dependencies between those services, and specific values for exposed ports,
 mount points, etc. Though it feels more complex at first, we recommend using
 docker-compose even when a single Dockerfile would suffice so that we have a
-consistent tool across 18F engineering. One of the bigger "aha" moments you
+consistent tool across TTS engineering. One of the bigger "aha" moments you
 will encounter is transitioning from thinking of Docker as a VM build script
 (a la `vagrant`) to thinking of it as a way to configure ("orchestrate")
 several, single-purpose containers (i.e. microservices).
