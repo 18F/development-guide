@@ -8,11 +8,6 @@ Using a responsive web design and a standards-based approach will result in wide
 
 A few options are available at TTS that allow testing on multiple browser platforms. An automated testing solution is ideal, but even manual cross-browser testing remains valuable.
 
-## Multiple operating systems and browsers
-
-- [Sauce Labs](https://saucelabs.com/platform)
-  * Ask in #infrastructure
-
 ## Windows
 
 To test with Windows-native browsers like Internet Explorer or Microsoft Edge: 
