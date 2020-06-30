@@ -8,6 +8,8 @@
 
 usa_banner: true
 
+type: basic
+
 #primary:
 #  # this is a key into _data/navigation.yml
 #  links: primary
