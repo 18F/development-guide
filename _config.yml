@@ -39,6 +39,11 @@ markdown: kramdown
 sass:
   style: compressed
 
+scripts:
+  - /assets/uswds/js/uswds.min.js
+  - /assets/js/private-eye.js
+  - /assets/js/application.js
+
 # Author/Organization info to be displayed in the templates
 author:
   name: 18F
