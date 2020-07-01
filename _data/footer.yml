@@ -2,7 +2,7 @@
 
 # Configuration for type of footer.
 # Footer types can be only be medium at the moment
-type: medium
+type: slim
 
 # Configuration for "Return to top" link.
 # Customize with 'text' and 'href' properties.
@@ -14,8 +14,8 @@ top:
 # Configuration for "Edit this page" link in the footer.
 # Customize with 'text' property.
 # Uncomment the following line to show.
-# edit_page:
-#   text: Edit this page
+edit_page:
+  text: Edit this page
 
 # Configuration for "Last updated" date and time.
 # Uncomment the following line to show.
@@ -27,12 +27,6 @@ links:
 
 # Configuration for footer heading. (optional)
 heading:
-
-# Configuration for agency logo(s) (shown side by side).
-# If the logo is external add external: true
-logos:
-  - src: /assets/images/18f-Logo.svg
-    alt: 18F
 
 # Configuration for footer contact links
 contact:

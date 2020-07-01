@@ -16,6 +16,12 @@ exclude:
 theme: uswds-jekyll
 
 url: "https://engineering.18f.gov"
+
+github_info:
+  organization: 18F
+  repository: development-guide
+  default_branch: master
+
 plugins:
   - jekyll-sitemap
 
