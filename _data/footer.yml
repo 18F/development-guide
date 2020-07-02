@@ -7,9 +7,9 @@ type: slim
 # Configuration for "Return to top" link.
 # Customize with 'text' and 'href' properties.
 # Comment out to the following section to hide.
-top:
-  text: Return to top
-  href: '#'
+# top:
+#   text: Return to top
+#   href: '#'
 
 # Configuration for "Edit this page" link in the footer.
 # Customize with 'text' property.
