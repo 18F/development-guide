@@ -43,7 +43,7 @@ classification for discussion._
 * [Code Review]({{site.baseurl}}/code-review)
 * [Development Environments]({{site.baseurl}}/development-environments)
 * [Incident Reports]({{site.baseurl}}/incident-reports)
-* [Cross-browser Testing]({{site.baseurl}}/crossbrowser-testing)
+* [Browser Testing]({{site.baseurl}}/browser-testing)
 
 ### Language Guides
 
