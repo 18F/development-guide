@@ -76,7 +76,7 @@ Done!
 ## Add manifests
 Cloud.gov (and Cloud Foundry) use manifest files to specify how an app should be built on cloud.gov. You will now add two separate files, a `manifest.yml` for your production app and a `manifest-staging.yml` for your development application.
 
-Generally your production application will have multiple instances while your staging will only have one. Manifests can be short and sweet, or extensive. For the full cloud foundry documentation on manifests see here: https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html#minimal-manifest.
+Generally your production application will have multiple instances while your staging will only have one. Manifests can be short and sweet, or extensive. For the full cloud foundry documentation on manifests see here: <https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html#minimal-manifest>.
 
 For an example manifest and manifest-staging see here:
 [Acquisitions Manifest](https://github.com/18F/acquisitions.18f.gov/blob/develop/manifest.yml)
@@ -84,7 +84,7 @@ For an example manifest and manifest-staging see here:
 
 
 ## Zero Downtime Deploy Options
-- `v3-zdt-push` is an official command, yet is in active development. See https://docs.cloudfoundry.org/devguide/deploy-apps/rolling-deploy.html
+- `v3-zdt-push` is an official command, yet is in active development. See <https://docs.cloudfoundry.org/devguide/deploy-apps/rolling-deploy.html>
 - `zero-downtime-push` is the popular Autopilot plugin used by a lot of TTS projects and used in both of the above examples. It is now unmaintained and archived though. Does not support buildpacks. If your application successfully deploys to cloud.gov but does not start, which may happen for an application that does not have an adequate test suite, you may have to go into the cf target space and manually delete the "APP_NAME-venerable" application in order to make use of `autopilot` again.
-- `blue-green-deploy` another plugin similar to autopilot. https://github.com/bluemixgaragelondon/cf-blue-green-deploy
-- An official CircleCI / Cloud Foundry Orb is also available at https://circleci.com/orbs/registry/orb/circleci/cloudfoundry
+- `blue-green-deploy` another plugin similar to autopilot. <https://github.com/bluemixgaragelondon/cf-blue-green-deploy>
+- An official CircleCI / Cloud Foundry Orb is also available at <https://circleci.com/orbs/registry/orb/circleci/cloudfoundry>
