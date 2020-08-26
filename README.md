@@ -18,7 +18,7 @@ Some guides at 18F/TTS might be exceptions; e.g., the TTS handbook (large volume
 
 ## Technical details
 
-To achieve these goals, this template repository uses:
+To achieve these goals, this repository uses:
 
 - [usdws-jekyll](https://github.com/18F/uswds-jekyll)
 - [a GitHub Action](./.github/actions/merge-template/action.yml) that downstream guides will (automatically) call to merge updates from this upstream repository
@@ -26,6 +26,7 @@ To achieve these goals, this template repository uses:
 - a separate [`_data/override`](./_data/override) subdirectory to further simplify the data files the guide maintainer has to understand
 - [a Jekyll generator](./_plugins/override.rb) to override values set from YAML files in `_data`
 - [Git attributes](./.github/actions/merge-template/action.yml#L8) to help ensure this upstream repository does not affect downstream content in `_pages`, etc.
+- `Template repository` setting in GitHub
 
 ## Concept of operations
 
