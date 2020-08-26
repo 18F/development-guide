@@ -1,0 +1,23 @@
+# Configuration in this file overrides those in _config.yml.
+# Required keys:
+# - title
+# - description
+# - url
+# - github_info
+# - search_site_handle
+
+title: Yet Another TTS Guide
+description: A set of guidelines and best practices
+url: "https://yet-another-tts-guide.18f.gov"
+
+# GitHub information
+github_info:
+  organization: 18F
+  repository: yet-another-tts-guide
+  default_branch: master
+
+# Unique identifier across GSA for this website; the repository name is
+# usually a good site handle.
+search_site_handle: yet-another-tts-guide
+
+# This should not be merged into instantiatedsite

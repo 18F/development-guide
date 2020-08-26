@@ -1,0 +1,20 @@
+name: "Merge base template"
+description: "Merge changes from the base 18F guide template for Jekyll"
+
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        echo 'override.yml merge=ours' >> .gitattributes
+        echo 'README.md merge=ours' >> .gitattributes
+        echo '_pages/* merge=ours' >> .gitattributes
+        echo '_data/override/* merge=ours' >> .gitattributes
+        cat .gitattributes
+        git config --global merge.ours.driver true
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git remote add -f upstream "https://github.com/18F/isildurs-bane.git"
+        git checkout master
+        git merge upstream/master
+        git push
+      shell: bash
