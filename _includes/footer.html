@@ -1,4 +1,4 @@
-{% assign anchor = site.data.usa_anchor.anchor_data[0] %}
+{% assign anchor = site.data.usa_anchor %}
 <section class="anchor" data-uswds="1.0">
 <div class="component-anchor">
   <div class="usa-accordion">
@@ -9,9 +9,11 @@
             <div class="org-copy">
               <a href="{{ anchor.agency_url }}" title="{{ anchor.agency }}">
                 <img src="{{site.baseurl}}/images/{{ anchor.agency_logo }}" class="org-img" alt="{{ anchor.agency }} Logo" %}></a>
+              {% if anchor.org_secondary %}
               <a href="{{ anchor.org_secondary_url }}" title="{{ anchor.org_secondary }}">
                 <img src="{{site.baseurl}}/images/{{ anchor.org_secondary_logo }}" class="org-img" alt="{{ anchor.org_secondary }} Logo" %}></a>
-              <p><a href="{{site.baseurl}}" title="{{ anchor.site_name }}">{{ anchor.site_name -}}</a> is a product of {{ anchor.agency_acronym }}&#8217;s <a href="{{ anchor.org_primary_url }}" title="{{ anchor.org_primary }}">{{ anchor.org_primary }}</a>{%if anchor.org_primary %}, and is managed by <a href="{{ anchor.org_secondary_url }}" title="{{ anchor.org_secondary }}">{{ anchor.org_secondary }}</a>{%endif%}.</p>
+              {% endif %}
+              <p><a href="{{site.baseurl}}" title="{{ site.title }}">{{ site.title -}}</a> is a product of {{ anchor.agency_acronym }}&#8217;s <a href="{{ anchor.org_primary_url }}" title="{{ anchor.org_primary }}">{{ anchor.org_primary }}</a>{%if anchor.org_secondary %}, and is managed by <a href="{{ anchor.org_secondary_url }}" title="{{ anchor.org_secondary }}">{{ anchor.org_secondary }}</a>{%endif%}.</p>
             </div>
             <button class="btn-learn-more usa-button usa-button--outline usa-button--inverse usa-accordion__button" aria-hidden="false" aria-expanded="false" aria-controls="org-details">
               <span>Learn&nbsp;more</span>
@@ -26,7 +28,7 @@
               {% if anchor.org_primary_bio %}
                 <p>{{ anchor.org_primary_bio }} <a class="more" href="{{ anchor.org_primary_url }}" title="Learn more about {{ anchor.org_primary }}">Read more</a></p>
               {%endif %}
-              {% if .org_secondary_bio %}
+              {% if anchor.org_secondary_bio %}
                 <p>{{ anchor.org_secondary_bio }} <a class="more" href="{{ anchor.org_secondary_url }}" title="Learn more about {{ anchor.org_secondary }}">Read more</a></p>
               {% endif %}
             </div>
@@ -55,7 +57,7 @@
       <div class="grid-col-12">
         <div class="usagov">
           <span>Looking for U.S. government information and services?</span></p>
-          <a class="usa-link usagov__link" href="{{ anchor.usagov_contact_url }}?ref={{ anchor.site_name }}">Visit USA.gov</a>
+          <a class="usa-link usagov__link" href="{{ anchor.usagov_contact_url }}?ref={{ site.title }}">Visit USA.gov</a>
         </div>
       </div>
     </div>

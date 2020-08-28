@@ -5,6 +5,8 @@
 # - url
 # - github_info
 # - search_site_handle
+# Optional keys
+# - suborg
 
 title: Yet Another TTS Guide
 description: A set of guidelines and best practices
@@ -20,4 +22,5 @@ github_info:
 # usually a good site handle.
 search_site_handle: yet-another-tts-guide
 
-# This should not be merged into instantiatedsite
+# Either 18F or unset
+suborg: 18F
