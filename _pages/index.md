@@ -1,7 +1,7 @@
 ---
 title: Guide Title
 permalink: /
-layout: page
+layout: post
 sidenav: home
 subnav:
   - text: Section One
