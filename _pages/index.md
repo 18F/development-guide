@@ -3,6 +3,7 @@ title: Guide Title
 permalink: /
 layout: post
 sidenav: home
+sticky_sidenav: true
 subnav:
   - text: Section One
     href: '#section-one'
