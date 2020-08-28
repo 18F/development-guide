@@ -1,0 +1,208 @@
+// Anchor component - - - - - - - - - - - - - - -
+// Using the USWDS Design Tokens
+.anchor{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+
+.component-anchor{
+  background-color: $color-dark;
+  @include u-text('white');
+
+  h3{
+    @include u-font('sans', 'md');
+  }
+
+  .org-short{
+    @include u-padding-y(3);
+    @include u-display('block');
+    @include at-media('tablet') {
+      @include u-display('flex');
+      @include u-flex('align-center');
+      @include u-flex('justify');
+    }
+    .org-copy{
+      @include u-display('flex');
+      @include u-flex('align-start');
+      @include at-media('tablet'){
+        @include u-flex('align-center');
+      }
+      p{
+        @include u-margin(0);
+        @include at-media('tablet'){
+          @include u-measure(5);
+        }
+      }
+      .org-img{
+        @include u-margin-right(2);
+        @include u-maxw(7);
+        @include u-minw(7);
+        @include at-media('tablet') {
+          @include u-maxw(6);
+          @include u-minw(6);
+        }
+      }
+    }
+  }
+
+  .org-copy{
+    @include u-font('sans', 'xs');
+    @include u-line-height('sans', 3);
+    @include u-text('white');
+    @include at-media('tablet') {
+      @include u-font('sans', 'sm');
+    }
+    p{
+      a{
+        @include u-text('white');
+      }
+      .more{
+        @include u-text('underline');
+      }
+    }
+
+  }
+
+  .org-expanded{
+    .org-copy{
+      @include u-margin-bottom(2);
+    }
+    .org-links{
+      @include u-margin-bottom(2);
+      @include u-padding-x(2);
+      @include u-padding-right(1);
+      @include u-padding-top('105');
+      @include u-padding-bottom(2);
+      @include u-bg('primary-dark');
+      @include u-font('sans', '2xs');
+      @include u-text('base-lightest');
+      ul{
+        @include u-padding-left('205');
+        li{
+          @include u-margin-bottom('05');
+          a{
+            @include u-text('no-underline');
+            @include u-border-bottom('1px', 'solid', 'white');
+            &:hover{
+              @include u-text('white');
+              @include u-border-bottom('2px', 'solid', 'white');
+            }
+          }
+        }
+      }
+      a{
+        @include u-text('base-lightest');
+        &:hover{
+          @include u-text('white');
+          @include u-border-bottom('2px', 'solid', 'white');
+        }
+      }
+    }
+  }
+
+  button.btn-learn-more{
+    @include u-text('white');
+    @include u-border('1px', 'solid', 'white');
+    @include u-radius('md');
+    background: none;
+    box-shadow: none;
+    @include u-width('auto');
+
+    @include u-margin(0);
+    @include u-margin-top(1);
+    @include u-padding-y('05');
+    @include u-padding-left('105');
+    @include u-padding-right(4);
+    @include u-font('sans', '2xs');
+    @include at-media('tablet') {
+      @include u-margin-top(0);
+      @include u-margin-left(2);
+      @include u-padding-y(1);
+      @include u-float('right');
+      @include u-font('sans', 'xs');
+    }
+    @include at-media('desktop') {
+      @include u-font('sans', 'sm');
+    }
+    &:hover{
+      box-shadow: none;
+    }
+  }
+  .usa-accordion__button[aria-expanded=false]{
+    background-image: url('../../images/angle-arrow-down-white.svg'),-webkit-gradient(linear,left top,left bottom,from(transparent),to(transparent));
+    background-size: .85rem;
+    background-repeat: no-repeat;
+    background-position: 6.65em center;
+  }
+  .usa-accordion__button[aria-expanded=true]{
+    background-image: url('../../images/angle-arrow-up-white.svg'),-webkit-gradient(linear,left top,left bottom,from(transparent),to(transparent));
+    background-size: .85rem;
+    background-repeat: no-repeat;
+    background-position: 6.65em center;
+  }
+}
+
+.component-anchor-support{
+  @include u-bg('black');
+  @include u-text('white');
+  .usagov{
+    @include u-padding-y(1);
+    @include u-display('block');
+    @include at-media('tablet') {
+      @include u-display('flex');
+      @include u-font('sans', 'sm');
+      @include u-flex('align-center');
+      @include u-flex('justify-start');
+    }
+    p{
+      @include u-margin-y('05');
+      @include u-flex('align-center');
+      @include u-line-height('sans', 2);
+      @include u-font('sans', 'xs');
+      @include at-media('tablet') {
+        @include u-font('sans', 'sm');
+      }
+      i{
+        @include u-margin-right('105');
+        font-size:1.25rem;
+        @include u-maxw(3);
+        @include u-minw(3);
+        @include at-media('tablet') {
+          @include u-maxw(3);
+          @include u-minw(3);
+        }
+      }
+    }
+    .usagov__link{
+      @include u-margin(0);
+      @include u-margin-top(1);
+      @include u-margin-bottom(2);
+      @include u-padding-y(1);
+      @include u-text('white');
+      white-space: nowrap;
+      @include u-font('sans', 'sm');
+      @include at-media('tablet') {
+        @include u-margin(0);
+        @include u-margin-left('105');
+        @include u-font('sans', 'xs');
+      }
+      @include at-media('tablet-lg') {
+        @include u-font('sans', 'sm');
+      }
+    }
+  }
+}
+
+
+.usa-button-sm{
+  @include u-margin-x('05');
+  @include u-padding-y('05');
+  @include u-padding-x('105');
+}
+.arrow-down{
+  @include u-margin-left('105');
+  @include u-width('105');
+}

@@ -1,0 +1,32 @@
+# Anchor component data
+# See usa_anchor.html for the template
+
+anchor_data:
+  - site_name: 18F UX Guide
+    site_email: 18F@gsa.gov
+    site_url: https://derisking-guide.18f.gsa.gov
+    site_about: https://derisking-guide.18f.gsa.gov
+    agency: U.S. General Services Administration
+    agency_acronym: GSA
+    agency_logo: gsa-logo-blue.svg
+    agency_url: https://www.gsa.gov
+    agency_about_url: https://www.gsa.gov/about
+    org_primary: Technology Transformation Services
+    org_primary_acronym: TTS
+    org_primary_url: https://www.gsa.gov/tts/
+    org_primary_email: tts-info@gsa.gov
+    org_primary_about: https://www.gsa.gov/tts/
+    org_primary_bio: "As part of GSA’s Technology Transformation Services (TTS), we apply modern methodologies and technologies to improve the public’s experience with government. We help agencies make their services more accessible, efficient, and effective with modern applications, platforms, processes, personnel, and software solutions."
+    org_secondary: 18F
+    org_secondary_acronym: 18F
+    org_secondary_logo: 18f-logo-blue.svg
+    org_secondary_url: https://18f.gsa.gov
+    org_secondary_email: 18F@gsa.gov
+    org_secondary_about: https://18f.gsa.gov/about/
+    org_secondary_bio: "TTS Solutions is a portfolio of products and services that help agencies improve delivery of information and services to the public."
+    foia_request_url: "https://www.gsa.gov/reference/freedom-of-information-act-foia"
+    fraud_waste_abuse_url: "https://www.gsaig.gov/"
+    no_fear_act_url: "https://www.gsa.gov/about-us/organization/office-of-civil-rights/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002"
+    budget_performance_url: "https://www.gsa.gov/reference/reports/budget-performance"
+    accessibility_url: "https://www.gsa.gov/website-information/accessibility-aids"
+    usagov_contact_url: "https://www.usa.gov/contact"

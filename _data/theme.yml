@@ -1,47 +1,85 @@
+## Color configurations
+## 'primary' - Defines content link color, primary button bg color, return to top link color
+## 'primary darker' - Defines content link hover color, primary button hover bg color, return to top link hover color
+## 'base' - Defines header site title, active top nav link color, left nav link color, link color in primary and main footer and text in usa-banner
+## 'visited' - Defines visited link color
+#
 colors:
-  usa-banner:
-    usa-banner-bg: 'base-lightest'
-    usa-banner-text: 'ink'
-    usa-banner-link: 'primary-dark'
-    usa-banner-link-hover: 'primary-darker'
+  primary: '#046B99'
+  primary-darker: '#1C304A'
+#   base: 'orange'
+#   visited: 'red'
+#
+# # USA banner colors
+#   usa-banner:
+#     usa-banner-bg: 'LightBlue'
+#     usa-banner-text: 'Black'
+#     usa-banner-link: 'Gray'
+#     usa-banner-link-hover: 'Gray'
+#
+# # Header colors
   header:
     header-bg: 'white'
-    header-title: 'ink'
-    header-link: 'base'
-    header-link-hover: 'primary-dark'
-  alt-section:
-    bg-color: 'primary-darker'
-    header-color: 'accent-cool'
-    text-color: 'white'
-    link-color: 'base-lightest'
-    link-hover-color: 'white'
-  hero:
-    hero-bg: 'primary-darker'
-    hero-header: 'accent-cool'
-    hero-header-alt: 'white'
-    hero-text: 'white'
-    hero-link: 'accent-cool'
-    hero-button-bg: 'primary'
-    hero-button-text: 'white'
-  top-navigation:
-    top-nav-bg: 'white'
-    top-nav-link: 'base-dark'
-    top-nav-link-hover: 'primary'
-    top-nav-link-hover-bg: 'white'
-    top-nav-link-current: 'base-dark'
-    top-nav-dropdown-bg: 'primary-dark'
-    top-nav-dropdown-link: 'white'
-    top-nav-dropdown-link-hover-bg: 'transparent'
-  side-navigation:
-    side-nav-bg: 'transparent'
-    side-nav-link: 'ink'
-    side-nav-link-hover: 'primary-dark'
-    side-nav-link-hover-bg: 'base-lightest'
-    side-nav-link-current: 'primary-dark'
-  footer:
-    primary-footer-bg: 'base-lightest'
-    primary-footer-link: 'ink'
-    footer-bg: 'base-lighter'
-    footer-text: 'ink'
-    footer-link: 'ink'
-    footer-social-link: 'black-transparent-10'
+    # header-title: '#1C304A'
+#     header-link: 'DarkSlateGray'
+#     header-link-hover: 'Indigo'
+#
+# # Alt section colors
+#   alt-section:
+#     bg-color: '#e6e3d0'
+#     header-color: 'DarkSlateGray'
+#     text-color: 'Black'
+#     link-color: 'red'
+#     link-hover-color: 'orange'
+#
+# # Hero colors
+#   hero:
+#     hero-bg: 'white'
+#     hero-header: 'DarkSlateGray'
+#     hero-header-alt: 'DarkSlateGray'
+#     hero-text: 'Gray'
+#     hero-link: 'DodgerBlue'
+#     hero-button-bg: 'DodgerBlue'
+#     hero-button-text: 'white'
+#
+# # Top navigation colors
+#   top-navigation:
+#     top-nav-bg: 'DarkSlateGray'
+#     top-nav-link: 'white'
+#     top-nav-link-hover: 'black'
+#     top-nav-link-hover-bg: '#6eb7b7'
+#     top-nav-link-current: 'black'
+#     top-nav-dropdown-bg: '#6eb7b7'
+#     top-nav-dropdown-link: 'orange'
+#     top-nav-dropdown-link-hover-bg: 'DarkSlateGray'
+#
+# # Side navigation colors
+#   side-navigation:
+#     side-nav-bg: 'white'
+#     side-nav-link: 'black'
+#     side-nav-link-hover: 'white'
+#     side-nav-link-hover-bg: 'DarkSlateGray'
+#     side-nav-link-current: 'DarkSlateGray'
+#
+# # Footer colors
+#   footer:
+#     primary-footer-bg: 'Gainsboro'
+#     primary-footer-link: 'black'
+#     footer-bg: 'DarkSlateGray'
+#     footer-text: 'white'
+#     footer-link: 'LightBlue'
+#
+#
+# # Font configurations
+# # 'sans' - Defines navigation and body text
+# # 'serif' - Defines headings
+# # 'normal' - Defines the default font weight
+# # 'bold' - Defines the bold font weight
+#
+fonts:
+  sans: >-
+      "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  serif: >-
+      "Helvetica Neue", "Helvetica", "Arial", sans-serif
+#   normal: 300
+#   bold: 500
