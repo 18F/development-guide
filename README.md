@@ -15,6 +15,7 @@ Some guides at 18F/TTS might be exceptions; e.g., the TTS handbook (large volume
 
 - [state of TTS documentation sites - 2020-03-28](https://docs.google.com/document/d/1LCKZKqoEEYOCwntZpTbHp8bW7tdnPnmmKVJ-YNHAUy4)
 - [GSA guidelines thread in #practice-leads](https://gsa-tts.slack.com/archives/C6W0B5W1G/p1598380975005700)
+- [18F/uswds-jekyll proposal: make more opinionated](https://github.com/18F/uswds-jekyll/issues/190)
 
 ## Technical details
 
