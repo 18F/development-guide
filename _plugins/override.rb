@@ -11,7 +11,7 @@ module Jekyll
     safe true
 
     def generate(site)
-      yamls = ['header', 'navigation', 'footer', 'theme'] 
+      yamls = ['header', 'navigation', 'footer', 'theme', 'usa_anchor'] 
       yamls.each do |y|
         self.merge(site, y)
       end
