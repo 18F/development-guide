@@ -26,4 +26,7 @@ defaults:
     values:
       layout: page
 
-# This should be merged
+scripts:
+  - /assets/uswds/js/uswds.min.js
+  - /assets/js/private-eye.js
+  - /assets/js/application.js
