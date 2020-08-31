@@ -22,9 +22,11 @@ Some guides at 18F/TTS might be exceptions; e.g., the TTS handbook (large volume
 To achieve these goals, this repository uses:
 
 - [usdws-jekyll](https://github.com/18F/uswds-jekyll)
+- Styling from [`18F/ux-guide`](https://github.com/18F/ux-guide) and [`18F/federalist-jekyll-uswds-18f-port`](https://github.com/18F/federalist-jekyll-uswds-18f-port)
 - [a GitHub Action](./.github/actions/merge-template/action.yml) that downstream guides will (automatically) call to merge updates from this upstream repository
 - separate file ([`override.yml`](./override.yml)), used along with `_config.yml`, that simplifies the values a guide maintainer needs to set
 - a separate [`_data/override`](./_data/override) subdirectory to further simplify the data files the guide maintainer has to understand
+- a separate [`_data/suborgs`](./_data/suborgs) subdirectory and [site configuration key](https://github.com/18F/isildurs-bane/blob/77b8aece41f4f61988a40cc079a70d07670c11e5/override.yml#L25) to have optional 18F branding. TTS-only branding is enabled by default.
 - [a Jekyll generator](./_plugins/override.rb) to override values set from YAML files in `_data`
 - [Git attributes](./.github/actions/merge-template/action.yml#L8) to help ensure this upstream repository does not affect downstream content in `_pages`, etc.
 - `Template repository` setting in GitHub
@@ -44,9 +46,8 @@ To achieve these goals, this repository uses:
 - Turn on daily upstream updates (currently have to manually trigger merge in downstream repo under Actions tab in GitHub)
 - Configure CircleCI or GitHub Action to run html-proofer (and externalize list of URLs to ignore)
 - Enforce use of prettier on Markdown
-- Incorporate new GSA guidance for branding, compliance, etc.
+- Incorporate Edit link into footer/anchor or another appropriate spot
 - Survey existing guides and incorporate additional plug-ins into supported baseline of template.
-- Conditional 18F or TTS branding, controlled by value in `override.yml`.
 
 ## Development
 
