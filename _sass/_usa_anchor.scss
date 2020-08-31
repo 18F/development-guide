@@ -206,3 +206,27 @@
   @include u-margin-left('105');
   @include u-width('105');
 }
+
+.component-anchor-meta{
+  @include u-bg('white');
+  @include u-text('black');
+  .page-meta{
+    @include u-padding-y(1);
+    @include u-display('block');
+    @include at-media('tablet') {
+      @include u-display('flex');
+      @include u-font('sans', 'sm');
+      @include u-flex('align-center');
+      @include u-flex('justify-end');
+    }
+    p{
+      @include u-margin-y('05');
+      @include u-flex('align-center');
+      @include u-line-height('sans', 2);
+      @include u-font('sans', 'xs');
+      @include at-media('tablet') {
+        @include u-font('sans', 'sm');
+      }
+    }
+  }
+}
