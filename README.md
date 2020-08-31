@@ -34,7 +34,7 @@ To achieve these goals, this repository uses:
 ## Concept of operations
 
 1. Use this repository as a template to create a new repository. Alternatively, merge its content into an existing repository.
-1. Edit `override.yml`, `_data/override/navigation.yml`, `_data/override/header.yml`, `README.md`, and content under `_pages`. Don't edit anything else if you want to guarantee consistency across guides and automatic updates for security and compliance.
+1. Edit `override.yml`, `_data/override/navigation.yml`, `_data/override/header.yml`, `_data/override/usa_anchor.yml` `README.md`, and content under `_pages`. Don't edit anything else if you want to guarantee consistency across guides and automatic updates for security and compliance.
 1. Set up Federalist, CircleCI, Snyk, etc.
 1. Register sitemap in search.gov.
 1. Any security updates, configuration changes, style changes done by the template maintainer get automatically merged into the downstream guide (i.e., once a day).
@@ -46,7 +46,6 @@ To achieve these goals, this repository uses:
 - Turn on daily upstream updates (currently have to manually trigger merge in downstream repo under Actions tab in GitHub)
 - Configure CircleCI or GitHub Action to run html-proofer (and externalize list of URLs to ignore)
 - Enforce use of prettier on Markdown
-- Incorporate Edit link into footer/anchor or another appropriate spot
 - Survey existing guides and incorporate additional plug-ins into supported baseline of template.
 
 ## Development
