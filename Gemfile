@@ -9,6 +9,7 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from'
   gem 'jekyll-sitemap'
   gem 'jemoji', '>= 0.12.0'
+  gem 'jekyll-last-modified-at'
 end
 
 group :development, :test do
