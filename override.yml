@@ -8,19 +8,16 @@
 # Optional keys
 # - suborg
 
-title: Yet Another TTS Guide
-description: A set of guidelines and best practices
-url: "https://yet-another-tts-guide.18f.gov"
+title: TTS Engineering Practices Guide
+description: A set of guidelines and best practices for an awesome engineering team
+url: "https://engineering.18f.gov"
 
-# GitHub information
 github_info:
   organization: 18F
-  repository: yet-another-tts-guide
+  repository: development-guide
   default_branch: master
 
-# Unique identifier across GSA for this website; the repository name is
-# usually a good site handle.
-search_site_handle: yet-another-tts-guide
+search_site_handle: engineering.18f.gov
 
-# Either 18F or unset
-suborg: 18F
+# Use the default TTS branding
+suborg:
