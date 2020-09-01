@@ -1,5 +1,6 @@
 ---
 title: Language Selection Guidance
+layout: post
 ---
 
 Many factors should influence how TTS engineers make technology selections

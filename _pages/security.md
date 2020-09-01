@@ -1,5 +1,6 @@
 ---
 title: Security
+layout: post
 sidenav: security
 ---
 

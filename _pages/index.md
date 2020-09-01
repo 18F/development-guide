@@ -1,6 +1,7 @@
 ---
 title: TTS Engineering Practices Guide
 permalink: /
+layout: post
 ---
 A set of guidelines and best practices for an awesome engineering team
 

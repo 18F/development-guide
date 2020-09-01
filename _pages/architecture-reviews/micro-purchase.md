@@ -1,5 +1,6 @@
 ---
 title: 'Micro-purchase: Do one thing well'
+layout: post
 ---
 
 ## TL;DR

@@ -1,5 +1,6 @@
 ---
 title: Development Environments
+layout: post
 ---
 
 ## Why this guide?

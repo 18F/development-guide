@@ -1,5 +1,6 @@
 ---
 title: Output Encoding
+layout: post
 sidenav: security
 ---
 

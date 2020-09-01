@@ -1,5 +1,6 @@
 ---
 title: Preprocessors
+layout: post
 sidenav: css
 ---
 

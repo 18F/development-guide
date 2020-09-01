@@ -1,5 +1,6 @@
 ---
 title: Accessibility Scanning
+layout: post
 ---
 
 ## Accessibility Scanning using AccessLint

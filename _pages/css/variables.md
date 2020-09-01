@@ -1,5 +1,6 @@
 ---
 title: Variables
+layout: post
 sidenav: css
 ---
 

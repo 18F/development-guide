@@ -1,5 +1,6 @@
 ---
 title: Naming
+layout: post
 sidenav: css
 ---
 

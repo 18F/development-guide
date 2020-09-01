@@ -1,5 +1,6 @@
 ---
 title: JavaScript
+layout: post
 sidenav: js
 ---
 

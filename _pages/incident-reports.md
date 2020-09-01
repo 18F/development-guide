@@ -1,5 +1,6 @@
 ---
 title: Incident Reports
+layout: post
 ---
 
 Though we fully expect to write dependable applications, every project will

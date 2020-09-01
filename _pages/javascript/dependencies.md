@@ -1,5 +1,6 @@
 ---
 title: Dependencies
+layout: post
 sidenav: js
 ---
 

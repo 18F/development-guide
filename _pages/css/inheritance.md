@@ -1,5 +1,6 @@
 ---
 title: Inheritance
+layout: post
 sidenav: css
 ---
 

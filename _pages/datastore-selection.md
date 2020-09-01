@@ -1,5 +1,6 @@
 ---
 title: Datastore Selection Guidance
+layout: post
 ---
 
 We're fortunate to have dozens of battle-tested datastores available to us,

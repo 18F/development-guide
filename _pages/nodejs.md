@@ -1,5 +1,6 @@
 ---
 title: Node.js Development Guide
+layout: post
 ---
 
 ## Related topics

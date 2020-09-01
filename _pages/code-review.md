@@ -1,5 +1,6 @@
 ---
 title: Code Review
+layout: post
 ---
 
 A friendly guide for reviewing code — and not each other — at 18f.

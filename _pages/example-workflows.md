@@ -1,5 +1,6 @@
 ---
 title: Example Workflows
+layout: post
 ---
 ## Example Workflows
 

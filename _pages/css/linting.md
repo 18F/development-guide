@@ -1,5 +1,6 @@
 ---
 title: Linting
+layout: post
 sidenav: css
 ---
 

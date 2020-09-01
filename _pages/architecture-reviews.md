@@ -1,5 +1,6 @@
 ---
 title: Architecture Reviews
+layout: post
 ---
 
 Though we pride ourselves on our [transparent and remote-friendly

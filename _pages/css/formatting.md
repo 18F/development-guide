@@ -1,5 +1,6 @@
 ---
 title: Formatting
+layout: post
 sidenav: css
 ---
 

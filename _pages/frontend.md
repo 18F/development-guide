@@ -1,5 +1,6 @@
 ---
 title: Front-End Disciplines
+layout: post
 ---
 ## Related topics
 * [CSS]({{site.baseurl}}/css)

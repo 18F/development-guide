@@ -1,5 +1,6 @@
 ---
 title: Specificity
+layout: post
 sidenav: css
 ---
 

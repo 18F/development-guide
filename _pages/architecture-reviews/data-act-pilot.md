@@ -1,5 +1,6 @@
 ---
 title: 'DATA Act Pilot: Simplicity is Key'
+layout: post
 ---
 
 ## TL;DR

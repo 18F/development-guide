@@ -1,5 +1,6 @@
 ---
 title: Python Development Guide
+layout: post
 ---
 
 This is a **WORK IN PROGRESS**. Help us make it better by [submitting an

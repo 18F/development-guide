@@ -1,5 +1,6 @@
 ---
 title: Architecture
+layout: post
 sidenav: css
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Cloud.gov post mortems
+layout: post
 ---
 
 Cloud.gov post mortems (including incident response) are hosted at

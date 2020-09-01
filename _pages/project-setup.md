@@ -1,5 +1,6 @@
 ---
 title: Project Setup
+layout: post
 ---
 
 While the specific setup for each TTS project varies widely, there are certain

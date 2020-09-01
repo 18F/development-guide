@@ -1,5 +1,6 @@
 ---
 title: Continuous Deployment
+layout: post
 ---
 
 ## Pre-requisites

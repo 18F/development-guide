@@ -1,5 +1,6 @@
 ---
 title: Third-Party Integrations
+layout: post
 ---
 
 Our software is built on the shoulders of giants. We use several third parties

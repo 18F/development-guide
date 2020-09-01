@@ -1,5 +1,6 @@
 ---
 title: Workflow Best Practices
+layout: post
 ---
 
 Project teams may vary, but across TTS engineering we aim for consistency

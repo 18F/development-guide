@@ -1,5 +1,6 @@
 ---
 title: Docker for development
+layout: post
 ---
 
 Below we lay out recommendations for using Docker to wrap development

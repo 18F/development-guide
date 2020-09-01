@@ -1,5 +1,6 @@
 ---
 title: Style / Linting
+layout: post
 sidenav: js
 ---
 

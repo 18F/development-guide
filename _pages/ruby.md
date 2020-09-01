@@ -1,5 +1,6 @@
 ---
 title: Ruby Guide
+layout: post
 ---
 This is a **WORK IN PROGRESS**. Help us make it better by
 [submitting an issue](https://github.com/18F/development-guide) or joining us

@@ -1,5 +1,6 @@
 ---
 title: Content Security Policy
+layout: post
 sidenav: security
 ---
 
