@@ -1,0 +1,199 @@
+
+//// 18F styles
+
+// Color
+$color-light:        color("cyan-10v"); // was #b3efff
+$color-bright:       color("cyan-30v"); // was #00cfff
+$color-medium:       color("primary");
+$color-dark:         color("primary-dark"); // was #1C304A
+$color-base:         color("primary-dark"); // was #1F2E4A
+$color-black:        color("black");
+$color-inverse:      color("white");
+
+$color-bright-hover: color("accent-cool-dark");
+$color-medium-hover: color("blue-60");
+
+$color-gray-lightest: color("base-lightest"); // Adding bc used in our $border-light in this file.
+$color-gray-hover:    color("gray-2");
+$color-gray-divider:  color("gray-20");
+
+$color-gray-border:   color("base-dark");
+
+
+// Typography
+.usa-prose{
+  h1,h2,h3,h4,h5,h6 {
+    color: $color-dark;
+  }
+
+  p, li {
+    color: $color-base;
+  }
+}
+.usa-list li,
+.usa-prose>ul li,
+.usa-prose>ol li {
+  margin-bottom: units(0.5);
+}
+.usa-prose>ul li>ul,
+.usa-prose>ul li>ol,
+.usa-prose>ol li>ul,
+.usa-prose>ol li>ol {
+  margin-top: units(1.5);
+}
+
+// Links
+a {
+  color: $color-medium;
+}
+
+a:hover {
+  color: $color-medium-hover;
+}
+
+// Header
+.usa-nav .usa-current::after,
+.usa-header--extended .usa-current:hover::after,
+.usa-nav__primary>.usa-nav__primary-item > .usa-current:hover::after {
+  background-color: $color-bright;
+  height: units(0.5);
+}
+
+.usa-nav__primary>.usa-nav__primary-item > .usa-current,
+.usa-nav__primary>.usa-nav__primary-item > a:hover {
+  color: $color-black;
+}
+
+.usa-nav__primary>.usa-nav__primary-item > a:hover {
+  background-color: $color-gray-lightest;
+}
+
+.usa-nav__primary>.usa-nav__primary-item > a:hover::after {
+  height: 0;
+}
+
+.usa-nav__secondary-links {
+  display: none;
+}
+
+// usa-sidenav
+
+.usa-sidenav a {
+  color: $color-base;
+}
+
+.usa-sidenav > .usa-sidenav__item {
+  padding-left: 0;
+}
+
+.usa-sidenav .usa-current {
+  color: $color-dark;
+}
+
+.usa-sidenav .usa-current::after {
+  background-color: $color-bright;
+  border-radius: 0;
+  width: units(1);
+  top: 0;
+  bottom: 0;
+}
+
+.usa-sidenav a:hover {
+  color: inherit;
+  background-color: $color-gray-lightest;
+}
+
+//// Customization
+
+// Set max-width on container to contain lines
+.usa-layout-docs__main {
+  max-width: units("tablet");
+}
+
+// Set line-height to specify distance between lines of text
+.usa-prose > h1,
+.usa-prose > h2,
+.usa-prose > h3,
+.usa-prose > h4,
+.usa-prose > h5,
+.usa-prose > h6 {
+  @include u-line-height("heading", 3);
+}
+
+// Set property values for code block
+pre {
+  white-space: pre-wrap;
+}
+
+// Show Slack icon before Slack Links
+a[href^="https://gsa-tts.slack.com"]::before {
+  content: "";
+  $size: units(4);
+  width: $size;
+  height: $size;
+  display: inline-block;
+  vertical-align: middle;
+  margin: units(-2px) units(-0.5) 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("/images/Slack_Mark.svg");
+}
+.usa-prose>ul.list-item--margin-bottom-extra>li,
+.usa-prose>ol.list-item--margin-bottom-extra>li {
+  @include u-margin-bottom(1.5);
+}
+
+@include at-media("desktop") {
+  .usa-header--extended .usa-logo {
+    max-width: none;
+  }
+
+  .usa-nav__primary>.usa-nav__primary-item {
+    @include u-font("ui", "xs");
+  }
+
+  .usa-header--extended .usa-nav__primary-item>.usa-current::after {
+    background-color: $color-bright;
+  }
+
+  .usa-header--extended .usa-nav__primary-item>.usa-nav__link:not(.usa-current):hover::after {
+    display: none;
+  }
+}
+
+.usa-layout-docs__sidenav {
+  overflow: visible;
+  order: 0;
+  margin-bottom: units(3);
+  padding-top: 0;
+  position: relative;
+}
+
+.usa-header .usa-logo a {
+  display: inline-block;
+}
+
+@include at-media("desktop") {
+  .usa-layout-docs__sidenav {
+    @include grid-col(3);
+    position: sticky;
+  }
+
+  .usa-layout-docs__main {
+    @include u-flex("fill");
+  }
+}
+
+
+//// Footer (usa-anchor styles)
+
+// Fixing footer anchor to bottom
+@include at-media("desktop") {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+}
+
+@import '_usa_anchor';
