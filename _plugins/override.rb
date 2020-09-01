@@ -12,7 +12,7 @@ module Jekyll
     safe true
 
     def generate(site)
-      yamls = ['header', 'navigation', 'footer', 'theme', 'usa_anchor'] 
+      yamls = ['header', 'navigation', 'footer', 'theme', 'anchor'] 
       yamls.each do |y|
         if site.config['suborg']
           self.merge(site, File.join(SUBORGS_DIR, site.config['suborg']), y)
