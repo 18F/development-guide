@@ -1,2 +1,3 @@
-edit_page: true
+edit_page:
+  text: "Edit this page"
 last_updated: true

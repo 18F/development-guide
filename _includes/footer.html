@@ -1,26 +1,39 @@
+{% assign footer = site.data.footer %}
+
+{% if footer.type == 'slim' %}
+  {% include components/footer--slim.html %}
+{% elsif footer.type == 'default' or footer.type == 'medium' %}
+  {% include components/footer--default.html %}
+{% elsif footer.type == 'big' %}
+  {% include components/footer--big.html %}
+{% endif %}
+
 {% assign anchor = site.data.anchor %}
+
 <section class="anchor" data-uswds="1.0">
 {% if anchor.edit_page or (anchor.last_updated and page.last_modified_at) %}
-<div class="component-anchor-meta">
-  <div class="grid-container grid-container-desktop">
-    <div class="grid-row tablet-lg:grid-gap-2">
-      <div class="grid-col-12">
-        <div class="page-meta">
-          <p>
-            {% if anchor.last_updated and page.last_modified_at %}
-            <span><small>Last updated: {{ page.last_modified_at | date: '%B %d, %Y' }}</small></span>
-            {% endif %}
-            {% if anchor.edit_page %}
-            <span>
-              {% include components/github-edit.html footer=footer path=page.path %}
-            </span>
-            {% endif %}
-          </p>
+  {% unless footer.type %}
+    <div class="component-anchor-meta">
+      <div class="grid-container grid-container-desktop">
+        <div class="grid-row tablet-lg:grid-gap-2">
+          <div class="grid-col-12">
+            <div class="page-meta">
+              <p>
+                {% if anchor.last_updated and page.last_modified_at %}
+                <span><small>Last updated: {{ page.last_modified_at | date: '%B %d, %Y' }}</small></span>
+                {% endif %}
+                {% if anchor.edit_page %}
+                <span>
+                  {% include components/github-edit.html footer=anchor path=page.path %}
+                </span>
+                {% endif %}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+  {% endunless %}
 {% endif %}
 <div class="component-anchor">
   <div class="usa-accordion">
