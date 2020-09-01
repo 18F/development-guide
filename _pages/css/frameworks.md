@@ -1,5 +1,6 @@
 ---
 title: Frameworks
+layout: post
 sidenav: css
 ---
 
