@@ -2,6 +2,7 @@
 title: Frameworks
 layout: post
 sidenav: css
+sticky_sidenav: true
 ---
 
 TTS recommends using the [U.S. Web Design System](https://github.com/uswds/uswds) as it is specifically designed to help build fast, accessible, mobile-friendly federal government websites.

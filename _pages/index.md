@@ -1,5 +1,5 @@
 ---
-title: TTS Engineering Practices Guide
+title: About this guide
 permalink: /
 layout: post
 ---

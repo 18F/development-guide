@@ -2,6 +2,7 @@
 title: Linting
 layout: post
 sidenav: css
+sticky_sidenav: true
 ---
 
 The styleguide provides a method of linting [Sass] code to ensure it conforms

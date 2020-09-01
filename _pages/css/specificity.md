@@ -2,6 +2,7 @@
 title: Specificity
 layout: post
 sidenav: css
+sticky_sidenav: true
 ---
 
 - IDs should be reserved for JavaScript. Don’t use IDs for styles.

@@ -2,6 +2,7 @@
 title: Preprocessors
 layout: post
 sidenav: css
+sticky_sidenav: true
 ---
 
 The most supported CSS preprocessor at TTS is [Sass](http://sass-lang.com/)

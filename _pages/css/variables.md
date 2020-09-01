@@ -2,6 +2,7 @@
 title: Variables
 layout: post
 sidenav: css
+sticky_sidenav: true
 ---
 
 - Create new variables in the following circumstances:

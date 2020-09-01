@@ -2,6 +2,7 @@
 title: JavaScript
 layout: post
 sidenav: js
+sticky_sidenav: true
 ---
 
 The purpose of the JavaScript coding styleguide is to create and utilize

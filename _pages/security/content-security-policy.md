@@ -2,6 +2,7 @@
 title: Content Security Policy
 layout: post
 sidenav: security
+sticky_sidenav: true
 ---
 
 ## What is Content Security Policy?

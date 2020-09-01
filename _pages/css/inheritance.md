@@ -2,6 +2,7 @@
 title: Inheritance
 layout: post
 sidenav: css
+sticky_sidenav: true
 ---
 
 ## Mixins

@@ -2,6 +2,7 @@
 title: Formatting
 layout: post
 sidenav: css
+sticky_sidenav: true
 ---
 
 We recommend using [Prettier](https://prettier.io), and enabling it in your

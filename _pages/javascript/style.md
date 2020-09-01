@@ -2,6 +2,7 @@
 title: Style / Linting
 layout: post
 sidenav: js
+sticky_sidenav: true
 ---
 
 {%include components/tag-standard.html %}

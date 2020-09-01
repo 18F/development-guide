@@ -2,6 +2,7 @@
 title: CSS
 layout: post
 sidenav: css
+sticky_sidenav: true
 ---
 
 The purpose of the CSS coding styleguide is to create consistent CSS or

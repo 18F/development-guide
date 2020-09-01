@@ -2,6 +2,7 @@
 title: Units
 layout: post
 sidenav: css
+sticky_sidenav: true
 ---
 
 ## Measurements

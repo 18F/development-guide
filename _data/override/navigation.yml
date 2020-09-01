@@ -1,24 +1,70 @@
 primary:
-  - text: Documentation
-    href: /docs/
-  - text: Navigation section
-    links:
-      - text: Demo link A
-        href: /two/a/
-      - text: Demo link B
-        href: /two/b/
-      - text: Demo link C
-        href: /two/c/
-      - text: Demo link D
-        href: /two/a/
-      - text: Demo link E
-        href: /two/b/
-      - text: Demo link F
-        href: /two/c/
-  - text: External link
-    href: https://18f.gsa.gov
-    external: true
-
-home:
   - text: Home
     href: /
+  - text: More Guides
+    links:
+      - text: Accessibility
+        href: https://accessibility.18f.gov
+        external: true
+      - text: Agile
+        href: https://agile.18f.gov
+        external: true
+      - text: Before You Ship
+        href: https://before-you-ship.18f.gov
+        external: true
+      - text: Content
+        href: https://content-guide.18f.gov
+        external: true
+      - text: Design methods
+        href: https://methods.18f.gov
+        external: true
+      - text: Product
+        href: https://product-guide.18f.gov
+        external: true
+      - text: User experience
+        href: https://ux-guide.18f.gov
+        external: true
+
+css:
+  - text: CSS
+    href: /css/
+  - text: Architecture
+    href: /css/architecture/
+  - text: Documentation
+    href: /css/documentation/
+  - text: Frameworks
+    href: /css/frameworks/
+  - text: Formatting
+    href: /css/formatting/
+  - text: Inheritance
+    href: /css/inheritance/
+  - text: Linting
+    href: /css/linting/
+  - text: Naming
+    href: /css/naming/
+  - text: Preprocessors
+    href: /css/preprocessors/
+  - text: Specificity
+    href: /css/specificity/
+  - text: Units
+    href: /css/units/
+  - text: Variables
+    href: /css/variables/
+
+js:
+  - text: JavaScript
+    href: /javascript/
+  - text: Dependencies
+    href: /javascript/dependencies/
+  - text: Frameworks
+    href: /javascript/frameworks/
+  - text: Style / Linting
+    href: /javascript/style/
+
+security:
+  - text: Security
+    href: /security/
+  - text: Content Security Policy (CSP)
+    href: /security/content-security-policy/
+  - text: Output Encoding
+    href: /security/output-encoding/
