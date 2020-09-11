@@ -30,7 +30,7 @@ editor and build system, as described at
 Using an eslint plugin with your editor makes it easier to quickly see
 non-conforming lines of code on the spot, as shown below:
 
-![Atom eslint plugin screenshot]({{ site.baseurl }}/assets/images/atom-eslint-example.png)
+![Atom eslint plugin screenshot]({{ site.baseurl }}/javascript/atom-eslint-example.png)
 
 ## Why both?
 
