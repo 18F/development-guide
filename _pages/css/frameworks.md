@@ -3,7 +3,7 @@ title: Frameworks
 sidenav: css
 ---
 
-TTS recommends using the [U.S. Web Design System](https://github.com/uswds/uswds) as it is specifically designed to help build fast, accessible, mobile-friendly federal government websites.
+TTS recommends using the [U.S. Web Design System (USWDS)](https://github.com/uswds/uswds) as it is specifically designed to help build fast, accessible, mobile-friendly federal government websites.
 
 Sometimes, projects utilize other CSS frameworks such as:
 
@@ -19,5 +19,6 @@ for the designer or developer to only use the parts that they need, rather than
 including a hefty library.
 
 ## Do not use Bootstrap
+
 18F specifically does not recommend using [Bootstrap](http://getbootstrap.com/) for production work
 because it can be difficult to adapt its opinionated styles to bespoke design work.
