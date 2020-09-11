@@ -3,14 +3,12 @@ title: Third-Party Integrations
 ---
 
 Our software is built on the shoulders of giants. We use several third parties
-to perform continuous monitoring, host our apps, etc.; all should be approved
-on the [GSA IT Standards
-list](https://ea.gsa.gov/#!/itstandards). A public, but only periodically updated, [snapshot of the IT Standards](https://github.com/GSA/data/blob/master/enterprise-architecture/it-standards.csv) is also available.
+to perform continuous monitoring, host our apps, etc.
 
 ## Standards
 
 While we don’t formally recommend third-party services, a handful have been
-approved by GSA IT (some we pay for collectively) and provide services which
+[approved](https://handbook.tts.gsa.gov/software/#get-access-to-software-we-already-have), procured, and provide services which
 are essential for attaining an [Authority-to-Operate (ATO)](https://atos.open-control.org). To get started quickly
 and to ease the ATO burden, use these systems; pain awaits your project
 otherwise.
