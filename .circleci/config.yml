@@ -1,0 +1,31 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.7.1
+    environment:
+      # fix encoding
+      - LANG: C.UTF-8
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            # Find a cache corresponding to this specific package-lock.json checksum
+            # when this file is changed, this key will fail
+            - v1-gem-dependencies-{{ checksum "Gemfile.lock" }}
+            # Find the most recently generated cache used from any branch
+            - v1-gem-dependencies-
+
+      - run: 
+          name: Install dependencies
+          command: bundle install --jobs=4 --retry=3 --path vendor/bundle
+
+      - save_cache:
+          key: v1-gem-dependencies-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+
+      - run:
+          name: Build and Test site
+          command: bundle exec rake ci_test
