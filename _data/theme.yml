@@ -1,0 +1,85 @@
+## Color configurations
+## 'primary' - Defines content link color, primary button bg color, return to top link color
+## 'primary darker' - Defines content link hover color, primary button hover bg color, return to top link hover color
+## 'base' - Defines header site title, active top nav link color, left nav link color, link color in primary and main footer and text in usa-banner
+## 'visited' - Defines visited link color
+#
+colors:
+  primary: '#046B99'
+  primary-darker: '#1C304A'
+#   base: 'orange'
+#   visited: 'red'
+#
+# # USA banner colors
+#   usa-banner:
+#     usa-banner-bg: 'LightBlue'
+#     usa-banner-text: 'Black'
+#     usa-banner-link: 'Gray'
+#     usa-banner-link-hover: 'Gray'
+#
+# # Header colors
+  header:
+    header-bg: 'white'
+    # header-title: '#1C304A'
+#     header-link: 'DarkSlateGray'
+#     header-link-hover: 'Indigo'
+#
+# # Alt section colors
+#   alt-section:
+#     bg-color: '#e6e3d0'
+#     header-color: 'DarkSlateGray'
+#     text-color: 'Black'
+#     link-color: 'red'
+#     link-hover-color: 'orange'
+#
+# # Hero colors
+#   hero:
+#     hero-bg: 'white'
+#     hero-header: 'DarkSlateGray'
+#     hero-header-alt: 'DarkSlateGray'
+#     hero-text: 'Gray'
+#     hero-link: 'DodgerBlue'
+#     hero-button-bg: 'DodgerBlue'
+#     hero-button-text: 'white'
+#
+# # Top navigation colors
+#   top-navigation:
+#     top-nav-bg: 'DarkSlateGray'
+#     top-nav-link: 'white'
+#     top-nav-link-hover: 'black'
+#     top-nav-link-hover-bg: '#6eb7b7'
+#     top-nav-link-current: 'black'
+#     top-nav-dropdown-bg: '#6eb7b7'
+#     top-nav-dropdown-link: 'orange'
+#     top-nav-dropdown-link-hover-bg: 'DarkSlateGray'
+#
+# # Side navigation colors
+#   side-navigation:
+#     side-nav-bg: 'white'
+#     side-nav-link: 'black'
+#     side-nav-link-hover: 'white'
+#     side-nav-link-hover-bg: 'DarkSlateGray'
+#     side-nav-link-current: 'DarkSlateGray'
+#
+# # Footer colors
+#   footer:
+#     primary-footer-bg: 'Gainsboro'
+#     primary-footer-link: 'black'
+#     footer-bg: 'DarkSlateGray'
+#     footer-text: 'white'
+#     footer-link: 'LightBlue'
+#
+#
+# # Font configurations
+# # 'sans' - Defines navigation and body text
+# # 'serif' - Defines headings
+# # 'normal' - Defines the default font weight
+# # 'bold' - Defines the bold font weight
+#
+fonts:
+  sans: >-
+      "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  serif: >-
+      "Helvetica Neue", "Helvetica", "Arial", sans-serif
+#   normal: 300
+#   bold: 500

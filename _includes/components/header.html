@@ -1,0 +1,163 @@
+{% if header %}
+  <div class="usa-overlay"></div>
+{% if header.type == 'basic' %}
+  <header class="usa-header usa-header--basic" role="banner">
+{% elsif header.type == 'basic-mega' %}
+  <header class="usa-header usa-header--basic usa-header--basic-megamenu" role="banner">
+{% elsif header.type == 'extended' or header.type == 'extended-mega' %}
+  <header class="usa-header usa-header--extended" role="banner">
+{% endif %}
+
+  {% if header.type == 'basic' or header.type == 'basic-mega' %}
+    <div class="usa-nav-container">
+  {% endif %}
+    <div class="usa-navbar">
+      <div class="usa-logo" id="header-logo">
+        <a
+          href="{% if header.href %}{{ header.href }}{% else %}{{ site.baseurl }}/{% endif %}"
+          title="Home">
+          {% if header.logo %}
+            <img
+              class="usa-logo-img"
+              src="{% if header.logo.external %}{{ header.logo.src }}{% else %}{{ header.logo.src | relative_url }}{% endif %}"
+              alt="{{ header.logo.alt }}">
+          {% endif %}
+          <em class="usa-logo__text">
+            {{ header.title | default: site.title }}
+          </em>
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+
+    <nav role="navigation" class="usa-nav">
+      <div class="usa-nav__inner">
+        <button class="usa-nav__close">
+          <img src="{{ site.baseurl }}/assets/uswds/img/close.svg" alt="close">
+        </button>
+
+        {% assign _primary = header.primary.links %}
+        {% assign primary_links = site.data.navigation[_primary] | default: _primary %}
+        {% if primary_links %}
+        <ul class="usa-nav__primary usa-accordion">
+          {% for _section in primary_links %}
+          <li class="usa-nav__primary-item">
+            {% if _section.links %}
+              {% assign section_links = site.data.navigation[_section.links] | default: _section.links %}
+              {% assign _section_id = _section.id %}
+              {% unless _section_id %}{% assign _section_id = 'nav-' | append: forloop.index %}{% endunless %}
+            <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="{{ _section_id }}">
+              <span>{{ _section.text }}</span>
+            </button>
+            {% if header.type == 'basic' or header.type == 'extended' %}
+            <ul id="{{ _section_id }}" class="usa-nav__submenu">
+            {% endif %}
+            {% if header.type == 'basic-mega' or header.type == 'extended-mega' %}
+            <div id="{{ _section_id }}" class="usa-nav__submenu usa-megamenu">
+              <div class="grid-row grid-gap-4">
+            {% endif %}
+              {% for _link in section_links %}
+                {% if header.type == 'basic-mega' or header.type == 'extended-mega' %}
+                <!-- wrap every 3 links in a usa-megamenu-col div -->
+                {% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
+                  {% if modulo == '1' %}
+                    <div class="desktop:grid-col-3">
+                      <ul class="usa-nav__submenu-list">
+                  {% endif %}
+                {% endif %}
+                <li class="usa-nav__submenu-item">
+                  <a href="{% if _link.external %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}">{{ _link.text }}</a>
+                </li>
+                {% if header.type == 'basic-mega' or header.type == 'extended-mega' %}
+                  {% if modulo == '0' or forloop.last %}
+                    </ul>
+                    </div>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            {% if header.type == 'basic' or header.type == 'extended' %}
+            </ul>
+            {% endif %}
+            {% if header.type == 'basic-mega' or header.type == 'extended-mega' %}
+              </div><!-- /grid-row -->
+            </div>
+            {% endif %}
+            {% else %}
+              {% assign basedir = page.url | remove_first: '/' | split: '/' | first | lstrip %}
+              {% assign linkdir = _section.href |  replace: '/', ''  | lstrip %}
+              <a class="{% if _section.class %}{{ _section.class }}{% else %} usa-nav__link {% endif %} {% if linkdir == basedir %} usa-current{% endif %}" href="{% if _section.external %}{{ _section.href }}{% else %}{{ _section.href | relative_url }}{% endif %}">
+                <span>{{ _section.text }}</span>
+              </a>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if header.type == 'basic' or header.type == 'basic-mega' %}
+          {% assign _secondary = header.secondary %}
+          {% if site.search_site_handle  %}
+            {% include components/search.html %}
+          {% endif %}
+        {% endif %}
+
+        {% if header.type == 'extended' or header.type == 'extended-mega' %}
+          {% assign _secondary = header.secondary %}
+          <div class="usa-nav__secondary">
+            <ul class="usa-unstyled-list usa-nav__secondary-links">
+              {% assign secondary_links = site.data.navigation[_secondary.links] | default: _secondary.links %}
+              {% for _link in secondary_links %}
+                <li class="usa-nav__secondary-item">
+                  <a href="{% if _link.external %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}"
+                  {% if _link.class %} class="{{ _link.class }}" {% endif %}>
+                    {{ _link.text }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+            {% if site.search_site_handle  %}
+              <form
+                accept-charset="UTF-8"
+                action="https://search.usa.gov/search"
+                id="search_form"
+                method="get"
+                class="usa-search usa-search--small js-search-form">
+              <input
+                name="utf8"
+                type="hidden"
+                value="&#x2713;" />
+              <input
+                type="hidden"
+                name="affiliate"
+                id="affiliate"
+                value="{{ site.search_site_handle }}" />
+                <div role="search">
+                  <label
+                    for="query" class="usa-sr-only">Enter search terms</label>
+                  <input
+                    autocomplete="off"
+                    class="usa-input usagov-search-autocomplete"
+                    id="query"
+                    name="query"
+                    type="search" />
+                  <button
+                    class="usa-button"
+                    type="submit"
+                    name="commit">
+                    <span class="usa-sr-only">Search</span>
+                  </button>
+                </div>
+              </form>
+            {% endif %}
+          </div>
+          {% endif %}
+
+
+        </div>
+      </div>
+    </nav>
+  {% if header.type == 'basic' or header.type == 'basic-mega' %}
+    </div>
+  {% endif %}
+  </header>
+{% endif %}
