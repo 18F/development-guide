@@ -12,7 +12,7 @@ A guide for writing and maintaining Ruby and Rails applications
 
 Follow the [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide) and
 enforce it via static analysis tools such as [Code Climate] and [Rubocop]. You
-can copy the [recommended Rubocop configuration](.rubocop.yml) in your Ruby
+can copy the [recommended Rubocop configuration](rubocop.yml) in your Ruby
 project and make any changes based on your team's preferences.
 
 Note that the Rubocop configuration linked above only includes settings that
