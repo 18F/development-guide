@@ -32,7 +32,7 @@ visual regression tests don't make sense for an API).
 1. Build scripts
 1. Unit test setup for each programming language
 1. Linter setup (e.g., [`flake8`](http://flake8.pycqa.org/en/latest/),
-   [`rubocop`](../ruby/.rubocop.yml),
+   [`rubocop`](../ruby/rubocop.yml),
    [`eslint`](https://github.com/airbnb/javascript/blob/master/linters/.eslintrc) {%include components/tag-suggestion.html %})
 1. Docker
    - Dockerfiles
