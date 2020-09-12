@@ -1,10 +1,7 @@
-# _data/navigation.yml
-#primary:
-#  - text: Example
-#    href: /example/
-
-secondary:
-  - text: More 18F guides
+primary:
+  - text: Overview
+    href: /
+  - text: More Guides
     href: https://18f.gsa.gov/guides/
     external: true
 
