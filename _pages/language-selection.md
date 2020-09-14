@@ -33,6 +33,16 @@ be major reasons to select one of these languages for your project. We feel
 relatively comfortable supporting these languages, but if all other factors
 are equal, we encourage selecting from our first tier.
 
+## Frequently-used frameworks
+
+The following are used widely in TTS:
+
+| Purpose                              | Tool                                                                                                         |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| CSS framework                        | [_More info_]({{site.baseurl}}/css/frameworks/)                                                              |
+| Infrastructure/configuration as code | [Terraform](https://www.terraform.io/)                                                                       |
+| Static site generator                | [Jekyll](https://jekyllrb.com/) (with the [uswds-jekyll](https://github.com/18F/uswds-jekyll) theme) or Hugo |
+
 ## Project scope
 
 Perhaps the most important factor<sup>[5](#factor)</sup> to weigh when
