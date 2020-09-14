@@ -37,11 +37,11 @@ are equal, we encourage selecting from our first tier.
 
 The following are used widely in TTS:
 
-| Purpose                              | Tool                                                                                                        |
-| ------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
-| CSS framework                        | [_More info_]({{site.baseurl}}/css/frameworks/)                                                             |
-| Infrastructure/configuration as code | [Terraform](https://www.terraform.io/)                                                                      |
-| Static site generator                | [Jekyll](https://jekyllrb.com/) (with the [uswds-jekyll](https://github.com/18F/uswds-jekyll) theme or Hugo |
+| Purpose                              | Tool                                                                                                         |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| CSS framework                        | [_More info_]({{site.baseurl}}/css/frameworks/)                                                              |
+| Infrastructure/configuration as code | [Terraform](https://www.terraform.io/)                                                                       |
+| Static site generator                | [Jekyll](https://jekyllrb.com/) (with the [uswds-jekyll](https://github.com/18F/uswds-jekyll) theme) or Hugo |
 
 ## Project scope
 
