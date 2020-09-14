@@ -20,10 +20,10 @@ To test with Windows-native browsers like Internet Explorer or Microsoft Edge:
      * You can’t access localhost
      * Manual testing only
 - Virtual machine (VM)
-  * Request access to [VirtualBox](https://www.virtualbox.org) through the GSA Self Service app, download and install a Windows VM, then set up access localhost (if needed).
+  * [Request access to VirtualBox](https://gsa.servicenowservices.com/sp/?id=sc_cat_item&sys_id=1bfdfdca78d3a400ce3ddff91a64940b).
   * Pros:
     * [VMs are available for IE8+ at no cost from Microsoft](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
-    * You can access localhost
+    * You can [access localhost](https://medium.com/@urubuz/accessing-localhost-in-mac-from-windows-vm-in-virtualbox-312a3de6fedb)
     * Can support local, automated testing through [Selenium](https://www.selenium.dev/)
   * Cons:
     * Takes a bit of setup
