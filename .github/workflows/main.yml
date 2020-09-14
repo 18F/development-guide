@@ -1,0 +1,14 @@
+name: Manual Merge Template
+on:  workflow_dispatch
+
+jobs:
+  merge-template:
+    if: ${{ github.repository != '18F/isildurs-bane' }}
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 
+      - name: Merge Template
+        uses: ./.github/actions/merge-template

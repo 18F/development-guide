@@ -1,8 +1,8 @@
-version: '3'
+version: "3"
 services:
   web:
     build: .
     ports:
       - "4000:4000"
     volumes:
-      - .:/dev-guide
+      - .:/usr/src/app

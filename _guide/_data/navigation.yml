@@ -1,0 +1,56 @@
+# _data/navigation.yml
+#primary:
+#  - text: Example
+#    href: /example/
+
+secondary:
+  - text: More 18F guides
+    href: https://18f.gsa.gov/guides/
+    external: true
+
+# TODO: figure out how to nest links
+css:
+  - text: CSS
+    href: /css/
+  - text: Architecture
+    href: /css/architecture/
+  - text: Documentation
+    href: /css/documentation/
+  - text: Frameworks
+    href: /css/frameworks/
+  - text: Formatting
+    href: /css/formatting/
+  - text: Inheritance
+    href: /css/inheritance/
+  - text: Linting
+    href: /css/linting/
+  - text: Naming
+    href: /css/naming/
+  - text: Preprocessors
+    href: /css/preprocessors/
+  - text: Specificity
+    href: /css/specificity/
+  - text: Units
+    href: /css/units/
+  - text: Variables
+    href: /css/variables/
+
+# TODO: figure out how to nest links
+js:
+  - text: JavaScript
+    href: /javascript/
+  - text: Dependencies
+    href: /javascript/dependencies/
+  - text: Frameworks
+    href: /javascript/frameworks/
+  - text: Style / Linting
+    href: /javascript/style/
+
+# TODO: figure out how to nest links
+security:
+  - text: Security
+    href: /security/
+  - text: Content Security Policy (CSP)
+    href: /security/content-security-policy/
+  - text: Output Encoding
+    href: /security/output-encoding/

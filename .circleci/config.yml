@@ -1,44 +1,31 @@
 version: 2.1
 jobs:
   build:
-    working_directory: ~/development-guide
     docker:
-      - image: circleci/ruby:2.6.1
+      - image: circleci/ruby:2.7.1
     environment:
       # fix encoding
       - LANG: C.UTF-8
     steps:
       - checkout
 
-      # Download and cache dependencies
       - restore_cache:
           keys:
-            - v2-dependencies-{{ checksum "Gemfile.lock" }}
-            # fallback to using the latest cache if no exact match is found
-            - v2-dependencies-
+            # Find a cache corresponding to this specific package-lock.json checksum
+            # when this file is changed, this key will fail
+            - v1-gem-dependencies-{{ checksum "Gemfile.lock" }}
+            # Find the most recently generated cache used from any branch
+            - v1-gem-dependencies-
 
-      - run:
-          name: install dependencies
+      - run: 
+          name: Install dependencies
           command: bundle install --jobs=4 --retry=3 --path vendor/bundle
 
       - save_cache:
+          key: v1-gem-dependencies-{{ checksum "Gemfile.lock" }}
           paths:
-            - ./vendor/bundle
-          key: v2-dependencies-{{ checksum "Gemfile.lock" }}
+            - vendor/bundle
 
       - run:
-          name: checking internal links
-          # grep for pages with markdown links to local pages (links with "(/"),
-          # ignoring any binary files.
-          # if found, fail build with error message (grep returns the opposite
-          # exit code from what we’re hoping for, so the '!' negates the
-          # expression to pass/fail the build as expected).
-          command: |
-            ! (grep -IErl "\(/|href=['\"]/" _pages && echo "ERROR: Internal links must be prefixed with {{site.baseurl}} to work correctly with Federalist Previews. Fix the above pages.")
-      - run:
-          name: build site
-          command: bundle exec jekyll build
-
-      - run:
-          name: htmlproofer
-          command: bundle exec htmlproofer ./_site htmlproofer --disable-external
+          name: Build and Test site
+          command: bundle exec rake ci_test
