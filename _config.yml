@@ -28,7 +28,7 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: page
+      layout: post
 
 scripts:
   - /assets/uswds/js/uswds.min.js
