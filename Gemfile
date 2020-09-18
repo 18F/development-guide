@@ -1,11 +1,20 @@
 source 'https://rubygems.org'
 
-gem 'uswds-jekyll', :git => 'https://github.com/18F/uswds-jekyll.git'
+ruby '2.7.1'
 
-gem 'html-proofer'
-gem 'jekyll-sitemap', '>= 1.4.0'
+gem 'jekyll'
 
+# If you put them in a jekyll_plugins group they’ll automatically be required into Jekyll
+# One of 3 ways to load plug-ins, don't need to do both
 group :jekyll_plugins do
-  gem 'jekyll_pages_api_search'
+  gem 'uswds-jekyll', '~> 5.0'
+  gem 'jekyll-redirect-from'
+  gem 'jekyll-sitemap'
   gem 'jemoji', '>= 0.12.0'
+  gem 'jekyll-last-modified-at'
+end
+
+group :development, :test do
+  gem 'html-proofer'
+  gem 'rake'
 end

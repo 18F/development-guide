@@ -1,4 +1,4 @@
-// https://github.com/18F/private-eye
+// https://github.com/18F/private-eye version 2.0.0
 (function() {
   'use strict';
 
