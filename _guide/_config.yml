@@ -16,7 +16,7 @@ url: "https://engineering.18f.gov"
 github_info:
   organization: 18F
   repository: development-guide
-  default_branch: master
+  default_branch: main
 
 # Unique identifier across GSA for this website; the repository name is
 # usually a good site handle.
