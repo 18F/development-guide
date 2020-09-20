@@ -1,6 +1,7 @@
 ---
 title: Node.js
 sidenav: languages
+sticky_sidenav: true
 ---
 
 ## Related topics

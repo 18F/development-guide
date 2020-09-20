@@ -1,6 +1,7 @@
 ---
 title: Output Encoding
 sidenav: security
+sticky_sidenav: true
 ---
 
 ## What is cross site scripting (XSS)?

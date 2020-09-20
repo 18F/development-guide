@@ -1,6 +1,7 @@
 ---
 title: Naming
 sidenav: css
+sticky_sidenav: true
 ---
 
 - HTML elements should be in lowercase.

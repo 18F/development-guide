@@ -1,6 +1,7 @@
 ---
 title: Linting
 sidenav: css
+sticky_sidenav: true
 ---
 
 The styleguide provides a method of linting [Sass] code to ensure it conforms

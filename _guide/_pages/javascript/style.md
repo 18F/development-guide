@@ -1,6 +1,7 @@
 ---
 title: Style / Linting
 sidenav: js
+sticky_sidenav: true
 ---
 
 {%include components/tag-standard.html %}

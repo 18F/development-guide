@@ -1,6 +1,7 @@
 ---
 title: Content Security Policy
 sidenav: security
+sticky_sidenav: true
 ---
 
 ## What is Content Security Policy?

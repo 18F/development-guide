@@ -1,6 +1,7 @@
 ---
 title: Units
 sidenav: css
+sticky_sidenav: true
 ---
 
 ## Measurements
