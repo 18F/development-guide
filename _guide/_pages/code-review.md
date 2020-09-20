@@ -2,13 +2,20 @@
 title: Code Review
 sidenav: approach
 sticky_sidenav: true
+subnav:
+  - text: Why Reviews?
+    href: "#why-reviews"
+  - text: Discuss code review with your team
+    href: "#discuss-code-review-with-your-team"
+  - text: Tips for a successful review
+    href: "#tips-for-a-successful-review"
+  - text: Submitting code
+    href: "#submitting-code"
+  - text: Reviewing code
+    href: "#reviewing-code"
 ---
 
-A friendly guide for reviewing code — and not each other — at 18f.
-
-_Forked from the excellent Consumer Financial Protection Bureau
-[guide](https://github.com/cfpb/front-end/blob/master/code-reviews.md)). 
-Help us continually improve by [submitting an issue](https://github.com/18F/development-guide)._
+_A friendly guide for reviewing code — and not each other — at TTS._
 
 ## Why reviews?
 
@@ -48,14 +55,14 @@ Some guiding questions for your team's code review discussion:
 - If commit messages aren't up to par, should they be modified before the PR is?
 - What do you look for when conducting a code review?
 - Should code be pulled down and tested/what QA strategy is used?
-merged?
+  merged?
 - How do you know that a pull request is ready to be merged?
 - Who merges code, the author or the reviewer?
 - Are there any exceptions to the above process? Typos? Hotfixes?
 - What about the current process do you like?
 - What about the current process do you think can be improved?
 - How do changes and refinements to this process get made? Retro? PR to a
-contributing file?
+  contributing file?
 
 ## Tips for a successful review
 
@@ -112,7 +119,6 @@ accomplish this, everyone should consider these tips.
   them. ("What do you think about such-and-such here?")
 - Sign off on the pull request with a :thumbsup: or "Ready to merge" comment.
 - Wait to merge the branch until it has passed Continuous Integration testing.
-  (TDDium, TravisCI, etc.)
 
 ### Who merges
 
@@ -120,7 +126,6 @@ There's lively debate over whether the code author or reviewer should merge
 the pull request. Follow the idioms that your team has set; if none are
 present, discuss until you have a consensus. Write that down to resolve the
 issue quickly in the future.
-
 
 ### Opening a PR
 
@@ -136,49 +141,36 @@ for a final review. The more information you provide to reviewers in the
 description, the more context they will have. This leads to faster reviews,
 and less back and forth between everyone.
 
-CFPB has published a nice [PR Template](https://raw.githubusercontent.com/cfpb/front-end/master/pr-template.md)
-which might make this easier. You can also create a [Bookmarklet based on this
-template](https://gist.github.com/cfarm/b9b638943a2eea52a3a8).
-
+CFPB has published a nice [PR Template](https://github.com/cfpb/development/blob/main/.github/PULL_REQUEST_TEMPLATE.md)
+which might make this easier.
 
 ## Submitting code
 
 Before seeking a review, you should be able to check off each of the following:
 
-    - [ ] Changes are limited to a single goal (no scope creep)
-    - [ ] Code can be automatically merged (no conflicts)
-    - [ ] Code follows the standards laid out in this playbook
-    - [ ] Passes all existing automated tests
-    - [ ] New functions include new tests
-    - [ ] New functions are documented (with a description, list of inputs,
-          and expected output)
-    - [ ] Placeholder code is flagged
-    - [ ] Visually tested in supported browsers and devices
-    - [ ] Project documentation has been updated (including the "Unreleased"
-          section of the CHANGELOG)
-
+- Changes are limited to a single goal (no scope creep)
+- Code can be automatically merged (no conflicts)
+- Code follows the standards laid out in this playbook
+- Passes all existing automated tests
+- New functions include new tests
+- New functions are documented (with a description, list of inputs, and expected output)
+- Placeholder code is flagged
+- Visually tested in supported browsers and devices
+- Project documentation has been updated (including the "Unreleased" section of the CHANGELOG)
 
 ## Reviewing code
 
 When reviewing code, you should be able to check off each of the following:
 
-    - [ ] Do the changes address the project's needs?
-    - [ ] Do the changes respect the project's existing style?
-    - [ ] Does the new code avoid reproducing existing functionality?
-    - [ ] Are functions/classes as simple as possible?
-    - [ ] Is the code as efficient as possible?
-    - [ ] Is the usage of each function/class clear?
-    - [ ] Have edge cases been considered and tested for?
-    - [ ] Does the code represent a logical unit of work?
-    - [ ] Are there any glaring syntax errors that were missed?
-    - [ ] Are language constructs being utilized properly?
-    - [ ] Are any frameworks/libraries being used leveraged properly?
-    - [ ] Are there useful comments/documentation where needed?
-
-## Credits
-
-- [CFPB's Frontend Code Review Guide](https://github.com/cfpb/front-end/blob/master/code-reviews.md)
-- [Code Review in the Lab](http://mozillascience.github.io/codeReview/intro.html)
-- [GitHub Code Reviews](https://blog.codeship.com/github-code-review/)
-- [thoughtbot Code Review Guide](https://github.com/thoughtbot/guides/blob/master/code-review/README.md)
-- [Effective Code Reviews without the Pain](http://www.developer.com/tech/article.php/3579756/Effective-Code-Reviews-Without-the-Pain.htm)
+- Do the changes address the project's needs?
+- Do the changes respect the project's existing style?
+- Does the new code avoid reproducing existing functionality?
+- Are functions/classes as simple as possible?
+- Is the code as efficient as possible?
+- Is the usage of each function/class clear?
+- Have edge cases been considered and tested for?
+- Does the code represent a logical unit of work?
+- Are there any glaring syntax errors that were missed?
+- Are language constructs being utilized properly?
+- Are any frameworks/libraries being used leveraged properly?
+- Are there useful comments/documentation where needed?
