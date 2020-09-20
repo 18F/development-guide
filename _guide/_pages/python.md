@@ -1,5 +1,6 @@
 ---
 title: Python Development Guide
+sidenav: languages
 ---
 
 This is a **WORK IN PROGRESS**. Help us make it better by [submitting an

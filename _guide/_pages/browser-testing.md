@@ -1,5 +1,7 @@
 ---
 title: Browser Testing
+sidenav: tools
+sticky_sidenav: true
 ---
 
 Regular cross-browser testing helps ensures your web site or application is accessible and functional to a broad audience, especially as Internet Explorer 11 is pervasive in federal government but TTS developers use Chrome on macOS almost exclusively.

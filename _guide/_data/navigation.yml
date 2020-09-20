@@ -1,9 +1,64 @@
 primary:
-  - text: Overview
+  - text: About this guide
     href: /
-  - text: More Guides
-    href: https://18f.gsa.gov/guides/
-    external: true
+  - text: Our approach
+    href: /workflow/
+  - text: Tools
+    href: /integrations/
+  - text: Languages & Runtimes
+    href: /language-selection/
+  - text: Security
+    href: /security/
+
+about:
+  - text: About this guide
+    href: /
+  - text: License
+    href: /license/
+  - text: Resources
+    href: /resources/
+
+approach:
+  - text: Our approach
+    href: /workflow/
+  - text: Feedback
+    href: /people/
+  - text: Code Review
+    href: /code-review/
+  - text: Development Environments
+    href: /development-environments/
+  - text: Incident Reports
+    href: /incident-reports/
+  - text: Architecture Reviews
+    href: /architecture-reviews/
+
+tools:
+  - text: Tools
+    href: /integrations/
+  - text: Project Setup
+    href: /project-setup/
+  - text: Browser Testing
+    href: /browser-testing/
+  - text: Accessibility Scanning
+    href: /accessibility-scanning/
+  - text: Continuous Deployment
+    href: /continuous-deployment/
+  - text: Datastore Selection
+    href: /datastore-selection/
+
+languages:
+  - text: Languages & Runtimes
+    href: /language-selection/
+  - text: JavaScript
+    href: /javascript/
+  - text: Node.js
+    href: /nodejs/
+  - text: Python
+    href: /python/
+  - text: Ruby
+    href: /ruby/
+  - text: CSS
+    href: /css/
 
 # TODO: figure out how to nest links
 css:

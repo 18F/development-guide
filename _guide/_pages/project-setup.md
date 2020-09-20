@@ -1,5 +1,7 @@
 ---
 title: Project Setup
+sidenav: tools
+sticky_sidenav: true
 ---
 
 While the specific setup for each TTS project varies widely, there are certain

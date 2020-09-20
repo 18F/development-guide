@@ -1,5 +1,6 @@
 ---
-title: Node.js Development Guide
+title: Node.js
+sidenav: languages
 ---
 
 ## Related topics

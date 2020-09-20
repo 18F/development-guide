@@ -1,5 +1,7 @@
 ---
 title: Accessibility Scanning
+sidenav: tools
+sticky_sidenav: true
 ---
 
 ## Accessibility Scanning using AccessLint

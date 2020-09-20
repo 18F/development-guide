@@ -1,5 +1,7 @@
 ---
 title: Development Environments
+sidenav: approach
+sticky_sidenav: true
 ---
 
 ## Why this guide?

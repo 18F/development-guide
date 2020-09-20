@@ -1,5 +1,7 @@
 ---
-title: Workflow Best Practices
+title: Our approach
+sidenav: approach
+sticky_sidenav: true
 ---
 
 Project teams may vary, but across TTS engineering we aim for consistency

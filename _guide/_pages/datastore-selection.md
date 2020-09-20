@@ -1,5 +1,7 @@
 ---
-title: Datastore Selection Guidance
+title: Datastore Selection
+sidenav: tools
+sticky_sidenav: true
 ---
 
 We're fortunate to have dozens of battle-tested datastores available to us,

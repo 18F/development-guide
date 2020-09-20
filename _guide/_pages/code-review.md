@@ -1,5 +1,7 @@
 ---
 title: Code Review
+sidenav: approach
+sticky_sidenav: true
 ---
 
 A friendly guide for reviewing code — and not each other — at 18f.

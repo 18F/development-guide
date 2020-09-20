@@ -1,5 +1,7 @@
 ---
-title: Third-Party Integrations
+title: Tools
+sidenav: tools
+sticky_sidenav: true
 ---
 
 Our software is built on the shoulders of giants. We use several third parties
