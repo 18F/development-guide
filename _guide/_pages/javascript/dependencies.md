@@ -18,8 +18,8 @@ It's not needed and should be phased out and replaced by npm. More information c
 1. Get [Node.js].
 2. To initialize your project, run `npm init` in your project directory, which will create a `package.json`.
 3. Install some dependencies with `npm install --save [name]`, e.g.
-  - [jQuery]: `npm install --save jquery`
-  - [D3]: `npm install --save d3@v3.5.5` (version 3.5.5)
+  - [jQuery](https://npm.im/jquery): `npm install --save jquery`
+  - [D3](https://npm.im/d3): `npm install --save d3@v3.5.5` (version 3.5.5)
 
 npm installs its dependencies in the `node_modules` directory. Common conventions dictate that `node_modules` should be excluded from source control by adding it to your project's `.gitignore`, primarily because Node.js-friendly environments (such as [Cloud Foundry] and [Heroku]) recognize the existence of `package.json` and automatically install dependencies as needed.
 
@@ -35,6 +35,17 @@ To install on MacOSX or linux, follow the instructions on the [nvm site](https:/
 ```
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.6/install.sh | bash
 ```
+
+### Configuring git and GitHub
+
+The npm `package-lock.json` is a big, gnarly file and it changes a lot. Because it's a generated file, there's not really any value or purpose in manually reviewing it. You can tell git to treat it like a binary file to remove it from diff results by creating a `.gitattributes` file. This file can also include a hint to GitHub to collapse the file in diff view:
+
+```
+package-lock.json -diff -merge
+package-lock.json linguist-generated=true
+```
+
+When git notices a difference during a merge, it will tenatively accept the current version of the file, but it will fail the merge with a message along the lines of "binary files differ." To manage merge conflicts in `package-lock.json` files, consider installing [npm-merge-driver](https://www.npmjs.com/package/npm-merge-driver), which will automatically resolve those conflicts.
 
 ### Safely installing packages from npm
 While npm is generally a safe environment to install code from, there are certain aspects of the system that are vulnerable to dangerous script execution. Luckily there are steps that can be taken to minimize these risks.
