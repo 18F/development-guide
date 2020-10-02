@@ -1,6 +1,7 @@
 ---
 title: Inheritance
 sidenav: css
+sticky_sidenav: true
 ---
 
 ## Mixins

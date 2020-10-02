@@ -1,5 +1,7 @@
 ---
 title: Python Development Guide
+sidenav: languages
+sticky_sidenav: true
 ---
 
 This is a **WORK IN PROGRESS**. Help us make it better by [submitting an

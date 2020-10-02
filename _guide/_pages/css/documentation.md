@@ -1,6 +1,7 @@
 ---
 title: Documentation
 sidenav: css
+sticky_sidenav: true
 ---
 
 ## Sass Comments

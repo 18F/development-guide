@@ -1,5 +1,7 @@
 ---
-title: Node.js Development Guide
+title: Node.js
+sidenav: languages
+sticky_sidenav: true
 ---
 
 ## Related topics

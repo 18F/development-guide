@@ -1,5 +1,7 @@
 ---
 title: Continuous Deployment
+sidenav: tools
+sticky_sidenav: true
 ---
 
 ## Pre-requisites

@@ -1,6 +1,7 @@
 ---
 title: Variables
 sidenav: css
+sticky_sidenav: true
 ---
 
 - Create new variables in the following circumstances:

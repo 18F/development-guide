@@ -1,6 +1,7 @@
 ---
 title: Architecture
 sidenav: css
+sticky_sidenav: true
 ---
 
 A site's architecture should be based on its goals and purposes. This means the

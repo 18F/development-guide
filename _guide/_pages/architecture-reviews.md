@@ -1,5 +1,7 @@
 ---
 title: Architecture Reviews
+sidenav: approach
+sticky_sidenav: true
 ---
 
 Though we pride ourselves on our [transparent and remote-friendly

@@ -1,5 +1,7 @@
 ---
 title: Incident Reports
+sidenav: approach
+sticky_sidenav: true
 ---
 
 Though we fully expect to write dependable applications, every project will
