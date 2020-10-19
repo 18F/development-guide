@@ -45,7 +45,7 @@ tools:
     href: /continuous-deployment/
   - text: Datastore Selection
     href: /datastore-selection/
-  - text: Microsoft SharePoint
+  - text: SharePoint Primer
     href: /sharepoint/
 
 languages:

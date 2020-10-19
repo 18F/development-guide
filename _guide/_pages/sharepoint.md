@@ -2,6 +2,15 @@
 title: A Modern SharePoint Primer
 sidenav: tools
 sticky_sidenav: true
+subnav:
+  - text: SharePoint Presentation Methods
+    href: "#sharepoint-presentation-methods"
+  - text: SharePoint Development Process
+    href: "#sharepoint-development-process"
+  - text: SharePoint and Microsoft Teams
+    href: "#sharepoint-and-microsoft-teams"
+  - text: PowerShell for SharePoint administration
+    href: "#powershell-for-sharepoint-administration"
 ---
 
 Microsoft SharePoint is a vast product. It started life as a document
