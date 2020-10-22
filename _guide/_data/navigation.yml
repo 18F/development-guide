@@ -35,6 +35,8 @@ approach:
 tools:
   - text: Tools
     href: /integrations/
+  - text: Laptop Setup 
+    href: /laptop-setup
   - text: Project Setup
     href: /project-setup/
   - text: Browser Testing
