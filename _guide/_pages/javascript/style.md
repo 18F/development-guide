@@ -6,8 +6,7 @@ sticky_sidenav: true
 
 {%include components/tag-standard.html %}
 We recommend combining [Prettier](https://prettier.io) with the
-[Airbnb JavaScript style guide](https://github.com/airbnb/javascript) plugins
-for [eslint](https://eslint.org).
+[eslint preconfigured with 18F's rules](https://github.com/18F/18f-eslint).
 
 Maintaining stylistic consistency across TTS code helps lower the barrier to
 jumping in and helping with or reviewing other projects because we'll all be
@@ -45,54 +44,58 @@ undefined variable, define a variable that never gets used, and even warn you
 about accessibility issues such as leaving an `alt` attribute out of `<img>`
 tags in JSX.
 
-## How to set it up
+## How to set it up locally
 
 Prettier has a few [configurable options](https://prettier.io/docs/en/options.html).
 Generally we recommend going with its defaults for simplicity, but the
 important thing is to pick something and use it consistently.
 
-eslint is configured with rules, but rather than write all our own rules we
-recommend using the rules defined by the [Airbnb Javascript style guide](https://github.com/airbnb/javascript)
-and Prettier. Both Prettier and Airbnb provide their rules as sets of npm
-modules, depending on your needs:
-
-- For all projects
-  - [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
-- For React projects:
-  - [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
-  - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
-  - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
-  - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
-- For ES6/2015 projects that don't use React:
-  - [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base)
-  - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
-- For ES5 or below:
-  - [eslint-config-airbnb-base/legacy](https://www.npmjs.com/package/eslint-config-airbnb-base#eslint-config-airbnb-baselegacy))
-
-Each link above has instructions for installing the required `npm` packages and
-configuring `eslint` to use the installed rules. These should be installed for
-each project, and saved in each project's `package.json`.
-
-Generally the process is to `npm install` the required modules and peer
-dependencies, for example:
+eslint is configured with rules, but rather than use eslint directly, we
+recommend using the [18F eslint wrapper](https://github.com/18F/18f-eslint),
+which includes all of our recommended rules and plugins by default.
 
 ```sh
 npm install --save-dev \
-  eslint \
-  eslint-config-airbnb \
-  eslint-plugin-jsx-a11y \
-  eslint-plugin-import \
-  eslint-plugin-react
+  prettier \
+  @18f/18f-eslint
 ```
 
-and then create a local file configuration within your project called
-`.eslintrc.json` that looks like:
+If the standard 18F eslint wrapper isn't quite right for you, you can tweak it
+with your own `.eslintrc.json` configuration file, which will overwrite the base
+settings provided by the wrapper. For example:
 
-```txt
+```json
 {
-  "extends": ["airbnb", "prettier"]
+  "rules": {
+    "semi": "never"
+  }
 }
 ```
 
+...would disable the requirement that all statements terminate with a semicolon.
+(Don‘t do this one, please, it's just an example.)
+
 For more information on configuring `eslint`, see its documentation at
 [http://eslint.org/docs/user-guide/configuring](http://eslint.org/docs/user-guide/configuring).
+
+## GitHub Action
+
+If you're using GitHub Actions (or are willing to use them in addition to your
+regular CI/CD pipeline), there's a handy action already written to make this
+simple. See the [18F eslint action](https://github.com/18F/18f-eslint-action)
+repo for more details.
+
+Currently, this action only runs the eslint portion of this recommendation. If
+you also want to test that `prettier` has been run, you can add something like
+this as a job in your GitHub workflows file:
+
+```yml
+prettier:
+  name: prettier has been run on compatible files
+  runs-on: ubuntu-latest
+  container: node:14
+  steps:
+    - uses: actions/checkout@af513c7a
+    - name: check that modified files are prettier
+      run: npx prettier
+```
