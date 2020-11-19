@@ -5,12 +5,13 @@ runs:
   using: "composite"
   steps:
     - run: |
-        echo 'README.md merge=ours' >> .gitattributes
-        echo '_guide/** merge=ours' >> .gitattributes
-        git config --global merge.ours.driver true
         git config user.name github-actions
         git config user.email github-actions@github.com
         git remote add -f upstream "https://github.com/18F/isildurs-bane.git"
-        git merge --allow-unrelated-histories upstream/main
+        git merge --squash --strategy-option=theirs --allow-unrelated-histories upstream/main
+        git restore --source=HEAD --staged --worktree -- _guide
+        git restore --source=HEAD --staged --worktree -- README.md
+        REMOTE_SHA=`git rev-parse upstream/main`
+        git commit -m "Merging in 18F/isildurs-bane guide template" -m "18F/isildurs-bane@$REMOTE_SHA"
         git push
       shell: bash
