@@ -15,7 +15,7 @@ This guide is where the TTS Engineering Practices Guild collects its best practi
 
 ## How we classify best practices
 
-These documents are structured by topic; under each, we include "Requirement",
+These documents are structured by topic; under several topics we indicate "Requirement",
 "Standard", "Default", "Suggestion", and "Caution".
 
 {%include components/tag-requirement.html %} indicates practices that *must* be done for
@@ -34,3 +34,6 @@ they're not widely used enough to be defaults, but are worth considering.
 
 {%include components/tag-caution.html %} marks approaches that have significant pitfalls or should not be used for
 security/compliance reasons.
+
+If a specific classification is not present on a topic or reference to a tool or practice, it should be presumed
+to be a {%include components/tag-suggestion.html %}.
