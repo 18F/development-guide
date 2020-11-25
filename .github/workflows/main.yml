@@ -1,5 +1,8 @@
-name: Manual Merge Template
-on:  workflow_dispatch
+name: Daily Sync
+on:
+  schedule:
+    - cron: "11 7 * * *"  # Arbitrary time outside continental US office hours
+  workflow_dispatch:
 
 jobs:
   merge-template:

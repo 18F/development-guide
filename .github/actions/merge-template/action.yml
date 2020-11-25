@@ -1,6 +1,11 @@
-name: "Merge base template"
-description: "Merge changes from the base 18F guide template for Jekyll"
+name: "Merge guide template"
+description: "Merge upstream changes from the base 18F guide template"
 
+# To avoid merge conflicts, use a strategy of first adopting all changes from
+# the upstream template, then reverting files and directories mangaged by the
+# the downstream guide.
+# Note: GitHub Actions do not execute with `workflows` permission; any workflow
+# updates that should be reflected in downstream guides must be manually merged.
 runs:
   using: "composite"
   steps:
@@ -11,7 +16,9 @@ runs:
         git merge --squash --strategy-option=theirs --allow-unrelated-histories upstream/main
         git restore --source=HEAD --staged --worktree -- _guide
         git restore --source=HEAD --staged --worktree -- README.md
+        git restore --source=HEAD --staged --worktree -- .github/workflows
         REMOTE_SHA=`git rev-parse upstream/main`
-        git commit -m "Merging in 18F/isildurs-bane guide template" -m "18F/isildurs-bane@$REMOTE_SHA"
+        git diff-index --quiet --cached HEAD -- || \
+          git commit -m "Merging in 18F/isildurs-bane guide template" -m "18F/isildurs-bane@$REMOTE_SHA"
         git push
       shell: bash
