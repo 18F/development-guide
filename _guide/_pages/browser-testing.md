@@ -47,4 +47,4 @@ For Safari on iOS:
 ## Chrome-family browsers and Firefox
 
 - [Cypress](https://www.cypress.io/features)
-  * Ask in #infrastructure
+  * The command-line test runner and local GUI is [approved for use](https://handbook.tts.gsa.gov/software/search/#cypress). However, the [Cypress Dashboard SaaS](https://www.cypress.io/dashboard/) is not.
