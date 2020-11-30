@@ -51,7 +51,7 @@ In order for AccessLint to access your GitHub webhooks, you will need to
 1. Reference it. In your Circle CI settings for your repo, create a variable named `ACCESSLINT_API_TOKEN` with the token you created.
 1. Also add a variable named `ACCESSLINT_GITHUB_USER` to your Circle CI repo settings, with a value of the GitHub username that was used to create the token in step 1.
 
-### Configuring ther project frameworks
+### Configuring other project frameworks
 
 If your project is not a Rails or Jekyll project, you can still use AccessLintCI!
 
