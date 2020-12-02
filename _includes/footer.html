@@ -24,7 +24,8 @@
                 {% endif %}
                 {% if anchor.edit_page %}
                 <span>
-                  {% include components/github-edit.html footer=anchor path=page.path %}
+                  {% assign repo_page_path = site.collections_dir | append: "/" | append: page.path %}
+                  {% include components/github-edit.html footer=anchor path=repo_page_path %}
                 </span>
                 {% endif %}
               </p>
