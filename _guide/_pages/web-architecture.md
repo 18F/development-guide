@@ -37,7 +37,7 @@ See below for examples and heuristics to help you decide which architecture coul
 
 ### If you can make it a static site, you should.
 
-_When thinking about a static site, you might use words like: [Jekyll](https://jekyllrb.com), [Hugo](https://gohugo.io), [Federalist](https://federalist.18f.gov), static HTML._
+_When thinking about a static site, you might use words like: [Jekyll](https://jekyllrb.com), [Hugo](https://gohugo.io), [Federalist](https://federalist.18f.gov) {%include components/tag-standard.html %}, static HTML._
 
 #### Benefits to this approach:
 
@@ -105,7 +105,7 @@ _You might use words like: [Stimulus](https://stimulus.hotwire.dev), [jQuery](ht
 
 ### If your use case requires complex client-side interactivity, then you may need a single-page application (SPA).
 
-_You might use words like: [React](https://engineering.18f.gov/javascript/frameworks/#react), [React Router](https://reactrouter.com), [Redux](https://redux.js.org), [Angular](https://engineering.18f.gov/javascript/frameworks/#angular), [Gatsby](https://www.gatsbyjs.com), [Vue.js](https://vuejs.org), [Ember](https://emberjs.com)_
+_You might use words like: [React](https://engineering.18f.gov/javascript/frameworks/#react) {%include components/tag-default.html %}, [React Router](https://reactrouter.com), [Redux](https://redux.js.org), [Angular](https://engineering.18f.gov/javascript/frameworks/#angular), [Gatsby](https://www.gatsbyjs.com), [Vue.js](https://vuejs.org), [Ember](https://emberjs.com)_
 
 #### Benefits to this approach:
 
