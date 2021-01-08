@@ -33,7 +33,7 @@ How much complexity does your web application need to include? That depends on w
 
 Many web apps begin their life cycles with server-side rendering only, and add more client-side functionality over time in response to user behavior. Consider whether your application could initially launch as a server-rendered app, with the potential to add more client-side functionality based on user behavior.
 
-See below for examples and heuristics to help you decide which UI architecture could make the most sense for your project as a starting point:
+See below for examples and heuristics to help you decide which architecture could make the most sense for your project as a starting point:
 
 ### If you can make it a static site, you should.
 
