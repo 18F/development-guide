@@ -105,7 +105,7 @@ _You might use words like: [Stimulus](https://stimulus.hotwire.dev), [jQuery](ht
 
 ### If your use case requires complex client-side interactivity, then you may need a single-page application.
 
-_You might use words like: React, React Router, Redux, Angular, Gatsby, Vue.js, Ember_
+_You might use words like: [React](https://engineering.18f.gov/javascript/frameworks/#react), [React Router](https://reactrouter.com), [Redux](https://redux.js.org), [Angular](https://engineering.18f.gov/javascript/frameworks/#angular), [Gatsby](https://www.gatsbyjs.com), [Vue.js](https://vuejs.org), [Ember](https://emberjs.com)_
 
 #### Benefits to this approach:
 
