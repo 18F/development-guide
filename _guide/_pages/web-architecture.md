@@ -83,7 +83,7 @@ _When thinking about a server-rendered app, you might use words like: [Django](h
 
 ### If your use case requires a bit of client-side interactivity, use the above options with a bit of JavaScript.
 
-_You might use words like: Stimulus, jQuery, Plain JavaScript._
+_You might use words like: [Stimulus](https://stimulus.hotwire.dev), [jQuery](https://jquery.com), Plain JavaScript._
 
 #### Benefits to this approach:
 
