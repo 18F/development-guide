@@ -68,7 +68,7 @@ _When thinking about a server-rendered app, you might use words like: [Django](h
 - Stable, tried-and-true tooling
 - Only one set of development skills needed, as opposed to separate back-end and front-end development skills
 - Faster development velocity and lower costs to build and maintain than an equivalent project with separate front-end and back-end apps
-- Can use tools like Cloud.gov
+- Can use tools like [Cloud.gov](https://cloud.gov)
 - Easy to see if it’s working (compared to purely client-side functionality) if status codes returned are 200
 - Changes to data are easy to manage using tools like Admin Interfaces
 - Custom implemented searching with SQL-y endpoints
