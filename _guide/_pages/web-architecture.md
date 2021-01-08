@@ -128,4 +128,4 @@ _You might use words like: [React](https://engineering.18f.gov/javascript/framew
 
 ### Conclusion
 
-Keeping UI architecture as simple as possible can help keep government websites cost-effective, maintainable, and accessible. Understanding your user requirements can help decide what kinds of client-side interactivity are nice-to-haves, must-haves, or not needed at all.
+Keeping web application architecture as simple as possible can help keep government websites cost-effective, maintainable, and accessible. Understanding your user requirements can help decide what kinds of client-side interactivity are nice-to-haves, must-haves, or not needed at all.
