@@ -37,7 +37,7 @@ See below for examples and heuristics to help you decide which UI architecture c
 
 ### If you can make it a static site, you should.
 
-_When thinking about a static site, you might use words like: Jekyll, Hugo, Federalist, static HTML._
+_When thinking about a static site, you might use words like: [Jekyll](https://jekyllrb.com), [Hugo](https://gohugo.io), [Federalist](https://federalist.18f.gov), static HTML._
 
 #### Benefits to this approach:
 
