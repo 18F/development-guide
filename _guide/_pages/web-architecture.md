@@ -61,7 +61,7 @@ _When thinking about a static site, you might use words like: [Jekyll](https://j
 
 ### If you can’t, it should probably be a server-rendered app.
 
-_When thinking about a server-rendered app, you might use words like: Django, Rails._
+_When thinking about a server-rendered app, you might use words like: [Django](https://www.djangoproject.com/), [Rails](https://rubyonrails.org/)._
 
 #### Benefits to this approach:
 
