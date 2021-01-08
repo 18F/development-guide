@@ -4,7 +4,7 @@ sidenav: tools
 sticky_sidenav: true
 ---
 
-The goal of this guide is to help you decide how to approach an application’s UI, driving towards simplicity.
+The goal of this guide is to help you decide how to approach a web application’s architecture, driving towards simplicity.
 
 Simpler approaches involve:
 
