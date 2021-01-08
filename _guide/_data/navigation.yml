@@ -47,6 +47,8 @@ tools:
     href: /continuous-deployment/
   - text: Datastore Selection
     href: /datastore-selection/
+  - text: Choosing a Web App Architecture
+    href: /web-architecture
   - text: SharePoint Primer
     href: /sharepoint/
 
