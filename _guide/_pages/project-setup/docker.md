@@ -26,6 +26,8 @@ into a consistent, reproducible environment. While we don't generally support
 Docker in production, we can create a setup that matches cloud.gov relatively
 closely and which makes running our app painless.
 
+Within GSA, [Docker Desktop](https://www.docker.com/products/docker-desktop) can be installed through [Self Service](https://handbook.tts.gsa.gov/gsa-internal-tools/#self-service) without [admin rights](https://handbook.tts.gsa.gov/equipment/#admin-rights). This allows people doing "light" development (like editing content) to run the site locally. Use of Docker can also hide the complexity of setting up a development environment from them.
+
 ## Recommendations
 
 We hope to have an end-to-end recommendation in the future, but for now we
@@ -125,6 +127,14 @@ my-service:
       {"my-user-provided-service": [{"credentials": {"SOME_KEY": "VALUE"}}],
        "my-elastic-service": [{"more": "settings"}]}
 ```
+
+### Jekyll
+
+The Docker configuration from [the Handbook](https://github.com/18F/handbook) is very copy-able for other [Jekyll](https://jekyllrb.com/) sites. Specifically, see the:
+
+- [`Dockerfile`](https://github.com/18F/handbook/blob/master/Dockerfile)
+- [Docker Compose configuration](https://github.com/18F/handbook/blob/master/docker-compose.yml)
+- [Instructions to run the site](https://github.com/18F/handbook#development)
 
 ## For further debate
 
