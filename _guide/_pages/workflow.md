@@ -65,3 +65,7 @@ workflows]({{site.baseurl}}/example-workflows).
   about **good commit messages**.
 - Consider [**signing commits** with a GPG
   key](https://help.github.com/articles/signing-commits-with-gpg/)
+
+## Code style
+
+- Use an opinionated automated code formatter whenever possible. This saves teams from wasting time arguing about code style, and makes it easy to comply. Specific suggestions in [the pages for each language]({{site.baseurl}}/language-selection/).
