@@ -3,11 +3,11 @@ title: Ruby Guide
 sidenav: languages
 sticky_sidenav: true
 ---
-This is a **WORK IN PROGRESS**. Help us make it better by
-[submitting an issue](https://github.com/18F/development-guide) or joining us
-in the [#ruby](https://18f.slack.com/messages/ruby/) channel!
 
-## Ruby Guide
+_This is a **WORK IN PROGRESS**. Help us make it better by
+[submitting an issue](https://github.com/18F/development-guide) or joining us
+in the [#ruby](https://18f.slack.com/messages/ruby/) channel!_
+
 A guide for writing and maintaining Ruby and Rails applications
 
 ### Style Guide
