@@ -26,6 +26,8 @@ into a consistent, reproducible environment. While we don't generally support
 Docker in production, we can create a setup that matches cloud.gov relatively
 closely and which makes running our app painless.
 
+Within GSA, [Docker Desktop](https://www.docker.com/products/docker-desktop) can be installed through [Self Service](https://handbook.tts.gsa.gov/gsa-internal-tools/#self-service) without [admin rights](https://handbook.tts.gsa.gov/equipment/#admin-rights). This allows people doing "light" development (like editing content) to run the site locally. Use of Docker can also hide the complexity of setting up a development environment from them.
+
 ## Recommendations
 
 We hope to have an end-to-end recommendation in the future, but for now we
@@ -126,6 +128,14 @@ my-service:
        "my-elastic-service": [{"more": "settings"}]}
 ```
 
+### Jekyll
+
+The Docker configuration from [the Handbook](https://github.com/18F/handbook) is very copy-able for other [Jekyll](https://jekyllrb.com/) sites. Specifically, see the:
+
+- [`Dockerfile`](https://github.com/18F/handbook/blob/master/Dockerfile)
+- [Docker Compose configuration](https://github.com/18F/handbook/blob/master/docker-compose.yml)
+- [Instructions to run the site](https://github.com/18F/handbook#development)
+
 ## For further debate
 
 As with any new tool, we need time to derive best practices. Below we catalog
@@ -175,9 +185,11 @@ have several strategies at our disposal.
 
 Before we dive too deep, it's important to first discuss `docker-compose run`.
 Consider
+
 ```sh
 docker-compose run --rm my-service py.test --pdb
 ```
+
 This starts your `my-service` (as defined in your docker-compose manifest),
 including any necessary dependencies, such as databases. It doesn't execute
 `my-service`'s startup command, however; instead it runs `py.test` within the
@@ -192,18 +204,22 @@ by writing wrapping shell scripts or command aliases.
 
 A second strategy places those commands within the docker-compose manifest as
 pseudo-services, e.g.
+
 ```yml
 services:
   py.test:
     image: thing-that-contains-pytest
     volumes:
-    - $PWD:/apps-dir
+      - $PWD:/apps-dir
     entrypoint: py.test
 ```
+
 These would be executed via
+
 ```sh
 docker-compose run --rm py.test --pdb
 ```
+
 This approach defines a concise list of the entry points to your software
 suite, but may require additional image rebuilding and can be confusing when
 combined with `docker-compose up`. If taking this approach, be sure to use
@@ -226,18 +242,20 @@ Can we get by without an application image, then?
 
 For example, consider a docker-compose manifest that referred only to official
 images but shared a Docker volume:
+
 ```yml
 services:
   my-app:
     image: python:3.5
     volumes:
-    - dependencies:/path/to/dependency/storage
+      - dependencies:/path/to/dependency/storage
 volumes:
   dependencies:
 ```
 
 Then we could execute all of our application setup _without_ an application
 image:
+
 ```sh
 docker-compose run --rm my-app pip install
 docker-compose run --rm my-app gunicorn   # start app
@@ -250,27 +268,27 @@ settling), but it's worth considering.
 
 ### Docker as primary dev env
 
-* [calc](https://github.com/18F/calc)
-* [e-QIP](https://github.com/18F/e-QIP-prototype)
-* [omb-eregs](https://github.com/18F/omb-eregs)
-* [pa11y-lambda](https://github.com/18F/pa11y-lambda)
-* [tock](https://github.com/18F/tock)
-* [federalist](https://github.com/18F/federalist)
+- [calc](https://github.com/18F/calc)
+- [e-QIP](https://github.com/18F/e-QIP-prototype)
+- [omb-eregs](https://github.com/18F/omb-eregs)
+- [pa11y-lambda](https://github.com/18F/pa11y-lambda)
+- [tock](https://github.com/18F/tock)
+- [federalist](https://github.com/18F/federalist)
 
 ### Docker as alternative dev env
 
-* [acqstackdb](https://github.com/18F/acqstackdb)
-* [autoapi](https://github.com/18F/autoapi)
-* [checklistomania](https://github.com/18F/checklistomania)
-* [continua11y](https://github.com/18F/continua11y)
-* [domain-scan](https://github.com/18F/domain-scan)
-* [iaa-gem](https://github.com/18F/iaa-gem)
-* [identity-idp](https://github.com/18F/identity-idp)
-* [micropurchase](https://github.com/18F/micropurchase)
+- [acqstackdb](https://github.com/18F/acqstackdb)
+- [autoapi](https://github.com/18F/autoapi)
+- [checklistomania](https://github.com/18F/checklistomania)
+- [continua11y](https://github.com/18F/continua11y)
+- [domain-scan](https://github.com/18F/domain-scan)
+- [iaa-gem](https://github.com/18F/iaa-gem)
+- [identity-idp](https://github.com/18F/identity-idp)
+- [micropurchase](https://github.com/18F/micropurchase)
 
 ## Additional reading
 
-* Atul's [Reflections on Docker-based
+- Atul's [Reflections on Docker-based
   development](https://github.com/18F/dev-environment-standardization/blob/18f-pages/pages/virtualization/docker.md)
-* OMB eRegs' [Resolving common container
+- OMB eRegs' [Resolving common container
   issues](https://github.com/18F/omb-eregs#resolving-common-container-issues)
