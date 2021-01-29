@@ -110,7 +110,7 @@ solution helps abstract that complexity and makes it easier for cross-functional
 teams to create consistent, reproducible, local development environments.
 
 - [Docker](https://www.docker.com/why-docker) {%include components/tag-suggestion.html %}<br>
-  See our [Docker for development](./docker/) recommendations.
+  See our [Docker for Development](../docker/) recommendations.
 
 ## Deployment infrastructure
 
