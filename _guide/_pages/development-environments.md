@@ -22,7 +22,7 @@ At minimum, there should be a README.md file describing what the software does, 
 
 Moreover, while it's great to use code comments or other documentation tools, often the best documentation is the code itself--that is, if the code is easy to comprehend and contextualize, there might not be a pressing need for extraneous explanation of each and every function.
 
-Sometimes configuration files (e.g. `.travis.yml`) get used more as scripts. This should be avoided. Instead, leverage these files as "runnable" documentation. For example, the declarative nature of a `.travis.yml` file is a perfect opportunity to document how to do everything needed to set up and run tests.
+Make your continuous integration configuration as concise and readable as possible.
 
 Instead of:
 
