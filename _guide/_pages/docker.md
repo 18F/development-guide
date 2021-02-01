@@ -1,5 +1,9 @@
 ---
-title: Docker for development
+title: Docker for Development
+sidenav: tools
+sticky_sidenav: true
+redirect_from:
+  - /project-setup/docker/
 ---
 
 Below we lay out recommendations for using Docker to wrap development
