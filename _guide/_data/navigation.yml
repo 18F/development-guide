@@ -114,3 +114,5 @@ security:
     href: /security/content-security-policy/
   - text: Output Encoding
     href: /security/output-encoding/
+  - text: Vulnerable dependency remediation
+    href: /security/dependency-remediation/
