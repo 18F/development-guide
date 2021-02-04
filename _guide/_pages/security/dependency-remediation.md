@@ -71,4 +71,4 @@ the dependency.
 If the risk is low, take a look at where the vulnerability resides in
 your dependency tree. If the vulnerability is associated with a
 development dependency rather than with public code, the risk associated
-with the vulnerability might be acceptable (in the short term?).
+with the vulnerability might be acceptable (in the short term).
