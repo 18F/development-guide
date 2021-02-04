@@ -7,8 +7,8 @@ sticky_sidenav: true
 Your application should have dependency scanning to ensure that the
 libraries your code relies on do not have vulnerabilities within them.
 For more on how to set up vulnerability scanning see the
-[Before you ship
-guide<](https://before-you-ship.18f.gov/security/static-analysis/#dependency-analysis)’s
+[Before You Ship
+guide](https://before-you-ship.18f.gov/security/static-analysis/#dependency-analysis)’s
 suggestions.
 
 In operating a system with a dependency scan you’ll find that
