@@ -35,7 +35,7 @@ approach:
 tools:
   - text: Tools
     href: /integrations/
-  - text: Laptop Setup 
+  - text: Laptop Setup
     href: /laptop-setup
   - text: Project Setup
     href: /project-setup/
@@ -59,6 +59,8 @@ languages:
     href: /language-selection/
   - text: JavaScript
     href: /javascript/
+  - text: Markdown
+    href: /markdown/
   - text: Node.js
     href: /nodejs/
   - text: Python

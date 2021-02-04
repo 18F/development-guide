@@ -63,6 +63,8 @@ isort](https://pypi.python.org/pypi/flake8-isort) for import order. We
 ecosystem](https://pypi.python.org/pypi?%3Aaction=search&term=flake8&submit=search)
 for more functionality.
 
+Use [Black](https://black.readthedocs.io/en/stable/) for automatic code formatting.
+
 Using Code Climate to measure complexity scores (by way of
 [radon](https://pypi.python.org/pypi/radon)) is also a reasonable **default**
 to ensure you see potentially confounding functions and classes.
