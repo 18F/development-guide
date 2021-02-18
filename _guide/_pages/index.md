@@ -10,6 +10,7 @@ subnav:
 
 ## Testing public PR
 * After CircleCI change
+* Turned off CircleCI setting
 
 *A set of guidelines and best practices for an awesome software engineering team.*
 
