@@ -8,18 +8,10 @@ The styleguide provides a method of linting [Sass] code to ensure it conforms
 to the rules in the styleguide. This linting tool will go through all Sass code
 and issue warnings wherever the code differs from the styleguide. We've created
 a specific [`.scss-lint.yml` file][scss-lint yaml] that's configured to work
-with the css coding styleguide. There are three ways to setup linting:
+with the css coding styleguide. There are two ways to set up linting:
 
-* on GitHub with Hound
 * locally with ruby
 * locally with node
-
-## On GitHub with Hound
-1. Go to [Hound](https://houndci.com/).
-2. Sign in with GitHub.
-3. Activate the respository through [Hound](https://houndci.com/repos).
-4. Add the [`.scss-lint.yml` file][scss-lint yaml] to the base of your
-   repository.
 
 ## Locally with ruby
 1. Add the [`.scss-lint.yml` file][scss-lint yaml] to the base of your
