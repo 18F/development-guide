@@ -8,7 +8,7 @@ The styleguide provides a method of linting [Sass] code to ensure it conforms
 to the rules in the styleguide. This linting tool will go through all Sass code
 and issue warnings wherever the code differs from the styleguide. We've created
 a specific [`.scss-lint.yml` file][scss-lint yaml] that's configured to work
-with the css coding styleguide. There are two ways to setup linting:
+with the css coding styleguide. There are two ways to set up linting:
 
 * locally with ruby
 * locally with node
