@@ -1,9 +1,3 @@
----
-title: Preprocessors
-sidenav: css
-sticky_sidenav: true
----
-
 The most supported CSS preprocessor at TTS is [Sass](http://sass-lang.com/)
 (SCSS). Using this pre-processor means you'll get supported resources such as
 frameworks, libraries, tutorials, and a comprehensive styleguide as support.

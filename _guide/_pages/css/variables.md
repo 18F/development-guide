@@ -1,9 +1,3 @@
----
-title: Variables
-sidenav: css
-sticky_sidenav: true
----
-
 - Create new variables in the following circumstances:
   - The value is repeated twice
   - The value is likely to be updated at least once

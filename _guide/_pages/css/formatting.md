@@ -1,9 +1,3 @@
----
-title: Formatting
-sidenav: css
-sticky_sidenav: true
----
-
 We recommend using [Prettier](https://prettier.io), and enabling it in your
 editor by default. Prettier is an automatic code formatter that will make your
 code format consistent. This way we don't have to argue over how to format our

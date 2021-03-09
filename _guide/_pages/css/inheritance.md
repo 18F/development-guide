@@ -1,9 +1,3 @@
----
-title: Inheritance
-sidenav: css
-sticky_sidenav: true
----
-
 ## Mixins
 - Use mixins for groups of properties that appear together intentionally and
   are used multiple times.

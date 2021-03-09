@@ -1,9 +1,3 @@
----
-title: Documentation
-sidenav: css
-sticky_sidenav: true
----
-
 ## Sass Comments
 Be intentional when you use `//` (silent comments) versus `/* */`
 (which are preserved in the CSS output). When in doubt, use `//`.
