@@ -35,7 +35,7 @@ preprocessor CSS code across TTS. The styleguide should be treated as a guide
 # Inheritance
 {% include_relative css/inheritance.md %}
 
-# </a>Linting
+# Linting
 {% include_relative css/linting.md %}
 
 # Naming 

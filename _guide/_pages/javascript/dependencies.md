@@ -1,13 +1,9 @@
----
-title: Dependencies
-sidenav: js
-sticky_sidenav: true
----
+
 
 The word "dependency" refers to all of the frameworks, libraries, and other tools that your project relies on. *Dependency management* is the process by which tools are incorporated into your project, removed and updated (for instance, when you need a new version of [jQuery]). Here are the tools that we recommend for managing dependencies:
 
 ## Bower
-{%include components/tag-standard.html %} __Do not use Bower.__
+{%include components/tag-caution.html %} __Do not use Bower.__
 
 It's not needed and should be phased out and replaced by npm. More information can be found here: [Why We Should Stop Using Bower – And How to Do It](http://gofore.com/ohjelmistokehitys/stop-using-bower/).
 
@@ -15,18 +11,10 @@ It's not needed and should be phased out and replaced by npm. More information c
 ## npm
 {%include components/tag-default.html %} [npm] informally stands for *N*ode *P*ackage *M*anager, and is the package manager node uses. Its usage is very similar to Bower because the latter was inspired by the former.
 
-### npm instructions
-1. Get [Node.js].
-2. To initialize your project, run `npm init` in your project directory, which will create a `package.json`.
-3. Install some dependencies with `npm install --save [name]`, e.g.
-  - [jQuery](https://npm.im/jquery): `npm install --save jquery`
-  - [D3](https://npm.im/d3): `npm install --save d3@v3.5.5` (version 3.5.5)
-
-npm installs its dependencies in the `node_modules` directory. Common conventions dictate that `node_modules` should be excluded from source control by adding it to your project's `.gitignore`, primarily because Node.js-friendly environments (such as [Cloud Foundry] and [Heroku]) recognize the existence of `package.json` and automatically install dependencies as needed.
-
 ### Install npm
 
-We recommend that developers (note 1) install both node and npm through a tool called nvm. nvm (which stands for Node version manager) is a software that allows you to run multiple versions of node in different projects on the same computer. Its benefits include
+{%include components/tag-standard.html %} 
+We recommend installing both node and npm through a tool called nvm. nvm (which stands for Node version manager) is a software that allows you to run multiple versions of node in different projects on the same computer. Its benefits include
 
 - Installs npm in a manner that doesn't require running sudo to install global packages.
 - Easily be able to switch between multiple node versions with a project configuration file or command.
@@ -36,6 +24,18 @@ To install on MacOSX or linux, follow the instructions on the [nvm site](https:/
 ```
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.6/install.sh | bash
 ```
+
+### npm instructions
+
+{%include components/tag-caution.html %} If you can't use nvm, you can install node and npm globally.
+
+1. Get [Node.js].
+2. To initialize your project, run `npm init` in your project directory, which will create a `package.json`.
+3. Install some dependencies with `npm install --save [name]`, e.g.
+  - [jQuery](https://npm.im/jquery): `npm install --save jquery`
+  - [D3](https://npm.im/d3): `npm install --save d3@v3.5.5` (version 3.5.5)
+
+npm installs its dependencies in the `node_modules` directory. Common conventions dictate that `node_modules` should be excluded from source control by adding it to your project's `.gitignore`, primarily because Node.js-friendly environments (such as [Cloud Foundry] and [Heroku]) recognize the existence of `package.json` and automatically install dependencies as needed.
 
 ### Configuring git and GitHub
 
