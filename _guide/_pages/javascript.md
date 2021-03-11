@@ -2,6 +2,10 @@
 title: JavaScript
 sidenav: languages
 sticky_sidenav: true
+redirect_from:
+  - /javascript/dependencies/
+  - /javascript/frameworks/
+  - /javascript/style/
 subnav:
   - text: Dependencies
     href: "#dependencies"

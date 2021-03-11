@@ -2,6 +2,18 @@
 title: CSS
 sidenav: languages
 sticky_sidenav: true
+redirect_from:
+  - /css/architecture/
+  - /css/documentation/
+  - /css/frameworks/
+  - /css/formatting/
+  - /css/inheritance/
+  - /css/linting/
+  - /css/naming/
+  - /css/preprocessors/
+  - /css/specificity/
+  - /css/units/
+  - /css/variables/
 subnav:
   - text: Architecture
     href: "#architecture"
