@@ -1,5 +1,7 @@
 ---
 title: 18F Engineering 2017 End of Year Assessment Guide
+sidenav: approach
+sticky_sidenav: true
 ---
 
 18F, as a part of GSA, has a mature [performance management and recognition system](https://insite.gsa.gov/topics/hr-pay-and-leave/employee-performance-management). 
@@ -25,7 +27,7 @@ In September 2016, a group of Engineering leadership and engineers met to determ
 The number one desired outcome was actionable feedback for individuals. In order for a review to be valuable, the person being reviewed needs to finish the process with knowledge of and a plan for how to grow over the following year. At the end of the review period, every engineer should have a solid understanding of what to do next to continue to improve and deliver better value to their teams.
 
 ### Fair rating
-Individuals deserve fair ratings. These ratings should be calibrated both within Engineering and across 18F. The ratings and feedback should be aligned with the individual’s performance profile (as is required of course), and not biased towards individuals that the raters have interacted with more than others or those whose strengths align the most with their raters’ interests. Positive and constructive feedback should be balanced, and all feedback should be backed by evidence. Ideally the individual agrees with the rating they’re given.
+Individuals deserve fair ratings. These ratings should be calibrated both within Engineering and across 18F. The ratings and feedback should be aligned with the individual’s performance profile (as is required of course), and not biased towards individuals that the raters have interacted with more than others or those whose strengths align the most with their raters’ interests. Positive and construective feedback should be balanced, and all feedback should be backed by evidence. Ideally the individual agrees with the rating they’re given.
 
 ### Holistic review
 Individuals should be rated not only on their technical abilities and contributions, but on their total contribution to their teams and 18F. 18F Engineering performance plans include critical elements for technical and team contributions, and of course are how folks are rated. This means the reviewers must seek to understand the individual's role on their teams: for example, were they doing any project management or design work in addition to committing code. The reviewer should seek feedback from the individual’s project leads and more experienced technical staff they’ve worked with. Additionally, if an individual has contributed to other areas of 18F through guild and working group contributions, the reviewer should gather feedback from leaders and stakeholders in that group.

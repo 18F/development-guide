@@ -2,6 +2,8 @@
 title: Incident Reports
 sidenav: approach
 sticky_sidenav: true
+redirect_from:
+  /incident-reports/cloud-gov/
 ---
 
 Though we fully expect to write dependable applications, every project will
@@ -50,7 +52,6 @@ Don't make folks search for the information.
 
 ## Examples
 * [C2](./C2/c2-outage-report-2016-08-10.pdf)
-* [Cloud.gov](./cloud-gov)
 
 ## Additional resources
 * John Allspaw's [introduction](https://codeascraft.com/2012/05/22/blameless-postmortems/)

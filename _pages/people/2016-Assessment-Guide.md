@@ -1,5 +1,7 @@
 ---
 title: 18F Engineering 2016 End of Year Assessment Guide
+sidenav: approach
+sticky_sidenav: true
 ---
 
 18F, as a part of GSA, has a mature [performance management and recognition system](https://insite.gsa.gov/portal/content/500278). 

@@ -1,5 +1,7 @@
 ---
 title: 'DATA Act Pilot: Simplicity is Key'
+sidenav: approach
+sticky_sidenav: true
 ---
 
 ## TL;DR

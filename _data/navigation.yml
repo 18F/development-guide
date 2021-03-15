@@ -36,6 +36,10 @@ approach:
     href: /incident-reports/
   - text: Architecture Reviews
     href: /architecture-reviews/
+  - text: Front-End Disciplines
+    href: /frontend/
+  - text: Example Workflows
+    href: /example-workflows
 
 tools:
   - text: Tools
