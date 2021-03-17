@@ -166,7 +166,7 @@ When reviewing code, you should be able to check off each of the following:
 - Do the changes respect the project's existing style?
 - Does the new code avoid reproducing existing functionality?
 - Are functions/classes as simple as possible?
-- Is the code as efficient as possible?
+- Is the code reasonably efficient?
 - Is the usage of each function/class clear?
 - Have edge cases been considered and tested for?
 - Does the code represent a logical unit of work?
