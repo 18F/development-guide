@@ -14,7 +14,7 @@ We’ve done two projects exploring different aspects of simplicity — first, t
 - Building for a least common denominator (CSVs) gave the project reach (more users could participate) and reduced code complexity. 
 - Pulling out validation rules into a separate, easy-to-modify format made the product flexible and simple to maintain. 
 
-The second explores the idea of simplifying acquisitons in [Micro-purchase: Do one thing well]({{site.baseurl}}/architecture-reviews/micro-purchase) (2016) by using code boundaries in projects to define lines between micro-purchases of developer time. 
+The second explores the idea of simplifying acquisitions in [Micro-purchase: Do one thing well]({{site.baseurl}}/architecture-reviews/micro-purchase) (2016) by using code boundaries in projects to define lines between micro-purchases of developer time. 
 
 ## Documenting key decisions
 
