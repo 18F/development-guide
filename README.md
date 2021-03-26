@@ -7,7 +7,7 @@ This repo is where the TTS Engineering Practices Guild keeps its guide to best p
 ## Quicklinks
 
 - Published guide: [engineering.18f.gov](https://engineering.18f.gov)
-- Raw content: [_guide/_pages](_guide/_pages)
+- Content: [_pages](_pages)
 - [CONTRIBUTING.md](CONTRIBUTING.md) on how to build this guide locally and submitting PRs/issues.
 
 ## Our mission
@@ -27,8 +27,6 @@ The software development industry is ever-changing, and our guide is a living do
 Getting new practices into the guide is pretty light on process. Feel free to raise a topic in Slack or at a guild meeting and drive to some consensus. Once you've done that, document your findings, submit a PR, and ask in #dev for a quick review. If you think a proposal might be controversial after getting some consensus prior, please post the draft PR to #dev (and elsewhere if you don’t think target audience is in that channel) and solicit feedback.
 
 ## Development
-
-This site uses the [18F/isildurs-bane](https://github.com/18F/isildurs-bane) template, which manges all the content outside of [_guide](_guide) directory. Submit pull requests against that repository to effect those files. Only files under [_guide](_guide) should be modified and maintained here.
 
 To run the site locally, we recommend using:
 - [`git`](https://git-scm.com)
