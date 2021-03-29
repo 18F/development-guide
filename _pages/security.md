@@ -14,6 +14,24 @@ ways to approach it with our partners.
 This is an ever-expanding list; if an important issue is unrepresented, please feel free to open up a PR with your expertise 
 or add an issue!
 
+## FISMA
+Every system you'll work on at TTS has a FISMA level of impact. 
+The [Federal Information Security Modernization Act](https://www.cisa.gov/federal-information-security-modernization-act)
+(FISMA) was introduced to ensure that all government systems have a framework to handle confidential and sensitive information
+in a secure way.
+
+The impact level of a system is determined by how adverse the impact would be if the confidentiality, integrity and/or 
+availability of system was compromised. 
+
+```
+The potential impact is LOW if the loss of confidentiality, integrity, or availability could be expected to have a limited adverse effect on organizational operations, organizational assets, or individuals.
+...
+The potential impact is MODERATE if the loss of confidentiality, integrity, or availability could be expected to have a serious adverse effect on organizational operations, organizational assets, or individuals. 
+...
+The potential impact is HIGH if the loss of confidentiality, integrity, or availability could be expected to have a severe or catastrophic adverse effect on organizational operations, organizational assets, or individual
+```
+[Standards for Security Categorization of Federal Information and Information Systems](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf)
+
 ## When Should I Be Thinking About Security?
 
 The short answer: Always!
@@ -58,5 +76,7 @@ These "boundaries" can be in forms such as:
 * third party API
 * installed agent
 * form that posts input to your database
-* download
+* downloading/uploading to any part of the cloud
 * webhook integration
+
+Thinking about the edges of your system, how they're exposed, and to whom will help you make better decisions about security.
