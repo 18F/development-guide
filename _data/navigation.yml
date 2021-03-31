@@ -80,5 +80,5 @@ security:
     href: /security/output-encoding/
   - text: Vulnerable dependency remediation
     href: /security/dependency-remediation/
-  - text: Amazon Web Services (AWS)
-    href: /security/aws/
+  - text: Cloud Services
+    href: /security/cloud-services/

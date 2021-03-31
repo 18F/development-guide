@@ -7,9 +7,8 @@ sticky_sidenav: true
 Security is everybody's responsibility at TTS but if you're not used to thinking about security in your day-to-day job, 
 that's understandable. We come from a range of different backgrounds, some of which involved security more than others. 
 
-There are practices that we should adhere to as much as possible when building websites and this guide contains ones 
-that front-end designers and developers need to be aware of. We aim to give everyone a framework to think about security, and
-ways to approach it with our partners.
+There are practices that we as developers should adhere to as much as possible when building websites. We aim to give everyone
+a framework to think about security, and ways to approach it with our partners.
 
 This is an ever-expanding list; if an important issue is unrepresented, please feel free to open up a PR with your expertise 
 or add an issue!
@@ -49,6 +48,8 @@ Make sure you, or the system owners, have a way of knowing when something goes w
 * How will we know if there is a data leak?
 * What will happen if there is a data breach?
 * What is our escalation policy when things go wrong?
+
+If the project requires an [ATO](https://atos.open-control.org/) (or has one already), some of these topics may be explicitly covered in that process. Even if an ATO is not required, these are still important questions to ask.
 
 ### When starting work on an existing system
 
