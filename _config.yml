@@ -7,18 +7,11 @@ exclude:
   - Gemfile.lock
   - LICENSE.md
   - README.md
-  - override.yml
 
 permalink: pretty
 
 sass:
   style: :compressed
-
-google_analytics_ua: UA-48605964-19
-dap_agency: GSA
-dap_subagency: TTS
-
-collections_dir: _guide
 
 collections:
   pages:
@@ -35,3 +28,17 @@ scripts:
   - /assets/uswds/js/uswds.min.js
   - /assets/js/private-eye.js
   - /assets/js/application.js
+
+title: TTS Engineering Practices Guide
+description: A set of guidelines and best practices for an awesome engineering team
+url: "https://engineering.18f.gov"
+search_site_handle: engineering.18f.gov
+
+google_analytics_ua: UA-48605964-19
+dap_agency: GSA
+dap_subagency: TTS
+
+github_info:
+  organization: 18F
+  repository: development-guide
+  default_branch: main
