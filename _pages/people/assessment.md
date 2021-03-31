@@ -1,5 +1,5 @@
 ---
-title: 18F Engineering 2017 End of Year Assessment Guide
+title: 18F Engineering End of Year Assessment Guide
 sidenav: approach
 sticky_sidenav: true
 ---
@@ -10,6 +10,9 @@ engineers talk with their facilitator and supervisor about the past year and cre
 in the coming year. These reviews ideally build on a robust, granular, continuous feedback loop between an engineer, their 
 facilitator, and other coworkers.
 
+This guide is *historical* although still largely applicable, although there may be changes from current practices.
+Please submit a PR if you see an explanation or process that needs updating! 
+
 Assessments are based on an individual’s performance plan. GSA’s Office of Human Resources Management (OHRM) has a 
 [set of appraisal materials](https://insite.gsa.gov/topics/hr-pay-and-leave/performance-management/performance-management-appraising) applicable to all of GSA. These include a 
 good guide on [Appraising Objectively and Fairly](https://insite.gsa.gov/cdnstatic/insite/Appraising_Objectively_and_Fairly.pdf), 
@@ -17,9 +20,6 @@ and the requirement to evaluate performance on a 5 point scale. Performance plan
 Some ratings can earn performance awards. You can find more detail, including what each rating number means, in the 
 [Appraisal Rating System & Performance Awards](https://docs.google.com/document/d/1YtnP2RoSJZh5IiKWVJwxyAksjafCqlmBXspCV8nlhZM/edit) document. 
 
-End-of-year assessments are given to everyone hired into GSA on or prior to May 15, 2017, and are due by November 14, 2017. 
-
-In September 2016, a group of Engineering leadership and engineers met to determine what outcomes we wanted from the end-of-year review process, and what we’d do to achieve those outcomes. This 2017 guide is largely the same as the 2016 guide.
 
 ## Desired outcomes
 
@@ -27,7 +27,7 @@ In September 2016, a group of Engineering leadership and engineers met to determ
 The number one desired outcome was actionable feedback for individuals. In order for a review to be valuable, the person being reviewed needs to finish the process with knowledge of and a plan for how to grow over the following year. At the end of the review period, every engineer should have a solid understanding of what to do next to continue to improve and deliver better value to their teams.
 
 ### Fair rating
-Individuals deserve fair ratings. These ratings should be calibrated both within Engineering and across 18F. The ratings and feedback should be aligned with the individual’s performance profile (as is required of course), and not biased towards individuals that the raters have interacted with more than others or those whose strengths align the most with their raters’ interests. Positive and construective feedback should be balanced, and all feedback should be backed by evidence. Ideally the individual agrees with the rating they’re given.
+Individuals deserve fair ratings. These ratings should be calibrated both within Engineering and across 18F. The ratings and feedback should be aligned with the individual’s performance profile (as is required of course), and not biased towards individuals that the raters have interacted with more than others or those whose strengths align the most with their raters’ interests. Positive and constructive feedback should be balanced, and all feedback should be backed by evidence. Ideally the individual agrees with the rating they’re given.
 
 ### Holistic review
 Individuals should be rated not only on their technical abilities and contributions, but on their total contribution to their teams and 18F. 18F Engineering performance plans include critical elements for technical and team contributions, and of course are how folks are rated. This means the reviewers must seek to understand the individual's role on their teams: for example, were they doing any project management or design work in addition to committing code. The reviewer should seek feedback from the individual’s project leads and more experienced technical staff they’ve worked with. Additionally, if an individual has contributed to other areas of 18F through guild and working group contributions, the reviewer should gather feedback from leaders and stakeholders in that group.
@@ -108,7 +108,3 @@ Lastly, the engineer will need to sign the review. You’ll store those PDFs in 
 ## Continuous feedback
 
 Our intention for this process is that it is part of a regular, granular feedback system. Engineers deserve frequent feedback on their performance. Our structure, where engineers will have an established relationship with their facilitator and supervisor, allows us to ensure that feedback happens. Providing regular feedback makes the annual review process a simple extension of regular feedback, as it is a culmination of the year’s progress.
-
-## Retrospective
-
-In November 2017 we will conducte a retro of the 2017 Engineering end of year assessment. We will ask ourselves how the process we used worked, and what we'd improve. Those in 18F will be able to review that document for details.
