@@ -83,9 +83,7 @@
             </div>
             {% endif %}
             {% else %}
-              {% assign basedir = page.url | remove_first: '/' | split: '/' | first | lstrip %}
-              {% assign linkdir = _section.href |  replace: '/', ''  | lstrip %}
-              <a class="{% if _section.class %}{{ _section.class }}{% else %} usa-nav__link {% endif %} {% if linkdir == basedir %} usa-current{% endif %}" href="{% if _section.external %}{{ _section.href }}{% else %}{{ _section.href | relative_url }}{% endif %}">
+              <a class="{% if _section.class %}{{ _section.class }}{% else %} usa-nav__link {% endif %} {% if page.sidenav == _section.name %} usa-current{% endif %}" href="{% if _section.external %}{{ _section.href }}{% else %}{{ _section.href | relative_url }}{% endif %}">
                 <span>{{ _section.text }}</span>
               </a>
             {% endif %}

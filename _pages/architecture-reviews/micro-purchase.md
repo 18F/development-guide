@@ -1,5 +1,7 @@
 ---
 title: 'Micro-purchase: Do one thing well'
+sidenav: approach
+sticky_sidenav: true
 ---
 
 ## TL;DR

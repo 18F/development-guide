@@ -1,10 +1,8 @@
 ---
 title: Front-End Disciplines
+sidenav: approach
+sticky_sidenav: true
 ---
-## Related topics
-* [CSS]({{site.baseurl}}/css)
-* [JavaScript]({{site.baseurl}}/javascript)
-* [Security]({{site.baseurl}}/security)
 
 ## What is front end?
 
@@ -33,3 +31,8 @@ should feel comfortable developing and implementing client-side
 interactions and frameworks using semantic HTML5 and JavaScript, and
 should be able to help with debugging, testing, and performance
 optimization of the code base.
+
+## Related topics
+* [CSS]({{site.baseurl}}/css)
+* [JavaScript]({{site.baseurl}}/javascript)
+* [Security]({{site.baseurl}}/security)

@@ -1,8 +1,8 @@
 ---
 title: Example Workflows
+sidenav: approach
+sticky_sidenav: true
 ---
-## Example Workflows
-
 Here we've collected descriptions of team processes (particularly around
 submitting code) that various projects have used in the past. Please consider
 using one as an example until a more formal template is provided.
