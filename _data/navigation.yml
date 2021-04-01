@@ -80,3 +80,5 @@ security:
     href: /security/output-encoding/
   - text: Vulnerable dependency remediation
     href: /security/dependency-remediation/
+  - text: Cloud Services
+    href: /security/cloud-services/
