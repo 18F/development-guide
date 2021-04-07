@@ -26,48 +26,46 @@ around deployments, git etiquette, and similar workflow conventions.
   docs](https://circleci.com/docs/2.0/configuration-reference/#schedule) for
   details.
 
-## Git & GitHub
+## Git & GitHub {%include components/tag-standard.html %} 
 
-{%include components/tag-standard.html %} Git is our version control system of choice and
+Git is our version control system of choice and
 GitHub is our current repository platform, but how to use these tools can be spelled out
 in a bit more detail. Note that we are looking to consolidate this with our existing
 documentation on [code review]({{site.baseurl}}/code-review) and [example
 workflows]({{site.baseurl}}/example-workflows).
 
-### Security
+### Security {%include components/tag-requirement.html %}
 
-{%include components/tag-requirement.html %} [Install Caulking](https://github.com/cloud-gov/caulking). 
+[Install Caulking](https://github.com/cloud-gov/caulking). 
 It's easy to accidentally push secrets to GitHub. Caulking checks for many common types of API tokens 
 and other sensitive information before you commit, allowing you to remove sensitive data before
-accidentally publishing it. (This repo assumes MacOs with HomeBrew installed.)
+accidentally publishing it. (This repo assumes MacOS with Homebrew installed.)
 
-{%include components/tag-requirement.html %} Enble 
+Enable 
 [**two-factor authentication**](https://help.github.com/articles/about-two-factor-authentication/) for
 your GitHub account. This is required for all TTS employees.
 
-{%include components/tag-requirement.html %} As part of the ATO process, we require any branches which
+As part of the ATO process, we require any branches which
 trigger automated deployment be [**protected**](https://help.github.com/articles/about-protected-branches/)
 by passing CI and peer review.
 
 ### Other considerations
 
-{%include components/tag-standard.html %} Default to **public** for new repositories. See our
+#### {%include components/tag-standard.html %} 
+* Default to **public** for new repositories. See our
   [guidelines](https://github.com/18F/open-source-policy/blob/master/practice.md)
   about open source for more detail.
-
-{%include components/tag-standard.html %} Generally we prefer **branches** over forks to ease internal collaboration. {%include components/tag-default.html %} *If your project has many outside contributors, consider forks instead.*
-
-{%include components/tag-suggestion.html %} When in doubt, use feature branches and
-[**gitflow**](http://nvie.com/posts/a-successful-git-branching-model/) as your branch naming scheme.
-
-{%include components/tag-standard.html %} Keep your repository **clean**; delete merged branches and avoid committing
+* We prefer **branches** over forks to ease internal collaboration. *If your project has many outside contributors, consider forks instead.*
+* Keep your repository **clean**; delete merged branches and avoid committing
 files specific to your dev environment (e.g. `.DS_Store`).
-
-{%include components/tag-suggestion.html %} Follow [this
-  guidance](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) about **good commit messages**.
-
-{%include components/tag-suggestion.html %} Consider [**signing commits** with a GPG
+* Consider [**signing commits** with a GPG
   key](https://help.github.com/articles/signing-commits-with-gpg/)
+
+
+#### {%include components/tag-suggestion.html %}
+* When in doubt, use feature branches and [**gitflow**](http://nvie.com/posts/a-successful-git-branching-model/) as your branch naming scheme.
+* Follow [this
+  guidance](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) about **good commit messages**.
 
 ## Code style
 
