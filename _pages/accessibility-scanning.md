@@ -4,160 +4,89 @@ sidenav: tools
 sticky_sidenav: true
 ---
 
-## Accessibility Scanning using AccessLint
+Building a website or application that is easy accessible to everyone is  not only an important of the user
+experience, but also a requirement of all federally funded projects. GSA provides a helpful 
+[Section 508](https://section508.gov) portal. Accessibility should not just be an afterthought! Start thinking
+about how to make your projects accessible before you begin any development.
 
-[AccessLintCI](https://github.com/accesslint/accesslint-ci) is an automated accessibility scanning tool. It is configured with CircleCI (Travis and Jenkins support pending) to leave comments on Pull Requests stating potential accessibility problems with the committed code.
+While coding a site to be accessible is a responsibility for engineers, accessibility is not just a concern 
+for engineering. [Accessibility for Teams](https://accessibility.digital.gov/front-end/getting-started/)
+is a GSA-owned guide that gives explicit suggestions for the whole team product team can approach accessibility.
+It lists out ways to manually test your site, as well as giving automated testing guidance.
 
-### Getting started
+A more exhaustive list of elements and tools can be found at the [18F Accessibility Guide](https://accessibility.18f.gov/).
 
-Regardless of what framework your project is using, you will need to add `gem: accesslint-ci` to your `Gemfile` with the  gem.
+# Recommended Tools
 
-### Setup with Jekyll
+## Pa11y With aXe-core {%include components/tag-standard.html %}
 
-The setup is detailed [here](https://github.com/accesslint/accesslint-ci#installation) for Rails, but can also easily be configured with Jekyll sites as follows. In the `circle.yml` file of your repo add the following:
+[Pa11y](https://pa11y.org/) maintains a handful of open-source automated testing tools that scan your
+sites to check for accessibility problems. Their tools can be setup on your machine locally or remotely 
+using a CI tool.
 
-```yml
-general:
-  artifacts:
-    - "tmp"
+We are going to focus on [Pa11y-ci](https://github.com/pa11y/pa11y-ci), which is more geared towards use on
+projects in CI. (But can be run locally.)
 
-machine:
-  environment:
-    ACCESSLINT_MASTER_BRANCH: <Branch that you want accesslint to test against>
-  node:
-    version: 6.1.0
+Pa11y also maintains [Pa11y](https://github.com/pa11y/pa11y) that allows you to look at live sites or
+incorporate pa11y tests into an integration testing framework. ([See below](#pa11y-cli))
 
-dependencies:
-  pre:
-    - gem install bundler
-    - bundle install
-  override:
-    - npm install -g accesslint-cli
-    - gem install accesslint-ci
+While Pa11y gives you the option of different test runners, we recommend using aXe-core.
 
-test:
-  post:
-    - bundle exec jekyll serve --detach
-    - accesslint-ci scan http://localhost:4000
+### aXe-core {%include components/tag-standard.html %}
+[aXe-core](https://github.com/dequelabs/axe-core) is an open source accessibility testing engine; it includes
+a set of accessibility rules that Pa11y will test against. It is also possible to incorporate aXe-core directly
+into your integration tests as well.
+
+### Running Pa11y in CI
+
+#### GitHub Actions On Every Pull Request
+
+Thanks to Daniel Mundra and the folks at CivicActions Accessibility and their [comprehensive documentation](https://accessibility.civicactions.com/posts/automated-accessibility-testing-leveraging-github-actions-and-pa11y-ci-with-axe) 
+on setting up Pa11y-ci. All below code is taken from that blog post; read through for more details.
+
+Their instructions are specific to Jekyll but can be leveraged for other types of projects.
+
+* Install pa11y locally
+
+  `$ npm i --save-dev pa11y-ci`
+* Add pa11y-specific scripts to `package.json`
+
+``` json
+    "scripts": {
+      "start-detached": 
+        "bundle exec jekyll serve --detach",
+      "pa11y-ci:sitemap": 
+        "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude \"/*.pdf\""
+    }
 ```
 
-The `ACCESSLINT_MASTER_BRANCH` should be set to the branch that PRs are being made to. If it is not set, it will default to `master`. For TTS repos, this will generally be `dev` or `development`.
+* Create a `.pa11yci` in the root of your directory to [configure your pa11y run](https://github.com/pa11y/pa11y#configuration)
 
-### Accesslint API access
+[18F accessibility site's .pallyci](https://github.com/18F/accessibility/blob/18f-pages/.pa11yci).
+  `$ touch .pa11yci`
 
-In order for AccessLint to access your GitHub webhooks, you will need to
-
-1. [Create an token](https://accesslint.com/)
-1. Reference it. In your Circle CI settings for your repo, create a variable named `ACCESSLINT_API_TOKEN` with the token you created.
-1. Also add a variable named `ACCESSLINT_GITHUB_USER` to your Circle CI repo settings, with a value of the GitHub username that was used to create the token in step 1.
-
-### Configuring other project frameworks
-
-If your project is not a Rails or Jekyll project, you can still use AccessLintCI!
-
-To do so, make a few changes to the `post` section of your configuration. Replace `bundle exec jekyll serve --detach` with a repo-specific server command that detaches, and allows accesslint-ci to run on the same process to check your server port.
-
-```yml
-test:
-  post:
-    - <your detached server command>
-    - accesslint-ci scan http://localhost:<your server port>
+``` json
+    {
+      "defaults": {
+        "concurrency": 4,
+        "standard": "WCAG2AA",
+        "runners": ["axe"]
+      }
+    }
 ```
 
-### What it does
+* Create `.github/workflows` directories in the root of your project, and then a `pa11y.yml` file in `workflows`.
 
-Once configured, AccessLintCI will leave a single comment on a Pull Request to the `ACCESSLINT_MASTER_BRANCH`. If errors are accepted, they will be cached, and not checked again in the next PR to that branch.
+```
+  $ mkdir -P .github/workflows
+  $ touch .github/workflows/pa11y.yml
+```
 
-## Accessibility Scanning Using Pa11y-ci
+Create your [Github Action workflow](https://docs.github.com/en/actions/quickstart)! 
 
-### Introduction
+To see a pa11y.yml live in the wild, check out [18F Accessibility site's pa11y.yml](https://github.com/18F/accessibility/blob/18f-pages/.github/workflows/pa11y.yml).
 
-Building a website or application that is easy accessible toeveryone is  not only an important of the user experience, but also a requirement of all federally funded projects. GSA provides a helpful [Section 508](https://section508.gov)  portal. [Pa11y](https://github.com/pa11y/pa11y) is an automation tool that helps you scan your static web pages to check for accessibility problems and errors. It can be setup on your machine locally or remotely using a CI tool.
-
-## Running Pa11y locally
-
-### Installation and setup (For MacOS)
-
-1. [Concourse CI](https://concourse.ci/index.html) allows you to run multiple compliance scanning jobs  on your machine using a virtual machine. It is highly recommended to go through its [excellent documentation and "Hello World" tutorial ](https://concourse.ci/hello-world.html) before writing custom jobs for your project.
-
-2. If you want to run locally Pa11y-ci you will need to :
-
-   * [install **vagrant** and **virtualbox** ](http://sourabhbajaj.com/mac-setup/Vagrant/README.html)
-   * use [The Fly CLI](https://concourse.ci/fly-cli.html) , a command line tool for Concourse which is  used for a number of tasks from connecting to a shell in one of your build's containers to uploading new pipeline configuration into a running Concourse.
-
-3. If you're on MacOS , you will have to `chmod +x` the downloaded binary and put it in your `$PATH`. This can be done in one fell swoop with `install path/to/fly /usr/local/bin/fly`
-
-4. Run Vagrant
-
-   ```sh
-   vagrant init concourse/lite # creates ./Vagrantfile
-   vagrant up                  # downloads the box and spins up the VM
-   ```
-
-5. Log into fly
-
-   `fly -t lite login -c http://192.168.100.4:8080`
-
-   ​
-
-### Running Pa11y-ci on your local machine
-
- 1. Create a `.yml` file containing the job with tasks that you want to run
-
-     `touch accessibility-scan.yml`
-
-     `vim accessibility-scan.yml`
-      ```yml
-      jobs:
-        - name: accessibility-scan
-          plan:
-          - task: run-pa11y
-            config:
-              platform: linux
-              image_resource:
-                type: docker-image
-                source:
-                  repository: node
-              run:
-                path: sh
-                args:
-                - -exc
-                - |
-                  npm install -g pa11y-ci
-                  npm install -g phantomjs
-                  mkdir accessibility-scan
-                  pa11y-ci --json --sitemap https://18f.gsa.gov/sitemap.xml > accessibility-scan/summary.txt
-                  cat accessibility-scan/summary.txt
-      ```
-
-      `type` is almost always going to be `docker-image` . `pa11y-ci` requires node, so we are using a `node` docker-image.
-
-      `run` section contains a series of shell command that we are executing:
-
-      * install `pa11y-ci`  and `phantomjs` from the node package manager(`npm`)
-
-      * making a directory and telling pa11y-ci to pipe the results of the scan into a `json` file
-
-        the command is like so `pa11y-ci --json --sitemap https://[18f-static-site-url]/sitemap.xml > dir/file`
-
-      * printing the results in our CLI `cat…` (for debugging purposes, optional)
-
-      **Note that** we are using the `sitemap.xml`  file instead of individual files(much more efficient)
-
-
- 2.  Run
-
-      ```shell
-      fly -t lite set-pipeline -p accessibility-scan -c accessibility-scan.yml
-      ```
-
- 3. Go to the `URL` displayed on your CLI. **Click the plus sign on top right corner and toggle side bar and press play on         your pipeline**. Pipelines are posed by default.
-
-   ​
-
-## Running Pa11y-ci  with CI
-
-### Circle CI Setup Instructions
+#### Circle CI Setup Instructions
 
 If you want to run Pa11y-ci per pull request on your project:
 
@@ -203,3 +132,30 @@ If you want to run Pa11y-ci per pull request on your project:
 ### Travis CI Setup Instructions(To Be Written)
 
 ## Adding Pa11y To The Compliance Viewer(To Be Written)
+
+
+### Pa11y CLI
+
+If you'd like to test a live website, whether or not you have accesss to the code, the Pa11y CLI can help!
+
+The CLI requires [Node.js](http://nodejs.org/) 8+, which you can install with homebrew or nvm.
+
+`$ brew install node`
+or
+`$ nvm install node`
+
+Install the CLI globally on your machine:
+
+`$ npm install -g pa11y`
+
+and then you can run it against a live site.
+
+> ```
+> $ pa11y https://engineering.18f.gov/
+> 
+> Welcome to Pa11y
+>
+> > Running Pa11y on URL https://engineering.18f.gov/
+>
+> No issues found!
+> ```
