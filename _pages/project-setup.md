@@ -52,6 +52,21 @@ visual regression tests don't make sense for an API).
 1. Integration test setup (e.g., [Selenium](https://www.selenium.dev/) {%include components/tag-suggestion.html %})
 1. Visual regression setup (e.g., [Backstop](https://github.com/garris/BackstopJS) {%include components/tag-suggestion.html %})
 
+## Branch protection {%include components/tag-requirement.html %}
+
+Set up branch protection rules for each repository. The [most current ATO checklist](https://github.com/18F/tts-tech-portfolio/blob/master/.github/ISSUE_TEMPLATE/ato.md) requires it;
+it's also a good practice to prevent mistakes like an accidental force-push to main.
+
+We recommend at the very least enabling:
+* Require pull request reviews before merging
+* Restrict who can push to your main branch
+
+Please refer to GitHub's [branch protection documentation](https://docs.github.com/en/github/administering-a-repository/managing-a-branch-protection-rule)
+to help determine what other configuration settings are best for your project. 
+
+By default, protected branch rules do not apply to people with admin permissions to a repository,
+allowing admins to merge PRs without an external review when necessary.
+
 ## Project Management Tool
 
 Every project, no matter the size, should use a project management tool to keep
