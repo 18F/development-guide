@@ -4,45 +4,42 @@ sidenav: security
 sticky_sidenav: true
 ---
 
-## Why do an Incident Response drill?
+## Why do Incident Response drills?
 
-You don't want to be creating or testing your recovery processes while things are on fire.
-
+You don't want to be creating or testing recovery processes while things are on fire. Preparing and practicing ahead of time is a good idea.
 
 ## Preparing for the Drill
 
 ### Finding your weak points
 
-First, create a boundary diagram. Second, pull out your boundary diagram and determine where your system can be accessed. Make sure
-you include third party products (ie. Analytics, CI/CD pipelines, code hosting) in this analysis.
+First, create a boundary diagram. (You will very likely need to create a boundary diagram as part of your system's security and compliance process.)
 
-Look at each box and each connection on the diagram separately. Figure out how someone who isn't
-supposed to be there could get there, or how each component could go down unexpectedly.
+Then, pull out your boundary diagram and determine where your system can be accessed. Make sure that you include third party products (analytics, CI/CD pipelines, code hosting) in this analysis.
+
+Look at each box and each connection on the diagram separately. Figure out how someone who isn't supposed to be there could get there, or how each component could fail unexpectedly.
 
 This will help you build a set of incident scenarios to practice recovering from.
 
 ### Gathering Organization Policies
 
-It is likely that your Agency or OCIO has existing policies around reporting for security or data breach incidents.
-Gather them to ensure they are built into your response.
+It is likely that your Agency or OCIO has existing policies around reporting for security or data breach incidents. Gather them to ensure they are built into your response.
 
-
-## Example Web App using Cloud.gov
+## Example Incident Response drills
 
 Scenarios worth practicing for a web app include:
 
-* A deploy goes wrong
-* PII exposed
-* API Keys or passwords exposed
-* Oops, I deleted the database
-* S3 buckets are erased
-* Site defacement
-* Denial of Service
-* Service Downtime
+* [A deploy goes wrong](#a-deploy-goes-wrong)
+* [PII exposed](#pii-exposed)
+* [API Keys or passwords exposed](#api-keys-or-passwords-exposed)
+* [Oops, I deleted the database](#oops-i-deleted-the-database)
+* [S3 buckets are erased](#s3-buckets-are-erased)
+* [Site defacement](#site-defacement)
+* [Denial of Service](#denial-of-service)
+* [Service Downtime](#service-downtime)
 
 You don't need to drill each and every one of these scenarios each time, but they are good to plan for.
 
-These examples assume the application is hosted on cloud.gov.
+These examples a web application hosted on [Cloud.gov](https://cloud.gov) that generally follows [our approach](/workflow).
 
 Please adjust for your infrastructure.
 
