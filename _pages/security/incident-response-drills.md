@@ -4,13 +4,19 @@ sidenav: security
 sticky_sidenav: true
 ---
 
-## Why do Incident Response drills?
+*Table of Contents*
+
+* [Why do Incident Response Drills?](#why-do-incident-response-drills)
+* [How to Build Incident Response Drills](#how-to-build-incident-response-drills)
+* [Example Incident Response Drills](#example-incident-response-drills)
+
+## Why do Incident Response Drills?
 
 You don't want to be creating or testing recovery processes while things are on fire. 🔥
 
 Preparing and practicing ahead of time is a good idea.
 
-## Preparing for the Drill
+## How to Build Incident Response Drills
 
 ### Finding your weak points
 
@@ -26,18 +32,16 @@ This will help you build a set of incident scenarios to practice recovering from
 
 It is likely that your Agency or OCIO has existing policies around reporting for security or data breach incidents. Gather them to ensure they are built into your response.
 
-## Example Incident Response drills
+## Example Incident Response Drills
 
 Scenarios worth practicing for a web app include:
 
-* [Scenario: A Deploy Goes Wrong](#a-deploy-goes-wrong)
-* [Scenario: API Keys or Passwords Exposed](#api-keys-or-passwords-exposed)
-* [Scenario: Site Defacement](#site-defacement)
-* [Scenario: Oops, I Deleted the Database](#oops-i-deleted-the-database)
-* [Scenario: PII Exposed](#pii-exposed)
-* [S3 buckets are erased](#s3-buckets-are-erased)
-* [Denial of Service](#denial-of-service)
-* [Service Downtime](#service-downtime)
+* [Scenario: A Deploy Goes Wrong](#scenario-a-deploy-goes-wrong)
+* [Scenario: API Keys or Passwords Exposed](#scenario-api-keys-or-passwords-exposed)
+* [Scenario: Site Defacement](#scenario-site-defacement)
+* [Scenario: PII Exposed](#scenario-pii-exposed)
+* [Scenario: Oops, I Deleted the Database](#scenario-oops-i-deleted-the-database)
+* [Scenario: Oops, I Erased the S3 Bucket](#scenario-oops-i-erased-the-s3-bucket)
 
 You don't need to drill each and every one of these scenarios each time, but they are good to plan for.
 
@@ -93,29 +97,27 @@ The website has been hacked due to a compromised key! Now instead of our link to
   <i>Oh no! Who added this cute cat photo to our website?!? <br/> Photo attribution: Tran Mau Tri Tam. Unsplash License.</i>
 </caption>
 
-### Example mitigation steps:
-
-TK
-
-### Example drill steps:
-
-TK
-
-## Scenario: Oops, I Deleted the Database
-
-The database needs to be restored from a backup.
+What happened? Was a GitHub account compromised? A Cloud.gov account? A deploy key?
 
 ### Example mitigation steps:
 
-1. If you're using Cloud.gov, follow [Cloud.gov database backup procedures](https://cloud.gov/docs/services/relational-database/#backups).
+1. Contact `<<Insert email of POC laid out in Agency policies>>` and inform them of a breach.
+1. The first priority is to remove the unauthorized access so that there can't be further damage or information leakage. Figure out where the deploy came from.
+  * *If the deploy was triggered from GitHub*, you would be able to see it in CI/CD history. In this case, the GitHub admin should immediately remove the account that triggered the malicious deployment. Rotate any deploy credentials that may have been compromised.
+  * If you don't see the deploy in CI/CD, that means either deployment keys were compromised, or a Cloud.gov account was compromised. Look at the logs to see which deployment method was used.
+  * *If you see that the deploy came from a compromised Cloud.gov account*: Remove the compromised account from the org, all spaces (starting with prod), and all application (starting with prod apps).
+  * *If you see that the deploy came from a compromised deploy key*: In Cloud.gov delete the current deployment keys, remake them and add the new keys to your CI/CD tool.
+1. Isolate resources: incidents that are likely to be malicious need to be handled with care to preserve forensics. The most important things to remember: do not delete an instance that has been tampered with, and do not redeploy from the last release without removing routes and renaming the instances. That could get rid of valuable forensic information. Instead:
+  * Remove the route to the affected instances. (This will make the bad deploy inaccessible to the public.)
+  * Rename the instance. (This will preserve forensics as you redeploy.)
+
 
 ### Example drill steps:
 
-Assuming you have a staging database using a dedicated Cloud.gov database plan:
-
-1. Delete some data from your staging database. (No deleting data from a production database, please.)
-2. Reach out to Cloud.gov using the [the non-emergency email address provided in thir docs](https://cloud.gov/docs/services/relational-database/#backups); request a backup.
-3. Practice restoring the staging database to the point in time before you deleted the data.
+1. Acknolwedge that the first step would be to inform points of contact; establish that everyone knows who to inform in the event of an incident.
+1. Choose a scenario to drill: compromised GitHub account, compromised Cloud.gov account, or compromised deploy key. (Compromised deploy key might be easiest to drill)
+1. Practice the steps to remove compromised accounts or credentials, for example, by deleting the current deployment keys, remaking them, and adding them to CI/CD.
+1. Using a development application instance, practice removing the route to a instance that may have been compromised and then renaming it to preserve forensics.
 
 ## Scenario: PII Exposed
 
@@ -137,24 +139,33 @@ It's discovered that PII is being leaked to unauthorized users through the site.
 1. In a development environment, practice putting the site into a maintenance mode or removing/hiding a page on the site, whichever would be most relevant to your project.
 1. Review any relevant corrective action / affected user notification procedures.
 
-## S3 buckets are erased
+
+## Scenario: Oops, I Deleted the Database
+
+The database needs to be restored from a backup.
 
 ### Example mitigation steps:
 
-TK
+1. If you're using Cloud.gov, follow [Cloud.gov database backup procedures](https://cloud.gov/docs/services/relational-database/#backups).
 
 ### Example drill steps:
 
-TK
+Assuming you have a staging database using a dedicated Cloud.gov database plan:
 
+1. Delete some data from your staging database. (No deleting data from a production database, please.)
+2. Reach out to Cloud.gov using the [the non-emergency email address provided in thir docs](https://cloud.gov/docs/services/relational-database/#backups); request a backup.
+3. Practice restoring the staging database to the point in time before you deleted the data.
 
-## Denial of Service
+## Scenario: Oops, I Erased the S3 Bucket
+
+Let's re-create and restore from a backup.
 
 ### Example mitigation steps:
 
-TK
+1. If the bucket no longer exists, create a new bucket in Cloud.gov in the space where the bucket was deleted, ideally using infrastructure-as-code or a deploy script.
+2. Restore bucket contents from a backup.
+3. Verify the bucket settings, permissions, and contents are correct.
 
 ### Example drill steps:
 
-TK
-
+Follow the mitigation steps above in a development environment.
