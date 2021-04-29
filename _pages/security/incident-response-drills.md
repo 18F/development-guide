@@ -90,7 +90,7 @@ The website has been hacked due to a compromised key! Now instead of our link to
 
 ![Screenshot of Engineering Practices Guide homepage with cute cat photo in the middle of it]({{site.baseurl}}/assets/images/screenshot-fake-epg-hacked.png)
 <caption>
-  <i>Oh no! Who added this cute cat photo to our website?!?</i>
+  <i>Oh no! Who added this cute cat photo to our website?!? <br/> Photo attribution: Tran Mau Tri Tam. Unsplash License.</i>
 </caption>
 
 ### Example mitigation steps:
