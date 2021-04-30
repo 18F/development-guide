@@ -14,11 +14,11 @@ sticky_sidenav: true
 
 You don't want to be creating or testing recovery processes while things are on fire. 🔥
 
-Preparing and practicing ahead of time is a good idea.
+Preparing and practicing ahead of time is a good idea. Running incident response drills on an annual basis at the very least is a good idea!
 
-## How to Build Incident Response Drills
+## How to Run an Incident Response Drill
 
-### Finding your weak points
+### Identify Your Top Risks
 
 First, create a boundary diagram. (You will very likely need to create a boundary diagram as part of your system's security and compliance process.)
 
@@ -28,9 +28,42 @@ Look at each box and each connection on the diagram separately. Figure out how s
 
 This will help you build a set of incident scenarios to practice recovering from.
 
-### Gathering Organization Policies
+### Gather Organizational Policies
 
 It is likely that your Agency or OCIO has existing policies around reporting for security or data breach incidents. Gather them to ensure they are built into your response.
+
+### Create the Drill
+
+See [Example Incident Response Drills](#example-incident-response-drills) for inspiration!
+
+### Invite Everyone to the Drill
+
+Be sure to invite developers, infrastructure, and compliance professionals on your team to the drill. An open invitation for your team is a good idea! Letting the team know that you're doing this kind of activity builds confidence and assurance that the team takes security seriously.
+
+Give advance warning to any third parties that might want to know that you're planning an incident response drill, such as Cloud.gov or Login.gov.
+
+Schedule more time than you think you will need! If you schedule half a day, you may find you'll need the whole day!
+
+Ask for a volunteer to take notes throughout the incident response drill.
+
+### Conduct the Drill
+
+Follow the steps in the drill, making sure good notes are taken.
+
+Team members can rotate being the "driver" who shares their screen and walks through the steps in the drill.
+
+<img src="/assets/images/Drill_scheme.svg" alt="Image of a hardware drill" height="400px" />
+<caption>
+  <i>This is a drill.</i>
+</caption>
+
+### After the Drill
+
+You could end the drill with a practice "blameless postmortem". This is a low-pressure way to figure out your team's format for conducting postmortems after an incident.
+
+[Cloud.gov's retrospective meeting guide](https://cloud.gov/docs/ops/service-disruption-guide/#retrospective-meeting-guide) has ideas and checklists for organizing a successful post-incident retrospective.
+
+Send an email recapping the drill to all stakeholders. Include the outcomes of the drill, what you learned from the drill, and any follow-up actions.
 
 ## Example Incident Response Drills
 
@@ -38,14 +71,14 @@ Scenarios worth practicing for a web app include:
 
 * [Scenario: A Deploy Goes Wrong](#scenario-a-deploy-goes-wrong)
 * [Scenario: API Keys or Passwords Exposed](#scenario-api-keys-or-passwords-exposed)
-* [Scenario: Site Defacement](#scenario-site-defacement)
+* [Scenario: Compromised Account](#scenario-compromised-account)
 * [Scenario: PII Exposed](#scenario-pii-exposed)
 * [Scenario: Oops, I Deleted the Database](#scenario-oops-i-deleted-the-database)
 * [Scenario: Oops, I Erased the S3 Bucket](#scenario-oops-i-erased-the-s3-bucket)
 
 You don't need to drill each and every one of these scenarios each time, but they are good to plan for.
 
-These examples a web application hosted on [Cloud.gov](https://cloud.gov) that generally follows [our approach](/workflow).
+These examples are for a web application hosted on [Cloud.gov](https://cloud.gov) that generally follows [our approach](/workflow).
 
 Please adjust for your infrastructure.
 
@@ -88,7 +121,7 @@ An API Key for an AWS service was accidentally committed to our public code repo
 1. Practice rotating the keys for that service in a development context.
 1. Practice scrubbing the fake key from the commit history.
 
-## Scenario: Site Defacement
+## Scenario: Compromised Account
 
 The website has been hacked due to a compromised key! Now instead of our link to submit a report, we have a cute image of a cat and a spam link to follow cute cats on instagram.
 
