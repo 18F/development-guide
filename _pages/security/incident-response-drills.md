@@ -52,9 +52,9 @@ Follow the steps in the drill, making sure good notes are taken.
 
 Team members can rotate being the "driver" who shares their screen and walks through the steps in the drill.
 
-<img src="/assets/images/Drill_scheme.svg" alt="Image of a hardware drill" height="400px" />
+![Image of a hardware drill]({{site.baseurl}}/assets/images/drill-small-wikimedia.png)
 <caption>
-  <i>This is a drill.</i>
+  <i>This is a drill. <br/> Image attribution: Włodzimierz Wysocki. License: CC BY-SA 3.0</i>
 </caption>
 
 ### After the Drill
