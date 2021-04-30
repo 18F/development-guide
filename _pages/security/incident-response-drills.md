@@ -9,6 +9,7 @@ sticky_sidenav: true
 * [Why do Incident Response Drills?](#why-do-incident-response-drills)
 * [How to Build Incident Response Drills](#how-to-run-an-incident-response-drill)
 * [Example Incident Response Drills](#example-incident-response-drills)
+* [Using this drill as part of your ATO](#congratulations-you-accidentally-did-compliance-too)
 
 ## Why do Incident Response Drills?
 
