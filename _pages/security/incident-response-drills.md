@@ -7,7 +7,7 @@ sticky_sidenav: true
 *Table of Contents*
 
 * [Why do Incident Response Drills?](#why-do-incident-response-drills)
-* [How to Build Incident Response Drills](#how-to-build-incident-response-drills)
+* [How to Build Incident Response Drills](#how-to-run-an-incident-response-drill)
 * [Example Incident Response Drills](#example-incident-response-drills)
 
 ## Why do Incident Response Drills?
