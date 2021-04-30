@@ -202,3 +202,26 @@ Let's re-create and restore from a backup.
 ### Example drill steps:
 
 Follow the mitigation steps above in a development environment.
+
+## Congratulations, you accidentally did compliance too!
+
+For your project, you will need an [ATO](https://before-you-ship.18f.gov/ato/). Part of that ATO is providing required documentation of controls. Controls are different security considerations. This process varies from agency to agency, so, work with your security partners to know which controls they need documented. Don't forget that you can inherit most of your [controls by using cloud.gov](https://cloud.gov/docs/security/conforming-federal-security-regulations/) and you just need to reference that it's covered. The [before you ship guide](https://before-you-ship.18f.gov/) is a great resource for ATOs. 
+
+By doing this exercise, you have artifacts (proof that you are in compliance) and documentation that you can reference or pull from for your System Security Plan. Based on the needs of your security partners and the project, you may also need additional documentation or to reference Cloud.gov or AWS GovCloud's controls. The following examples are just meant as a starting point.
+
+Contigency Planning
+ - [CP-2 (5) Contingency plan](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=CP-2) Your troubleshooting doc is a contingency plan for your app! This document can complement existing agency contingency plans. Depending on what your security partners need, you can also make it easy to audit by naming headings like "Contingency plan," "Incident response," "Disaster Recovery," etc.
+ - [CP-2 (7) Contingency plan: coordinate with external service providers](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=CP-2) If you did a data deletion drill in coordination with cloud.gov, you can reference that here.
+ - [CP-3 Contingency training](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=CP-3) Your drill is training on your contingency plan. For artifacts, you can use what you wrote from your recap email and your drill document.
+ - [CP-4 Contingency plan testing](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=CP-4) Your drill tested your contingency plan. For artifacts, you can use what you wrote from your recap email and your drill document.  
+ 
+Training
+ - [AT-3(3) Role-based training: practical exercises](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=AT-3) Your drill was a practical exercise. For artifacts, you can use what you wrote from your recap email, your drill document and the practice postmortem write up.
+ - [AT-3(5) Role-based training: processing personally identifiable information](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=AT-3) If you run your drill using the PII scenario, that wold speak to this control. For artifacts, you can use what you wrote from your recap email and your drill document. The government training (those corses in OLU) count for this as well.
+
+Incident Response
+ - [IR-2 Incident response training](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=IR-2) Your drill is incident response training for your application. For artifacts, you can use what you wrote from your recap email and your drill document.
+ - [IR-3 Incident response testing](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=IR-3) Your troubleshooting drill included a security incident. You also may find a few bumps along the road as you do your drill, document those issues and any remediations you make. For artifacts, you can use what you wrote from your recap email, which should include that information.
+
+System Inventory
+ - [CM-8 System component inventory](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=CM-8) Use your network diagram and prep as a way to have an accurate network diagram. Keep a the doc in a place that the team has access and that maintainers can edit and update it. Your network diagram and READMEs make for good artifacts for this.
