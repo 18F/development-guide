@@ -21,9 +21,9 @@ Preparing and practicing ahead of time is a good idea. Running incident response
 
 ### Identify Your Top Risks
 
-First, create a boundary diagram. (You will very likely need to create a boundary diagram as part of your system's security and compliance process.)
+First, create a boundary diagram if you don't already have one. You will very likely need to create a boundary diagram as part of your system's security and compliance process, anyway.
 
-Then, pull out your boundary diagram and determine where your system can be accessed. Make sure that you include third party products (analytics, CI/CD pipelines, code hosting) in this analysis.
+Then, review your boundary diagram and determine where your system can be accessed. Make sure that you include third party products (analytics, CI/CD pipelines, code hosting) in this analysis.
 
 Look at each box and each connection on the diagram separately. Figure out how someone who isn't supposed to be there could get there, or how each component could fail unexpectedly.
 
@@ -98,7 +98,7 @@ Re-deploy last successful release from  your CI/CD pipeline. (You are deploying 
 
 1. Go to `<<Insert CI/CD URL>>` to view recent deploys.
 1. Rerun the deploy step for the last known-good deploy.
-1. If necessary, roll back the database to the correct version.
+1. If necessary, roll back the database to the correct version. `<<Insert rollback steps for your application>>`
 
 ### Example drill:
 
@@ -118,7 +118,7 @@ An API Key for an AWS service was accidentally committed to our public code repo
 ### Example drill steps:
 
 1. Acknolwedge that the first step would be to inform points of contact; establish that everyone knows who to inform in the event of an incident.
-1. To simulate the real thing, push up a file to GitHub or whichever code repository use with a fake service key. (No using real keys for drills, please.)
+1. To simulate the real thing, push up a file to GitHub or whichever code repository is in use with a fake service key. (No using real keys for drills, please.)
 1. Practice rotating the keys for that service in a development context.
 1. Practice scrubbing the fake key from the commit history.
 
