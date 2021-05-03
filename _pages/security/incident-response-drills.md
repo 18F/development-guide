@@ -41,7 +41,7 @@ See [Example Incident Response Drills](#example-incident-response-drills) for in
 
 Be sure to invite developers, infrastructure, and compliance professionals on your team to the drill. An open invitation for your team is a good idea! Letting the team know that you're doing this kind of activity builds confidence and assurance that the team takes security seriously.
 
-Give advance warning to any third parties that might want to know that you're planning an incident response drill, such as Cloud.gov or Login.gov.
+Give advance warning to any third parties that might want to know that you're planning an incident response drill, such as cloud.gov or login.gov.
 
 Schedule more time than you think you will need! If you schedule half a day, you may find you'll need the whole day!
 
@@ -62,7 +62,7 @@ Team members can rotate being the "driver" who shares their screen and walks thr
 
 You could end the drill with a practice "blameless postmortem". This is a low-pressure way to figure out your team's format for conducting postmortems after an incident.
 
-[Cloud.gov's retrospective meeting guide](https://cloud.gov/docs/ops/service-disruption-guide/#retrospective-meeting-guide) has ideas and checklists for organizing a successful post-incident retrospective.
+[cloud.gov's retrospective meeting guide](https://cloud.gov/docs/ops/service-disruption-guide/#retrospective-meeting-guide) has ideas and checklists for organizing a successful post-incident retrospective.
 
 Send an email recapping the drill to all stakeholders. Include the outcomes of the drill, what you learned from the drill, and any follow-up actions.
 
@@ -79,7 +79,7 @@ Scenarios worth practicing for a web app include:
 
 You don't need to drill each and every one of these scenarios each time, but they are good to plan for.
 
-These examples are for a web application hosted on [Cloud.gov](https://cloud.gov) that generally follows [our approach](/workflow).
+These examples are for a web application hosted on [cloud.gov](https://cloud.gov) that generally follows [our approach](/workflow).
 
 Please adjust for your infrastructure.
 
@@ -131,16 +131,16 @@ The website has been hacked due to a compromised key! Now instead of our link to
   <i>Oh no! Who added this cute cat photo to our website?!? <br/> Photo attribution: Tran Mau Tri Tam. Unsplash License.</i>
 </caption>
 
-What happened? Was a GitHub account compromised? A Cloud.gov account? A deploy key?
+What happened? Was a GitHub account compromised? A cloud.gov account? A deploy key?
 
 ### Example mitigation steps:
 
 1. Contact `<<Insert email of POC laid out in Agency policies>>` and inform them of a breach.
 1. The first priority is to remove the unauthorized access so that there can't be further damage or information leakage. Figure out where the deploy came from.
   * *If the deploy was triggered from GitHub*, you would be able to see it in CI/CD history. In this case, the GitHub admin should immediately remove the account that triggered the malicious deployment. Rotate any deploy credentials that may have been compromised.
-  * If you don't see the deploy in CI/CD, that means either deployment keys were compromised, or a Cloud.gov account was compromised. Look at the logs to see which deployment method was used.
-  * *If you see that the deploy came from a compromised Cloud.gov account*: Remove the compromised account from the org, all spaces (starting with prod), and all application (starting with prod apps).
-  * *If you see that the deploy came from a compromised deploy key*: In Cloud.gov delete the current deployment keys, remake them and add the new keys to your CI/CD tool.
+  * If you don't see the deploy in CI/CD, that means either deployment keys were compromised, or a cloud.gov account was compromised. Look at the logs to see which deployment method was used.
+  * *If you see that the deploy came from a compromised cloud.gov account*: Remove the compromised account from the org, all spaces (starting with prod), and all application (starting with prod apps).
+  * *If you see that the deploy came from a compromised deploy key*: In cloud.gov delete the current deployment keys, remake them and add the new keys to your CI/CD tool.
 1. Isolate resources: incidents that are likely to be malicious need to be handled with care to preserve forensics. The most important things to remember: do not delete an instance that has been tampered with, and do not redeploy from the last release without removing routes and renaming the instances. That could get rid of valuable forensic information. Instead:
   * Remove the route to the affected instances. (This will make the bad deploy inaccessible to the public.)
   * Rename the instance. (This will preserve forensics as you redeploy.)
@@ -149,7 +149,7 @@ What happened? Was a GitHub account compromised? A Cloud.gov account? A deploy k
 ### Example drill steps:
 
 1. Acknolwedge that the first step would be to inform points of contact; establish that everyone knows who to inform in the event of an incident.
-1. Choose a scenario to drill: compromised GitHub account, compromised Cloud.gov account, or compromised deploy key. (Compromised deploy key might be easiest to drill)
+1. Choose a scenario to drill: compromised GitHub account, compromised cloud.gov account, or compromised deploy key. (Compromised deploy key might be easiest to drill)
 1. Practice the steps to remove compromised accounts or credentials, for example, by deleting the current deployment keys, remaking them, and adding them to CI/CD.
 1. Using a development application instance, practice removing the route to a instance that may have been compromised and then renaming it to preserve forensics.
 
@@ -180,14 +180,14 @@ The database needs to be restored from a backup.
 
 ### Example mitigation steps:
 
-1. If you're using Cloud.gov, follow [Cloud.gov database backup procedures](https://cloud.gov/docs/services/relational-database/#backups).
+1. If you're using cloud.gov, follow [cloud.gov database backup procedures](https://cloud.gov/docs/services/relational-database/#backups).
 
 ### Example drill steps:
 
-Assuming you have a staging database using a dedicated Cloud.gov database plan:
+Assuming you have a staging database using a dedicated cloud.gov database plan:
 
 1. Delete some data from your staging database. (No deleting data from a production database, please.)
-2. Reach out to Cloud.gov using the [the non-emergency email address provided in thir docs](https://cloud.gov/docs/services/relational-database/#backups); request a backup.
+2. Reach out to cloud.gov using the [the non-emergency email address provided in thir docs](https://cloud.gov/docs/services/relational-database/#backups); request a backup.
 3. Practice restoring the staging database to the point in time before you deleted the data.
 
 ## Scenario: Oops, I Erased the S3 Bucket
@@ -196,7 +196,7 @@ Let's re-create and restore from a backup.
 
 ### Example mitigation steps:
 
-1. If the bucket no longer exists, create a new bucket in Cloud.gov in the space where the bucket was deleted, ideally using infrastructure-as-code or a deploy script.
+1. If the bucket no longer exists, create a new bucket in cloud.gov in the space where the bucket was deleted, ideally using infrastructure-as-code or a deploy script.
 2. Restore bucket contents from a backup.
 3. Verify the bucket settings, permissions, and contents are correct.
 
@@ -206,16 +206,16 @@ Follow the mitigation steps above in a development environment.
 
 ## Congratulations, you accidentally did compliance too!
 
-For your project, you will need an [ATO](https://before-you-ship.18f.gov/ato/). Part of that ATO is providing required documentation of controls. Controls are different security considerations. This process varies from agency to agency, so, work with your security partners to know which controls they need documented. Don't forget that you can inherit most of your [controls by using cloud.gov](https://cloud.gov/docs/security/conforming-federal-security-regulations/) and you just need to reference that it's covered. The [before you ship guide](https://before-you-ship.18f.gov/) is a great resource for ATOs. 
+For your project, you will need an [ATO](https://before-you-ship.18f.gov/ato/). Part of that ATO is providing required documentation of controls. Controls are different security considerations. This process varies from agency to agency, so, work with your security partners to know which controls they need documented. Don't forget that you can inherit most of your [controls by using cloud.gov](https://cloud.gov/docs/security/conforming-federal-security-regulations/) and you just need to reference that it's covered. The [before you ship guide](https://before-you-ship.18f.gov/) is a great resource for ATOs.
 
-By doing this exercise, you have artifacts (proof that you are in compliance) and documentation that you can reference or pull from for your System Security Plan. Based on the needs of your security partners and the project, you may also need additional documentation or to reference Cloud.gov or AWS GovCloud's controls. The following examples are just meant as a starting point.
+By doing this exercise, you have artifacts (proof that you are in compliance) and documentation that you can reference or pull from for your System Security Plan. Based on the needs of your security partners and the project, you may also need additional documentation or to reference cloud.gov or AWS GovCloud's controls. The following examples are just meant as a starting point.
 
 Contigency Planning
  - [CP-2 (5) Contingency plan](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=CP-2) Your troubleshooting doc is a contingency plan for your app! This document can complement existing agency contingency plans. Depending on what your security partners need, you can also make it easy to audit by naming headings like "Contingency plan," "Incident response," "Disaster Recovery," etc.
  - [CP-2 (7) Contingency plan: coordinate with external service providers](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=CP-2) If you did a data deletion drill in coordination with cloud.gov, you can reference that here.
  - [CP-3 Contingency training](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=CP-3) Your drill is training on your contingency plan. For artifacts, you can use what you wrote from your recap email and your drill document.
- - [CP-4 Contingency plan testing](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=CP-4) Your drill tested your contingency plan. For artifacts, you can use what you wrote from your recap email and your drill document.  
- 
+ - [CP-4 Contingency plan testing](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=CP-4) Your drill tested your contingency plan. For artifacts, you can use what you wrote from your recap email and your drill document.
+
 Training
  - [AT-3(3) Role-based training: practical exercises](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=AT-3) Your drill was a practical exercise. For artifacts, you can use what you wrote from your recap email, your drill document and the practice postmortem write up.
  - [AT-3(5) Role-based training: processing personally identifiable information](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=AT-3) If you run your drill using the PII scenario, that wold speak to this control. For artifacts, you can use what you wrote from your recap email and your drill document. The government training (those corses in OLU) count for this as well.
