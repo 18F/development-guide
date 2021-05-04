@@ -206,7 +206,7 @@ Follow the mitigation steps above in a development environment.
 
 ## Congratulations, you accidentally did compliance too!
 
-For your project, you will need an [ATO](https://before-you-ship.18f.gov/ato/). Part of that ATO is providing required documentation of controls. Controls are different security considerations. This process varies from agency to agency, so, work with your security partners to know which controls they need documented. Don't forget that you can inherit most of your [controls by using cloud.gov](https://cloud.gov/docs/security/conforming-federal-security-regulations/) and you just need to reference that it's covered. The [before you ship guide](https://before-you-ship.18f.gov/) is a great resource for ATOs.
+For your project, you will need an [ATO](https://before-you-ship.18f.gov/ato/). Part of that ATO is providing required documentation of controls. Controls are different security considerations. This process varies from agency to agency, so, work with your security partners to know which controls they need documented. Don't forget that you can inherit a substantial number of [controls by using cloud.gov](https://cloud.gov/docs/security/conforming-federal-security-regulations/) and you just need to reference that it's covered. The [Before You Ship guide](https://before-you-ship.18f.gov/) is a great resource for ATOs.
 
 By doing this exercise, you have artifacts (proof that you are in compliance) and documentation that you can reference or pull from for your System Security Plan. Based on the needs of your security partners and the project, you may also need additional documentation or to reference cloud.gov or AWS GovCloud's controls. The following examples are just meant as a starting point.
 
