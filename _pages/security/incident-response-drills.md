@@ -62,7 +62,7 @@ Team members can rotate being the "driver" who shares their screen and walks thr
 
 ### After the Drill
 
-You could end the drill with a practice "blameless postmortem". This is a low-pressure way to figure out your team's format for conducting postmortems after an incident.
+You could end the drill with a practice "blameless post-incident retrospective." This is a low-pressure way to figure out your team's format for conducting retrospectives after an incident.
 
 [cloud.gov's retrospective meeting guide](https://cloud.gov/docs/ops/service-disruption-guide/#retrospective-meeting-guide) has ideas and checklists for organizing a successful post-incident retrospective.
 
