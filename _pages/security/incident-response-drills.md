@@ -23,7 +23,7 @@ Preparing and practicing ahead of time is a good idea. Running incident response
 
 ### Identify Your Top Risks
 
-First, create a boundary diagram if you don't already have one. You will very likely need to create a boundary diagram as part of your system's security and compliance process, anyway.
+First, create a [boundary diagram](https://www.fedramp.gov/determining-your-fedramp-boundary-definition/) if you don't already have one. You will very likely need to create a boundary diagram as part of your system's security and compliance process, anyway.
 
 Then, review your boundary diagram and determine where your system can be accessed. Make sure that you include third party products (analytics, CI/CD pipelines, code hosting) in this analysis.
 
