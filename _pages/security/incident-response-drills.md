@@ -220,7 +220,7 @@ Contigency Planning
 
 Training
  - [AT-3(3) Role-based training: practical exercises](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=AT-3) Your drill was a practical exercise. For artifacts, you can use what you wrote from your recap email, your drill document and the practice postmortem write up.
- - [AT-3(5) Role-based training: processing personally identifiable information](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=AT-3) If you run your drill using the PII scenario, that wold speak to this control. For artifacts, you can use what you wrote from your recap email and your drill document. The government training (those corses in OLU) count for this as well.
+ - [AT-3(5) Role-based training: processing personally identifiable information](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=AT-3) If you run your drill using the PII scenario, that would speak to this control. For artifacts, you can use what you wrote from your recap email and your drill document. The government training (those courses in OLU, for GSA) count for this as well.
 
 Incident Response
  - [IR-2 Incident response training](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=IR-2) Your drill is incident response training for your application. For artifacts, you can use what you wrote from your recap email and your drill document.
