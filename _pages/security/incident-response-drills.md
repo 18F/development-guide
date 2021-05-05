@@ -150,7 +150,7 @@ What happened? Was a GitHub account compromised? A cloud.gov account? A deploy k
 
 ### Example drill steps:
 
-1. Acknolwedge that the first step would be to inform points of contact; establish that everyone knows who to inform in the event of an incident.
+1. Acknowledge that the first step would be to inform points of contact; establish that everyone knows who to inform in the event of an incident.
 1. Choose a scenario to drill: compromised GitHub account, compromised cloud.gov account, or compromised deploy key. (Compromised deploy key might be easiest to drill.)
 1. Practice the steps to remove compromised accounts or credentials, for example, by deleting the current deployment keys, remaking them, and adding them to CI/CD.
 1. Using a development application instance, practice removing the route to a instance that may have been compromised and then renaming it to preserve forensics.
@@ -171,7 +171,7 @@ It's discovered that PII is being leaked to unauthorized users through the site.
 
 ### Example drill steps:
 
-1. Acknolwedge that the first step would be to inform points of contact; establish that everyone knows who to inform in the event of an incident.
+1. Acknowledge that the first step would be to inform points of contact; establish that everyone knows who to inform in the event of an incident.
 1. In a development environment, practice putting the site into a maintenance mode or removing/hiding a page on the site, whichever would be most relevant to your project.
 1. Review any relevant corrective action / affected user notification procedures.
 
