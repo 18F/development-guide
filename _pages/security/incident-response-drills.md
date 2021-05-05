@@ -15,6 +15,8 @@ sticky_sidenav: true
 
 You don't want to be creating or testing recovery processes while things are on fire. 🔥
 
+When things are on fire, you want to be able to focus on fixing the issues and getting your system back online and in working order as soon as possible. Having an already established incident recovery practice will allow you and your team to focus on the problem, rather than the process.
+
 Preparing and practicing ahead of time is a good idea. Running incident response drills on an annual basis at the very least is a good idea!
 
 ## How to Run an Incident Response Drill
