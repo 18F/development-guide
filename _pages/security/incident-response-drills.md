@@ -119,7 +119,7 @@ An API Key for an AWS service was accidentally committed to our public code repo
 
 ### Example drill steps:
 
-1. Acknolwedge that the first step would be to inform points of contact; establish that everyone knows who to inform in the event of an incident.
+1. Acknowledge that the first step would be to inform points of contact; establish that everyone knows who to inform in the event of an incident.
 1. To simulate the real thing, push up a file to GitHub or whichever code repository is in use with a fake service key. (No using real keys for drills, please.)
 1. Practice rotating the keys for that service in a development context.
 1. Practice scrubbing the fake key from the commit history.
