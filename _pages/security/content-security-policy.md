@@ -18,7 +18,7 @@ All of the above supported browsers support CSP 1.0, with 100% support for 2.0 i
 ## Usage
 CSP is straigtforward to implement, and supports providing a policy server-side [via HTTP header](#server-side-implementation) or client-side via a [`<meta>` tag](#client-side-implementation).
 
-#### Policies
+### Policies
 The most important aspect of CSP is the policy itself, which is written as a string of **directives**. Directives describe how the browser should handle loading different content types. These directives are represented as a `;` delimited key-value pair.
 
 The values in this pair can either be **keywords**, **schemes**, **mime-types**, or **urls**. Keywords are always enclosed in single quotes, while all other values are left unquoted. Multiple values may be supplied in a single directive, they are always separated by a space.
@@ -52,7 +52,7 @@ The `default-src` directive should always be defined! This directive acts as a f
 It might be useful to test your policies before letting them loose on your users. To do this, use the `Content-Security-Policy-Report-Only` HTTP header. Combined with the reporting information in the next section, you can monitor the kinds of content your user's are encountering and tweak the your policy accordingly.
 
 
-#### Reporting
+### Reporting
 CSP can also be configured to send reports to an endpoint you control when content that violates your policies is encountered.
 
 To do this, use the `report-uri` directive, passing it a fully qualified URI, e.g. `https://my-public-site.gov/reports/csp`. Now, each time content from an invalid source is encountered, your browser will POST a JSON payload to the provided URI.
