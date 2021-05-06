@@ -91,3 +91,5 @@ security:
     href: /security/dependency-remediation/
   - text: Cloud Services
     href: /security/cloud-services/
+  - text: Incident Response Drills
+    href: /security/incident-response-drills/
