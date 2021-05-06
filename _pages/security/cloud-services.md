@@ -14,14 +14,14 @@ processes that are easier to use are less secure; likewise a workflow that is mo
 
 These tradeoffs get more significant depending on the FISMA level of your system.
 
-### Presigned URLs 
+## Presigned URLs 
 A common method of allowing users to transfer data without credentials is to use [presigned urls](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html).
 (Azure refers to these as [shared access signatures](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-storage-sharedaccesssignature-permissions), but they are a similar concept.)
 
 There are some differences between service providers; the below details are specific to S3 as that has
 been our most common use case and is supported by [cloud.gov](https://cloud.gov/docs/services/s3/).
 
-#### Some Things to know about S3 presigned URLs
+### Some Things to know about S3 presigned URLs
 * They can be reused until they expire
   * Default expiration time is 15 minutes
 * They can be used by *anyone*
@@ -41,12 +41,12 @@ some attack vectors could be:
 * A bad actor scanning spaces of URLs to find publicly-available files.
 * Anything with access to the client would have access to the URLs and the accompanying actions - this could include an installed untrustworthy browser extension.
 
-#### FISMA Low:
+### FISMA Low:
 Be cautious but proceed with presigned URLs if you feel it is the right choice for your system.
 
  We recommend taking [mitigation steps](#mitigation-steps) to secure your system.
 
-#### FISMA Medium:
+### FISMA Medium:
 Really consider the tradeoffs. What kind of adverse impact might happen if a bad actor gets hold of a presigned URL to your system?
 
 * Can they access PII?
@@ -55,11 +55,11 @@ Really consider the tradeoffs. What kind of adverse impact might happen if a bad
 If you've thought things through and it's the best or only option, proceed but definitely take [mitigation steps](#mitigation-steps)
 to secure your system. 
 
-#### FISMA High:
+### FISMA High:
 {%include components/tag-caution.html %} We do not recommend using presigned URLs for this kind of system. The only real barrier 
 between a bad actor and user data is the obscurity/randomness of the URL and the expiration duration. 
 
-#### Mitigation Steps
+### Mitigation Steps
 **All Actions**
 * Generate expiration times that are *very* short lived -- think seconds rather than minutes.
 * Don't log unencrypted presigned URLs
@@ -71,7 +71,7 @@ between a bad actor and user data is the obscurity/randomness of the URL and the
   * limit file type as appropriate to your use case
 * Scan for viruses
 
-### Proxying the file download
+## Proxying the file download
 
 This option is less "convenient" in that there is no easily-shareable URL that is generated. However, if your 
 system has a higher FISMA impact level, or if you don't need to generate a shareable URL, this is often a more 
