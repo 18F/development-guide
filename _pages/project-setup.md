@@ -74,8 +74,14 @@ track of ongoing tasks and to do items. The project management tool should be
 linked to somewhere in the project's GitHub repository so that others can find
 it easily.
 
+Choose a tool that will work for you and your partner. Remember, they will be the ones
+using it once the engagement is over!
+
 - [GitHub Issues](https://guides.github.com/features/issues/) {%include components/tag-default.html %}
 - [Trello](https://trello.com/) {%include components/tag-suggestion.html %}
+- [ZenHub](https://www.zenhub.com/) {%include components/tag-suggestion.html %}
+- [Jira](https://www.atlassian.com/software/jira) {%include components/tag-suggestion.html %}
+
 
 ## Continuous Integration/Continuous Deployment
 
