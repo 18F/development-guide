@@ -79,7 +79,6 @@ using it once the engagement is over!
 
 - [GitHub Issues](https://guides.github.com/features/issues/) {%include components/tag-default.html %}
 - [Trello](https://trello.com/) {%include components/tag-suggestion.html %}
-- [ZenHub](https://www.zenhub.com/) {%include components/tag-suggestion.html %}
 - [Jira](https://www.atlassian.com/software/jira) {%include components/tag-suggestion.html %}
 
 
