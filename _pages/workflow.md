@@ -69,4 +69,6 @@ files specific to your dev environment (e.g. `.DS_Store`).
 
 ## Code style
 
+{%include components/tag-standard.html %}  Write code and documentation that is easy to understand, is accessible and welcoming to everyone, and helps users do what they want to do. Adhere to the guidance for [Inclusive Language](https://content-guide.18f.gov/our-style/inclusive-language/) and others provided by https://content-guide.18f.gov/. 
+
 {%include components/tag-standard.html %}  Use an opinionated automated code formatter whenever possible. This saves teams from wasting time arguing about code style, and makes it easy to comply. Specific suggestions in [the pages for each language]({{site.baseurl}}/language-selection/).
