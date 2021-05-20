@@ -77,3 +77,39 @@ Launches often have expected support requests, such as:
 
 Preparing responses ahead of time allows the customer support team to give the same suppport to anyone who a predictable issue, allowing them
 to focus their energies on unexpected support needs. It also helps unsure a better customer experience for users.
+
+### Big Bang Release Factors
+
+There are some factors that make partners more attached to big bang releases. There are some strategies you can deploy to try to 
+convince partners to pivot to a smaller, more iterative release strategy.
+
+#### Partner Doesn't Want to Pick a Cohort of Controlled Users
+
+Understanding why a partner doesn't want to single out some controlled users is important. They may be nervous about creating inequity (or
+a perception of inequity) that might have some polical blowback. Or perhaps they feel overwhelmed about the effort required to narrow down
+to a subset of users, and so feel it's simpler to release to all users at once.
+
+*Mitigation strategies:*
+* Work with your partner to fully understand their fears. 
+* Frame this step as the first of many interactions with their different user groups, and use that framing to help them better engage and 
+understand their users. Having a more mature idea of their user groups will help them have confidence to stand behind their decisions better.
+
+#### A Long, Arduous ATO Process
+
+Partners have a valid fear of the ATO process, and may be nervous that they must repeat the ATO process every time a change is made to the
+system. That perspective easily lends itself to fear of iterative releases. 
+
+*Mitigation strategies:*
+* Engage security or ATO personnel early in the development process, or, ideally, embed someone onto the project team who can help advise.
+* Teams at 18F have also found success in employing the "Walking Skeleton" technique, where the main architectural components of a system are
+deployed early in a minumum viable way. Frontloading the infrastructure work creates an MVP for ATO work, and makes space for early
+compliance and security oversight.
+
+#### Legislative Mandate
+
+When the system is a byproduct of a legislative mandate, there can be political or legal implications if a deadline is missed.  A mandate 
+for a specific type or level of service may make partners wary of more iterative work.
+
+*Mitigation Strategies:*
+* Explore options for beta or trial release of services. Sometimes releasing a website or digital service under the banner of
+"beta" can provide needed flexibility for a rollout, making a big bang release less necessary.
