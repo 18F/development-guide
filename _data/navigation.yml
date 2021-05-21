@@ -38,6 +38,8 @@ approach:
     href: /architecture-reviews/
   - text: Front-End Disciplines
     href: /frontend/
+  - text: Release Strategies
+    href: /release-strategies/
   - text: Example Workflows
     href: /example-workflows
 
