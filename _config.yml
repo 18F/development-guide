@@ -43,3 +43,6 @@ github_info:
   organization: 18F
   repository: development-guide
   default_branch: main
+
+plugins:
+  - jekyll-last-modified-at
