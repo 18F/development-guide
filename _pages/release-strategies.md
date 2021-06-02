@@ -65,7 +65,7 @@ Recommendation: Conduct usability research and develop training strategies ahead
 
 It can be jarring as a user to be surprised by a completely new system. Spending some time before release working with critical users of the
 system to understand the common pitfalls a user may experience or uncover will help you develop training materials to address those issues 
-(or make the system more intuitive.) Releasing training materials for users to look at before the release will create better familiarity and
+(or make the system more intuitive). Releasing training materials for users to look at before the release will create better familiarity and
 make users less wary or uncomfortable with the big change. Your critical users can then become effective evangelists and trainers post-release
 for others suddenly learning the new system.
 
