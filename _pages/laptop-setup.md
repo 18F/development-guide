@@ -15,7 +15,7 @@ While you are welcome to customize your laptop, here are some tools that have wo
 * [Homebrew] for managing operating system libraries
 * [Homebrew Cask] for quickly installing Mac apps from the command line
 * [Homebrew Services] so you can easily stop, start, and restart services
-* [hub] for interacting with the GitHub API
+* [gh] (official) or [hub] (unofficial) GitHub-maintained CLI tools for interacting with the GitHub API
 * [nvm] for managing Node.js versions if you do not have [Node.js] already installed (Includes latest [Node.js] and [NPM], for running apps and installing JavaScript packages)
 * [pyenv] for managing Python versions if you do not have [Python] already installed (includes the latest 3.x [Python])
 * [ruby-install] for installing different versions of Ruby
@@ -34,6 +34,7 @@ While you are welcome to customize your laptop, here are some tools that have wo
 [Homebrew]: http://brew.sh/
 [Homebrew Cask]: https://github.com/Homebrew/homebrew-cask
 [Homebrew Services]: https://github.com/Homebrew/homebrew-services
+[gh]: https://cli.github.com/
 [hub]: https://github.com/github/hub
 [Node.js]: http://nodejs.org/
 [NPM]: https://www.npmjs.org/
