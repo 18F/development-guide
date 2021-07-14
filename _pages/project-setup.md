@@ -119,7 +119,7 @@ project, that might not be caught in a code review. Static analysis tools catch
 duplication, security concerns, and more. Also see [Static Security
 Analysis](https://before-you-ship.18f.gov/security/static-analysis/).
 
-- [CodeQL on GitHub](https://docs.github.com/en/code-security/secure-coding/automatically-scanning-your-code-for-vulnerabilities-and-errors/setting-up-code-scanning-for-a-repository) (for security analysis) {%include components/tag-standard.html %}
+- [CodeQL on GitHub](https://docs.github.com/en/code-security/secure-coding/automatically-scanning-your-code-for-vulnerabilities-and-errors/setting-up-code-scanning-for-a-repository) (for security analysis) {%include components/tag-default.html %}
 - [Code Climate Quality](https://codeclimate.com/quality/) (for maintainability metrics) {%include components/tag-suggestion.html %}
 
 ## Dependency management
