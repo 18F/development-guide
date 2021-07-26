@@ -186,14 +186,4 @@ a[href^="https://gsa-tts.slack.com"]::before {
 
 
 //// Footer (usa-anchor styles)
-
-// Fixing footer anchor to bottom
-@include at-media("desktop") {
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-}
-
-@import '_usa_anchor';
+@import '_usa_identifier';

@@ -8,23 +8,23 @@
   {% include components/footer--big.html %}
 {% endif %}
 
-{% assign anchor = site.data.anchor %}
+{% assign identifier = site.data.usa_identifier.identifier_data[0] %}
 
-<footer class="anchor" data-uswds="1.0">
-{% if anchor.edit_page or (anchor.last_updated and page.last_modified_at) %}
+<footer class="identifier" data-uswds="1.0">
+{% if identifier.edit_page or (identifier.last_updated and page.last_modified_at) %}
   {% unless footer.type %}
-    <div class="component-anchor-meta">
+    <div class="component-identifier-meta">
       <div class="grid-container grid-container-desktop">
         <div class="grid-row tablet-lg:grid-gap-2">
           <div class="grid-col-12">
             <div class="page-meta">
               <p>
-                {% if anchor.last_updated and page.last_modified_at %}
+                {% if identifier.last_updated and page.last_modified_at %}
                 <span><small>Last updated: {{ page.last_modified_at | date: '%B %d, %Y' }}</small></span>
                 {% endif %}
-                {% if anchor.edit_page %}
+                {% if identifier.edit_page %}
                 <span>
-                  {% include components/github-edit.html footer=anchor path=page.path %}
+                  {% include components/github-edit.html footer=identifier path=page.path %}
                 </span>
                 {% endif %}
               </p>
@@ -35,67 +35,64 @@
     </div>
   {% endunless %}
 {% endif %}
-  <div class="component-anchor">
-    <div class="usa-accordion">
-      <div class="grid-container grid-container-desktop">
-        <div class="grid-row tablet:grid-gap-4">
-          <div class="grid-col-12">
-            <div class="org-short">
-              <div class="org-copy">
-                <a href="{{ anchor.agency_url }}" title="{{ anchor.agency }}">
-                  <img src="{{site.baseurl}}/assets/images/{{ anchor.agency_logo }}" class="org-img" alt="{{ anchor.agency }} Logo"></a>
-                {% if anchor.org_secondary_logo %}
-                <a href="{{ anchor.org_secondary_url }}" title="{{ anchor.org_secondary }}">
-                  <img src="{{site.baseurl}}/assets/images/{{ anchor.org_secondary_logo }}" class="org-img" alt="{{ anchor.org_secondary }} Logo"></a>
-                {% endif %}
-                <p><a href="{{site.baseurl}}" title="{{ site.title }}">{{ site.title -}}</a> is a product of {{ anchor.agency_acronym }}&#8217;s <a href="{{ anchor.org_primary_url }}" title="{{ anchor.org_primary }}">{{ anchor.org_primary }}</a>{%if anchor.org_secondary %}, and is managed by <a href="{{ anchor.org_secondary_url }}" title="{{ anchor.org_secondary }}">{{ anchor.org_secondary }}</a>{%endif%}.</p>
-              </div>
-              <button class="btn-learn-more usa-button usa-button--outline usa-button--inverse usa-accordion__button" aria-hidden="false" aria-expanded="false" aria-controls="org-details">
-                <span>Learn&nbsp;more</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="org-expanded" id="org-details" hidden>
-          <div class="grid-row tablet:grid-gap-2">
-            <div class="grid-col-12 tablet:grid-col-6">
-              <div class="org-copy">
-                {% if anchor.org_primary_bio %}
-                  <p>{{ anchor.org_primary_bio }} <a class="more" href="{{ anchor.org_primary_url }}" title="Learn more about {{ anchor.org_primary }}">Read more</a></p>
-                {%endif %}
-                {% if anchor.org_secondary_bio %}
-                  <p>{{ anchor.org_secondary_bio }} <a class="more" href="{{ anchor.org_secondary_url }}" title="Learn more about {{ anchor.org_secondary }}">Read more</a></p>
-                {% endif %}
-              </div>
-            </div>
-            <div class="grid-col-12 tablet-lg:grid-col-5 tablet-lg:grid-offset-1">
-              <div class="org-links">
-                <p><i class="fas fa-envelope"></i> For questions about this website, email <a href="mailto:{{ anchor.site_email }}">{{ anchor.site_email }}</a>.</p>
-                <p>Additional information about the {{ anchor.agency }} ({{ anchor.agency_acronym }}) can be found at <a href="{{ anchor.agency_about_url }}" title="More about the {{ anchor.agency_acronym }}">{{ anchor.agency_about_url }}</a></p>
-                <ul>
-                  <li><a href="{{ anchor.fraud_waste_abuse_url }}" title="Report fraud, waste, or abuse to the Office of the Inspector General">Report fraud, waste, or abuse to the Office of the Inspector General</a></li>
-                  <li><a href="{{ anchor.foia_request_url }}" title="Submit a Freedom of Information Act (FOIA) request">Submit a Freedom of Information Act (FOIA) request</a></li>
-                  <li><a href="{{ anchor.budget_performance_url }}" title="View budget and performance reports">View budget and performance reports</a></li>
-                  <li><a href="{{ anchor.accessibility_url }}" title="View accessibility statement">View accessibility statement</a></li>
-                  <li><a href="{{ anchor.no_fear_act_url }}" title="View No FEAR Act data">View No FEAR Act data</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+
+
+<div class="usa-identifier">
+  <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+    <div class="usa-identifier__container">
+      <div class="usa-identifier__logos">
+        <a href="https://www.gsa.gov/" class="usa-identifier__logo">
+          <img class="usa-identifier__logo-img" src="{{ site.baseurl }}/assets/images/{{ identifier.agency_logo }}" alt="GSA logo" role="img"
+           />
+        </a>
+      </div>
+      <div class="usa-identifier__identity text-base-lightest" aria-label="Agency description">
+        <p class="usa-identifier__identity-domain">TTS Engineering Practices Guide</p>
+        <p class="usa-identifier__identity-disclaimer text-base-lightest">An official website of the
+          <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">
+            GSA’s Technology Transformation Services
+          </a>
+        </p>
       </div>
     </div>
-  </div>
-  <div class="component-anchor-support">
-    <div class="grid-container grid-container-desktop">
-      <div class="grid-row tablet-lg:grid-gap-2">
-        <div class="grid-col-12">
-          <div class="usagov">
-            <span>Looking for U.S. government information and services?</span></p>
-            <a class="usa-link usagov__link" href="{{ anchor.usagov_contact_url }}?ref={{ site.title }}">Visit USA.gov</a>
-          </div>
-        </div>
-      </div>
+  </section>
+  <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+    <div class="usa-identifier__container">
+      <ul class="usa-identifier__required-links-list">
+        <li class="usa-identifier__required-links-item">
+          <a class="usa-identifier__required-link usa-link" href="{{ identifier.fraud_waste_abuse_url }}" title="Report fraud, waste, or abuse to the Office of the Inspector General">
+            Report fraud, waste, or abuse to the Office of the Inspector General
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a class="usa-identifier__required-link usa-link" href="{{ identifier.foia_request_url }}" title="Submit a Freedom of Information Act (FOIA) request">
+            Submit a Freedom of Information Act (FOIA) request
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a class="usa-identifier__required-link usa-link" href="{{ identifier.budget_performance_url }}" title="View budget and performance reports">
+            View budget and performance reports
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a class="usa-identifier__required-link usa-link" href="{{ identifier.accessibility_url }}" title="View accessibility statement">
+            View accessibility statement
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a class="usa-identifier__required-link usa-link" href="{{ identifier.no_fear_act_url }}" title="View No FEAR Act data">
+            View No FEAR Act data
+          </a>
+        </li>
+      </ul>
     </div>
-  </div>
+  </nav>
+  <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="U.S. government information and services">
+    <div class="usa-identifier__container">
+      <div class="usa-identifier__usagov-description text-base-lightest">Looking for U.S. government information and services?</div>
+      <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
+    </div>
+  </section>
+</div>
+
 </footer>
