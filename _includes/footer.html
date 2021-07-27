@@ -8,7 +8,7 @@
   {% include components/footer--big.html %}
 {% endif %}
 
-{% assign identifier = site.data.usa_identifier.identifier_data[0] %}
+{% assign identifier = site.data.usa_identifier%}
 
 <footer class="identifier" data-uswds="1.0">
 {% if identifier.edit_page or (identifier.last_updated and page.last_modified_at) %}
