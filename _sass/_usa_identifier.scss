@@ -1,0 +1,39 @@
+// Identifier component - - - - - - - - - - - - - - -
+// Using the USWDS Design Tokens
+
+// fix footer to the bottom on short pages
+@include at-media("desktop") {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+}
+
+.usa-identifier {
+  margin-top: auto;
+}
+
+.component-identifier-meta{
+  @include u-bg('white');
+  @include u-text('black');
+  .page-meta{
+    @include u-padding-y(1);
+    @include u-display('block');
+    @include at-media('tablet') {
+      @include u-display('flex');
+      @include u-font('sans', 'sm');
+      @include u-flex('align-center');
+      @include u-flex('justify-end');
+    }
+    p{
+      @include u-margin-y('05');
+      @include u-flex('align-center');
+      @include u-line-height('sans', 2);
+      @include u-font('sans', 'xs');
+      @include at-media('tablet') {
+        @include u-font('sans', 'sm');
+      }
+    }
+  }
+}
