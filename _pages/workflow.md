@@ -25,6 +25,7 @@ around deployments, git etiquette, and similar workflow conventions.
   [“schedule”
   docs](https://circleci.com/docs/2.0/configuration-reference/#schedule) for
   details.
+- [Build Pipeline Security](https://sprocketfox.io/xssfox/2021/01/18/pipeline/) is a helpful resource for protecting sensitive information in CI/CD.
 
 ## Git & GitHub {%include components/tag-standard.html %} 
 
@@ -55,6 +56,7 @@ by passing CI and peer review.
 * Default to **public** for new repositories. See our
   [guidelines](https://github.com/18F/open-source-policy/blob/master/practice.md)
   about open source for more detail.
+* Enforce reviewer approval of pull requests against the main branch. 
 * We prefer **branches** over forks to ease internal collaboration. *If your project has many outside contributors, consider forks instead.*
 * Keep your repository **clean**; delete merged branches and avoid committing
 files specific to your dev environment (e.g. `.DS_Store`).

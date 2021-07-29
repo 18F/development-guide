@@ -10,7 +10,7 @@ While you are welcome to customize your laptop, here are some tools that have wo
 * [chruby] for managing [Ruby] versions. 
 * [Cloud Foundry CLI] for command line access to 18F's Cloud Foundry-based application platform
 * [Docker] for all your containerization needs
-* [git-seekret] for preventing you from committing passwords and other sensitive information to a git repository
+* [Caulking] checks for many common types of API tokens and other sensitive information before you commit 
 * [GitHub Desktop] for setting up your SSH keys automatically
 * [Homebrew] for managing operating system libraries
 * [Homebrew Cask] for quickly installing Mac apps from the command line
