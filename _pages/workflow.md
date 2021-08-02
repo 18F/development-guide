@@ -36,10 +36,8 @@ workflows]({{site.baseurl}}/example-workflows).
 
 ### Security {%include components/tag-requirement.html %}
 
-[Install Caulking](https://github.com/cloud-gov/caulking). 
-It's easy to accidentally push secrets to GitHub. Caulking checks for many common types of API tokens 
-and other sensitive information before you commit, allowing you to remove sensitive data before
-accidentally publishing it. (This repo assumes MacOS with Homebrew installed.)
+_For best practices on protecting sensitive information, check out the [TTS
+Handbook](https://handbook.tts.gsa.gov/sensitive-information/#protecting-tts-systems)._
 
 Enable 
 [**two-factor authentication**](https://help.github.com/articles/about-two-factor-authentication/) for
@@ -55,6 +53,7 @@ by passing CI and peer review.
 * Default to **public** for new repositories. See our
   [guidelines](https://github.com/18F/open-source-policy/blob/master/practice.md)
   about open source for more detail.
+* Enforce reviewer approval of pull requests against the main branch. 
 * We prefer **branches** over forks to ease internal collaboration. *If your project has many outside contributors, consider forks instead.*
 * Keep your repository **clean**; delete merged branches and avoid committing
 files specific to your dev environment (e.g. `.DS_Store`).
