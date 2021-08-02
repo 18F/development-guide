@@ -25,7 +25,6 @@ around deployments, git etiquette, and similar workflow conventions.
   [“schedule”
   docs](https://circleci.com/docs/2.0/configuration-reference/#schedule) for
   details.
-- [Build Pipeline Security](https://sprocketfox.io/xssfox/2021/01/18/pipeline/) is a helpful resource for protecting sensitive information in CI/CD.
 
 ## Git & GitHub {%include components/tag-standard.html %} 
 
@@ -37,10 +36,8 @@ workflows]({{site.baseurl}}/example-workflows).
 
 ### Security {%include components/tag-requirement.html %}
 
-[Install Caulking](https://github.com/cloud-gov/caulking). 
-It's easy to accidentally push secrets to GitHub. Caulking checks for many common types of API tokens 
-and other sensitive information before you commit, allowing you to remove sensitive data before
-accidentally publishing it. (This repo assumes MacOS with Homebrew installed.)
+_For best practices on protecting sensitive information, check out the [TTS
+Handbook](https://handbook.tts.gsa.gov/sensitive-information/#protecting-tts-systems)._
 
 Enable 
 [**two-factor authentication**](https://help.github.com/articles/about-two-factor-authentication/) for
