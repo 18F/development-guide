@@ -25,7 +25,7 @@ around deployments, git etiquette, and similar workflow conventions.
   [“schedule”
   docs](https://circleci.com/docs/2.0/configuration-reference/#schedule) for
   details.
-- [Build Pipeline Security](https://sprocketfox.io/xssfox/2021/01/18/pipeline/) is a helpful resource for protecting sensitive information in CI/CD.
+- [Build Pipeline Security](https://sprocketfox.io/xssfox/2021/01/18/pipeline/) is a helpful resource for [protecting sensitive information](https://handbook.tts.gsa.gov/sensitive-information/) in CI/CD.
 
 ## Git & GitHub {%include components/tag-standard.html %} 
 
