@@ -50,7 +50,7 @@ Some guiding questions for your team's code review discussion:
 - How many people are expected to review each pull request?
 - If a patch is worked on in a pairing session, how does it get merged?
 - Does your team make use of any tools to aid in code reviews? (eg: CI, Static
-  Analysis, linters)
+  Analysis, linters, [Conventional Comments syntax](https://conventionalcomments.org/))
 - Are there any automated tools that you are not using that you would like to try?
 - If commit messages aren't up to par, should they be modified before the PR is?
 - What do you look for when conducting a code review?
@@ -119,6 +119,7 @@ accomplish this, everyone should consider these tips.
   them. ("What do you think about such-and-such here?")
 - Sign off on the pull request with a :thumbsup: or "Ready to merge" comment.
 - Wait to merge the branch until it has passed Continuous Integration testing.
+- Consider using a syntax like [Conventional Comments](https://conventionalcomments.org/) in order to clarify whether a comment is blocking or non-blocking for merging the PR.
 
 ### Who merges
 
