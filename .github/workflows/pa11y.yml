@@ -34,7 +34,7 @@ jobs:
           path: ./pa11y_output.txt
 
       - name: Comment on pull request.
-        uses: thollander/actions-comment-pull-request@master
+        uses: thollander/actions-comment-pull-request@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           message: '<details><summary>Pa11y testing results</summary>
