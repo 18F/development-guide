@@ -135,14 +135,15 @@ connected to other live data sources. The disadvantage is that Power BI is
 another complicated tool for developers to learn and it requires that the
 source data be available in a structured format that Power BI can access.
 
-### Power Flow
+### Power Automate
 
-Another one of Microsoft’s "Power" tools, Power Flow is not a display tool,
-but it is a workflow automation system. If we need notifications or messages
-to be sent out when certain things happen on SharePoint or with various
-documents, then we can configure a Flow to do those actions. This may not be a
-large part of a SharePoint site, but it could be an important capability if
-needed.
+Another one of Microsoft's "Power" tools, Power Automate, is not a display tool, but it is a workflow automation system. If we need 
+* to move data between systems, 
+* send notifications or messages when certain things happen on SharePoint or with various documents,
+* connect to or create connectors to APIs,
+* approval processes, 
+
+then we can configure a Flow to do those actions. This may not be a large part of a SharePoint site, but it could be an important capability if needed.
 
 ## SharePoint Development Process
 
