@@ -87,9 +87,9 @@ particular order:
   SOAP-heavy specs<sup>[12](#specs)</sup> are more friendly in Java, and Rails
   projects promote CoffeeScript. We want to use the tools appropriate for the
   job.
-* Team familiarity - avoid the bus problem. The more TTS engineers who are
+* Team familiarity - The more TTS engineers who are
   comfortable with a language, the safer<sup>[13](#safe)</sup> it is to use.
-  We want our project to be accessible to many both within TTS and without.
+  We want our project to be accessible to many, both within TTS and without.
 * Stability - bleeding edge languages are more risky. If the standard API is
   changing every few months, we aren't going to be able to maintain the
   project. Try to fathom<sup>[14](#fantom)</sup> how this bodes when we're
