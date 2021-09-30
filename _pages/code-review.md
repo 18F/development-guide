@@ -45,7 +45,7 @@ Some guiding questions for your team's code review discussion:
   with the feature request and discuss each step until a feature is considered
   "done."
 - Do contributors use forks or branches?
-- What's the git workflow? E.g. is master always deployable? Rebase or merge?
+- What's the git workflow? E.g. is main always deployable? Rebase or merge?
 - Are pull requests assigned? If so what process is used?
 - How many people are expected to review each pull request?
 - If a patch is worked on in a pairing session, how does it get merged?
