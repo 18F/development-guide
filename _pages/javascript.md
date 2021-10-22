@@ -36,7 +36,7 @@ It's not needed and should be phased out and replaced by npm. More information c
 
 ### Install npm
 
-{%include components/tag-standard.html %} 
+{%include components/tag-standard.html %}
 We recommend installing both node and npm through a tool called nvm. nvm (which stands for Node version manager) is a software that allows you to run multiple versions of node in different projects on the same computer. Its benefits include
 
 - Installs npm in a manner that doesn't require running sudo to install global packages.
@@ -89,15 +89,7 @@ npm allows various hooks to be executed during the install process. These script
 
 ### Publishing
 #### Scoping a package to the 18F npm org
-18F has an npm organization called [18f](https://www.npmjs.com/org/18f) that is meant to organize permissions and packages related to 18F. As an 18F developer, when publishing a package, you have the choice whether to scope a package to the 18F org or not. Scoped packages will always be prefixed with `@18f/` before their package name and can have their permissions managed by people in the org. More information about scoped packages can be found on the [npm documentation](https://docs.npmjs.com/misc/scope).
-
-##### Guidance on when to scope a package or not
-- A package *should not* be scoped to 18F if it is not necessary for consumers (either gov or non-gov) of the package to be aware of 18F in order to use it.
-  - Example: The Draft US Web Design Standards are used by many entities outside of 18f and government. A user does not need to know anything about 18F to use the Web Design Standards package.
-- A package *should* be scoped to 18F if its use cases fall mainly inside of 18F.
-  - Example: [@18f/stylelint-rules](https://github.com/18F/stylelint-rules) is scoped to 18f because it's an 18F specific linting configuration that's directly linked to the 18F guides site.
-- A package *should* be scoped to 18f to avoid naming conflicts.
-  - Example: If 18F made a generic front-end accordion to use across 18F sites, it should probably be scoped to `@18f/accordion` to avoid conflicts with all other accordions out there.
+18F has an npm organization called [18f](https://www.npmjs.com/org/18f) that is meant to organize permissions and packages related to 18F. As an 18F developer, when publishing a package, you're encouraged to scope a package to the 18F org to clearly identify the package as being maintained by 18F, and to limit the chance of naming conflicts or [typosquatting attacks](https://snyk.io/blog/typosquatting-attacks/). Scoped packages will always be prefixed with `@18f/` before their package name and can have their permissions managed by people in the org. More information about scoped packages can be found on the [npm documentation](https://docs.npmjs.com/misc/scope).
 
 ##### How to scope a package to 18F
 - Ensure you are part of the 18f npm org and have at least developer rights. This can be found on the [18f org team page](https://www.npmjs.com/org/18f/members).
