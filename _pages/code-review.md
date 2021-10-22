@@ -130,17 +130,14 @@ issue quickly in the future.
 
 ### Opening a PR
 
-We want to receive feedback quickly and make our team members aware of our
-proposed solutions early, so it's often a good idea to open a Pull Request for
-your new feature/bugfix soon after your first commit. We strongly recommend
-that in-progress work is pushed up at least once a day.
-
 [Pull Requests initiate discussion about your
-commits.](https://guides.github.com/introduction/flow/) Tag your pull request
-with `WIP` (either as a Github tag or in the PR title) if you're not yet ready
-for a final review. The more information you provide to reviewers in the
+commits.](https://guides.github.com/introduction/flow/)
+We want to receive feedback quickly and make our team members aware of our
+proposed solutions early, so it's encouraged to open a Draft Pull Request for
+your new feature/bugfix soon after your first commit. The more information you provide to reviewers in the
 description, the more context they will have. This leads to faster reviews,
 and less back and forth between everyone.
+We strongly recommend that in-progress work is pushed up at least once a day.
 
 CFPB has published a nice [PR Template](https://github.com/cfpb/development/blob/main/.github/PULL_REQUEST_TEMPLATE.md)
 which might make this easier.
