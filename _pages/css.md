@@ -176,7 +176,7 @@ TTS recommends using the [U.S. Web Design System (USWDS)](https://github.com/usw
 Sometimes, projects utilize other CSS frameworks such as:
 
 1. [Bourbon](https://www.bourbon.io/)
-2. [BassCSS](https://www.basscss.com/)
+2. [BassCSS](https://basscss.com/)
 
 These frameworks were chosen because they're relatively unopinionated about
 design decisions while still providing the helpers that make frameworks

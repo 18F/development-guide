@@ -29,7 +29,7 @@ While you are welcome to customize your laptop, here are some tools that have wo
 [chruby]: https://github.com/postmodern/chruby
 [Cloud Foundry CLI]: https://github.com/cloudfoundry/cli
 [Docker]: https://www.docker.com/
-[git-seekret]: https://github.com/18F/git-seekret
+[Caulking]: https://github.com/cloud-gov/caulking
 [Github Desktop]: https://desktop.github.com/
 [Homebrew]: http://brew.sh/
 [Homebrew Cask]: https://github.com/Homebrew/homebrew-cask
@@ -39,7 +39,7 @@ While you are welcome to customize your laptop, here are some tools that have wo
 [Node.js]: http://nodejs.org/
 [NPM]: https://www.npmjs.org/
 [nvm]: https://github.com/nvm-sh/nvm
-[pyenv]: https://github.com/yyuu/pyenv/
+[pyenv]: https://github.com/pyenv/pyenv
 [Python]: https://www.python.org/
 [Ruby]: https://www.ruby-lang.org/en/
 [ruby-install]: https://github.com/postmodern/ruby-install
