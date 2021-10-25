@@ -45,6 +45,20 @@ To run the site locally, we recommend using:
 
 1. Open http://localhost:4000
 
+
+To check if the links referenced in the site content are valid, run:
+
+   ```sh
+   docker-compose run web bundle exec rake test
+   ```
+
+To only check internal links, run:
+   ```sh
+   docker-compose run web bundle exec rake ci_test
+   ```
+
+Note that the automated CircleCI integration process will only check internal links, as many websites will generate spurious errors.
+
 ## Public domain
 
 This project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):
