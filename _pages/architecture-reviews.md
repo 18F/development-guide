@@ -18,7 +18,7 @@ The second explores the idea of simplifying acquisitions in [Micro-purchase: Do 
 
 ## Documenting key decisions
 
-Some 18F projects have found success using [Architecture Decision Records](https://adr.github.io/) to capture key decisions and the context to which they were made, with the goal of allowing future project developers to know if a decision should be revisited or not. The decision records are typically stored in the repository alongside the code, using [this template](https://github.com/joelparkerhenderson/architecture-decision-record/blob/master/templates/decision_record_template_by_michael_nygard/index.md). For example:
+Some 18F projects have found success using [Architecture Decision Records](https://adr.github.io/) to capture key decisions and the context to which they were made, with the goal of allowing future project developers to know if a decision should be revisited or not. The decision records are typically stored in the repository alongside the code, using [this template](https://github.com/joelparkerhenderson/architecture-decision-record/blob/main/templates/decision-record-template-by-michael-nygard/index.md). For example:
 
 - [18F/piipan](https://github.com/18F/piipan/tree/main/docs/adr)
 - [HHS/Head-Start-TTADP](https://github.com/HHS/Head-Start-TTADP/tree/main/docs/adr)

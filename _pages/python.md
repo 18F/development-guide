@@ -82,7 +82,7 @@ recommend when trying to solve them.
 | ORM | [Django] | Default |
 | API | [Django Rest Framework](http://www.django-rest-framework.org/) | Default |
 | HTTP Client | [Requests](http://docs.python-requests.org/en/master/) | Default |
-| Task Queue | [Celery](http://www.celeryproject.org/) | Suggestion |
+| Task Queue | [Celery](https://github.com/celery/celery) | Suggestion |
  
 ## Type support
 

@@ -20,7 +20,7 @@ otherwise.
 | Back end Performance Monitoring    | [New Relic APM](https://newrelic.com/products/application-monitoring)                                                                                               |
 | Continuous Integration             | [CircleCI](https://circleci.com) and/or [GitHub Actions](https://github.com/features/actions)                                                                       |
 | Dependency Analysis                | [Snyk](https://snyk.io) and/or [GitHub](https://docs.github.com/en/github/managing-security-vulnerabilities/managing-vulnerabilities-in-your-projects-dependencies) |
-| Front end Performance Monitoring   | [Google Analytics](https://codelabs.developers.google.com/codelabs/performance-analytics/) (via [DAP][dap])<br/>Note: New Relic is not approved.                    |
+| Front end Performance Monitoring   | [Google Analytics](https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings) (via [DAP][dap])<br/>Note: New Relic is not approved.                    |
 | Infrastructure as a Service (IaaS) | [_See Before You Ship_](https://before-you-ship.18f.gov/infrastructure/#infrastructure-as-a-service-iaas)                                                           |
 | Platform as a Service (PaaS)       | [cloud.gov](https://cloud.gov)                                                                                                                                      |
 | Source Control                     | [GitHub](https://handbook.tts.gsa.gov/github/)                                                                                                                      |

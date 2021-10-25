@@ -21,7 +21,7 @@ see:
 * Slack: #infrastructure, #incident-response, #cloud-gov-support
 
 ## Key components
-At the high level, we want to follow Mark Imbriaco's [formula for writing a great post-mortem report](https://www.digitalocean.com/company/blog/inside-digitalocean-mark-imbriaco/#departing-from-github):
+At the high level, we want to follow Mark Imbriaco's [formula for writing a great post-mortem report](https://www.digitalocean.com/blog/inside-digitalocean-mark-imbriaco/#:~:text=Departing%20From%20GitHub):
 1. Apologize for what happened.
 1. Demonstrate you understand what happened.
 1. Explain what you will do to reduce the likelihood of it happening again.
@@ -56,7 +56,7 @@ Don't make folks search for the information.
 ## Additional resources
 * John Allspaw's [introduction](https://codeascraft.com/2012/05/22/blameless-postmortems/)
 * This [great * presentation](http://www.slideshare.net/danmil30/how-to-run-a-postmortem-with-humans-not-robots-velocity-2013) by Dan Milstein
-* Mark Imbriaco's [formula for writing a great post-mortem report](https://www.digitalocean.com/company/blog/inside-digitalocean-mark-imbriaco/#departing-from-github),
+* Mark Imbriaco's [formula for writing a great post-mortem report](https://www.digitalocean.com/blog/inside-digitalocean-mark-imbriaco/#:~:text=Departing%20From%20GitHub),
   and [an example with some commentary](https://medium.com/@faruque/post-mortem-communication-789f396c7dd6#.t1u4ziduf)
 * @peculiaire's [template for retrospective meetings](https://github.com/peculiaire/incident-lifecycle/blob/master/retrotemplate.md)
   (adapted from what Heroku uses)
