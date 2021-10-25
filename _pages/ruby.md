@@ -3,9 +3,9 @@ title: Ruby Guide
 sidenav: languages
 sticky_sidenav: true
 ---
-_This is a **WORK IN PROGRESS**. Help us make it better by
+Help us make this section better by
 [submitting an issue](https://github.com/18F/development-guide) or joining us
-in the [#ruby](https://18f.slack.com/messages/ruby/) channel!_
+in the [#ruby](https://18f.slack.com/messages/ruby/) channel!
 
 A guide for writing and maintaining Ruby and Rails applications
 
