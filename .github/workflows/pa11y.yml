@@ -44,8 +44,12 @@ jobs:
 
 </details>'
 
+      # A defect in pa11y is causing intermitent page crashes [1]. Until it is
+      # fixed, if a page crashes during a scan, do not mark the pa11y scan as
+      # failed.
+      # [1] https://github.com/pa11y/pa11y-ci/issues/128
       - name: Check for pa11y failures.
-        if: contains(steps.pa11y_output.outputs.content, 'errno 2') && !contains(steps.pa11y_output.outputs.content, 'UnhandledPromiseRejectionWarning: Error: Page crashed!')
+        if: "${{ contains(steps.pa11y_output.outputs.content, 'errno 2') && !contains(steps.pa11y_output.outputs.content, 'UnhandledPromiseRejectionWarning: Error: Page crashed!') }}"
         run: |
           echo "::error::The site is failing accessibility tests. Please review the comment in the pull request or the pa11y-ci step in the workflow for details."
           exit 1
