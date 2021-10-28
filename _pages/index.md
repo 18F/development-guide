@@ -1,7 +1,6 @@
 ---
 title: TTS Engineering Guide
 permalink: /
-sidenav: sitemap
 sticky_sidenav: true
 ---
 

@@ -1,7 +1,4 @@
 primary:
-  - text: Sitemap
-    href: /
-    name: sitemap
   - text: About this guide
     href: /about
     name: about
@@ -17,10 +14,6 @@ primary:
   - text: Security
     href: /security/
     name: security
-
-sitemap:
-  - text: Sitemap
-    href: /
 
 about:
   - text: About this guide
