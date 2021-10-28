@@ -10,8 +10,6 @@ subnav:
 
 [Technology Transformation Services (TTS)](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services) — which includes [18F](https://18f.gsa.gov/), [Centers of Excellence (CoE)](https://coe.gsa.gov/), [Presidential Innovation Fellows (PIF)](https://presidentialinnovationfellows.gov/), and [TTS Solutions](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services/tts-solutions) — promote best practices across specialty areas through guilds.
 
-This guide is where the TTS Engineering Practices Guild collects its best practices and resources for software development at TTS, as well as on our partner engagements. Our focus is cloud-native digital services and our recommendations in this guide reflect the needs of that domain.
-
 Getting new practices into the guide is pretty light on process. Feel free to raise a topic in Slack or at a guild meeting and drive to some consensus. Once you've done that, document your findings, submit a PR, and ask in #dev for a quick review. If you think a proposal might be controversial after getting some consensus prior, please post the draft PR to #dev (and elsewhere if you don’t think target audience is in that channel) and solicit feedback.
 
 ## How we classify best practices
