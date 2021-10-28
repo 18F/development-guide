@@ -1,6 +1,7 @@
 ---
 title: TTS Engineering Guide
 permalink: /
+sidenav: sitemap
 sticky_sidenav: true
 ---
 
@@ -8,14 +9,21 @@ _A set of guidelines and best practices for an awesome software engineering team
 
 {% for cat in site.data.navigation %}
 
-{% if cat[0] != "primary" %}
-
-## {{ cat[0] | capitalize }}
+{% if cat[0] != "primary" and cat[0] != "sitemap" %}
 
 {% for link in cat[1] %}
 
-- [{{ link.text }}]({{ link.href }})
+{% if forloop.first == true %}
 
-{% endfor %}
+### [{{ link.text }}]({{ link.href }})
+
+{% else %}
+
+- [{{ link.text }}]({{ link.href }})
+  {% endif %}
+  {% endfor %}
+
+---
+
 {% endif %}
 {% endfor %}

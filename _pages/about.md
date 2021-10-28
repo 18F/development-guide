@@ -6,10 +6,7 @@ sticky_sidenav: true
 subnav:
   - text: How we classify best practices
     href: "#how-we-classify-best-practices"
-categories: about
 ---
-
-_A set of guidelines and best practices for an awesome software engineering team._
 
 [Technology Transformation Services (TTS)](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services) — which includes [18F](https://18f.gsa.gov/), [Centers of Excellence (CoE)](https://coe.gsa.gov/), [Presidential Innovation Fellows (PIF)](https://presidentialinnovationfellows.gov/), and [TTS Solutions](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services/tts-solutions) — promote best practices across specialty areas through guilds.
 
