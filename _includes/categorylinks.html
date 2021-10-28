@@ -1,0 +1,9 @@
+    <div class="tablet:grid-col">
+      {% for link in include.links %}
+        {% if forloop.first == true %}
+          <h3><a href = "{{ link.href }}">{{ link.text }}</a></h3>
+        {% else %}
+          <a href = "{{ link.href }}">{{ link.text }}</a><br />
+        {% endif %}
+      {% endfor %}
+    </div>
