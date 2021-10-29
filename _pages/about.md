@@ -1,6 +1,5 @@
 ---
 title: About this guide
-permalink: /about
 sidenav: about
 sticky_sidenav: true
 subnav:
