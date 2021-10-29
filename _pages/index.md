@@ -21,24 +21,3 @@ This guide is where the TTS Engineering Practices Guild collects its best practi
     {% include categorylinks.html links=site.data.navigation.security %}
   </div>
 </div>
-
-<hr />
-
-<div class="layout-table-of-contents">
-  <div class="wrapper usa-prose">
-      {% for cat in site.data.navigation %}
-      {% if cat[0] != "primary" %}
-        {% for link in cat[1] %}
-          {% if forloop.first == true %}
-            <h3><a href = "{{ link.href }}">{{ link.text }}</a></h3>
-          {% else %}
-            <a href = "{{ link.href }}">{{ link.text }}</a><br />
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-      {% endfor %}
-      <hr />
-  </div>
-</div>
-
-<hr />
