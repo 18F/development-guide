@@ -1,7 +1,7 @@
     <div class="tablet:grid-col">
       {% for link in include.links %}
         {% if forloop.first == true %}
-          <h3>{{ link.text }}</h3>
+          <h2 class = "usa-prose">{{ link.text }}</h2>
           <a href = "{{ link.href }}">Overview</a><br />
         {% else %}
           <a href = "{{ link.href }}">{{ link.text }}</a><br />
