@@ -1,6 +1,6 @@
 primary:
   - text: About this guide
-    href: /
+    href: /about
     name: about
   - text: Our approach
     href: /workflow/
@@ -17,7 +17,7 @@ primary:
 
 about:
   - text: About this guide
-    href: /
+    href: /about
   - text: License
     href: /license/
   - text: Resources
