@@ -64,6 +64,8 @@ tools:
     href: /web-architecture/
   - text: SharePoint Primer
     href: /sharepoint/
+  - text: Reading List
+    href: /reading-list/
 
 languages:
   - text: Languages & Runtimes
