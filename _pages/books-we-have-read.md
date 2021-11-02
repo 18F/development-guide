@@ -1,10 +1,10 @@
 ---
-title: Reading List
+title: Books we've read
 sidenav: tools
 sticky_sidenav: true
 ---
 
-Engineers at TTS like to read! Here are a few publications that folks have mentioned that they have read in #dev and elsewhere.
+Engineers at TTS like to read! Here are a few books and other publications that folks have mentioned that they have read in #dev and elsewhere.
 
 - *Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations* by Nicole Forsgren, Jez Humble, and Gene Kim
 - *Being Wrong: Adventures in the Margin of Error* by Kathryn Schulz
