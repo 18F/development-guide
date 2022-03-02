@@ -8,10 +8,10 @@ some of these products may need 24/7 availability. 18F is also an organization
 that occasionally gets called on to develop emergent, urgent web applications
 that need short-term 24/7 support.
 
-The needs of those two different scenarios are different, but there are a
-number of things that could be considered at different stages of development
-that would allow both types of teams and products to be better set up for
-success.
+The needs of those two different scenarios are different. Regardless of the
+type of project, there are a number of things that could be considered at
+different stages of development that would allow both types of teams and
+products to be set up for on-call success.
 
 ## Staffing/resourcing phase
 Resourcing is very important to the support success of a team.
@@ -32,7 +32,7 @@ of the assignment.
 The incentives for being on-call also need to be very clear. Will overtime be paid?
 Is there a limit to the amount of hours staff can work? These incentives need to be
 clearly defined and clarified for the team before anyone is expected to accept an
-on-call shift.v Some of the limitations like hour caps may be level-specific, and so
+on-call shift. Some of the limitations like hour caps may be level-specific, and so
 we will need to build an organizational fluency at the supervisory level to help
 individual people navigate them.
 
