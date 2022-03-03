@@ -48,6 +48,7 @@ Information can be passed to an endpoint in either of two ways:
 
 * The URL query string (e.g. `?year=2014`)
 * HTTP headers (e.g. `X-Api-Key: my-key`)
+* The HTTP request body (for `POST` and `PUT` requests)
 
 When people say "RESTful" nowadays, they really mean designing simple, intuitive endpoints that represent unique functions in the API.
 
