@@ -16,7 +16,7 @@ This document provides a mix of:
 For APIs that syndicate data, consider several common client use cases:
 
 * **Bulk data.** Clients often wish to establish their own copy of the API's dataset in its entirety. For example, someone might like to build their own search engine on top of the dataset, using different parameters and technology than the "official" API allows. If the API can't easily act as a bulk data provider, provide a separate mechanism for acquiring the backing dataset in bulk.
-* **Staying up to date.** Especially for large datasets, clients may want to keep their dataset up to date without downloading the data set after every change. If this is a use case for the API, prioritize it in the design.
+* **Staying up to date.** Especially for large datasets, clients may want to keep their copy of the dataset up to date without downloading the entire dataset after every change. If this is a use case for the API, prioritize it in the design.
 * **Driving expensive actions.** What would happen if a client wanted to automatically send text messages to thousands of people or light up the side of a skyscraper every time a new record appears? Consider whether the API's records will always be in a reliable unchanging order, and whether they tend to appear in clumps or in a steady stream. Generally speaking, consider the "entropy" an API client would experience.
 
 ### Using one's own API
@@ -37,7 +37,7 @@ Have a simple mechanism for clients to follow changes to the API.
 
 Common ways to do this include a mailing list, or a [dedicated developer blog](https://developer.github.com/changes/) with an RSS feed.
 
-### API Endpoints
+### API endpoints
 
 An "endpoint" is a combination of two things:
 
@@ -85,7 +85,7 @@ For just dates, that looks like `2013-02-27`. For full times, that's of the form
 This date format is used all over the web, and puts each field in consistent order -- from least granular to most granular.
 
 
-### API Keys
+### API keys
 
 These standards do not take a position on whether or not to use API keys.
 
