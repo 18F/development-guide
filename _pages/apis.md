@@ -64,7 +64,57 @@ Some examples of these principles in action:
 * [OpenFDA example query](https://open.fda.gov/api/reference/#example-query)
 * [Sunlight Congress API methods](https://sunlightlabs.github.io/congress/#using-the-api)
 
-## Just use JSON
+## Always use HTTPS
+
+Any new API should use and require [HTTPS encryption](https://en.wikipedia.org/wiki/HTTP_Secure). HTTPS provides:
+
+* **Security**. The contents of the request are encrypted across the Internet.
+* **Authenticity**. A stronger guarantee that a client is communicating with the real API.
+* **Privacy**. Enhanced privacy for apps and users using the API. HTTP headers and query string parameters (among other things) will be encrypted.
+* **Compatibility**. Broader client-side compatibility. For CORS requests to the API to work on HTTPS websites -- to not be blocked as mixed content -- those requests must be over HTTPS.
+
+The CIO Council provides two relevant guides:
+
+* **[Technical Guidelines](https://https.cio.gov/technical-guidelines/)** covering how your HTTPS should be configured.
+* **[Migrating APIs to HTTPS](https://https.cio.gov/apis/)** covering moving existing HTTP-only APIs to HTTPS.
+
+## CORS
+
+For clients to be able to use an API from inside web browsers, the API must [enable CORS](http://enable-cors.org).
+
+For the simplest and most common use case, where the entire API should be accessible from inside the browser, enabling CORS is as simple as including this HTTP header in all responses:
+
+```
+Access-Control-Allow-Origin: *
+```
+
+It's supported by [every modern browser](http://enable-cors.org/client.html).
+
+For more advanced configuration, see the [W3C spec](http://www.w3.org/TR/cors/) or [Mozilla's guide](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS).
+
+## API keys
+
+If keys are used to manage and authenticate API access, the API should allow some sort of unauthenticated access, without keys.
+
+This allows newcomers to use and experiment with the API in demo environments and with simple `curl`/`wget`/etc. requests.
+
+Consider whether one of your product goals is to allow a certain level of normal production use of the API without enforcing advanced registration by clients.
+
+## Use UTF-8
+
+Just [use UTF-8](http://utf8everywhere.org).
+
+Expect accented characters or "smart quotes" in API output, even if they're not expected.
+
+An API should tell clients to expect UTF-8 by including a charset notation in the `Content-Type` header for responses.
+
+An API that returns JSON should use:
+
+```
+Content-Type: application/json; charset=utf-8
+```
+
+## Just use JSON 
 
 [JSON](https://en.wikipedia.org/wiki/JSON) is an excellent, widely supported transport format, suitable for many web APIs.
 
@@ -84,32 +134,6 @@ For just dates, that looks like `2013-02-27`. For full times, that's of the form
 
 This date format is used all over the web, and puts each field in consistent order -- from least granular to most granular.
 
-
-## API keys
-
-These standards do not take a position on whether or not to use API keys.
-
-But _if_ keys are used to manage and authenticate API access, the API should allow some sort of unauthenticated access, without keys.
-
-This allows newcomers to use and experiment with the API in demo environments and with simple `curl`/`wget`/etc. requests.
-
-Consider whether one of your product goals is to allow a certain level of normal production use of the API without enforcing advanced registration by clients.
-
-
-## Error handling
-
-Handle all errors (including otherwise uncaught exceptions) and return a data structure in the same format as the rest of the API.
-
-For example, a JSON API might provide the following when an uncaught exception occurs:
-
-```json
-{
-  "message": "Description of the error.",
-  "exception": "[detailed stacktrace]"
-}
-```
-
-HTTP responses with error details should use a `4XX` status code to indicate a client-side failure (such as invalid authorization, or an invalid parameter), and a `5XX` status code to indicate server-side failure (such as an uncaught exception).
 
 
 ## Pagination
@@ -141,44 +165,19 @@ Example of how that might be implemented:
 }
 ```
 
-## Always use HTTPS
+## Error handling
 
-Any new API should use and require [HTTPS encryption](https://en.wikipedia.org/wiki/HTTP_Secure). HTTPS provides:
+Handle all errors (including otherwise uncaught exceptions) and return a data structure in the same format as the rest of the API.
 
-* **Security**. The contents of the request are encrypted across the Internet.
-* **Authenticity**. A stronger guarantee that a client is communicating with the real API.
-* **Privacy**. Enhanced privacy for apps and users using the API. HTTP headers and query string parameters (among other things) will be encrypted.
-* **Compatibility**. Broader client-side compatibility. For CORS requests to the API to work on HTTPS websites -- to not be blocked as mixed content -- those requests must be over HTTPS.
+For example, a JSON API might provide the following when an uncaught exception occurs:
 
-The CIO Council provides two relevant guides:
-
-* **[Technical Guidelines](https://https.cio.gov/technical-guidelines/)** covering how your HTTPS should be configured.
-* **[Migrating APIs to HTTPS](https://https.cio.gov/apis/)** covering moving existing HTTP-only APIs to HTTPS.
-
-## Use UTF-8
-
-Just [use UTF-8](http://utf8everywhere.org).
-
-Expect accented characters or "smart quotes" in API output, even if they're not expected.
-
-An API should tell clients to expect UTF-8 by including a charset notation in the `Content-Type` header for responses.
-
-An API that returns JSON should use:
-
-```
-Content-Type: application/json; charset=utf-8
+```json
+{
+  "message": "Description of the error.",
+  "exception": "[detailed stacktrace]"
+}
 ```
 
-## CORS
+HTTP responses with error details should use a `4XX` status code to indicate a client-side failure (such as invalid authorization, or an invalid parameter), and a `5XX` status code to indicate server-side failure (such as an uncaught exception).
 
-For clients to be able to use an API from inside web browsers, the API must [enable CORS](http://enable-cors.org).
 
-For the simplest and most common use case, where the entire API should be accessible from inside the browser, enabling CORS is as simple as including this HTTP header in all responses:
-
-```
-Access-Control-Allow-Origin: *
-```
-
-It's supported by [every modern browser](http://enable-cors.org/client.html).
-
-For more advanced configuration, see the [W3C spec](http://www.w3.org/TR/cors/) or [Mozilla's guide](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS).
