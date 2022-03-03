@@ -143,35 +143,17 @@ Example of how that might be implemented:
 
 ### Always use HTTPS
 
-Any new API should use and require [HTTPS encryption](https://en.wikipedia.org/wiki/HTTP_Secure) (using TLS/SSL). HTTPS provides:
+Any new API should use and require [HTTPS encryption](https://en.wikipedia.org/wiki/HTTP_Secure). HTTPS provides:
 
 * **Security**. The contents of the request are encrypted across the Internet.
 * **Authenticity**. A stronger guarantee that a client is communicating with the real API.
 * **Privacy**. Enhanced privacy for apps and users using the API. HTTP headers and query string parameters (among other things) will be encrypted.
 * **Compatibility**. Broader client-side compatibility. For CORS requests to the API to work on HTTPS websites -- to not be blocked as mixed content -- those requests must be over HTTPS.
 
-HTTPS should be configured using modern best practices, including ciphers that support [forward secrecy](https://en.wikipedia.org/wiki/Forward_secrecy), and [HTTP Strict Transport Security](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security). **This is not exhaustive**: use tools like [SSL Labs](https://www.ssllabs.com/ssltest/analyze.html) to evaluate an API's HTTPS configuration.
+The CIO Council provides two relevant guides:
 
-For an existing API that runs over plain HTTP, the first step is to add HTTPS support, and update the documentation to declare it the default, use it in examples, etc.
-
-Then, evaluate the viability of disabling or redirecting plain HTTP requests. See [GSA/api.data.gov#34](https://github.com/18F/api.data.gov/issues/34) for a discussion of some of the issues involved with transitioning from HTTP->HTTPS.
-
-#### Server Name Indication
-
-If you can, use [Server Name Indication](https://en.wikipedia.org/wiki/Server_Name_Indication) (SNI) to serve HTTPS requests.
-
-SNI is an extension to TLS, [first proposed in 2003](http://tools.ietf.org/html/rfc3546), that allows SSL certificates for multiple domains to be served from a single IP address.
-
-Using one IP address to host multiple HTTPS-enabled domains can significantly lower costs and complexity in server hosting and administration. This is especially true as IPv4 addresses become more rare and costly. SNI is a Good Idea, and it is widely supported.
-
-However, some clients and networks still do not properly support SNI. As of this writing, that includes:
-
-* Internet Explorer 8 and below on Windows XP
-* Android 2.3 (Gingerbread) and below.
-* All versions of Python 2.x (a version of Python 2.x with SNI [is planned](http://legacy.python.org/dev/peps/pep-0466/)).
-* Some enterprise network environments have been configured in some custom way that disables or interferes with SNI support. One identified network where this is the case: the White House.
-
-When implementing SSL support for an API, evaluate whether SNI support makes sense for the audience it serves.
+* **[Technical Guidelines](https://https.cio.gov/technical-guidelines/)** covering how your HTTPS should be configured.
+* **[Migrating APIs to HTTPS](https://https.cio.gov/apis/)** covering moving existing HTTP-only APIs to HTTPS.
 
 ### Use UTF-8
 
