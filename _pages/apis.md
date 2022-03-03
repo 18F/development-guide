@@ -4,12 +4,6 @@ sidenav: approach
 sticky_sidenav: true
 ---
 
-# 18F API Standards
-
-**[18F](https://18f.gsa.gov/)** is a technology team inside the US federal government. 18F is very API-focused: our first project was an [API for business opportunities](https://fbopen.gsa.gov/).
-
-This document captures **18F's view of API best practices and standards**. We aim to incorporate as many of them as possible into our work.
-
 APIs, like other web applications, vary greatly in implementation and design, depending on the situation and the problem the application is solving.
 
 This document provides a mix of:
@@ -209,15 +203,3 @@ For more advanced configuration, see the [W3C spec](http://www.w3.org/TR/cors/) 
 **What about JSONP?**
 
 JSONP is [not secure or performant](https://gist.github.com/tmcw/6244497). If IE8 or IE9 must be supported, use Microsoft's [XDomainRequest](http://blogs.msdn.com/b/ieinternals/archive/2010/05/13/xdomainrequest-restrictions-limitations-and-workarounds.aspx?Redirected=true) object instead of JSONP. There are [libraries](https://github.com/mapbox/corslite) to help with this.
-
-
-## Public domain
-
-This project is in the public domain within the United States, and
-copyright and related rights in the work worldwide are waived through
-the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
-
-All contributions to this project will be released under the CC0
-dedication. By submitting a pull request, you are agreeing to comply
-with this waiver of copyright interest.
-
