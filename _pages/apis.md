@@ -60,8 +60,7 @@ Generally speaking:
 
 Some examples of these principles in action:
 
-* [FBOpen API documentation](https://18f.github.io/fbopen/)
-* [OpenFDA example query](https://open.fda.gov/api/reference/#example-query)
+* [OpenFEC API](https://api.open.fec.gov/developers/)
 * [Sunlight Congress API methods](https://sunlightlabs.github.io/congress/#using-the-api)
 
 ## Always use HTTPS
