@@ -77,28 +77,6 @@ The CIO Council provides two relevant guides:
 * **[Technical Guidelines](https://https.cio.gov/technical-guidelines/)** covering how your HTTPS should be configured.
 * **[Migrating APIs to HTTPS](https://https.cio.gov/apis/)** covering moving existing HTTP-only APIs to HTTPS.
 
-## CORS
-
-For clients to be able to use an API from inside web browsers, the API must [enable CORS](http://enable-cors.org).
-
-For the simplest and most common use case, where the entire API should be accessible from inside the browser, enabling CORS is as simple as including this HTTP header in all responses:
-
-```
-Access-Control-Allow-Origin: *
-```
-
-It's supported by [every modern browser](http://enable-cors.org/client.html).
-
-For more advanced configuration, see the [W3C spec](http://www.w3.org/TR/cors/) or [Mozilla's guide](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS).
-
-## API keys
-
-If keys are used to manage and authenticate API access, the API should allow some sort of unauthenticated access, without keys.
-
-This allows newcomers to use and experiment with the API in demo environments and with simple `curl`/`wget`/etc. requests.
-
-Consider whether one of your product goals is to allow a certain level of normal production use of the API without enforcing advanced registration by clients.
-
 ## Use UTF-8
 
 Just [use UTF-8](http://utf8everywhere.org).
@@ -133,7 +111,27 @@ For just dates, that looks like `2013-02-27`. For full times, that's of the form
 
 This date format is used all over the web, and puts each field in consistent order -- from least granular to most granular.
 
+## CORS
 
+For clients to be able to use an API from inside web browsers, the API must [enable CORS](http://enable-cors.org).
+
+For the simplest and most common use case, where the entire API should be accessible from inside the browser, enabling CORS is as simple as including this HTTP header in all responses:
+
+```
+Access-Control-Allow-Origin: *
+```
+
+It's supported by [every modern browser](http://enable-cors.org/client.html).
+
+For more advanced configuration, see the [W3C spec](http://www.w3.org/TR/cors/) or [Mozilla's guide](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS).
+
+## API keys
+
+If keys are used to manage and authenticate API access, the API should allow some sort of unauthenticated access, without keys.
+
+This allows newcomers to use and experiment with the API in demo environments and with simple `curl`/`wget`/etc. requests.
+
+Consider whether one of your product goals is to allow a certain level of normal production use of the API without enforcing advanced registration by clients.
 
 ## Pagination
 
