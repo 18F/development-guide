@@ -3,24 +3,19 @@ title: On call recommendations
 sidenav: approach
 sticky_sidenav: true
 ---
-As 18F transforms into an organization that builds and supports products,
-some of these products may need 24/7 availability. 18F is also an organization
-that occasionally gets called on to develop emergent, urgent web applications
-that need short-term 24/7 support.
-
-The needs of those two different scenarios are different. Regardless of the
-type of project, there are a number of things that could be considered at
-different stages of development that would allow both types of teams and
-products to be set up for on-call success.
+Different types of projects have unique on-call support needs.
+Regardless of the type of project, there are a number of things that
+could be considered at different stages of development that would
+allow any type of team and product to be set up for on-call success.
 
 ## Staffing/resourcing phase
 Resourcing is very important to the support success of a team.
 
-For short, emergent projects, staffing *at least one* extra engineer than estimated,
+For short, emergent projects, staffing *at least one* more engineer than estimated,
 without increasing scope will better allow:
  - opportunities for engineers to pair,
  - higher quality code review, and
- - dedicated time to creating comprehensive documentation.
+ - dedicated time for creating comprehensive documentation.
 
 Staffing an engineering role that has ownership over documentation and technical
 writing will also ease some of this stress.
