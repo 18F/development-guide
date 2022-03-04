@@ -81,15 +81,13 @@ The CIO Council provides two relevant guides:
 
 {% include components/tag-requirement.html %} Just [use UTF-8](http://utf8everywhere.org).
 
-Expect accented characters or "smart quotes" in API output, even if they're not expected.
-
-An API should tell clients to expect UTF-8 by including a charset notation in the `Content-Type` header for responses.
-
-An API that returns JSON should use:
+An API should tell clients to expect UTF-8 by including a charset notation in the `Content-Type` header for responses. For example, an API that returns JSON should use:
 
 ```
 Content-Type: application/json; charset=utf-8
 ```
+
+Even if you do not believe your API will ever return data outside the ASCII character set, you should assume it could and return data encoded as UTF-8.
 
 ## Just use JSON 
 
@@ -99,15 +97,15 @@ Supporting JSON and only JSON is a practical default for APIs, and generally red
 
 General JSON guidelines:
 
-* Responses should be **a JSON object** (not an array). Using an array to return results limits the ability to include metadata about results, and limits the API's ability to add additional top-level keys in the future.
+* **Responses should be a JSON object (not an array)**. Using an array to return results limits the ability to include metadata about results, and limits the API's ability to add additional top-level keys in the future.
 * **Don't use unpredictable keys**. Parsing a JSON response where keys are unpredictable (e.g. derived from data) is difficult, and adds friction for clients.
 * **Use consistent case for keys**. Whether you use `under_score` or `CamelCase` for your API keys, make sure you are consistent.
 
 ## Use a consistent date format
 
-{% include components/tag-standard.html %} And specifically, [use ISO 8601](https://xkcd.com/1179/), in UTC.
+{% include components/tag-standard.html %} Specifically, [use ISO 8601](https://xkcd.com/1179/), in UTC.
 
-For just dates, that looks like `{{ site.time | date: '%Y-%m-%d' }}`. For full times, that's of the form 
+For dates, that looks like `{{ site.time | date: '%Y-%m-%d' }}`. For dates with times, that's of the form 
 `{{ site.time | date: '%Y-%m-%dT%TZ' }}`.
 
 This date format is used all over the web, and puts each field in consistent order -- from least granular to most granular.
@@ -130,7 +128,7 @@ For more advanced configuration, see the [W3C spec](http://www.w3.org/TR/cors/) 
 
 If keys are used to manage and authenticate API access, the API should allow some sort of unauthenticated access, without keys.
 
-This allows newcomers to use and experiment with the API in demo environments and with simple `curl`/`wget`/etc. requests.
+This allows newcomers to use and experiment with the API in demo environments and with simple `curl` / `wget` / etc. requests.
 
 Consider whether one of your product goals is to allow a certain level of normal production use of the API without enforcing advanced registration by clients.
 
@@ -177,5 +175,3 @@ For example, a JSON API might provide the following when an uncaught exception o
 ```
 
 HTTP responses with error details should use a `4XX` status code to indicate a client-side failure (such as invalid authorization, or an invalid parameter), and a `5XX` status code to indicate server-side failure (such as an uncaught exception).
-
-
