@@ -65,7 +65,7 @@ Some examples of these principles in action:
 
 ## Always use HTTPS
 
-Any new API should use and require [HTTPS encryption](https://en.wikipedia.org/wiki/HTTP_Secure). HTTPS provides:
+{% include components/tag-requirement.html %} Any new API should use and require [HTTPS encryption](https://en.wikipedia.org/wiki/HTTP_Secure). HTTPS provides:
 
 * **Security**. The contents of the request are encrypted across the Internet.
 * **Authenticity**. A stronger guarantee that a client is communicating with the real API.
@@ -79,7 +79,7 @@ The CIO Council provides two relevant guides:
 
 ## Use UTF-8
 
-Just [use UTF-8](http://utf8everywhere.org).
+{% include components/tag-requirement.html %} Just [use UTF-8](http://utf8everywhere.org).
 
 Expect accented characters or "smart quotes" in API output, even if they're not expected.
 
@@ -93,7 +93,7 @@ Content-Type: application/json; charset=utf-8
 
 ## Just use JSON 
 
-[JSON](https://en.wikipedia.org/wiki/JSON) is an excellent, widely supported transport format, suitable for many web APIs.
+{% include components/tag-standard.html %} [JSON](https://en.wikipedia.org/wiki/JSON) is an excellent, widely supported transport format, suitable for many web APIs.
 
 Supporting JSON and only JSON is a practical default for APIs, and generally reduces complexity for both the API provider and consumer.
 
@@ -105,7 +105,7 @@ General JSON guidelines:
 
 ## Use a consistent date format
 
-And specifically, [use ISO 8601](https://xkcd.com/1179/), in UTC.
+{% include components/tag-standard.html %} And specifically, [use ISO 8601](https://xkcd.com/1179/), in UTC.
 
 For just dates, that looks like `2013-02-27`. For full times, that's of the form `2013-02-27T10:00:00Z`.
 
