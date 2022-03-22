@@ -4,7 +4,7 @@
 Proposed
 
 ## Context
-TTS needs to build a lot of server-rendered websites, both for its own purposes and for other goverment agencies.
+TTS needs to build a lot of server-rendered websites, both for its own purposes and for other government agencies.
 
 Jekyll has been the popular go-to framework for this work, for a few reasons:
 - Many 18F employees were Rubyists
