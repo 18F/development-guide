@@ -37,6 +37,7 @@ Any static site generator used by TTS needs to:
 - be able to be used for both prototyping and production
 - have build times that don't impede development
 - not make a11y hard
+- have multilingual support
 - enable people without specialized engineering skills to edit static content
 
 It would be nice to have:
