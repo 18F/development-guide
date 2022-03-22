@@ -49,6 +49,7 @@ Current candidates (in no particular order):
 - [Gatsby](https://www.gatsbyjs.com/)
 - [Bridgetown](https://www.bridgetownrb.com/)
 - Build our own
+- [Middleman](https://middlemanapp.com/)
 - [TK]
 
 
