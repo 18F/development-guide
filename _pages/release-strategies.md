@@ -108,7 +108,7 @@ system. That perspective easily lends itself to fear of iterative releases.
 
 *Mitigation strategies:*
 * Engage security and ATO personnel early in the development process, or, ideally, embed someone onto the project team who can help advise. This strategy (among other improvements) helped GSA bring average ATO time from [six months to thirty days](https://18f.gsa.gov/2018/07/19/taking-the-ato-process-from-6-months-to-30-days/). 
-* Familiarize yourself with 18F's [Before You Ship](https://before-you-ship.18f.gov/) guide so you can personally help alleviate some of their concerns.
+* Familiarize yourself with TTS's [Launching Software](https://handbook.tts.gsa.gov/#launching-software) strategies so you can personally help alleviate some of their concerns.
 * Teams at 18F have also found success in employing the "Walking Skeleton" technique, where the main architectural components of a system are
 deployed early in a minumum viable way. Frontloading the infrastructure work creates an MVP for ATO work, and makes space for early
 compliance and security oversight.
