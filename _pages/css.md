@@ -40,7 +40,7 @@ subnav:
 ---
 
 The purpose of the CSS coding styleguide is to create consistent CSS or
-preprocessor CSS code across TTS. The styleguide should be treated as a guide
+preprocessor CSS code (such as [Sass]) in your projects. The styleguide should be treated as a guide
 &mdash; rules can be modified according to project needs.
 
 # Architecture
@@ -360,54 +360,26 @@ the difference will often be negligible once the output file has been gzipped.
 [placeholders]: http://thesassway.com/intermediate/understanding-placeholder-selectors
 
 # Linting
-The styleguide provides a method of linting [Sass] code to ensure it conforms
-to the rules in the styleguide. This linting tool will go through all Sass code
-and issue warnings wherever the code differs from the styleguide. We've created
-a specific [`.scss-lint.yml` file][scss-lint yaml] that's configured to work
-with the css coding styleguide. There are two ways to set up linting:
+Using a linter will ensure that [Sass] code conforms to some consistent rules. A linting tool like 
+(Stylelint)[https://stylelint.io/] can issue warnings wherever your code differs from established rules.
 
-* locally with ruby
-* locally with node
+## Setting up Stylelint locally
+1. Run `npm install --save-dev stylelint stylelint-config-standard` to download the package and save it to your package.json
+2. Create a .stylelintrc.json configuration file in the root of your project with the following content:
+```json
+{
+  "extends": "stylelint-config-standard"
+}
+```
+3. Run Stylelint on all the CSS files in your project:
+`npx stylelint "**/*.css"`
 
-## Locally with ruby
-1. Add the [`.scss-lint.yml` file][scss-lint yaml] to the base of your
-   repository.
-2. Install the [scss-lint] gem with `gem install scss_lint`
-3. Run scss-lint: `scss-lint app/assets/stylesheets/`
+This utilizes stylelint's standard rules configuration for css linting. 
+If your project needs different rules or defaults, or you'd like to extend linting to other types of
+files, you can utilize custom syntaxes or write your own.
 
-## Locally with node (experimental!)
-1. Run `npm install --save-dev @18f/stylelint-rules` to download the package and save it to your package.json
-2. The package provides both a gulp task and a cli interface. Detailed usage instructions can be found in the [README](https://github.com/18F/stylelint-rules)
-
-## Shortcomings
-
-### scss-lint
-
-The scss-lint tool currently lacks the functionality to check these rules in
-the CSS coding styleguide:
-
-- Does not limit line width to 80 characters
-- Does not check for numeric calculations in parentheses
-- Does not sort properties in quite the order we want (defaults to
-  alphabetical)
-
-### stylelint
-
-This tool is still being evaluated, so not every rule in our current styleguide
-is supported by stylelint. scss-lint is purpose built for SCSS and is therefore
-a bit more feature rich. The following rules are currently not supported:
-
-- PropertySpelling
-- UnecessaryParentReference
-
-That being said, if you want to avoid a dependency on ruby in your project and
-still benefit from reliable SCSS linting, please test out this tool!
-
-
-[Sass]: http://sass-lang.com/
-[scss-lint]: https://github.com/brigade/scss-lint
-[scss-lint yaml]: https://raw.githubusercontent.com/18F/frontend/18f-pages-staging/.scss-lint.yml
-[stylelint-rules]: https://github.com/18F/stylelint-rules
+Stylelint has a [user guide](https://stylelint.io/user-guide/get-started) that will give you more
+details about how to configure and extend your linting rules.
 
 # Naming 
 - HTML elements should be in lowercase.
@@ -607,21 +579,29 @@ Don't attach styles to classes with a `test-` flag. These classes are reserved f
 [mindbemding]: http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
 
 # Preprocessors 
-The most supported CSS preprocessor at TTS is [Sass](http://sass-lang.com/)
-(SCSS). Using this pre-processor means you'll get supported resources such as
-frameworks, libraries, tutorials, and a comprehensive styleguide as support.
-
-In addition, TTS uses a [`.scss-lint.yml`
-file](https://raw.githubusercontent.com/18F/frontend/18f-pages-staging/.scss-lint.yml)
-to keep our CSS code compliant with our own styleguide.
+The most supported CSS preprocessor at TTS is [Sass]. Using this pre-processor means you'll
+get supported resources such as frameworks, libraries, tutorials, and a comprehensive styleguide
+as support.
 
 _That being said, any preprocessor is allowed as long as it's a sound project
 and has community support._
 
-The recommended way to compile your Sass code is through
-[node-sass](https://www.npmjs.com/package/node-sass), rather than Ruby Sass.
-This allows eliminating the Ruby dependency for projects that don't already
-require it and is the fastest method of compiling Sass.
+[Dart Sass](https://sass-lang.com/dart-sass) is the primary implementation of Sass and is
+recommended for use in your projects. 
+
+## Command line installation 
+
+### With npm
+
+* run: `npm install -g sass`
+
+### With homebrew
+
+* run `brew install sass/sass/sass`
+
+### Other installations
+
+You can read about other installation methods on [their website](https://sass-lang.com/install). 
 
 # Specificity 
 - IDs should be reserved for JavaScript. Don’t use IDs for styles.
@@ -918,3 +898,5 @@ color: $secondary;
   $small: new-breakpoint(min-width 0 max-width 40em 6);
   $medium: new-breakpoint(min-width 0 max-width 60em 6);
   ```
+  
+  [Sass]: http://sass-lang.com
