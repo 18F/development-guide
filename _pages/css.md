@@ -579,7 +579,7 @@ Don't attach styles to classes with a `test-` flag. These classes are reserved f
 [mindbemding]: http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
 
 # Preprocessors 
-The most supported CSS preprocessor at TTS is [Sass]. Using this pre-processor means you'll
+The most supported CSS preprocessor at TTS is [Sass]. Using this preprocessor means you'll
 get supported resources such as frameworks, libraries, tutorials, and a comprehensive styleguide
 as support.
 
