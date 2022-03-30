@@ -1,7 +1,7 @@
 # 3. Set Criteria for Recommended Static Site Generator
 
 ## Status
-Proposed
+Accepted
 
 ## Context
 TTS needs to build a lot of server-rendered websites, both for its own purposes and for other government agencies.
@@ -12,7 +12,6 @@ Jekyll has been the popular go-to framework for this work, for a few reasons:
   - Github uses it as the engine for Github Pages
 - Federalist (now Cloud.gov Pages) supports it and USWDS built multiple themes for it, allowing teams to stand up a new government website very quickly
 - Markdown pages were relatively easier to edit by a wider variety of TTS employees than other frameworks
-- [TK - anything else?]
 
 In mid-2021 some core maintainers said Jekyll was [in hiatus](https://www.theregister.com/2021/09/14/future_of_jekyll_project_engine/) and recommended other frameworks to switch to. This hasn't been stated on the official website, and the [Jekyll Github repo](https://github.com/jekyll/jekyll) remains active, so Jekyll's future seems unclear.
 
@@ -53,7 +52,6 @@ Current candidates (in no particular order):
 - [Bridgetown](https://www.bridgetownrb.com/)
 - Build our own
 - [Middleman](https://middlemanapp.com/)
-- [TK]
 
 ## Consequences
 
@@ -65,3 +63,6 @@ Current candidates (in no particular order):
 - We will still need to maintain our many Jekyll apps, for a time
 - We will need to decide whether these apps should be deprecated or moved to a new platform
 - Moving to a new platform will take a lot of work and support
+
+## Next Steps
+The Guild will make a checklist based on these criteria, share it out with teams using these alternatives, and decide what to do next based on the feedback we get.
