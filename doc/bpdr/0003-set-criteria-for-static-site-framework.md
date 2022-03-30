@@ -55,7 +55,13 @@ Current candidates (in no particular order):
 - [Middleman](https://middlemanapp.com/)
 - [TK]
 
-
 ## Consequences
-I think forming an agreed-upon list of criteria will help us clarify the problem, validate our assumptions, and give us a consistent template to assess each alternative.
 
+### Risks of staying with Jekyll
+- Degredation of framework and dependencies as community support wanes
+- If Jekyll's period of support officially ends, we will be forced to migrate at that point, or risk running deprecated software
+
+## Risks of moving from Jekyll
+- We will still need to maintain our many Jekyll apps, for a time
+- We will need to decide whether these apps should be deprecated or moved to a new platform
+- Moving to a new platform will take a lot of work and support
