@@ -58,6 +58,8 @@ tools:
     href: /docker/
   - text: Browser Testing
     href: /browser-testing/
+  - text: Automated Testing
+    href: /tests/
   - text: Accessibility Scanning
     href: /accessibility-scanning/
   - text: Continuous Deployment

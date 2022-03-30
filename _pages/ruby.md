@@ -24,5 +24,13 @@ Whenever a `Style` Rubocop setting provides multiple options, at least one
 option must be chosen. A cop that supports different styles must never be
 disabled outright. The point is to pick one style and use it consistently.
 
+## Testing
+
+### Validating HTML output
+
+We use HTMLProofer for testing rendered HTML automatically. Please see
+the [test page] for more details.
+
 [Code Climate]: https://codeclimate.com
 [Rubocop]: https://github.com/bbatsov/rubocop
+[test page]: /tests#html-output-ruby
