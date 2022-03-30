@@ -18,7 +18,8 @@ In mid-2021 some core maintainers said Jekyll was [in hiatus](https://www.thereg
 
 In addition, a number of TTS employees are unsatisfied with Jekyll because:
 - build times have become slower relative to other frameworks
-- [TK - what else?]
+- It’s difficult to support asset rendering (including building USWDS, a common component of our sites) in a way that supports far-futures cache headers
+- Building locally in development is difficult to impossible without admin rights, hindering handoff to folks with less computer privileges
 
 For these reasons, we want teams to avoid standing up new Jekyll sites, but we don't yet have consensus on what the alternative should be.
 
@@ -41,7 +42,8 @@ Any static site generator used by TTS needs to:
 - enable people without specialized engineering skills to edit static content
 
 It would be nice to have:
-- [TK]
+- built-in support for common compiles-to-web languages, like SASS, ESNext, and TypeScript
+- the ability to reuse/share layouts or templates across sites
 
 Current candidates (in no particular order):
 - [11ty](https://www.11ty.dev/)
