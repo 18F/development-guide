@@ -8,6 +8,9 @@ primary:
   - text: Tools
     href: /integrations/
     name: tools
+  - text: Technical Discovery
+    href: /tech-discovery/
+    name: tech-discovery
   - text: Languages & Runtimes
     href: /language-selection/
     name: languages
@@ -68,6 +71,20 @@ tools:
     href: /sharepoint/
   - text: Books we've read
     href: /books-we-have-read/
+
+tech-discovery:
+  - text: Introduction
+    href: /tech-discovery/
+  - text: Expectations
+    href: /expectations/
+  - text: Where to Start
+    href: /where-to-start/
+  - text: What to Ask
+    href: /what-to-ask/
+  - text: Exercises
+    href: /exercises/
+  - text: Demonstrate Learnings
+    href: /demonstrate-learnings/
 
 languages:
   - text: Languages & Runtimes

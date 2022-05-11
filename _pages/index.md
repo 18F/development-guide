@@ -13,9 +13,10 @@ This guide is where the TTS Engineering Practices Guild collects its best practi
   </div>
   <div class="grid-row">
     {% include categorylinks.html links=site.data.navigation.tools %}
-    {% include categorylinks.html links=site.data.navigation.languages %}
+    {% include categorylinks.html links=site.data.navigation.tech-discovery %}
   </div>
   <div class="grid-row">
+    {% include categorylinks.html links=site.data.navigation.languages %}
     {% include categorylinks.html links=site.data.navigation.security %}
   </div>
 </div>
