@@ -53,7 +53,7 @@ While you are welcome to customize your laptop, here are some tools that have wo
 
   The docker daemon and docker CLI tools are available on a free license.
 
-  [Docker Desktop] requires a paid license. Ask in #admins-docker in Slack to get a license.
+  [Docker Desktop] requires a paid license. Ask in [#admins-docker](https://gsa-tts.slack.com/app_redirect?channel=admins-docker) in Slack to get a license.
 
 [Docker]: https://www.docker.com/
 [Docker Desktop]: https://www.docker.com/products/docker-desktop/
