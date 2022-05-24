@@ -9,7 +9,6 @@ While you are welcome to customize your laptop, here are some tools that have wo
 * [ChromeDriver] for headless website testing
 * [chruby] for managing [Ruby] versions. 
 * [Cloud Foundry CLI] for command line access to 18F's Cloud Foundry-based application platform
-* [Docker] for all your containerization needs
 * [Caulking] checks for many common types of API tokens and other [sensitive information](https://handbook.tts.gsa.gov/sensitive-information/) before you commit 
 * [GitHub Desktop] for setting up your SSH keys automatically
 * [Homebrew] for managing operating system libraries
@@ -28,7 +27,6 @@ While you are welcome to customize your laptop, here are some tools that have wo
 [ChromeDriver]: http://chromedriver.chromium.org/
 [chruby]: https://github.com/postmodern/chruby
 [Cloud Foundry CLI]: https://github.com/cloudfoundry/cli
-[Docker]: https://www.docker.com/
 [Caulking]: https://github.com/cloud-gov/caulking
 [Github Desktop]: https://desktop.github.com/
 [Homebrew]: http://brew.sh/
@@ -49,6 +47,16 @@ While you are welcome to customize your laptop, here are some tools that have wo
 [Virtualenvwrapper]: http://virtualenvwrapper.readthedocs.org/en/latest/#
 [Zsh]: http://www.zsh.org/
 
+## Licensed Software
+
+* [Docker] for all your containerization needs
+
+  The docker daemon and docker CLI tools are available on a free license.
+
+  [Docker Desktop] requires a paid license. Ask in [#admins-docker](https://gsa-tts.slack.com/app_redirect?channel=admins-docker) in Slack to get a license.
+
+[Docker]: https://www.docker.com/
+[Docker Desktop]: https://www.docker.com/products/docker-desktop/
 
 ## Other customizations
 
