@@ -325,7 +325,7 @@ $align_top: 100%;
   }
   ```
 
-- Do not use mixins for browser prefixes. Use [Autoprefixer](https://github.com/postcss/autoprefixer).
+- Do not use mixins for browser prefixes. Use [Autoprefixer](https://github.com/postcss/autoprefixer) ([available as an online tool](https://goonlinetools.com/autoprefixer/)).
 
   ```scss
   // Bad
