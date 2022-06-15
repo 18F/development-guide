@@ -13,6 +13,19 @@
 <footer class="identifier" data-uswds="1.0">
 {% if identifier.edit_page or (identifier.last_updated and page.last_modified_at) %}
   {% unless footer.type %}
+    <div class="usa-footer__secondary-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="usa-footer__contact-links mobile-lg:grid-col-12">
+            <div class="usa-footer grid-row grid-gap-1">
+              <div class="grid-col-auto">
+                Have questions or would like to contact us? Email us at <a class="usa-link" href="mailto:{{ identifier.site_email }}">{{ identifier.site_email }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="component-identifier-meta">
       <div class="grid-container grid-container-desktop">
         <div class="grid-row tablet-lg:grid-gap-2">
@@ -82,6 +95,11 @@
         <li class="usa-identifier__required-links-item">
           <a class="usa-identifier__required-link usa-link" href="{{ identifier.no_fear_act_url }}" title="View No FEAR Act data">
             View No FEAR Act data
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a class="usa-identifier__required-link usa-link" href="{{ identifier.privacy_policy_url }}" title="View privacy policy">
+            Privacy policy
           </a>
         </li>
       </ul>
