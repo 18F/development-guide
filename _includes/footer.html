@@ -1,23 +1,17 @@
-{% assign footer = site.data.footer %}
-
-{% if footer.type == 'slim' %}
-  {% include components/footer--slim.html %}
-{% elsif footer.type == 'default' or footer.type == 'medium' %}
-  {% include components/footer--default.html %}
-{% elsif footer.type == 'big' %}
-  {% include components/footer--big.html %}
-{% endif %}
-
 {% assign identifier = site.data.usa_identifier %}
 
-<footer class="identifier" data-uswds="1.0">
-{% if identifier.edit_page or (identifier.last_updated and page.last_modified_at) %}
-  {% unless footer.type %}
+<footer class="usa-footer">
+  <section>
     <div class="usa-footer__secondary-section">
       <div class="grid-container">
         <div class="grid-row grid-gap">
           <div class="usa-footer__contact-links mobile-lg:grid-col-12">
-            <div class="usa-footer grid-row grid-gap-1">
+            <div class="usa-footer grid-row">
+              <div class="grid-col-auto">
+                This project is maintained by <a class="usa-link" href="{{ identifier.org_secondary_url }}">{{ identifier.org_secondary }}</a>
+              </div>
+            </div>
+            <div class="usa-footer grid-row">
               <div class="grid-col-auto">
                 Have questions or would like to contact us? Email us at <a class="usa-link" href="mailto:{{ identifier.site_email }}">{{ identifier.site_email }}</a>
               </div>
@@ -26,91 +20,71 @@
         </div>
       </div>
     </div>
-    <div class="component-identifier-meta">
-      <div class="grid-container grid-container-desktop">
-        <div class="grid-row tablet-lg:grid-gap-2">
-          <div class="grid-col-12">
-            <div class="page-meta">
-              <p>
-                {% if identifier.last_updated and page.last_modified_at %}
-                <span><small>Last updated: {{ page.last_modified_at | date: '%B %d, %Y' }}</small></span>
-                {% endif %}
-                {% if identifier.edit_page %}
-                <span>
-                  {% include components/github-edit.html footer=identifier path=page.path %}
-                </span>
-                {% endif %}
-              </p>
-            </div>
-          </div>
+  </section>
+  <div class="usa-identifier">
+    <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+      <div class="usa-identifier__container">
+        <div class="usa-identifier__logos">
+          <a href="https://www.gsa.gov/" class="usa-identifier__logo">
+            <img class="usa-identifier__logo-img" src="{{ site.baseurl }}/assets/images/{{ identifier.agency_logo }}" alt="GSA logo" role="img" />
+          </a>
+        </div>
+        <div class="usa-identifier__identity text-base-lightest" aria-label="Agency description">
+          <p class="usa-identifier__identity-domain">{{ identifier.site_name }}</p>
+          <p class="usa-identifier__identity-disclaimer text-base-lightest">An official website of the
+            <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">
+              GSA’s Technology Transformation Services
+            </a>
+          </p>
         </div>
       </div>
-    </div>
-  {% endunless %}
-{% endif %}
-
-
-<div class="usa-identifier">
-  <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
-    <div class="usa-identifier__container">
-      <div class="usa-identifier__logos">
-        <a href="https://www.gsa.gov/" class="usa-identifier__logo">
-          <img class="usa-identifier__logo-img" src="{{ site.baseurl }}/assets/images/{{ identifier.agency_logo }}" alt="GSA logo" role="img"
-           />
-        </a>
+    </section>
+    <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+      <div class="usa-identifier__container">
+        <ul class="usa-identifier__required-links-list">
+          <li class="usa-identifier__required-links-item">
+            <a class="usa-identifier__required-link usa-link" href="{{ identifier.agency_about_url }}" title="About GSA">
+              About GSA
+            </a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a class="usa-identifier__required-link usa-link" href="{{ identifier.accessibility_url }}" title="View accessibility statement">
+              Accessibility support
+            </a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a class="usa-identifier__required-link usa-link" href="{{ identifier.foia_request_url }}" title="Submit a Freedom of Information Act (FOIA) request">
+              FOIA requests
+            </a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a class="usa-identifier__required-link usa-link" href="{{ identifier.no_fear_act_url }}" title="View No FEAR Act data">
+              No FEAR Act data
+            </a>
+          </li> 
+          <li class="usa-identifier__required-links-item">
+            <a class="usa-identifier__required-link usa-link" href="{{ identifier.fraud_waste_abuse_url }}" title="Office of the Inspector General">
+              Office of the Inspector General
+            </a>
+          </li>                   
+          <li class="usa-identifier__required-links-item">
+            <a class="usa-identifier__required-link usa-link" href="{{ identifier.budget_performance_url }}" title="View budget and performance reports">
+              Performance reports
+            </a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a class="usa-identifier__required-link usa-link" href="{{ identifier.privacy_policy_url }}" title="Our privacy policy">
+              Privacy policy
+            </a>
+          </li>       
+        </ul>
       </div>
-      <div class="usa-identifier__identity text-base-lightest" aria-label="Agency description">
-        <p class="usa-identifier__identity-domain">TTS Engineering Practices Guide</p>
-        <p class="usa-identifier__identity-disclaimer text-base-lightest">An official website of the
-          <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">
-            GSA’s Technology Transformation Services
-          </a>
-        </p>
+    </nav>
+    <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="U.S. government information and services">
+      <div class="usa-identifier__container">
+        <div class="usa-identifier__usagov-description text-base-lightest">Looking for U.S. government information and services?</div>
+        <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
       </div>
-    </div>
-  </section>
-  <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
-    <div class="usa-identifier__container">
-      <ul class="usa-identifier__required-links-list">
-        <li class="usa-identifier__required-links-item">
-          <a class="usa-identifier__required-link usa-link" href="{{ identifier.fraud_waste_abuse_url }}" title="Report fraud, waste, or abuse to the Office of the Inspector General">
-            Report fraud, waste, or abuse to the Office of the Inspector General
-          </a>
-        </li>
-        <li class="usa-identifier__required-links-item">
-          <a class="usa-identifier__required-link usa-link" href="{{ identifier.foia_request_url }}" title="Submit a Freedom of Information Act (FOIA) request">
-            Submit a Freedom of Information Act (FOIA) request
-          </a>
-        </li>
-        <li class="usa-identifier__required-links-item">
-          <a class="usa-identifier__required-link usa-link" href="{{ identifier.budget_performance_url }}" title="View budget and performance reports">
-            View budget and performance reports
-          </a>
-        </li>
-        <li class="usa-identifier__required-links-item">
-          <a class="usa-identifier__required-link usa-link" href="{{ identifier.accessibility_url }}" title="View accessibility statement">
-            View accessibility statement
-          </a>
-        </li>
-        <li class="usa-identifier__required-links-item">
-          <a class="usa-identifier__required-link usa-link" href="{{ identifier.no_fear_act_url }}" title="View No FEAR Act data">
-            View No FEAR Act data
-          </a>
-        </li>
-        <li class="usa-identifier__required-links-item">
-          <a class="usa-identifier__required-link usa-link" href="{{ identifier.privacy_policy_url }}" title="View privacy policy">
-            Privacy policy
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="U.S. government information and services">
-    <div class="usa-identifier__container">
-      <div class="usa-identifier__usagov-description text-base-lightest">Looking for U.S. government information and services?</div>
-      <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
-    </div>
-  </section>
-</div>
-
+    </section>
+  </div>
 </footer>
