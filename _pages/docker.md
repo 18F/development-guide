@@ -30,7 +30,26 @@ into a consistent, reproducible environment. While we don't generally support
 Docker in production, we can create a setup that matches cloud.gov relatively
 closely and which makes running our app painless.
 
-Within GSA, [Docker Desktop](https://www.docker.com/products/docker-desktop) can be installed through [Self Service](https://handbook.tts.gsa.gov/gsa-internal-tools/#self-service) without [admin rights](https://handbook.tts.gsa.gov/equipment/#admin-rights). This allows people doing "light" development (like editing content) to run the site locally. Use of Docker can also hide the complexity of setting up a development environment from them.
+Within GSA, [Docker Desktop](https://www.docker.com/products/docker-desktop) can
+be installed through [Self Service](https://handbook.tts.gsa.gov/gsa-internal-tools/#self-service)
+without [admin rights](https://handbook.tts.gsa.gov/equipment/#admin-rights).
+This allows people doing "light" development (like editing content) to run the
+site locally. Use of Docker can also hide the complexity of setting up a
+development environment from them.
+
+Docker Desktop requires a license. In the event that licenses are not available,
+you may use [Rancher Desktop](https://rancherdesktop.io/) instead. It is almost
+a drop-in replacement for Docker Desktop, providing access to a Docker daemon
+running inside a managed virtual machine. However, it does come with two notable
+caveats:
+
+1. Rancher Desktop only makes your local home directory available for mounting
+   into the container by default. To mitigate this, you may choose to copy your
+   source code into a subdirectory of your home.
+2. Rancher Desktop's virtual filesystem does not support `inotify` events which
+   are used to notify processes of filesystem events. As a result, containers
+   that rely on filesystem changes in order to automatically restart or build
+   must switch to polling, which is considerably slower.
 
 ## Recommendations
 
