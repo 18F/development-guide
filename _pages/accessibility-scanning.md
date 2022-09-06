@@ -39,33 +39,31 @@ into your integration tests as well.
 
 ### Running Pa11y in CI
 
+- [GitHub Actions](#github-actions-on-every-pull-request)
+  - [Jekyll Specific Setup](#jekyll-specific-setup)
+  - [Eleventy Specific Setup](#eleventy-specific-setup)
+- [Circle CI](#circle-ci-setup-instructions)
+
 #### GitHub Actions On Every Pull Request
 
+If you are not familiar with GitHub Actions, you may want to start by reading their [quick start guide](https://docs.github.com/en/actions/quickstart).
+
 Thanks to Daniel Mundra and the folks at CivicActions Accessibility and their [comprehensive documentation](https://accessibility.civicactions.com/posts/automated-accessibility-testing-leveraging-github-actions-and-pa11y-ci-with-axe) 
-on setting up Pa11y-ci. All below code is taken from that blog post; read through for more details.
+on setting up Pa11y-ci with GitHub Actions. Much of the below code is taken from that blog post; read through for more details.
 
 Their instructions are specific to Jekyll but can be leveraged for other types of projects.
 
-* Install pa11y locally
+Install pa11y locally:
 
-  `$ npm i --save-dev pa11y-ci`
-* Add pa11y-specific scripts to `package.json`
-
-``` json
-    "scripts": {
-      "start-detached": 
-        "bundle exec jekyll serve --detach",
-      "pa11y-ci:sitemap": 
-        "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude \"/*.pdf\""
-    }
+```bash
+  $ npm i --save-dev pa11y-ci
 ```
 
-* Create a `.pa11yci` in the root of your directory to [configure your pa11y run](https://github.com/pa11y/pa11y#configuration)
+Create a `.pa11yci` in the root of your directory to [configure your pa11y CI run](https://github.com/pa11y/pa11y-ci#configuration). This step is optional, but helpful if you want to change any default configuration.
 
-[18F accessibility site's .pallyci](https://github.com/18F/accessibility/blob/18f-pages/.pa11yci).
-  `$ touch .pa11yci`
+For an example, take a look at the [18F accessibility site's .pallyci file](https://github.com/18F/accessibility/blob/18f-pages/.pa11yci):
 
-``` json
+```json
     {
       "defaults": {
         "concurrency": 4,
@@ -75,16 +73,108 @@ Their instructions are specific to Jekyll but can be leveraged for other types o
     }
 ```
 
-* Create `.github/workflows` directories in the root of your project, and then a `pa11y.yml` file in `workflows`.
+Create a `.github/workflows` directory in the root of your project, and then add a file `accessibility-scan.yml` (or whatever you want to call it).
 
-```
+```bash
   $ mkdir -P .github/workflows
-  $ touch .github/workflows/pa11y.yml
+  $ touch .github/workflows/accessibility-scan.yml
 ```
 
-Create your [Github Action workflow](https://docs.github.com/en/actions/quickstart)! 
+Copy the following into your `accessibility-scan.yml` file :
+
+```yaml
+name: accessibility tests
+
+on: [pull_request]
+
+jobs:
+  build:
+    name: Build site and run pa11y-ci tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source.
+        uses: actions/checkout@v2
+```
+
+Depending on the type of technology you have built your site in, the rest of this file will vary.
+
+##### Jekyll Specific Setup
+
+Add pa11y-specific scripts to `package.json`:
+
+``` json
+    "scripts": {
+      "start-detached":
+        "bundle exec jekyll serve --detach",
+      "pa11y-ci:sitemap":
+        "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude \"/*.pdf\""
+    }
+```
+
+Add the following lines to your `accessibility-scan.yml` file at the end of the steps key:
+
+```yaml
+  # steps:
+    - name: Install jekyll site dependencies
+        uses: ruby/setup-ruby@v1
+        with:
+          # your preferred version here
+          ruby-version: 2.7.2
+          bundler-cache: true
+
+      - name: Install JS dependencies including pa11y-ci
+        run: npm install
+
+      - name: Start up jekyll server
+        run: npm run start-detached
+
+      - name: Run pa11y-ci
+        run: npm run pa11y-ci:sitemap
+```
+
+This installs Ruby and JavaScript dependencies, then starts Jekyll with the `start-detached` script you added to `package.json` in an earlier step. Once Jekyll has started and detached, pa11y-ci will scan URLs from the sitemap.
 
 To see a pa11y.yml live in the wild, check out [18F Accessibility site's pa11y.yml](https://github.com/18F/accessibility/blob/18f-pages/.github/workflows/pa11y.yml).
+
+
+##### Eleventy Specific Setup
+
+Install `start-server-and-test`:
+
+```bash
+  $ npm i --save-dev start-server-and-test
+```
+
+Add the following to your `package.json`:
+
+```json
+  "scripts": {
+    "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:8080/sitemap.xml --sitemap-exclude \"/*.pdf\"",
+    "test:pa11y-ci": "npx start-server-and-test start 8080 pa11y-ci:sitemap"
+  }
+```
+
+Add the following lines to your `accessibility-scan.yml` file at the end of the steps key:
+
+```yaml
+    # steps:
+      - name: Install node.js.
+        uses: actions/setup-node@v2
+        with:
+          # your preferred version here
+          node-version: '16'
+
+      - name: Install NPM dependencies
+        run: npm install
+
+      - name: Build eleventy and run pa11y-ci
+        run: npm run test:pa11y-ci
+```
+
+Eleventy does not have a `--detach` option unlike Jekyll, so therefore we use `start-server-and-test` to run eleventy and our tests for us.
+
+You can see an example of this setup in the [Federal Audit Clearinghouse Front-End repository](https://github.com/GSA-TTS/FAC-Frontend).
 
 #### Circle CI Setup Instructions
 
