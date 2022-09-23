@@ -65,7 +65,7 @@ files specific to your dev environment (e.g. `.DS_Store`).
 * When in doubt, use feature branches and [**gitflow**](http://nvie.com/posts/a-successful-git-branching-model/) as your branch naming scheme.
 * Follow [this
   guidance](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) about **good commit messages**.
-* Consider using [Allstar](https://github.com/ossf/allstar) to enforce consistent branch protection rules or to require commit signing on all repositories in your organization.
+* Consider using [Allstar](https://github.com/ossf/allstar) to enforce consistent branch protection rules or to require commit signing on all repositories in your organization. For example, see the [Allstar configuration](https://github.com/cloud-gov/.allstar) that the cloud.gov team is using.
 
 ## Code style
 
