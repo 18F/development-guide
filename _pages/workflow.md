@@ -9,7 +9,7 @@ around deployments, git etiquette, and similar workflow conventions.
 
 ## Continuous Integration & Deployment
 
-### All Projects {%include components/tag-standard.html %} 
+### All Projects {%include components/tag-standard.html %}
 
 - Ensure that your project is running **automated tests** in CI. Successful
   test completion should be a requirement for deployment.
@@ -26,7 +26,7 @@ around deployments, git etiquette, and similar workflow conventions.
   docs](https://circleci.com/docs/2.0/configuration-reference/#schedule) for
   details.
 
-## Git & GitHub {%include components/tag-standard.html %} 
+## Git & GitHub {%include components/tag-standard.html %}
 
 Git is our version control system of choice and
 GitHub is our current repository platform, but how to use these tools can be spelled out
@@ -39,7 +39,7 @@ workflows]({{site.baseurl}}/example-workflows).
 _For best practices on protecting sensitive information, check out the [TTS
 Handbook](https://handbook.tts.gsa.gov/sensitive-information/#protecting-tts-systems)._
 
-Enable 
+Enable
 [**two-factor authentication**](https://help.github.com/articles/about-two-factor-authentication/) for
 your GitHub account. This is required for all TTS employees.
 
@@ -49,11 +49,11 @@ by passing CI and peer review.
 
 ### Other considerations
 
-#### {%include components/tag-standard.html %} 
+#### {%include components/tag-standard.html %}
 * Default to **public** for new repositories. See our
   [guidelines](https://github.com/18F/open-source-policy/blob/master/practice.md)
   about open source for more detail.
-* Enforce reviewer approval of pull requests against the main branch. 
+* Enforce reviewer approval of pull requests against the main branch.
 * We prefer **branches** over forks to ease internal collaboration. *If your project has many outside contributors, consider forks instead.*
 * Keep your repository **clean**; delete merged branches and avoid committing
 files specific to your dev environment (e.g. `.DS_Store`).
@@ -65,6 +65,7 @@ files specific to your dev environment (e.g. `.DS_Store`).
 * When in doubt, use feature branches and [**gitflow**](http://nvie.com/posts/a-successful-git-branching-model/) as your branch naming scheme.
 * Follow [this
   guidance](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) about **good commit messages**.
+* Consider using [Allstar](https://github.com/ossf/allstar) to enforce consistent branch protection rules or to require commit signing on all repositories in your organization. For example, see the [Allstar configuration](https://github.com/cloud-gov/.allstar) that the cloud.gov team is using.
 
 ## Code style
 
