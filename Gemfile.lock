@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.3.1)
+    activesupport (7.0.4.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -81,7 +81,7 @@ GEM
     mini_portile2 (2.8.0)
     mini_racer (0.3.1)
       libv8 (~> 8.4.255)
-    minitest (5.16.2)
+    minitest (5.17.0)
     nokogiri (1.13.7)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
