@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.3.1)
+    activesupport (7.0.4.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -11,7 +11,7 @@ GEM
     autoprefixer-rails (9.8.6.5)
       execjs
     colorator (1.1.0)
-    concurrent-ruby (1.1.10)
+    concurrent-ruby (1.2.2)
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -81,7 +81,7 @@ GEM
     mini_portile2 (2.8.0)
     mini_racer (0.3.1)
       libv8 (~> 8.4.255)
-    minitest (5.16.2)
+    minitest (5.18.0)
     nokogiri (1.13.7)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
@@ -107,7 +107,7 @@ GEM
       unicode-display_width (~> 1.1, >= 1.1.1)
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
-    tzinfo (2.0.5)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.7.0)
     uswds-jekyll (5.3.0)
