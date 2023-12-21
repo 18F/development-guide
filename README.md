@@ -1,3 +1,5 @@
+**⚠️ This guide has moved to the [consolidated 18F guides repository](https://github.com/18F/guides).**
+
 # Technology Transformation Services (TTS) Engineering Practices
 
 [TTS](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services) offices and programs — including [18F](https://18f.gsa.gov), [Centers of Excellence](https://coe.gsa.gov) (CoE), [Presidential Innovation Fellows](https://presidentialinnovationfellows.gov) (PIF), and [Solutions](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services/tts-solutions) — promote team best practices across specialty areas through guilds. These guilds support their members in whatever way deemed most appropriate by those members themselves.
